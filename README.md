@@ -7,4 +7,4 @@ La finalité de la thèse professionnelle est d’apporter une réponse à la pr
 
 ## Problématique
 
-> Comment faire le choix d'un architecture applicative multi plateformes.
+> Comment faire le choix d'une architecture applicative multi-plateformes.
