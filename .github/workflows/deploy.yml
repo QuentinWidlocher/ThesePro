@@ -16,12 +16,11 @@ jobs:
       with:
         jekyll_build_opts: -s ./jekyll/
         pre_build_commands: |
-          echo $(pwd)
           rm ./jekyll/_chapters/*
           cp -R ./These/. ./jekyll/_chapters
           echo
           echo Chapters :
           echo $(ls ./jekyll/_chapters)
           echo
-        post_build_commands : echo $(ls ./jekyll/_site)
+        post_build_commands : echo $(ls ./jekyll)
         secret_gh_pages_api_token: ${{ secrets.GH_PAGES_TOKEN }}
