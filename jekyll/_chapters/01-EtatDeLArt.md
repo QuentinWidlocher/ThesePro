@@ -1,13 +1,6 @@
----
-layout: post
-title: État de l'art
-slug: etat-de-l-art
-categories: these
----
-
 # État de l'Art <!-- omit in toc -->
 
-1. [Les programmes dits "Bureau"](#les-programmes-dits-%22bureau%22)
+1. [Les programmes dits "Bureau"](#les-programmes-dits-bureau)
 1. [Les applications mobiles](#les-applications-mobiles)
 1. [Les logiciels du Web](#les-logiciels-du-web)
 
@@ -35,10 +28,10 @@ Les logiciels de gestion ou les logiciels métiers sont bien entendu profusémen
 
 <!-- ### Les début de l'air mobile -->
 
-Propulsé en 2007 avec l'arrivé de l'iPhone de première génération, le marché des téléphones portables intelligent (renommés par la suite _smartphones_) n'a cessé de croitre.
-Si en 2010, l'utilisation d'internet sur un appareil mobile était d'à peine 3%[^1], 10 ans plus tard cela représente maintenant **plus de la majorité** de la consommation d'information du web[^2] !
+Propulsé en 2007 avec l'arrivé de l'iPhone de première génération, le marché des téléphones portables intelligent (renommés par la suite *smartphones*) n'a cessé de croitre.
+Si en 2010, l'utilisation d'internet sur un appareil mobile était d'à peine 3%[<sup>1</sup>][utilisation-web-2010], 10 ans plus tard cela représente maintenant **plus de la majorité** de la consommation d'information du web[<sup>2</sup>][utilisation-web-2020] !
 
-Grâce à des "marchés d'application" comme le _Google Play_ pour Android et _l'AppStore_ pour iOS, il est très aisé de trouver des applications qui peuvent satisfaire nos besoins.\
+Grâce à des "marchés d'application" comme le *Google Play* pour Android et *l'AppStore* pour iOS, il est très aisé de trouver des applications qui peuvent satisfaire nos besoins.\
 Même les systèmes d'exploitations bureau comme Windows ou Mac n'ont intégré ces système de que trois ou quatre ans après la première version de l'AppStore. (Linux quand à lui faisant exception avec son gestionnaire de paquet APT, créé en 1998)
 
 Les téléphones portables sont aujourd'hui de parfait outils du quotidien et, bien que leur puissance de calcul soit toujours (et irrémédiablement) inférieure à celles des ordinateurs de bureau, ils sont capable de faire fonctionner des applications toujours plus performantes. (Sous la contrainte cependant que ces applicatifs ne soient pas trop demandeur en ressource)
@@ -50,10 +43,10 @@ Les téléphones portables sont aujourd'hui de parfait outils du quotidien et, b
 Bien évidemment, l'usage d'Internet tel qu'on le connait aujourd'hui est très loin de se résumer à de simples murs de texte. Très nombreuses sont les entreprises à avoir saisi l'opportunité d'Internet en ayant créé des façades visuellement attrayante pour promouvoir leurs produits ou leurs services.
 
 Cependant, en plus des sites qu'on appelle communément "vitrine", certaines entreprises exposent des sites qui proposent directement des services.\
-Le plus connu mais aussi le plus souvent négligé est bien sûr le géant _Google_ qui, avec son moteur de recherche éminemment célèbre, offre depuis 1998 la possibilité à ses visiteurs de devenirs **utilisateurs** en recherchant la toile à la recherche d'information.
+Le plus connu mais aussi le plus souvent négligé est bien sûr le géant *Google* qui, avec son moteur de recherche éminemment célèbre, offre depuis 1998 la possibilité à ses visiteurs de devenirs **utilisateurs** en recherchant la toile à la recherche d'information.
 
 Aujourd'hui, un très grand nombre d'applications sont disponibles, leur croissance a été si rapide qu'il est parfois difficile de s'imaginer que l'Internet n'avait pas du tout comme intention de remplacer les logiciels tels qu'il le fait.\
 Des moteurs de recherches, aux sites marchands en passant par les galeries en ligne et les réseaux sociaux, notre utilisation quotidienne des applications web est immense et pourtant tout cela nous apparaît généralement comme trivial.
 
-[^1]: [Statcounter 2010](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide/2010)\
-[^2]: [Statcounter 2020](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide/2020)
+[utilisation-web-2010]: https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide/2010
+[utilisation-web-2020]: https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide/2020
