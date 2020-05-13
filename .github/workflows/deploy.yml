@@ -16,7 +16,7 @@ jobs:
       with:
         gh_pages_publishing_source: jekyll
         pre_build_commands: |
-          mv -f ./These ./jekyll/_chapter
+          mv -f ./These ./jekyll/_chapters
           echo Chapters :
           echo $(ls ./jekyll/_chapter)
         post_build_commands: |
