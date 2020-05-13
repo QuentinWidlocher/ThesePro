@@ -16,7 +16,7 @@ jobs:
       with:
         gh_pages_publishing_source: jekyll
         pre_build_commands: |
-          rm ./jekyll/*
+          rm ./jekyll/_chapters/*
           cp ./these/. ./jekyll/_chapters
           echo
           echo Chapters :
