@@ -14,7 +14,7 @@ jobs:
     - name: Build Jekyll site.
       uses: meitar/jekyll-builder-for-github-pages-action@v1
       with:
-        jekyll_build_opts: -s ./jekyll
+        jekyll_build_opts: -s ./jekyll -d ./docs
         pre_build_commands: |
           rm ./jekyll/_chapters/*
           cp -R ./These/. ./jekyll/_chapters
