@@ -1,5 +1,6 @@
 ---
 title: État de l'art
+slug: etat-de-lart
 ---
 
 1. [Les programmes dits "Bureau"](#les-programmes-dits-%22bureau%22)
