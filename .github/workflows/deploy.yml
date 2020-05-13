@@ -18,6 +18,8 @@ jobs:
         pre_build_commands: |
           mv -f ./These ./jekyll/_chapter
           echo Chapters :
-          echo $(ls -l ./jekyll/_chapter)
-        post_build_commands: mv ./jekyll/_site ./docs
+          echo $(ls ./jekyll/_chapter)
+        post_build_commands: |
+          echo $(ls ./jekyll)
+          mv ./jekyll/_site ./docs
         secret_gh_pages_api_token: ${{ secrets.GH_PAGES_TOKEN }}
