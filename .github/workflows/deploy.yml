@@ -1,0 +1,36 @@
+name: Deploy website
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Move files to jekyll
+      run: |
+          rm ./jekyll/_chapters/*
+          cp -R ./These/. ./jekyll/_chapters
+          echo
+          echo Chapters :
+          echo $(ls ./jekyll/_chapters)
+          echo
+    - name: Jekyll Build
+      uses: gha-utilities/jekyll-build@v0.0.4
+      with:
+        jekyll_github_token: ${{ secrets.GH_PAGES_TOKEN }}
+        source: ./jekyll
+        destination: ../docs
+    - name: Print results
+      run: echo $(ls ./jekyll); echo $(ls ./docs)
+    - name: Add, commit and push changes to master branch
+      run: |
+        git config --local user.email 'action@github.com'
+        git config --local user.name 'GitHub Action'
+        git add -A .
+        git commit -m 'Updates compiled site files'
+        git push origin master
