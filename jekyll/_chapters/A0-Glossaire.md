@@ -1,6 +1,7 @@
 ---
 title: Glossaire
 slug: glossaire
+layout: post
 ---
 
 1. [Cross Platform](#cross-platform)
