@@ -2,9 +2,7 @@ name: Deploy website
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    branches: [ master, Jekyll ]
 
 jobs:
   build:
