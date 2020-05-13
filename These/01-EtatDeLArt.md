@@ -1,4 +1,6 @@
-# État de l'Art <!-- omit in toc -->
+---
+title: État de l'art
+---
 
 1. [Les programmes dits "Bureau"](#les-programmes-dits-%22bureau%22)
 1. [Les applications mobiles](#les-applications-mobiles)
