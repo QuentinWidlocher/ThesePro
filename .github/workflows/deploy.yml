@@ -24,18 +24,13 @@ jobs:
       with:
         jekyll_github_token: ${{ secrets.GH_PAGES_TOKEN }}
         source: ./jekyll
-        destination: ./docs
+        destination: ../docs
     - name: Print results
       run: echo $(ls ./jekyll); echo $(ls ./docs)
-    - name: Add and Commit changes to pr-pages branch
+    - name: Add, commit and push changes to master branch
       run: |
         git config --local user.email 'action@github.com'
         git config --local user.name 'GitHub Action'
         git add -A .
         git commit -m 'Updates compiled site files'
-
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GH_PAGES_TOKEN }}
-
+        git push origin Jekyll
