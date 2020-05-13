@@ -11,16 +11,31 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build Jekyll site.
-      uses: meitar/jekyll-builder-for-github-pages-action@v1
-      with:
-        jekyll_build_opts: -s ./jekyll
-        pre_build_commands: |
+    - name: Move files to jekyll
+      run: |
           rm ./jekyll/_chapters/*
           cp -R ./These/. ./jekyll/_chapters
           echo
           echo Chapters :
           echo $(ls ./jekyll/_chapters)
           echo
-        post_build_commands : echo $(ls ./jekyll)
-        secret_gh_pages_api_token: ${{ secrets.GH_PAGES_TOKEN }}
+    - name: Jekyll Build
+      uses: gha-utilities/jekyll-build@v0.0.4
+      with:
+        jekyll_github_token: ${{ secrets.GH_PAGES_TOKEN }}
+        source: ./jekyll
+        destination: ./docs
+    - name: Print results
+      run: echo $(ls ./jekyll); echo $(ls ./docs)
+    - name: Add and Commit changes to pr-pages branch
+      run: |
+        git config --local user.email 'action@github.com'
+        git config --local user.name 'GitHub Action'
+        git add -A .
+        git commit -m 'Updates compiled site files'
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GH_PAGES_TOKEN }}
+
