@@ -2,7 +2,7 @@ name: Deploy website
 
 on:
   push:
-    branches: [ master, Jekyll ]
+    branches: [ master ]
 
 jobs:
   build:
@@ -33,4 +33,4 @@ jobs:
         git config --local user.name 'GitHub Action'
         git add -A .
         git commit -m 'Updates compiled site files'
-        git push origin Jekyll
+        git push origin master
