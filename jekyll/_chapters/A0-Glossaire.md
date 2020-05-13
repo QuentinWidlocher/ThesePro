@@ -1,10 +1,12 @@
-# Glossaire <!-- omit in toc -->
+---
+title: Glossaire
+---
 
-- [Cross Platform](#cross-platform)
-- [Logiciel *Natif*](#logiciel-natif)
-- [Logiciel *Web*](#logiciel-web)
-- [Logiciel *Hybride*](#logiciel-hybride)
-- [Software](#software)
+1. [Cross Platform](#cross-platform)
+1. [Logiciel *Natif*](#logiciel-natif)
+1. [Logiciel *Web*](#logiciel-web)
+1. [Logiciel *Hybride*](#logiciel-hybride)
+1. [Software](#software)
 
 ## Cross Platform
 
