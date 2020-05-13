@@ -8,7 +8,6 @@
         "editor.wordWrap": "bounded",
         "markdownlint.run": "onSave",
         "markdown.extension.toc.orderedList": true,
-        "markdown.extension.toc.githubCompatibility": true,
         "markdown.extension.tableFormatter.normalizeIndentation": true,
         "markdown.extension.orderedList.marker": "one",
         "altervista-thesaurus.lang": "fr_FR"
