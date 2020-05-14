@@ -2,7 +2,8 @@
 layout: home
 ---
 
-# Chapitres :
-{% for chapter in site.chapters %}
-<a href="{{chapter.url | relative_url }}">{{ chapter.title }}</a>
-{% endfor %}
+# Chapitres
+
+<section class="px-5 mt-3">
+    {% include toc.html %}
+</section>

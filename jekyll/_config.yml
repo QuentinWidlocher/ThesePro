@@ -1,14 +1,15 @@
 title: Thèse professionnelle
 email: quentin@widlocher.com
+author: Quentin Widlocher
 description: >-
     Write an awesome description for your new site here. You can edit this
     line in _config.yml. It will appear in your document head meta (for
     Google search results) and in your feed.xml site description.
-baseurl: 'ThesePro'
+baseurl: '' #'ThesePro'
 github_username: QuentinWidlocher
+encoding: utf-8
 
 # Build settings
-theme: minima
 collections:
     chapters:
         output: true

@@ -1,35 +1,22 @@
-<footer class="site-footer h-card">
+<footer class="footer">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
+  <section class="container">
+    <section class="triptych">
+      <div class="triptych-left">
+        <h2 class="title is-size-5">{{ site.title | escape }}</h2>
+        {%- if site.author -%}
+        <h3 class="subtitle is-size-6 has-text-grey">
+          Par {{ site.author | escape }}
+        </h3>
+        {%- endif -%}
 
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
+        {%- if site.email -%}
+        <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
+        {%- endif -%}
       </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
+      <div class="triptych-right">
+        <p style="max-width: 25rem;">{{- site.description | escape -}}</p>
       </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
-    </div>
-
-  </div>
-
+    </section>
+  </section>
 </footer>

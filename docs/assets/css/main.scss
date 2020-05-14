@@ -1,0 +1,99 @@
+$footer-padding: 2rem 1rem 3rem;
+
+@import "./bulma/bulma.sass";
+
+$sizes: 1,2,3,4,5,6;
+@each $size in $sizes {
+    h#{$size} {
+        @extend .is-size-#{$size};
+    }
+}
+
+$spacer: 1rem;
+$space-sizes: (
+    '0': 0,
+    '1': $spacer * 0.25,
+    '2': $spacer * 0.5,
+    '3': $spacer * 1,
+    '4': $spacer * 1.5,
+    '5': $spacer * 3,
+    'auto': auto,
+);
+
+@each $name, $multiplier in $space-sizes {
+    .mt-#{$name},
+    .my-#{$name},
+    .ma-#{$name} {
+        margin-top: $multiplier !important;
+    }
+
+    .mb-#{$name},
+    .my-#{$name},
+    .ma-#{$name} {
+        margin-bottom: $multiplier !important;
+    }
+
+    .ml-#{$name},
+    .mx-#{$name},
+    .ma-#{$name} {
+        margin-left: $multiplier !important;
+    }
+
+    .mr-#{$name},
+    .mx-#{$name},
+    .ma-#{$name} {
+        margin-right: $multiplier !important;
+    }
+
+    .pt-#{$name},
+    .py-#{$name},
+    .pa-#{$name} {
+        padding-top: $multiplier !important;
+    }
+
+    .pb-#{$name},
+    .py-#{$name},
+    .pa-#{$name} {
+        padding-bottom: $multiplier !important;
+    }
+
+    .pl-#{$name},
+    .px-#{$name},
+    .pa-#{$name} {
+        padding-left: $multiplier !important;
+    }
+
+    .pr-#{$name},
+    .px-#{$name},
+    .pa-#{$name} {
+        padding-right: $multiplier !important;
+    }
+}
+
+.triptych {
+    @extend .columns;
+
+    &-right {
+        @extend .column, .is-narrow-tablet;
+        margin-left: auto;
+    }
+    &-left {
+        @extend .column, .is-narrow-tablet;
+        margin-right: auto;
+    }
+    &-middle {
+        @extend .column, .is-narrow-tablet;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    main {
+        flex: 1;
+    }
+}
