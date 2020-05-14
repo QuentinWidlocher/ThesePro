@@ -5,26 +5,33 @@ layout: post
 ---
 
 1. [Les programmes dits "Bureau"](#les-programmes-dits-bureau)
-   1. [Historique](#historique)
+   1. [Historique informatique](#historique-informatique)
       1. [Naissance de l'informatique](#naissance-de-linformatique)
       1. [L'informatique au quotidien](#linformatique-au-quotidien)
    1. [Le problème de sous-optimisation](#le-problème-de-sous-optimisation)
 1. [Les applications mobiles](#les-applications-mobiles)
-   1. [Historique nomade](#historique-nomade)
-      1. [Les début de l'air mobile](#les-début-de-lair-mobile)
+   1. [Historique mobile](#historique-mobile)
+      1. [Les début de l'air nomade](#les-début-de-lair-nomade)
       1. [Les applications](#les-applications)
       1. [Les smartphones au quotidien](#les-smartphones-au-quotidien)
    1. [Pour les entreprises](#pour-les-entreprises)
 1. [Les logiciels du Web](#les-logiciels-du-web)
+   1. [Historique du web](#historique-du-web)
+      1. [Naissance de l'Internet](#naissance-de-linternet)
+      1. [Le passage au dynamisme](#le-passage-au-dynamisme)
+      1. [Le web au quotidien](#le-web-au-quotidien)
+   1. [Les performances](#les-performances)
+   1. [Le web sur mobile](#le-web-sur-mobile)
+      1. [Le Responsive Design](#le-responsive-design)
 
-Les logiciels ont une place très importante dans notre monde depuis plusieurs dizaines d'années et leur importance ne cesse de croitre.\
+Les logiciels ont une place très importante dans notre monde depuis plusieurs dizaines d'années et leur importance ne cesse de croître.\
 Nous utilisons des appareils électroniques chaque jour et ces logiciels sont notre moyen de communiquer avec la machine, afin de la laisser agir pour notre confort.
 
 Il est donc primordial de rendre ces interfaces le plus accessible possible et continuer d'améliorer leur utilité auprès des utilisateurs.
 
 ## Les programmes dits "Bureau"
 
-### Historique
+### Historique informatique
 
 #### Naissance de l'informatique
 
@@ -37,7 +44,7 @@ Bien évidemment, ce problème de taille fut rapidement réglé avec l'arrivé d
 
 > Il n'y a aucune raison pour qu'un particulier possède un ordinateur chez lui.
 
-<span style="text-align: right;">*Ken Olsen - 1977*</span>
+<p style="text-align: right;">*Ken Olsen - 1977*</p>
 
 Contrairement à ce qu'annonçait l'ingénieur Olsen, aujourd'hui, les ordinateurs personnels sont toujours au cœur de notre utilisation de l'informatique, principalement pour leur puissance de calcul et la précision et la rigueur de leur maniement.\
 
@@ -60,9 +67,9 @@ Ces deux faces d'un même pièce représentent un conflit qui existe depuis quel
 
 ## Les applications mobiles
 
-### Historique nomade
+### Historique mobile
 
-#### Les début de l'air mobile
+#### Les début de l'air nomade
 
 Propulsé en 2007 avec l'arrivé de l'iPhone de première génération, le marché des téléphones portables intelligent (renommés par la suite *smartphones*) n'a cessé de croître.\
 C'est avec la démocratisation de l'usage d'Internet sur les mobiles que grandi cette nouvelle air nomade.
@@ -89,10 +96,14 @@ On estime en 2020 que deux tiers des habitant du monde possèdent un téléphone
 Certaines entreprises se sont mises à utiliser des terminaux mobiles (des smartphones mais aussi parfois des tablettes pour profiter de dimensions d'affichage confortables) dans leurs cœurs de métiers. Parfois simplement pour l'aspect communicatif mais aussi pour profiter d'applications qu'il est possible d'embarquer. Par exemple un commercial sur la route serait en mesure de se déplacer avec une version allégé de l'ERP utilisé en interne pour pouvoir accéder à des donnés de son entreprise depuis n'importe où.
 
 Les entreprises ayant le rapport le plus important aux appareils mobiles sont celles qui ont choisi de faire des applications leur priorité et qui s'adresse généralement au plus grand public.\
-Pourtant quand on observe les grandes entreprises utilisant des applications mobile pour fournir des services (*Google*, *Uber*, *Facebook* pour ne citer qu'elles), ont remarque qu'elles possède toute une présence plus "fixe" sur les utilisateurs d'ordinateurs.\
-Cependant, **aucune n'a de logiciel bureau**. Ces entreprises se basent uniquement sur des versions web de leurs portails.
+Pourtant quand on observe les grandes entreprises utilisant des applications mobile pour fournir des services (*Google*, *Uber*, *Facebook* pour ne citer qu'elles), ont remarque qu'elles possède toute une présence plus "fixe" pour les utilisateurs d'ordinateurs.\
+Cependant, **aucune n'a de logiciel bureau**. Ces entreprises se basent uniquement sur les versions web de leurs portails pour toucher cette cible.
 
 ## Les logiciels du Web
+
+### Historique du web
+
+#### Naissance de l'Internet
 
 À ses premiers pas avec le grand public au début des années 1990, l'Internet avait comme but d'afficher des pages de contenus fixe. On pouvait de ce fait rédiger des articles et les agrémenter de quelques images d'illustration.
 
@@ -101,8 +112,44 @@ Bien évidemment, l'usage d'Internet tel qu'on le connait aujourd'hui est très 
 Cependant, en plus des sites qu'on appelle communément "vitrine", certaines entreprises exposent des sites qui proposent directement des services.\
 Le plus connu mais aussi le plus souvent négligé est bien sûr le géant *Google* qui, avec son moteur de recherche éminemment célèbre, offre depuis 1998 la possibilité à ses visiteurs de devenirs **utilisateurs** en recherchant la toile à la recherche d'information.
 
+#### Le passage au dynamisme
+
+La première version du web ne possédait aucun moyen de traiter des données de manières dynamique, ni même de moyen pour l'utilisateur d'interagir directement avec le contenu d'une page. Le flux d'information n'allait que dans une seule direction, celle du visiteur.
+
+Plusieurs langage de programmation pour le web sont apparu à partir des années 1990, parmi ceux ci, les deux plus populaire et encore très largement utilisé aujourd'hui sont sorti en 1995, à savoir le *PHP* et le *JavaScript*.
+
+#### Le web au quotidien
+
 Aujourd'hui, un très grand nombre d'applications sont disponibles, leur croissance a été si rapide qu'il est parfois difficile de s'imaginer que l'Internet n'avait pas du tout comme intention de remplacer les logiciels tels qu'il le fait.\
 Des moteurs de recherches, aux sites marchands en passant par les galeries en ligne et les réseaux sociaux, notre utilisation quotidienne des applications web est immense et pourtant tout cela nous apparaît généralement comme trivial.
+
+Il est maintenant relativement difficile de trouver une entreprise qui choisisse de faire l'impasse sur la visibilité que pourrait lui apporter une présence sur la toile.\
+Au delà de chercher à dégager du revenu avec des méthodes comme la publicité (méthode en déclin de toute manière), être visible parmi les premières pages d'un moteur de recherche permet à un nombre toujours croissant d'utilisateurs de se renseigner et de découvrir l'entreprise en question.
+
+### Les performances
+
+Comme nous en parlions [plus tôt](#le-problème-de-sous-optimisation), certains langages du web souffrent de mauvaise réputation concernant leurs performances, en particulier le *JavaScript*. Il est important de rappeler que contrairement au langages dit "[natifs](/chapters/glossaire#logiciel-natif)", ces langages de script sont exécuté au sein d'un navigateur internet qui lui même est exécuté par le système d'exploitation.\
+Cette "double couche" exécutive est malheureusement à la source des ces problèmes de performances.
+
+En plus de cela, d'une manière assez paradoxale, l'accessibilité de ces langages est aussi une source de ce problème.\
+Dans le cas du *JavaScript* en particulier, c'est un langage de programmation à la syntaxe relativement aisée à la lecture, ressemblant à beaucoup d'autres langages tout aussi connus (le *Java* pour ne citer que lui). En plus de cela, il ne nécessite pas d'outils particulier pour exécuter, si ce n'est un navigateur Internet.\
+Cette facilité d'accès et d'écriture font de ce langage une excellente porte d'entrée pour le développement informatique.
+
+Le problème étant que si beaucoup d'apprentis se sont mis à créer des applications web, la qualité moindre du code a pu se ressentir, couplé au [problème de sous optimisation](#le-problème-de-sous-optimisation). Le résultat en est une mauvaise utilisation de l'outil de développement et de mauvaises performances en général au sein des pages web que nous visitons chaque jour.
+
+### Le web sur mobile
+
+Quand les applications mobiles ont explosé en popularité lors de l'avènement des smartphones, il a fallu aussi adapter les pages web déjà existantes pour ces petits écrans dont le ratio était inversé (16:9 pour un écran d'ordinateur commun contre 9:16 pour la plupart des smartphones).
+<!-- Il a aussi fallu rendre les sites dynamique aussi rapide que possible pour accommoder les puissances de calcul moindre des appareils mobiles. -->
+
+#### Le Responsive Design
+
+Ce changement de forme d'écran pose tout de suite un problème de taille, pratiquement aucun site ne peux afficher son contenu le plus important à l'écran puisque ce contenu est distribué horizontalement.\
+Lors d'une navigation sur un écran vertical, seul un faible pourcentage de l'information est disponible à la fois et l'utilisateur se retrouve dans l'obligation de se déplacer constamment dans la fenêtre.
+
+Quand bien même un site afficherais son contenu verticalement, il n'est pas certain que sa largeur sera la même que celle de l'écran qui le visualisera, et si on visite ce site sur un écran d'ordinateur c'est le problème inverse qui se pose, il faudra désormais faire défiler l'écran plus que de raison afin d'accéder à tout le contenu du site.
+
+Devant ce problème, une seule véritable solution se présente, il fallait un moyen de créer un site qui s'adapterais à toute taille d'écran. Un site qui puisse réagir à la taille de son écran, en anglais, un site **responsive**.
 
 [^1]: [Statcounter 2010](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide/2010)
 [^2]: [Statcounter 2020](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide/2020)
