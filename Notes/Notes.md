@@ -78,6 +78,10 @@
 - Rapidité/facilité de déploiement
 - Android et/ou iOS et/ou PC et/ou Mac
 
+Bureau : Performant\
+Mobile : Portable\
+Web : Pratique
+
 ## Liens intéressants
 
 - <https://stackoverflow.com/questions/2098492/why-are-web-apps-prevalent-for-internal-corporate-apps>
