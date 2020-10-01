@@ -8,13 +8,13 @@
 <meta property="og:title" content="État de l’art" />
 <meta name="author" content="Quentin Widlocher" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Les programmes dits “Bureau” Historique informatique Naissance de l’informatique L’informatique au quotidien Le problème de sous-optimisation Les applications mobiles Historique mobile Les début de l’air nomade Les applications Les smartphones au quotidien Pour les entreprises Les logiciels du Web Historique du web Naissance de l’Internet Le passage au dynamisme Le web au quotidien Les performances Le web sur mobile Le Responsive Design" />
-<meta property="og:description" content="Les programmes dits “Bureau” Historique informatique Naissance de l’informatique L’informatique au quotidien Le problème de sous-optimisation Les applications mobiles Historique mobile Les début de l’air nomade Les applications Les smartphones au quotidien Pour les entreprises Les logiciels du Web Historique du web Naissance de l’Internet Le passage au dynamisme Le web au quotidien Les performances Le web sur mobile Le Responsive Design" />
+<meta name="description" content="Les programmes dits “Bureau” Historique informatique Naissance de l’informatique Les langages et leurs niveaux d’abstraction L’informatique au quotidien Le problème de sous-optimisation Les applications mobiles Historique mobile Les début de l’air nomade Les applications Les smartphones au quotidien Pour les entreprises Les logiciels du Web Historique du web Naissance de l’Internet Le passage au dynamisme Le web au quotidien Les performances Le web sur mobile Le Responsive Design La solution multiplateforme Pourquoi chercher le multiplateforme Le multiplateforme bureau Le multiplateforme mobile" />
+<meta property="og:description" content="Les programmes dits “Bureau” Historique informatique Naissance de l’informatique Les langages et leurs niveaux d’abstraction L’informatique au quotidien Le problème de sous-optimisation Les applications mobiles Historique mobile Les début de l’air nomade Les applications Les smartphones au quotidien Pour les entreprises Les logiciels du Web Historique du web Naissance de l’Internet Le passage au dynamisme Le web au quotidien Les performances Le web sur mobile Le Responsive Design La solution multiplateforme Pourquoi chercher le multiplateforme Le multiplateforme bureau Le multiplateforme mobile" />
 <meta property="og:site_name" content="Thèse professionnelle" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-10-01T07:10:18+00:00" />
+<meta property="article:published_time" content="2020-10-01T15:06:08+00:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"/ThesePro/chapters/etat-de-lart","headline":"État de l’art","dateModified":"2020-10-01T07:10:18+00:00","datePublished":"2020-10-01T07:10:18+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/ThesePro/chapters/etat-de-lart"},"author":{"@type":"Person","name":"Quentin Widlocher"},"description":"Les programmes dits “Bureau” Historique informatique Naissance de l’informatique L’informatique au quotidien Le problème de sous-optimisation Les applications mobiles Historique mobile Les début de l’air nomade Les applications Les smartphones au quotidien Pour les entreprises Les logiciels du Web Historique du web Naissance de l’Internet Le passage au dynamisme Le web au quotidien Les performances Le web sur mobile Le Responsive Design","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","url":"/ThesePro/chapters/etat-de-lart","headline":"État de l’art","dateModified":"2020-10-01T15:06:08+00:00","datePublished":"2020-10-01T15:06:08+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/ThesePro/chapters/etat-de-lart"},"author":{"@type":"Person","name":"Quentin Widlocher"},"description":"Les programmes dits “Bureau” Historique informatique Naissance de l’informatique Les langages et leurs niveaux d’abstraction L’informatique au quotidien Le problème de sous-optimisation Les applications mobiles Historique mobile Les début de l’air nomade Les applications Les smartphones au quotidien Pour les entreprises Les logiciels du Web Historique du web Naissance de l’Internet Le passage au dynamisme Le web au quotidien Les performances Le web sur mobile Le Responsive Design La solution multiplateforme Pourquoi chercher le multiplateforme Le multiplateforme bureau Le multiplateforme mobile","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/ThesePro/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/ThesePro/feed.xml" title="Thèse professionnelle" /></head>
 <body><header class="site-header" role="banner">
@@ -41,6 +41,7 @@
       <li><a href="#historique-informatique">Historique informatique</a>
         <ol>
           <li><a href="#naissance-de-linformatique">Naissance de l’informatique</a></li>
+          <li><a href="#les-langages-et-leurs-niveaux-dabstraction">Les langages et leurs niveaux d’abstraction</a></li>
           <li><a href="#linformatique-au-quotidien">L’informatique au quotidien</a></li>
         </ol>
       </li>
@@ -76,6 +77,13 @@
       </li>
     </ol>
   </li>
+  <li><a href="#la-solution-multiplateforme">La solution multiplateforme</a>
+    <ol>
+      <li><a href="#pourquoi-chercher-le-multiplateforme">Pourquoi chercher le multiplateforme</a></li>
+      <li><a href="#le-multiplateforme-bureau">Le multiplateforme bureau</a></li>
+      <li><a href="#le-multiplateforme-mobile">Le multiplateforme mobile</a></li>
+    </ol>
+  </li>
 </ol>
 
 <p>Les logiciels ont une place très importante dans notre monde depuis plusieurs dizaines d’années et leur importance ne cesse de croître.<br />
@@ -94,6 +102,25 @@ Si un logiciel devait exister sur un ordinateur d’une marque et sur un autre d
 
 <p>Bien évidemment, ce problème de taille fut rapidement réglé avec l’arrivé des langages de programmation à haut niveau d’abstraction et des systèmes d’exploitations.</p>
 
+<h4 id="les-langages-et-leurs-niveaux-dabstraction">Les langages et leurs niveaux d’abstraction</h4>
+
+<p>Le binaire, cette suite de 0 et 1 indéchiffrable pour un simple être humain, est notoirement connu pour être la première façon qu’un développeur avait de communiquer avec la machine, en altérant comme cela les différences de potentiels au sein de celle ci. C’est avec cette méthode aujourd’hui complètement révolue que les premiers “logiciels” ont pu voir le jour.</p>
+
+<p>En plus d’être extrêmement fastidieux, cette méthode était prône à l’erreur et très délicate. La moindre erreur était complexe à trouver et à corriger.<br />
+Bien évidemment, ce n’est pas avec cette technique que l’apparition en masse des logiciels a pu se faire.</p>
+
+<p>L’arrivé des langages dit “machines” a permit de rendre tout cela bien plus facile. Les langages machines, appelés aussi “assembleur”, permettaient de pouvoir relire un code dans un format plus proche de l’anglais, même si un grand fossé sépare ces langages de celui de Shakespeare.</p>
+
+<!-- TODO: exemple de code assembleur -->
+
+<p>Ces langages cependant étaient liés directement aux processeurs qui exécutait les instructions, rendant donc la portabilité du code source impossible, à l’instar du binaire.</p>
+
+<p>Il a fallu attendre l’arrivé d’un plus haut niveau d’abstraction pour faciliter l’écriture du code et sa portabilité par la même occasion. Le concept d’abstraction est un peu complexe a saisir mais peut-être résumé dans ce cas à la hiérarchie des instructions.<br />
+Là ou le code binaire influe directement sur le processeur qui l’exécute, un langage à plus haut niveau d’abstraction passe d’abord dans un compilateur (logiciel spécialisé utilisé exclusivement par les développeurs) qui va le transformer en son équivalent en code assembleur. (Qui lui même passera dans un assembleur pour être transformé en binaire).</p>
+
+<p>C’est cette particularité qui permet à un langage à haut niveau d’abstraction de proposer des fonctionnalités très commune dans une syntaxe plus simple, et qui permet aussi par exemple de rendre un code plus proche d’une langue parlée, facilitant de ce fait la compréhension.<br />
+Cette couche d’abstraction a permis à un langage comme le C par exemple de pouvoir être compilé pour plusieurs sorte de processeurs différent. Avec un seul code source, on pouvait sortir des instructions pour plusieurs machines différentes, c’était le début du code multi-plateforme.</p>
+
 <h4 id="linformatique-au-quotidien">L’informatique au quotidien</h4>
 
 <blockquote>
@@ -102,9 +129,9 @@ Si un logiciel devait exister sur un ordinateur d’une marque et sur un autre d
 
 <p style="text-align: right;">*Ken Olsen - 1977*</p>
 
-<p>Contrairement à ce qu’annonçait l’ingénieur Olsen, aujourd’hui, les ordinateurs personnels sont toujours au cœur de notre utilisation de l’informatique, principalement pour leur puissance de calcul et la précision et la rigueur de leur maniement.\</p>
+<p>Contrairement à ce qu’annonçait l’ingénieur Olsen, aujourd’hui, les ordinateurs personnels sont toujours au cœur de notre utilisation de l’informatique, principalement pour leur puissance de calcul et la précision et la rigueur de leur maniement.</p>
 
-<p>Malgré l’essor des smartphones, s’il y a bien un milieu dans lequel les terminaux fixe sont toujours très amplement utilisés, c’est dans les milieu professionnels.<br />
+<p>Malgré l’essor des smartphones, s’il y a bien un milieu dans lequel les terminaux fixe sont toujours très amplement utilisés, c’est dans les milieux professionnels.<br />
 Les logiciels de gestion ou les logiciels métiers sont bien entendu profusément répandus dans la plupart des professions de toute sorte.</p>
 
 <p>Il ne faut pas non plus mettre de côté la culture des jeux vidéos qui elle aussi est en croissance depuis les années 1980. Même si le marché du jeu vidéo est aussi en plein essor sur les téléphones portables, les ordinateurs de bureau ont toujours une place prépondérante dans ce domaine.</p>
@@ -196,8 +223,7 @@ Cette facilité d’accès et d’écriture font de ce langage une excellente po
 
 <h3 id="le-web-sur-mobile">Le web sur mobile</h3>
 
-<p>Quand les applications mobiles ont explosé en popularité lors de l’avènement des smartphones, il a fallu aussi adapter les pages web déjà existantes pour ces petits écrans dont le ratio était inversé (16:9 pour un écran d’ordinateur commun contre 9:16 pour la plupart des smartphones).
-<!-- Il a aussi fallu rendre les sites dynamique aussi rapide que possible pour accommoder les puissances de calcul moindre des appareils mobiles. --></p>
+<p>Quand les applications mobiles ont explosé en popularité lors de l’avènement des smartphones, il a fallu aussi adapter les pages web déjà existantes pour ces petits écrans dont le ratio était inversé (16:9 pour un écran d’ordinateur commun contre 9:16 pour la plupart des smartphones).</p>
 
 <h4 id="le-responsive-design">Le Responsive Design</h4>
 
@@ -206,21 +232,53 @@ Lors d’une navigation sur un écran vertical, seul un faible pourcentage de l�
 
 <p>Quand bien même un site afficherais son contenu verticalement, il n’est pas certain que sa largeur sera la même que celle de l’écran qui le visualisera, et si on visite ce site sur un écran d’ordinateur c’est le problème inverse qui se pose, il faudra désormais faire défiler verticalement l’écran plus que de raison afin d’accéder à tout le contenu du site.</p>
 
-<p>Devant ce problème, une seule véritable solution se présente, il fallait un moyen de créer un site qui s’adapterais à toute taille d’écran. Un site qui puisse réagir à la taille de ce dernier, en anglais, un site <strong><em>responsive</em></strong>.</p>
+<p>Devant ce problème, une seule véritable solution se présente, il fallait un moyen de créer un site qui s’adapterait à toute taille d’écran. Un site qui puisse réagir à la taille de ce dernier, en anglais, un site <strong><em>responsive</em></strong>.</p>
 
 <p>Le <em>Responsive Design</em> est un ensemble de pratique visant à rendre expérience d’un utilisateur mobile la plus fluide et pratique possible.<br />
-L’un et potentiellement la plus importante pratique sont les <em>media queries</em> . Cette pratique part d’une base commune; une page avec des sections, des formulaires, des images etc. . A cela elle permet aux développeurs et <em>designers</em> d’ajouter des règles d’affichage en fonction de la taille de l’écran.</p>
+L’une et potentiellement la plus importante des pratiques est les <em>media queries</em> . Cette pratique part d’une base commune; une page avec des sections, des formulaires, des images etc. . A cela elle permet aux développeurs et <em>designers</em> d’ajouter des règles d’affichage en fonction de la taille de l’écran.</p>
 
-<p>Un exemple, un formulaire classique qui s’afficherais sur deux colonnes comme celui ci :</p>
+<p>Pour exemple, un formulaire classique qui s’afficherait sur deux colonnes comme celui ci :</p>
 
-<p><img src="./BootstrapFormDesktop.jpg" alt="Formulaire Responsive Bureau" /></p>
+<!-- ![Formulaire Responsive Bureau](./BootstrapFormDesktop.jpg) -->
 
 <p>En lui précisant une règle qui défini que s’il doit s’afficher sur un écran dont la largeur est inférieur à 576px (valeur fréquente mais non standard pour définir la largeur d’un écran de smartphone vertical), il devra lister ses champs sur une seule colonne verticalement afin de s’ajuster au mieux à cet écran :</p>
 
-<p><img src="./BootstrapFormMobile.jpg" alt="Formulaire Responsive Mobile" /></p>
+<!-- ![Formulaire Responsive Mobile](./BootstrapFormMobile.jpg) -->
 
 <p>Ce système est très puissant et à son arrivé en Juin 2012 il a révolutionné la façon dont les sites web (et par extension les applications web) pouvait être développé et les cibles qu’ils pouvaient viser.<br />
 Aujourd’hui il n’est pas rare de pouvoir accéder aux sites de grandes sociétés grâce à un smartphone sans que celui ne rencontre de problème d’affichage. C’est même souvent le cas lors de l’utilisation d’une tablette, un “simple” ensemble de règles supplémentaire pour cet éventail de taille d’écran.</p>
+
+<h2 id="la-solution-multiplateforme">La solution multiplateforme</h2>
+
+<p>Devant ces trois grandes familles d’applicatifs, l’une d’entre elle s’est hissé sur le devant de la scène ces dernières années et ce, malgré plusieurs problématique, j’ai bien sûr nommé les applications web et leurs “successeurs spirituels” les applications <em>hybrides</em>.</p>
+
+<h3 id="pourquoi-chercher-le-multiplateforme">Pourquoi chercher le multiplateforme</h3>
+
+<p>L’utilisation de plus en plus fréquente des appareils mobiles ainsi que celle des sites web a poussé de plus en plus d’entreprises à se pencher sur la question du multiplateforme.<br />
+En effet si un logiciel métier peut-être développé pour un parc installé restreint en systèmes d’exploitations, ce n’est pas un luxe que peut se permettre une application grand public ou même un logiciel métier déployé dans un parc de machines non contrôlés. Pour ces derniers cas, il fallait obligatoirement développer une version pour chaque appareil qui pouvait potentiellement être utilisé.</p>
+
+<p>Ce processus de développement était fort long et fastidieux. Dans les cas chanceux où les technologies de développement étaient les mêmes entre les différentes cibles (comprendre : appareil au système d’exploitation différent), il était possible de partager du code (et donc de la fonctionnalité). Pour les autres cas, il fallait parfois recréer des fonctionnalités existantes dans un langage de programmation différent, entrainant de ce fait une importante montée du temps de développement et donc des coûts associés.</p>
+
+<p>Devant cette problématique de taille, la stratégie la plus souvent employée était de développer le logiciel pour la cible la plus prolifique seulement afin de maximiser les revenus par rapport aux coûts de productions.<br />
+Cependant on peux remarquer que cette stratégie se contente de contourner le problème plutôt que d’y répondre.</p>
+
+<h3 id="le-multiplateforme-bureau">Le multiplateforme bureau</h3>
+
+<p>Pour répondre à cette problématique, les ingénieurs développeurs ont cherchés à trouver le moyen de partager le code source entre plusieurs cibles, voir à utiliser la même <em>codebase</em> (code source complet d’un projet particulier, là où le code source n’en représente potentiellement qu’une partie).<br />
+Comme précisé <a href="#les-langages-et-leurs-niveaux-dabstraction">plus haut</a>, c’est avec l’arrivé de langages à plus haut niveau d’abstraction que l’on a pu commencer à porter des applications entre les différents systèmes d’exploitations les plus populaires (Windows, Linux et MacOS). Cependant avec la diversité croissante des technologies disponible, et l’apparition de langages à niveau d’abstraction encore plus élevé, cette portabilité a fini par s’estomper.</p>
+
+<p>Aussi contre-intuitif cela puisse-t-il être, lorsqu’on base un outil sur une autre qui se base lui même sur un autre, en plus de créer un outil plus performant, on risque de le rendre dépendant d’une multitude de détails qui l’empêche d’être utilisé avec d’autres outils.<br />
+C’est le cas de certains langages qui, pour pallier cela, nécessitent de posséder leur compilateur (ou interpréteur, voir glossaire<!--TODO-->) installé sur la machine cible (Java, C#, Python etc.).</p>
+
+<!-- TODO: Schéma des couches d'abstraction -->
+
+<p>Et si les fonctionnalités dites “<em>back-office</em>” ou communément “<em>back</em>” (comprendre : les calculs et les opérations effectués en arrière plan) ne sont dépendantes de rien de plus que ce compilateur, les fonctionnalités dites “<em>front-office</em>” ou “<em>front</em>” (comprendre : l’affichage de l’interface utilisateur et sa gestion) en revanche sont très dépendantes des technologies embarquées dans le système d’exploitation.<br />
+En effet, si le <em>back</em> représente 50% des fonctionnalités d’une application, le <em>front</em> représente alors les cinquante autres pour cents. Dès lors il est nécessaire d’utiliser des technologies communes aux systèmes d’exploitations que l’on cible si l’on désire pouvoir partager un maximum de code.</p>
+
+<h3 id="le-multiplateforme-mobile">Le multiplateforme mobile</h3>
+
+<p>Au début des ordinateurs de bureau, la rivalité entre les producteurs de systèmes d’exploitations ne connaissait pas l’ampleur qu’elle connait aujourd’hui. C’est aussi grâce a cela en partie que la portabilité du code bureau est si démocratisé.<br />
+Cependant, au début des smartphones, cette rivalité pouvait déjà plus se faire ressentir et couplé aux langages à haut niveau d’abstraction, la route fut scindé entre les deux leaders du marché.</p>
 
 <div class="footnotes" role="doc-endnotes">
   <ol>
