@@ -2,7 +2,7 @@
 
 1. [Problématiques potentielles](#problématiques-potentielles)
 1. [Glossaire](#glossaire)
-1. [État de l'art](#État-de-lart)
+1. [État de l'art](#état-de-lart)
 1. [Méthodes à appliquer](#méthodes-à-appliquer)
 1. [Performances](#performances)
 1. [Efficacité de prod](#efficacité-de-prod)
@@ -21,7 +21,7 @@
 - Soft Natif
 - Soft Hybride
 - Soft Web
-- Xp Cross Platform
+- Cross Platform (XP)
 
 ## État de l'art
 
@@ -50,7 +50,7 @@
 
 ## Efficacité de prod
 
-- Projet bureau natif puis mobile natif VS Projet Xp hybride natif VS Projet Xp Web
+- Projet bureau natif puis mobile natif VS Projet XP hybride natif VS Projet XP Web
 - Différents outils
   - Natif
     - C# Xamarin
@@ -91,3 +91,9 @@ Web : Pratique
 
 - Combien de sites web VS applications web
 - Combien d'entreprises utilisent des web apps
+
+Méthodologie
+
+Plan d'expérience
+pour chaque expériences, quels critère à fixer/varier\
+Interview d'experts
