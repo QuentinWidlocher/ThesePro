@@ -55,9 +55,10 @@ Il ne faut pas non plus mettre de côté la culture des jeux vidéos qui elle au
 
 ### Le problème de sous-optimisation
 
-Lorsque le développement informatique nécessitait de gérer l'état de la machine à une couche presque *physique*, et qu'il fallait manuellement accéder à des zones de la mémoire vive pour faire fonctionner un logiciel, il était bien évidemment essentiel de passer un temps non négligeable à optimiser le code afin de ne pas surcharger la machine.\
+Lorsque le développement informatique nécessitait de gérer l'état de la machine à une couche presque *physique*, et qu'il fallait manuellement accéder à des zones de la mémoire vive pour faire fonctionner un logiciel, il était bien évidemment essentiel de passer un temps non négligeable à optimiser le code afin de ne pas surcharger la machine.
+
 Aujourd'hui les ordinateurs ont une puissance de calcul telle qu'il est parfois facile d'oublier le chemin qui a été parcouru.\
-On parle de sous-optimisation lorsqu'une application fonctionne normalement, sauf qu'elle est très (parfois trop) gourmande en ressource pour ce qu'elle accompli. Le manque de rigueur lié à la gestion des ressources et à l'optimisation du code engendrant donc cette consommation excessive.\
+On parle de sous-optimisation lorsqu'une application fonctionne normalement, sauf qu'elle est très (parfois trop) gourmande en ressource pour ce qu'elle chercher à accomplir. Le manque de rigueur lié à la gestion des ressources et à l'optimisation du code engendrant donc cette consommation excessive de ressources.\
 Cette problématique est assez connue des développeur mais il existe pourtant assez peu de solutions pour y remédier, si ce n'est passer plus de temps à chercher à optimiser le code source d'un logiciel.
 
 D'un autre côté, certains voient d'un bon œil ce problème en montrant que le code écrit aujourd'hui et bien plus facile à lire (et donc à maintenir) qu'il y a des années.\
@@ -129,13 +130,13 @@ Au delà de chercher à dégager du revenu avec des méthodes comme la publicit�
 ### Les performances
 
 Comme nous en parlions [plus tôt](#le-problème-de-sous-optimisation), certains langages du web souffrent de mauvaise réputation concernant leurs performances, en particulier le *JavaScript*. Il est important de rappeler que contrairement au langages dit "[natifs](/chapters/glossaire#logiciel-natif)", ces langages de script sont exécuté au sein d'un navigateur internet qui lui même est exécuté par le système d'exploitation.\
-Cette "double couche" exécutive est malheureusement à la source des ces problèmes de performances.
+Cette "double couche" exécutive est malheureusement souvent à la source des ces problèmes de performances.
 
 En plus de cela, d'une manière assez paradoxale, l'accessibilité de ces langages est aussi une source de ce problème.\
 Dans le cas du *JavaScript* en particulier, c'est un langage de programmation à la syntaxe relativement aisée à la lecture, ressemblant à beaucoup d'autres langages tout aussi connus (le *Java* pour ne citer que lui). En plus de cela, il ne nécessite pas d'outils particulier pour exécuter, si ce n'est un navigateur Internet.\
 Cette facilité d'accès et d'écriture font de ce langage une excellente porte d'entrée pour le développement informatique.
 
-Le problème étant que si beaucoup d'apprentis se sont mis à créer des applications web, la qualité moindre du code a pu se ressentir, couplé au [problème de sous optimisation](#le-problème-de-sous-optimisation). Le résultat en est une mauvaise utilisation de l'outil de développement et de mauvaises performances en général au sein des pages web que nous visitons chaque jour.
+Le problème étant que si beaucoup d'apprentis se sont mis à créer des applications web, la moindre qualité du code a pu se faire ressentir, couplé au [problème de sous optimisation](#le-problème-de-sous-optimisation). Le résultat en est une mauvaise utilisation de l'outil de développement et de mauvaises performances en général au sein des pages web que nous visitons chaque jour.
 
 ### Le web sur mobile
 
@@ -145,12 +146,27 @@ Quand les applications mobiles ont explosé en popularité lors de l'avènement 
 #### Le Responsive Design
 
 Ce changement de forme d'écran pose tout de suite un problème de taille, pratiquement aucun site ne peux afficher son contenu le plus important à l'écran puisque ce contenu est distribué horizontalement.\
-Lors d'une navigation sur un écran vertical, seul un faible pourcentage de l'information est disponible à la fois et l'utilisateur se retrouve dans l'obligation de se déplacer constamment dans la fenêtre.
+Lors d'une navigation sur un écran vertical, seul un faible pourcentage de l'information est disponible à la fois et l'utilisateur se retrouve dans l'obligation de se déplacer constamment dans la fenêtre s'il veut accéder aux informations.
 
-Quand bien même un site afficherais son contenu verticalement, il n'est pas certain que sa largeur sera la même que celle de l'écran qui le visualisera, et si on visite ce site sur un écran d'ordinateur c'est le problème inverse qui se pose, il faudra désormais faire défiler l'écran plus que de raison afin d'accéder à tout le contenu du site.
+Quand bien même un site afficherais son contenu verticalement, il n'est pas certain que sa largeur sera la même que celle de l'écran qui le visualisera, et si on visite ce site sur un écran d'ordinateur c'est le problème inverse qui se pose, il faudra désormais faire défiler verticalement l'écran plus que de raison afin d'accéder à tout le contenu du site.
 
-Devant ce problème, une seule véritable solution se présente, il fallait un moyen de créer un site qui s'adapterais à toute taille d'écran. Un site qui puisse réagir à la taille de son écran, en anglais, un site **responsive**.
+Devant ce problème, une seule véritable solution se présente, il fallait un moyen de créer un site qui s'adapterais à toute taille d'écran. Un site qui puisse réagir à la taille de ce dernier, en anglais, un site ***responsive***.
+
+Le *Responsive Design* est un ensemble de pratique visant à rendre expérience d'un utilisateur mobile la plus fluide et pratique possible.\
+L'un et potentiellement la plus importante pratique sont les *media queries* . Cette pratique part d'une base commune; une page avec des sections, des formulaires, des images etc. . A cela elle permet aux développeurs et *designers* d'ajouter des règles d'affichage en fonction de la taille de l'écran.
+
+Un exemple, un formulaire classique qui s'afficherais sur deux colonnes comme celui ci :
+
+![Formulaire Responsive Bureau](./BootstrapFormDesktop.jpg)
+
+En lui précisant une règle qui défini que s'il doit s'afficher sur un écran dont la largeur est inférieur à 576px (valeur fréquente mais non standard pour définir la largeur d'un écran de smartphone vertical), il devra lister ses champs sur une seule colonne verticalement afin de s'ajuster au mieux à cet écran :
+
+![Formulaire Responsive Mobile](./BootstrapFormMobile.jpg)
+
+Ce système est très puissant et à son arrivé en Juin 2012 il a révolutionné la façon dont les sites web (et par extension les applications web) pouvait être développé et les cibles qu'ils pouvaient viser.\
+Aujourd'hui il n'est pas rare de pouvoir accéder aux sites de grandes sociétés grâce à un smartphone sans que celui ne rencontre de problème d'affichage. C'est même souvent le cas lors de l'utilisation d'une tablette, un "simple" ensemble de règles supplémentaire pour cet éventail de taille d'écran.
 
 [^1]: [Statcounter 2010](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide/2010)
 [^2]: [Statcounter 2020](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide/2020)
 [^3]: [Data Reportal](https://datareportal.com/global-digital-overview)
+[^4]: [W3](https://www.w3.org/standards/history/css3-mediaqueries)

@@ -12,9 +12,9 @@
 <meta property="og:description" content="Les programmes dits “Bureau” Historique informatique Naissance de l’informatique L’informatique au quotidien Le problème de sous-optimisation Les applications mobiles Historique mobile Les début de l’air nomade Les applications Les smartphones au quotidien Pour les entreprises Les logiciels du Web Historique du web Naissance de l’Internet Le passage au dynamisme Le web au quotidien Les performances Le web sur mobile Le Responsive Design" />
 <meta property="og:site_name" content="Thèse professionnelle" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-09-08T07:27:33+00:00" />
+<meta property="article:published_time" content="2020-10-01T07:10:18+00:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"/ThesePro/chapters/etat-de-lart","headline":"État de l’art","dateModified":"2020-09-08T07:27:33+00:00","datePublished":"2020-09-08T07:27:33+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/ThesePro/chapters/etat-de-lart"},"author":{"@type":"Person","name":"Quentin Widlocher"},"description":"Les programmes dits “Bureau” Historique informatique Naissance de l’informatique L’informatique au quotidien Le problème de sous-optimisation Les applications mobiles Historique mobile Les début de l’air nomade Les applications Les smartphones au quotidien Pour les entreprises Les logiciels du Web Historique du web Naissance de l’Internet Le passage au dynamisme Le web au quotidien Les performances Le web sur mobile Le Responsive Design","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","url":"/ThesePro/chapters/etat-de-lart","headline":"État de l’art","dateModified":"2020-10-01T07:10:18+00:00","datePublished":"2020-10-01T07:10:18+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/ThesePro/chapters/etat-de-lart"},"author":{"@type":"Person","name":"Quentin Widlocher"},"description":"Les programmes dits “Bureau” Historique informatique Naissance de l’informatique L’informatique au quotidien Le problème de sous-optimisation Les applications mobiles Historique mobile Les début de l’air nomade Les applications Les smartphones au quotidien Pour les entreprises Les logiciels du Web Historique du web Naissance de l’Internet Le passage au dynamisme Le web au quotidien Les performances Le web sur mobile Le Responsive Design","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/ThesePro/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/ThesePro/feed.xml" title="Thèse professionnelle" /></head>
 <body><header class="site-header" role="banner">
@@ -111,9 +111,10 @@ Les logiciels de gestion ou les logiciels métiers sont bien entendu profusémen
 
 <h3 id="le-problème-de-sous-optimisation">Le problème de sous-optimisation</h3>
 
-<p>Lorsque le développement informatique nécessitait de gérer l’état de la machine à une couche presque <em>physique</em>, et qu’il fallait manuellement accéder à des zones de la mémoire vive pour faire fonctionner un logiciel, il était bien évidemment essentiel de passer un temps non négligeable à optimiser le code afin de ne pas surcharger la machine.<br />
-Aujourd’hui les ordinateurs ont une puissance de calcul telle qu’il est parfois facile d’oublier le chemin qui a été parcouru.<br />
-On parle de sous-optimisation lorsqu’une application fonctionne normalement, sauf qu’elle est très (parfois trop) gourmande en ressource pour ce qu’elle accompli. Le manque de rigueur lié à la gestion des ressources et à l’optimisation du code engendrant donc cette consommation excessive.<br />
+<p>Lorsque le développement informatique nécessitait de gérer l’état de la machine à une couche presque <em>physique</em>, et qu’il fallait manuellement accéder à des zones de la mémoire vive pour faire fonctionner un logiciel, il était bien évidemment essentiel de passer un temps non négligeable à optimiser le code afin de ne pas surcharger la machine.</p>
+
+<p>Aujourd’hui les ordinateurs ont une puissance de calcul telle qu’il est parfois facile d’oublier le chemin qui a été parcouru.<br />
+On parle de sous-optimisation lorsqu’une application fonctionne normalement, sauf qu’elle est très (parfois trop) gourmande en ressource pour ce qu’elle chercher à accomplir. Le manque de rigueur lié à la gestion des ressources et à l’optimisation du code engendrant donc cette consommation excessive de ressources.<br />
 Cette problématique est assez connue des développeur mais il existe pourtant assez peu de solutions pour y remédier, si ce n’est passer plus de temps à chercher à optimiser le code source d’un logiciel.</p>
 
 <p>D’un autre côté, certains voient d’un bon œil ce problème en montrant que le code écrit aujourd’hui et bien plus facile à lire (et donc à maintenir) qu’il y a des années.<br />
@@ -185,13 +186,13 @@ Au delà de chercher à dégager du revenu avec des méthodes comme la publicit�
 <h3 id="les-performances">Les performances</h3>
 
 <p>Comme nous en parlions <a href="#le-problème-de-sous-optimisation">plus tôt</a>, certains langages du web souffrent de mauvaise réputation concernant leurs performances, en particulier le <em>JavaScript</em>. Il est important de rappeler que contrairement au langages dit “<a href="/chapters/glossaire#logiciel-natif">natifs</a>”, ces langages de script sont exécuté au sein d’un navigateur internet qui lui même est exécuté par le système d’exploitation.<br />
-Cette “double couche” exécutive est malheureusement à la source des ces problèmes de performances.</p>
+Cette “double couche” exécutive est malheureusement souvent à la source des ces problèmes de performances.</p>
 
 <p>En plus de cela, d’une manière assez paradoxale, l’accessibilité de ces langages est aussi une source de ce problème.<br />
 Dans le cas du <em>JavaScript</em> en particulier, c’est un langage de programmation à la syntaxe relativement aisée à la lecture, ressemblant à beaucoup d’autres langages tout aussi connus (le <em>Java</em> pour ne citer que lui). En plus de cela, il ne nécessite pas d’outils particulier pour exécuter, si ce n’est un navigateur Internet.<br />
 Cette facilité d’accès et d’écriture font de ce langage une excellente porte d’entrée pour le développement informatique.</p>
 
-<p>Le problème étant que si beaucoup d’apprentis se sont mis à créer des applications web, la qualité moindre du code a pu se ressentir, couplé au <a href="#le-problème-de-sous-optimisation">problème de sous optimisation</a>. Le résultat en est une mauvaise utilisation de l’outil de développement et de mauvaises performances en général au sein des pages web que nous visitons chaque jour.</p>
+<p>Le problème étant que si beaucoup d’apprentis se sont mis à créer des applications web, la moindre qualité du code a pu se faire ressentir, couplé au <a href="#le-problème-de-sous-optimisation">problème de sous optimisation</a>. Le résultat en est une mauvaise utilisation de l’outil de développement et de mauvaises performances en général au sein des pages web que nous visitons chaque jour.</p>
 
 <h3 id="le-web-sur-mobile">Le web sur mobile</h3>
 
@@ -201,11 +202,25 @@ Cette facilité d’accès et d’écriture font de ce langage une excellente po
 <h4 id="le-responsive-design">Le Responsive Design</h4>
 
 <p>Ce changement de forme d’écran pose tout de suite un problème de taille, pratiquement aucun site ne peux afficher son contenu le plus important à l’écran puisque ce contenu est distribué horizontalement.<br />
-Lors d’une navigation sur un écran vertical, seul un faible pourcentage de l’information est disponible à la fois et l’utilisateur se retrouve dans l’obligation de se déplacer constamment dans la fenêtre.</p>
+Lors d’une navigation sur un écran vertical, seul un faible pourcentage de l’information est disponible à la fois et l’utilisateur se retrouve dans l’obligation de se déplacer constamment dans la fenêtre s’il veut accéder aux informations.</p>
 
-<p>Quand bien même un site afficherais son contenu verticalement, il n’est pas certain que sa largeur sera la même que celle de l’écran qui le visualisera, et si on visite ce site sur un écran d’ordinateur c’est le problème inverse qui se pose, il faudra désormais faire défiler l’écran plus que de raison afin d’accéder à tout le contenu du site.</p>
+<p>Quand bien même un site afficherais son contenu verticalement, il n’est pas certain que sa largeur sera la même que celle de l’écran qui le visualisera, et si on visite ce site sur un écran d’ordinateur c’est le problème inverse qui se pose, il faudra désormais faire défiler verticalement l’écran plus que de raison afin d’accéder à tout le contenu du site.</p>
 
-<p>Devant ce problème, une seule véritable solution se présente, il fallait un moyen de créer un site qui s’adapterais à toute taille d’écran. Un site qui puisse réagir à la taille de son écran, en anglais, un site <strong>responsive</strong>.</p>
+<p>Devant ce problème, une seule véritable solution se présente, il fallait un moyen de créer un site qui s’adapterais à toute taille d’écran. Un site qui puisse réagir à la taille de ce dernier, en anglais, un site <strong><em>responsive</em></strong>.</p>
+
+<p>Le <em>Responsive Design</em> est un ensemble de pratique visant à rendre expérience d’un utilisateur mobile la plus fluide et pratique possible.<br />
+L’un et potentiellement la plus importante pratique sont les <em>media queries</em> . Cette pratique part d’une base commune; une page avec des sections, des formulaires, des images etc. . A cela elle permet aux développeurs et <em>designers</em> d’ajouter des règles d’affichage en fonction de la taille de l’écran.</p>
+
+<p>Un exemple, un formulaire classique qui s’afficherais sur deux colonnes comme celui ci :</p>
+
+<p><img src="./BootstrapFormDesktop.jpg" alt="Formulaire Responsive Bureau" /></p>
+
+<p>En lui précisant une règle qui défini que s’il doit s’afficher sur un écran dont la largeur est inférieur à 576px (valeur fréquente mais non standard pour définir la largeur d’un écran de smartphone vertical), il devra lister ses champs sur une seule colonne verticalement afin de s’ajuster au mieux à cet écran :</p>
+
+<p><img src="./BootstrapFormMobile.jpg" alt="Formulaire Responsive Mobile" /></p>
+
+<p>Ce système est très puissant et à son arrivé en Juin 2012 il a révolutionné la façon dont les sites web (et par extension les applications web) pouvait être développé et les cibles qu’ils pouvaient viser.<br />
+Aujourd’hui il n’est pas rare de pouvoir accéder aux sites de grandes sociétés grâce à un smartphone sans que celui ne rencontre de problème d’affichage. C’est même souvent le cas lors de l’utilisation d’une tablette, un “simple” ensemble de règles supplémentaire pour cet éventail de taille d’écran.</p>
 
 <div class="footnotes" role="doc-endnotes">
   <ol>
