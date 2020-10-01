@@ -13,7 +13,7 @@
 ## Problématiques potentielles
 
 - Peut on créer des application multi-plateforme sans coût supplémentaire ?
-- Comment porter des solutions applicatives sur un maximum de plateformes avec le moins d'impact sur la codebase et les performances ?
+- Comment porter des solutions applicatives sur un maximum de plateformes avec le moins d'impact sur la code base et les performances ?
 - Comment faire le choix d'un architecture applicative multi plateformes.
 
 ## Glossaire
