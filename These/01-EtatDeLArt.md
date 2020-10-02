@@ -28,6 +28,7 @@ layout: post
    1. [Pourquoi chercher le multiplateforme](#pourquoi-chercher-le-multiplateforme)
    1. [Le multiplateforme bureau](#le-multiplateforme-bureau)
    1. [Le multiplateforme mobile](#le-multiplateforme-mobile)
+   1. [Le multiplateforme web](#le-multiplateforme-web)
 
 Les logiciels ont une place très importante dans notre monde depuis plusieurs dizaines d'années et leur importance ne cesse de croître.\
 Nous utilisons des appareils électroniques chaque jour et ces logiciels sont notre moyen de communiquer avec la machine, afin de la laisser agir pour notre confort.
@@ -54,7 +55,28 @@ Bien évidemment, ce n'est pas avec cette technique que l'apparition en masse de
 
 L'arrivé des langages dit "machines" a permit de rendre tout cela bien plus facile. Les langages machines, appelés aussi "assembleur", permettaient de pouvoir relire un code dans un format plus proche de l'anglais, même si un grand fossé sépare ces langages de celui de Shakespeare.
 
-<!-- TODO: exemple de code assembleur -->
+```asm
+SUB     AX,AX
+MOV     ES,AX
+SUB     BH,BH
+MOV     BL,INT_NUMBER
+SHL     BX,1
+SHL     BX,1
+MOV     DI,ES:[BX]
+MOV     ES,ES:[BX+2]
+ADD     DI,4
+LEA     SI,TAG
+MOV     CX,TAG_LEN
+REPE  CMPSB
+JE      CALL_CALC
+MOV     BX,SCREEN_HANDLE
+MOV     CX,MESSAGE_LEN
+LEA     DX,MESSAGE
+MOV     AH,40h
+INT     21h
+JMP     SHORT CALC_EXIT
+```
+> Exemple de code en langage assembleur
 
 Ces langages cependant étaient liés directement aux processeurs qui exécutait les instructions, rendant donc la portabilité du code source impossible, à l'instar du binaire.
 
@@ -211,7 +233,26 @@ Comme précisé [plus haut](#les-langages-et-leurs-niveaux-dabstraction), c'est 
 Aussi contre-intuitif cela puisse-t-il être, lorsqu'on base un outil sur une autre qui se base lui même sur un autre, en plus de créer un outil plus performant, on risque de le rendre dépendant d'une multitude de détails qui l'empêche d'être utilisé avec d'autres outils.\
 C'est le cas de certains langages qui, pour pallier cela, nécessitent de posséder leur compilateur (ou interpréteur, voir glossaire<!--TODO-->) installé sur la machine cible (Java, C#, Python etc.).
 
-<!-- TODO: Schéma des couches d'abstraction -->
+```mermaid
+graph TD
+  F[Langage à abstraction encore plus élevé]
+  F -->|Compile| E
+  F -->|Interprète| E
+  F -->|Transpile| E
+  E[Langage à haut niveau d'abstraction]
+  E -->|Compile| D
+  E -->|Interprète| D
+  E -->|Transpile| D
+  D[Langage à bas niveau d'abstraction]
+  D -->|Compile| C
+  C[Assembleur]
+  C -->|Assemble| B
+  B[Binaire]
+  B -->|Contrôle| A
+  A[Couche matérielle]
+```
+
+  ![Schéma des couches d'abstractions](https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggVERcbiAgRltMYW5nYWdlIMOgIGFic3RyYWN0aW9uIGVuY29yZSBwbHVzIMOpbGV2w6ldXG4gIEYgLS0-fENvbXBpbGV8IEVcbiAgRiAtLT58SW50ZXJwcsOodGV8IEVcbiAgRiAtLT58VHJhbnNwaWxlfCBFXG4gIEVbTGFuZ2FnZSDDoCBoYXV0IG5pdmVhdSBkJ2Fic3RyYWN0aW9uXVxuICBFIC0tPnxDb21waWxlfCBEXG4gIEUgLS0-fEludGVycHLDqHRlfCBEXG4gIEUgLS0-fFRyYW5zcGlsZXwgRFxuICBEW0xhbmdhZ2Ugw6AgYmFzIG5pdmVhdSBkJ2Fic3RyYWN0aW9uXVxuICBEIC0tPnxDb21waWxlfCBDXG4gIENbQXNzZW1ibGV1cl1cbiAgQyAtLT58QXNzZW1ibGV8IEIgXG4gIEJbQmluYWlyZV1cbiAgQiAtLT58Q29udHLDtGxlfCBBXG4gIEFbQ291Y2hlIG1hdMOpcmllbGxlXVxuICAgICAgICAgICAgIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQiLCJ0aGVtZVZhcmlhYmxlcyI6eyJiYWNrZ3JvdW5kIjoid2hpdGUiLCJwcmltYXJ5Q29sb3IiOiIjRUNFQ0ZGIiwic2Vjb25kYXJ5Q29sb3IiOiIjZmZmZmRlIiwidGVydGlhcnlDb2xvciI6ImhzbCg4MCwgMTAwJSwgOTYuMjc0NTA5ODAzOSUpIiwicHJpbWFyeUJvcmRlckNvbG9yIjoiaHNsKDI0MCwgNjAlLCA4Ni4yNzQ1MDk4MDM5JSkiLCJzZWNvbmRhcnlCb3JkZXJDb2xvciI6ImhzbCg2MCwgNjAlLCA4My41Mjk0MTE3NjQ3JSkiLCJ0ZXJ0aWFyeUJvcmRlckNvbG9yIjoiaHNsKDgwLCA2MCUsIDg2LjI3NDUwOTgwMzklKSIsInByaW1hcnlUZXh0Q29sb3IiOiIjMTMxMzAwIiwic2Vjb25kYXJ5VGV4dENvbG9yIjoiIzAwMDAyMSIsInRlcnRpYXJ5VGV4dENvbG9yIjoicmdiKDkuNTAwMDAwMDAwMSwgOS41MDAwMDAwMDAxLCA5LjUwMDAwMDAwMDEpIiwibGluZUNvbG9yIjoiIzMzMzMzMyIsInRleHRDb2xvciI6IiMzMzMiLCJtYWluQmtnIjoiI0VDRUNGRiIsInNlY29uZEJrZyI6IiNmZmZmZGUiLCJib3JkZXIxIjoiIzkzNzBEQiIsImJvcmRlcjIiOiIjYWFhYTMzIiwiYXJyb3doZWFkQ29sb3IiOiIjMzMzMzMzIiwiZm9udEZhbWlseSI6IlwidHJlYnVjaGV0IG1zXCIsIHZlcmRhbmEsIGFyaWFsIiwiZm9udFNpemUiOiIxNnB4IiwibGFiZWxCYWNrZ3JvdW5kIjoiI2U4ZThlOCIsIm5vZGVCa2ciOiIjRUNFQ0ZGIiwibm9kZUJvcmRlciI6IiM5MzcwREIiLCJjbHVzdGVyQmtnIjoiI2ZmZmZkZSIsImNsdXN0ZXJCb3JkZXIiOiIjYWFhYTMzIiwiZGVmYXVsdExpbmtDb2xvciI6IiMzMzMzMzMiLCJ0aXRsZUNvbG9yIjoiIzMzMyIsImVkZ2VMYWJlbEJhY2tncm91bmQiOiIjZThlOGU4IiwiYWN0b3JCb3JkZXIiOiJoc2woMjU5LjYyNjE2ODIyNDMsIDU5Ljc3NjUzNjMxMjglLCA4Ny45MDE5NjA3ODQzJSkiLCJhY3RvckJrZyI6IiNFQ0VDRkYiLCJhY3RvclRleHRDb2xvciI6ImJsYWNrIiwiYWN0b3JMaW5lQ29sb3IiOiJncmV5Iiwic2lnbmFsQ29sb3IiOiIjMzMzIiwic2lnbmFsVGV4dENvbG9yIjoiIzMzMyIsImxhYmVsQm94QmtnQ29sb3IiOiIjRUNFQ0ZGIiwibGFiZWxCb3hCb3JkZXJDb2xvciI6ImhzbCgyNTkuNjI2MTY4MjI0MywgNTkuNzc2NTM2MzEyOCUsIDg3LjkwMTk2MDc4NDMlKSIsImxhYmVsVGV4dENvbG9yIjoiYmxhY2siLCJsb29wVGV4dENvbG9yIjoiYmxhY2siLCJub3RlQm9yZGVyQ29sb3IiOiIjYWFhYTMzIiwibm90ZUJrZ0NvbG9yIjoiI2ZmZjVhZCIsIm5vdGVUZXh0Q29sb3IiOiJibGFjayIsImFjdGl2YXRpb25Cb3JkZXJDb2xvciI6IiM2NjYiLCJhY3RpdmF0aW9uQmtnQ29sb3IiOiIjZjRmNGY0Iiwic2VxdWVuY2VOdW1iZXJDb2xvciI6IndoaXRlIiwic2VjdGlvbkJrZ0NvbG9yIjoicmdiYSgxMDIsIDEwMiwgMjU1LCAwLjQ5KSIsImFsdFNlY3Rpb25Ca2dDb2xvciI6IndoaXRlIiwic2VjdGlvbkJrZ0NvbG9yMiI6IiNmZmY0MDAiLCJ0YXNrQm9yZGVyQ29sb3IiOiIjNTM0ZmJjIiwidGFza0JrZ0NvbG9yIjoiIzhhOTBkZCIsInRhc2tUZXh0TGlnaHRDb2xvciI6IndoaXRlIiwidGFza1RleHRDb2xvciI6IndoaXRlIiwidGFza1RleHREYXJrQ29sb3IiOiJibGFjayIsInRhc2tUZXh0T3V0c2lkZUNvbG9yIjoiYmxhY2siLCJ0YXNrVGV4dENsaWNrYWJsZUNvbG9yIjoiIzAwMzE2MyIsImFjdGl2ZVRhc2tCb3JkZXJDb2xvciI6IiM1MzRmYmMiLCJhY3RpdmVUYXNrQmtnQ29sb3IiOiIjYmZjN2ZmIiwiZ3JpZENvbG9yIjoibGlnaHRncmV5IiwiZG9uZVRhc2tCa2dDb2xvciI6ImxpZ2h0Z3JleSIsImRvbmVUYXNrQm9yZGVyQ29sb3IiOiJncmV5IiwiY3JpdEJvcmRlckNvbG9yIjoiI2ZmODg4OCIsImNyaXRCa2dDb2xvciI6InJlZCIsInRvZGF5TGluZUNvbG9yIjoicmVkIiwibGFiZWxDb2xvciI6ImJsYWNrIiwiZXJyb3JCa2dDb2xvciI6IiM1NTIyMjIiLCJlcnJvclRleHRDb2xvciI6IiM1NTIyMjIiLCJjbGFzc1RleHQiOiIjMTMxMzAwIiwiZmlsbFR5cGUwIjoiI0VDRUNGRiIsImZpbGxUeXBlMSI6IiNmZmZmZGUiLCJmaWxsVHlwZTIiOiJoc2woMzA0LCAxMDAlLCA5Ni4yNzQ1MDk4MDM5JSkiLCJmaWxsVHlwZTMiOiJoc2woMTI0LCAxMDAlLCA5My41Mjk0MTE3NjQ3JSkiLCJmaWxsVHlwZTQiOiJoc2woMTc2LCAxMDAlLCA5Ni4yNzQ1MDk4MDM5JSkiLCJmaWxsVHlwZTUiOiJoc2woLTQsIDEwMCUsIDkzLjUyOTQxMTc2NDclKSIsImZpbGxUeXBlNiI6ImhzbCg4LCAxMDAlLCA5Ni4yNzQ1MDk4MDM5JSkiLCJmaWxsVHlwZTciOiJoc2woMTg4LCAxMDAlLCA5My41Mjk0MTE3NjQ3JSkifX0sInVwZGF0ZUVkaXRvciI6ZmFsc2V9)
 
 Et si les fonctionnalités dites "*back-office*" ou communément "*back*" (comprendre : les calculs et les opérations effectués en arrière plan) ne sont dépendantes de rien de plus que ce compilateur, les fonctionnalités dites "*front-office*" ou "*front*" (comprendre : l'affichage de l'interface utilisateur et sa gestion) en revanche sont très dépendantes des technologies embarquées dans le système d'exploitation.\
 En effet, si le *back* représente 50% des fonctionnalités d'une application, le *front* représente alors les cinquante autres pour cents. Dès lors il est nécessaire d'utiliser des technologies communes aux systèmes d'exploitations que l'on cible si l'on désire pouvoir partager un maximum de code.
@@ -221,7 +262,24 @@ En effet, si le *back* représente 50% des fonctionnalités d'une application, l
 Au début des ordinateurs de bureau, la rivalité entre les producteurs de systèmes d'exploitations ne connaissait pas l'ampleur qu'elle connait aujourd'hui. C'est aussi grâce a cela en partie que la portabilité du code bureau est si démocratisé.\
 Cependant, au début des smartphones, cette rivalité pouvait déjà plus se faire ressentir et couplé aux langages à haut niveau d'abstraction, la route fut scindé entre les deux leaders du marché.
 
+D'un coté Apple avec son iOS, se base sur une distribution (= version) de Linux appelée Darwin pour en faire un système d'exploitation propriétaire (voir glossaire) et requière des développeurs de concevoir les applications en *Objective-C* (Ancien langage de programmation de 1984, remplacé en 2014 par le langage *Swift*).\
+De l'autre côté, Google acquière Android en 2005. Ce système d'exploitation se base aussi sur Linux mais reste libre de droit (voir glossaire), les applications devant être développé en *Java* (Puis potentiellement *Kotlin* en 2017).
+
+Ces différences de langage amène une scission entre les deux marques de smartphones et le code n'a donc plus rien de multiplateforme, une application développée pour Android devrait être entièrement re-développée si une sortie sur iOS est envisagée. Même le travail de conception visuel devra être revu étant donné les lignes directrices d'interface utilisateur que chaque entreprise recommande pour ses appareils. (Pour Google et Apple il s'agit de *Material Design*[^5] et de *Human Interface*[^6] respectivement).
+
+### Le multiplateforme web
+
+La technologie du web, par sa nature d'être affichée par le biais d'un navigateur internet, et le nombre conséquents de système d'exploitation possédant un navigateur intégré, deviens *de facto* le système de restitution d'applicatif le plus multiplateforme.
+
+L'unique problème de ce point de vue concernant les applications web sont justement les navigateurs, et plus particulièrement ce qu'on appelle leurs *moteurs*. Le moteur d'un navigateur représente la technologie qui lui permet d'afficher une page web, et d’exécuter son code JavaScript.\
+Un navigateur comme Google Chrome utilise un moteur nommé *Blink*, basé sur un moteur précédent appelé *WebKit*. Mozilla de son coté avec Firefox utilise *Gecko*. De son coté Apple et son navigateur Safari utilise toujours l'ancien moteur *WebKit*.
+
+Ces moteurs, bien qu'indiscernables pour les utilisateurs profanes, possèdent des différences dans leurs manière d’appréhender la restitution d'une page web.\
+Malgré cette problématique, user de quelques subtilités techniques permet de contourner la plupart des limitations et de rendre le code compatible avec un grand nombre de navigateurs modernes.
+
 [^1]: [Statcounter 2010](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide/2010)
 [^2]: [Statcounter 2020](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide/2020)
 [^3]: [Data Reportal](https://datareportal.com/global-digital-overview)
-[^4]: [W3](https://www.w3.org/standards/history/css3-mediaqueries)
+[^4]: [W3 org](https://www.w3.org/standards/history/css3-mediaqueries)
+[^5]: [Material Design](https://material.io/design/introduction#color-usage-and-palettes)
+[^6]: [Human Interface](https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/)

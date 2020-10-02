@@ -72,7 +72,10 @@
 
 - Poids de l'app
 - Temps de dev
-- Performance de l'app
+- Performance de l'app (Benchmark)
+  - Charge CPU
+  - Consommation RAM
+- Consommation Électrique
 - Facilité de maintenance
 - Étendu de l'API (est ce qu'on est limité)
 - Rapidité/facilité de déploiement
