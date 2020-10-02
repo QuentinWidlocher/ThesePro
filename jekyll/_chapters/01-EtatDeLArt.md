@@ -236,7 +236,7 @@ C'est le cas de certains langages qui, pour pallier cela, nécessitent de possé
 
 {% mermaid %}
 graph TD
-  F[Langage à abstraction encore plus élevé]
+  F[Langage à abstraction encore plus élevée]
   F -->|Compile| E
   F -->|Interprète| E
   F -->|Transpile| E
