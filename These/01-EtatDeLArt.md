@@ -121,7 +121,7 @@ Ces deux faces d'un même pièce représentent un conflit qui existe depuis quel
 
 Propulsé en 2007 avec l'arrivé de l'iPhone de première génération, le marché des téléphones portables intelligent (renommés par la suite *smartphones*) n'a cessé de croître.\
 C'est avec la démocratisation de l'usage d'Internet sur les mobiles que grandi cette nouvelle air nomade.
-Si en 2010, l'utilisation d'Internet sur un appareil mobile était d'à peine 3%[^1], 10 ans plus tard cela représente maintenant **plus de la majorité** de la consommation d'information du web[^1] !
+Si en 2010, l'utilisation d'Internet sur un appareil mobile était d'à peine 3%[^1], 10 ans plus tard cela représente maintenant **plus de la majorité** de la consommation d'information du web[^2] !
 
 #### Les applications
 
@@ -137,7 +137,7 @@ Aujourd'hui, cette "frénésie de l'application" se perd petit à petit au profi
 
 Les téléphones portables sont aujourd'hui de parfait outils du quotidien et, bien que leur puissance de calcul soit toujours (et irrémédiablement) inférieure à celles des ordinateurs de bureau, ils sont capable de faire fonctionner des applications toujours plus performantes. (Sous la contrainte cependant que ces applicatifs ne soient pas trop demandeur en ressource)
 
-On estime en 2020 que deux tiers des habitant du monde possèdent un téléphone portable[^1]
+On estime en 2020 que deux tiers des habitant du monde possèdent un téléphone portable[^3]
 
 ### Pour les entreprises
 
@@ -265,7 +265,7 @@ Cependant, au début des smartphones, cette rivalité pouvait déjà plus se fai
 D'un coté Apple avec son iOS, se base sur une distribution (= version) de Linux appelée Darwin pour en faire un système d'exploitation propriétaire (voir glossaire) et requière des développeurs de concevoir les applications en *Objective-C* (Ancien langage de programmation de 1984, remplacé en 2014 par le langage *Swift*).\
 De l'autre côté, Google acquière Android en 2005. Ce système d'exploitation se base aussi sur Linux mais reste libre de droit (voir glossaire), les applications devant être développé en *Java* (Puis potentiellement *Kotlin* en 2017).
 
-Ces différences de langage amène une scission entre les deux marques de smartphones et le code n'a donc plus rien de multiplateforme, une application développée pour Android devrait être entièrement re-développée si une sortie sur iOS est envisagée. Même le travail de conception visuel devra être revu étant donné les lignes directrices d'interface utilisateur que chaque entreprise recommande pour ses appareils. (Pour Google et Apple il s'agit de *Material Design*[^1] et de *Human Interface*[^1] respectivement).
+Ces différences de langage amène une scission entre les deux marques de smartphones et le code n'a donc plus rien de multiplateforme, une application développée pour Android devrait être entièrement re-développée si une sortie sur iOS est envisagée. Même le travail de conception visuel devra être revu étant donné les lignes directrices d'interface utilisateur que chaque entreprise recommande pour ses appareils. (Pour Google et Apple il s'agit de *Material Design*[^5] et de *Human Interface*[^6] respectivement).
 
 ### Le multiplateforme web
 
@@ -278,8 +278,8 @@ Ces moteurs, bien qu'indiscernables pour les utilisateurs profanes, possèdent d
 Malgré cette problématique, user de quelques subtilités techniques permet de contourner la plupart des limitations et de rendre le code compatible avec un grand nombre de navigateurs modernes.
 
 [^1]: [Statcounter 2010](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide/2010)
-[^1]: [Statcounter 2020](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide/2020)
-[^1]: [Data Reportal](https://datareportal.com/global-digital-overview)
-[^1]: [W3 org](https://www.w3.org/standards/history/css3-mediaqueries)
-[^1]: [Material Design](https://material.io/design/introduction#color-usage-and-palettes)
-[^1]: [Human Interface](https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/)
+[^2]: [Statcounter 2020](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide/2020)
+[^3]: [Data Reportal](https://datareportal.com/global-digital-overview)
+[^4]: [W3 org](https://www.w3.org/standards/history/css3-mediaqueries)
+[^5]: [Material Design](https://material.io/design/introduction#color-usage-and-palettes)
+[^6]: [Human Interface](https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/)

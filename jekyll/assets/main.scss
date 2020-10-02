@@ -3,3 +3,9 @@
 ---
 
 @import "minima";
+
+.mermaid {
+    // Center any mermaid diagram
+    display: flex;
+    justify-content: center;
+}
