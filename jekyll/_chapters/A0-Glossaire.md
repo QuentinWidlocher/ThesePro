@@ -9,10 +9,12 @@ layout: post
 1. [Logiciel *Web*](#logiciel-web)
 1. [Logiciel *Hybride*](#logiciel-hybride)
 1. [Software](#software)
+1. [Logiciel propriétaire](#logiciel-propriétaire)
+1. [Logiciel libre (de droit)](#logiciel-libre-de-droit)
 
 ## Cross Platform
 
-Mot anglais se traduisant par "Multi-plateforme". Se dit de logiciel qui peuvent tourner sur plusieurs systèmes d'exploitation (PC, Mac, Android etc.).
+Mot anglais se traduisant par "Multi-plateforme". Se dit de logiciel qui peuvent tourner sur plusieurs systèmes d'exploitation (PC, Mac, Android etc.) sans nécessiter de le recréer de zéro.
 
 ## Logiciel *Natif*
 
@@ -40,3 +42,14 @@ Cette méthode permet de contourner certaines limitation dû au choix Web ou Nat
 ## Software
 
 Mot anglais désignant un logiciel. Souvent abrégé "soft".
+
+## Logiciel propriétaire
+
+Un logiciel propriétaire désigne la licence de distribution de ce dernier. La mention propriétaire indique que le code source du logiciel n'est pas rendu publique et qu'il ne doit en aucun cas être partagé, dévoilé ou réutilisé en dehors de la société qui le conçoit.\
+Un logiciel propriétaire n'est pas forcément payant, la nuance ne s'effectuant exclusivement que sur sa distribution.
+
+## Logiciel libre (de droit)
+
+Un logiciel libre désigne la licence de distribution de ce dernier. La mention libre indique que le code source du logiciel peut-être librement consulté, distribué et réutilisé à des fin commerciales ou non. Ces différents points sont spécifié par le biais de licenses comme la licence [MIT](https://choosealicense.com/licenses/mit/) ou [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/).\
+Cette thèse professionnelle, bien que n'étant pas un logiciel, est partagé en ligne selon une licence [Creative Commons](https://choosealicense.com/licenses/cc-by-sa-4.0/). Vous pouvez retrouver sont contenu source sur un [dépôt Github](https://github.com/QuentinWidlocher/ThesePro).\
+Un logiciel libre n'est pas forcément gratuit, la nuance ne s'effectuant exclusivement que sur sa distribution.
