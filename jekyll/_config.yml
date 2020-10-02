@@ -17,4 +17,4 @@ collections:
         permalink: /:collection/:title
 
 mermaid:
-  src: '/assets/mermaid.min.js'
+  src: '/ThesePro/assets/mermaid.min.js'
