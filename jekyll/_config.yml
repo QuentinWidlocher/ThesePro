@@ -1,3 +1,6 @@
+plugins: 
+    - jekyll-mermaid
+
 title: Thèse professionnelle
 email: quentin@widlocher.com
 author: Quentin Widlocher
@@ -12,3 +15,6 @@ collections:
     chapters:
         output: true
         permalink: /:collection/:title
+
+mermaid:
+  src: '/assets/mermaid.min.js'
