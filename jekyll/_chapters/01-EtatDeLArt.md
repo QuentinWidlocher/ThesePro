@@ -7,6 +7,7 @@ layout: post
 1. [Les programmes dits "Bureau"](#les-programmes-dits-bureau)
    1. [Historique informatique](#historique-informatique)
       1. [Naissance de l'informatique](#naissance-de-linformatique)
+      1. [Les langages et leurs niveaux d'abstraction](#les-langages-et-leurs-niveaux-dabstraction)
       1. [L'informatique au quotidien](#linformatique-au-quotidien)
    1. [Le problème de sous-optimisation](#le-problème-de-sous-optimisation)
 1. [Les applications mobiles](#les-applications-mobiles)
@@ -23,6 +24,10 @@ layout: post
    1. [Les performances](#les-performances)
    1. [Le web sur mobile](#le-web-sur-mobile)
       1. [Le Responsive Design](#le-responsive-design)
+1. [La solution multiplateforme](#la-solution-multiplateforme)
+   1. [Pourquoi chercher le multiplateforme](#pourquoi-chercher-le-multiplateforme)
+   1. [Le multiplateforme bureau](#le-multiplateforme-bureau)
+   1. [Le multiplateforme mobile](#le-multiplateforme-mobile)
 
 Les logiciels ont une place très importante dans notre monde depuis plusieurs dizaines d'années et leur importance ne cesse de croître.\
 Nous utilisons des appareils électroniques chaque jour et ces logiciels sont notre moyen de communiquer avec la machine, afin de la laisser agir pour notre confort.
@@ -40,15 +45,34 @@ Si un logiciel devait exister sur un ordinateur d'une marque et sur un autre d'u
 
 Bien évidemment, ce problème de taille fut rapidement réglé avec l'arrivé des langages de programmation à haut niveau d'abstraction et des systèmes d'exploitations.
 
+#### Les langages et leurs niveaux d'abstraction
+
+Le binaire, cette suite de 0 et 1 indéchiffrable pour un simple être humain, est notoirement connu pour être la première façon qu'un développeur avait de communiquer avec la machine, en altérant comme cela les différences de potentiels au sein de celle ci. C'est avec cette méthode aujourd'hui complètement révolue que les premiers "logiciels" ont pu voir le jour.
+
+En plus d'être extrêmement fastidieux, cette méthode était prône à l'erreur et très délicate. La moindre erreur était complexe à trouver et à corriger.\
+Bien évidemment, ce n'est pas avec cette technique que l'apparition en masse des logiciels a pu se faire.
+
+L'arrivé des langages dit "machines" a permit de rendre tout cela bien plus facile. Les langages machines, appelés aussi "assembleur", permettaient de pouvoir relire un code dans un format plus proche de l'anglais, même si un grand fossé sépare ces langages de celui de Shakespeare.
+
+<!-- TODO: exemple de code assembleur -->
+
+Ces langages cependant étaient liés directement aux processeurs qui exécutait les instructions, rendant donc la portabilité du code source impossible, à l'instar du binaire.
+
+Il a fallu attendre l'arrivé d'un plus haut niveau d'abstraction pour faciliter l’écriture du code et sa portabilité par la même occasion. Le concept d'abstraction est un peu complexe a saisir mais peut-être résumé dans ce cas à la hiérarchie des instructions.\
+Là ou le code binaire influe directement sur le processeur qui l’exécute, un langage à plus haut niveau d'abstraction passe d'abord dans un compilateur (logiciel spécialisé utilisé exclusivement par les développeurs) qui va le transformer en son équivalent en code assembleur. (Qui lui même passera dans un assembleur pour être transformé en binaire).
+
+C'est cette particularité qui permet à un langage à haut niveau d'abstraction de proposer des fonctionnalités très commune dans une syntaxe plus simple, et qui permet aussi par exemple de rendre un code plus proche d'une langue parlée, facilitant de ce fait la compréhension.\
+Cette couche d'abstraction a permis à un langage comme le C par exemple de pouvoir être compilé pour plusieurs sorte de processeurs différent. Avec un seul code source, on pouvait sortir des instructions pour plusieurs machines différentes, c'était le début du code multi-plateforme.
+
 #### L'informatique au quotidien
 
 > Il n'y a aucune raison pour qu'un particulier possède un ordinateur chez lui.
 
 <p style="text-align: right;">*Ken Olsen - 1977*</p>
 
-Contrairement à ce qu'annonçait l'ingénieur Olsen, aujourd'hui, les ordinateurs personnels sont toujours au cœur de notre utilisation de l'informatique, principalement pour leur puissance de calcul et la précision et la rigueur de leur maniement.\
+Contrairement à ce qu'annonçait l'ingénieur Olsen, aujourd'hui, les ordinateurs personnels sont toujours au cœur de notre utilisation de l'informatique, principalement pour leur puissance de calcul et la précision et la rigueur de leur maniement.
 
-Malgré l'essor des smartphones, s'il y a bien un milieu dans lequel les terminaux fixe sont toujours très amplement utilisés, c'est dans les milieu professionnels.\
+Malgré l'essor des smartphones, s'il y a bien un milieu dans lequel les terminaux fixe sont toujours très amplement utilisés, c'est dans les milieux professionnels.\
 Les logiciels de gestion ou les logiciels métiers sont bien entendu profusément répandus dans la plupart des professions de toute sorte.
 
 Il ne faut pas non plus mettre de côté la culture des jeux vidéos qui elle aussi est en croissance depuis les années 1980. Même si le marché du jeu vidéo est aussi en plein essor sur les téléphones portables, les ordinateurs de bureau ont toujours une place prépondérante dans ce domaine.
@@ -141,7 +165,6 @@ Le problème étant que si beaucoup d'apprentis se sont mis à créer des applic
 ### Le web sur mobile
 
 Quand les applications mobiles ont explosé en popularité lors de l'avènement des smartphones, il a fallu aussi adapter les pages web déjà existantes pour ces petits écrans dont le ratio était inversé (16:9 pour un écran d'ordinateur commun contre 9:16 pour la plupart des smartphones).
-<!-- Il a aussi fallu rendre les sites dynamique aussi rapide que possible pour accommoder les puissances de calcul moindre des appareils mobiles. -->
 
 #### Le Responsive Design
 
@@ -150,21 +173,53 @@ Lors d'une navigation sur un écran vertical, seul un faible pourcentage de l'in
 
 Quand bien même un site afficherais son contenu verticalement, il n'est pas certain que sa largeur sera la même que celle de l'écran qui le visualisera, et si on visite ce site sur un écran d'ordinateur c'est le problème inverse qui se pose, il faudra désormais faire défiler verticalement l'écran plus que de raison afin d'accéder à tout le contenu du site.
 
-Devant ce problème, une seule véritable solution se présente, il fallait un moyen de créer un site qui s'adapterais à toute taille d'écran. Un site qui puisse réagir à la taille de ce dernier, en anglais, un site ***responsive***.
+Devant ce problème, une seule véritable solution se présente, il fallait un moyen de créer un site qui s’adapterait à toute taille d'écran. Un site qui puisse réagir à la taille de ce dernier, en anglais, un site ***responsive***.
 
 Le *Responsive Design* est un ensemble de pratique visant à rendre expérience d'un utilisateur mobile la plus fluide et pratique possible.\
-L'un et potentiellement la plus importante pratique sont les *media queries* . Cette pratique part d'une base commune; une page avec des sections, des formulaires, des images etc. . A cela elle permet aux développeurs et *designers* d'ajouter des règles d'affichage en fonction de la taille de l'écran.
+L'une et potentiellement la plus importante des pratiques est les *media queries* . Cette pratique part d'une base commune; une page avec des sections, des formulaires, des images etc. . A cela elle permet aux développeurs et *designers* d'ajouter des règles d'affichage en fonction de la taille de l'écran.
 
-Un exemple, un formulaire classique qui s'afficherais sur deux colonnes comme celui ci :
+Pour exemple, un formulaire classique qui s’afficherait sur deux colonnes comme celui ci :
 
-![Formulaire Responsive Bureau](./BootstrapFormDesktop.jpg)
+<!-- ![Formulaire Responsive Bureau](./BootstrapFormDesktop.jpg) -->
 
 En lui précisant une règle qui défini que s'il doit s'afficher sur un écran dont la largeur est inférieur à 576px (valeur fréquente mais non standard pour définir la largeur d'un écran de smartphone vertical), il devra lister ses champs sur une seule colonne verticalement afin de s'ajuster au mieux à cet écran :
 
-![Formulaire Responsive Mobile](./BootstrapFormMobile.jpg)
+<!-- ![Formulaire Responsive Mobile](./BootstrapFormMobile.jpg) -->
 
 Ce système est très puissant et à son arrivé en Juin 2012 il a révolutionné la façon dont les sites web (et par extension les applications web) pouvait être développé et les cibles qu'ils pouvaient viser.\
 Aujourd'hui il n'est pas rare de pouvoir accéder aux sites de grandes sociétés grâce à un smartphone sans que celui ne rencontre de problème d'affichage. C'est même souvent le cas lors de l'utilisation d'une tablette, un "simple" ensemble de règles supplémentaire pour cet éventail de taille d'écran.
+
+## La solution multiplateforme
+
+Devant ces trois grandes familles d'applicatifs, l'une d'entre elle s'est hissé sur le devant de la scène ces dernières années et ce, malgré plusieurs problématique, j'ai bien sûr nommé les applications web et leurs "successeurs spirituels" les applications *hybrides*.
+
+### Pourquoi chercher le multiplateforme
+
+L'utilisation de plus en plus fréquente des appareils mobiles ainsi que celle des sites web a poussé de plus en plus d'entreprises à se pencher sur la question du multiplateforme.\
+En effet si un logiciel métier peut-être développé pour un parc installé restreint en systèmes d'exploitations, ce n'est pas un luxe que peut se permettre une application grand public ou même un logiciel métier déployé dans un parc de machines non contrôlés. Pour ces derniers cas, il fallait obligatoirement développer une version pour chaque appareil qui pouvait potentiellement être utilisé.
+
+Ce processus de développement était fort long et fastidieux. Dans les cas chanceux où les technologies de développement étaient les mêmes entre les différentes cibles (comprendre : appareil au système d'exploitation différent), il était possible de partager du code (et donc de la fonctionnalité). Pour les autres cas, il fallait parfois recréer des fonctionnalités existantes dans un langage de programmation différent, entrainant de ce fait une importante montée du temps de développement et donc des coûts associés.
+
+Devant cette problématique de taille, la stratégie la plus souvent employée était de développer le logiciel pour la cible la plus prolifique seulement afin de maximiser les revenus par rapport aux coûts de productions.\
+Cependant on peux remarquer que cette stratégie se contente de contourner le problème plutôt que d'y répondre.
+
+### Le multiplateforme bureau
+
+Pour répondre à cette problématique, les ingénieurs développeurs ont cherchés à trouver le moyen de partager le code source entre plusieurs cibles, voir à utiliser la même *codebase* (code source complet d'un projet particulier, là où le code source n'en représente potentiellement qu'une partie).\
+Comme précisé [plus haut](#les-langages-et-leurs-niveaux-dabstraction), c'est avec l'arrivé de langages à plus haut niveau d'abstraction que l'on a pu commencer à porter des applications entre les différents systèmes d'exploitations les plus populaires (Windows, Linux et MacOS). Cependant avec la diversité croissante des technologies disponible, et l'apparition de langages à niveau d'abstraction encore plus élevé, cette portabilité a fini par s'estomper.
+
+Aussi contre-intuitif cela puisse-t-il être, lorsqu'on base un outil sur une autre qui se base lui même sur un autre, en plus de créer un outil plus performant, on risque de le rendre dépendant d'une multitude de détails qui l'empêche d'être utilisé avec d'autres outils.\
+C'est le cas de certains langages qui, pour pallier cela, nécessitent de posséder leur compilateur (ou interpréteur, voir glossaire<!--TODO-->) installé sur la machine cible (Java, C#, Python etc.).
+
+<!-- TODO: Schéma des couches d'abstraction -->
+
+Et si les fonctionnalités dites "*back-office*" ou communément "*back*" (comprendre : les calculs et les opérations effectués en arrière plan) ne sont dépendantes de rien de plus que ce compilateur, les fonctionnalités dites "*front-office*" ou "*front*" (comprendre : l'affichage de l'interface utilisateur et sa gestion) en revanche sont très dépendantes des technologies embarquées dans le système d'exploitation.\
+En effet, si le *back* représente 50% des fonctionnalités d'une application, le *front* représente alors les cinquante autres pour cents. Dès lors il est nécessaire d'utiliser des technologies communes aux systèmes d'exploitations que l'on cible si l'on désire pouvoir partager un maximum de code.
+
+### Le multiplateforme mobile
+
+Au début des ordinateurs de bureau, la rivalité entre les producteurs de systèmes d'exploitations ne connaissait pas l'ampleur qu'elle connait aujourd'hui. C'est aussi grâce a cela en partie que la portabilité du code bureau est si démocratisé.\
+Cependant, au début des smartphones, cette rivalité pouvait déjà plus se faire ressentir et couplé aux langages à haut niveau d'abstraction, la route fut scindé entre les deux leaders du marché.
 
 [^1]: [Statcounter 2010](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide/2010)
 [^2]: [Statcounter 2020](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide/2020)
