@@ -203,13 +203,13 @@ L'une et potentiellement la plus importante des pratiques est les *media queries
 
 Pour exemple, un formulaire classique qui s’afficherait sur deux colonnes comme celui ci :
 
-<!-- ![Formulaire Responsive Bureau](./BootstrapFormDesktop.jpg) -->
+![Formulaire Responsive Bureau](./BootstrapFormDesktop.jpg)
 
 En lui précisant une règle qui défini que s'il doit s'afficher sur un écran dont la largeur est inférieur à 576px (valeur fréquente mais non standard pour définir la largeur d'un écran de smartphone vertical), il devra lister ses champs sur une seule colonne verticalement afin de s'ajuster au mieux à cet écran :
 
-<!-- ![Formulaire Responsive Mobile](./BootstrapFormMobile.jpg) -->
+![Formulaire Responsive Mobile](./BootstrapFormMobile.jpg)
 
-Ce système est très puissant et à son arrivé en Juin 2012 il a révolutionné la façon dont les sites web (et par extension les applications web) pouvait être développé et les cibles qu'ils pouvaient viser.\
+Ce système est très puissant et à son arrivé en Juin 2012[^4] il a révolutionné la façon dont les sites web (et par extension les applications web) pouvait être développé et les cibles qu'ils pouvaient viser.\
 Aujourd'hui il n'est pas rare de pouvoir accéder aux sites de grandes sociétés grâce à un smartphone sans que celui ne rencontre de problème d'affichage. C'est même souvent le cas lors de l'utilisation d'une tablette, un "simple" ensemble de règles supplémentaire pour cet éventail de taille d'écran.
 
 ## La solution multiplateforme

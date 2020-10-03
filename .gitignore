@@ -1,3 +1,4 @@
+.jekyll-cache
 jekyll/_site
 jekyll/_chapters
-.docx
+*.docx

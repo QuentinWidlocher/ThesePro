@@ -252,7 +252,6 @@ graph TD
   B -->|Contrôle| A
   A[Couche matérielle]
 </div>
-
 > Schéma des couches d'abstractions
 
 Et si les fonctionnalités dites "*back-office*" ou communément "*back*" (comprendre : les calculs et les opérations effectués en arrière plan) ne sont dépendantes de rien de plus que ce compilateur, les fonctionnalités dites "*front-office*" ou "*front*" (comprendre : l'affichage de l'interface utilisateur et sa gestion) en revanche sont très dépendantes des technologies embarquées dans le système d'exploitation.\
