@@ -234,7 +234,7 @@ Comme précisé [plus haut](#les-langages-et-leurs-niveaux-dabstraction), c'est 
 Aussi contre-intuitif cela puisse-t-il être, lorsqu'on base un outil sur une autre qui se base lui même sur un autre, en plus de créer un outil plus performant, on risque de le rendre dépendant d'une multitude de détails qui l'empêche d'être utilisé avec d'autres outils.\
 C'est le cas de certains langages qui, pour pallier cela, nécessitent de posséder leur compilateur (ou interpréteur, voir glossaire<!--TODO-->) installé sur la machine cible (Java, C#, Python etc.).
 
-{% mermaid %}
+<div class="mermaid">
 graph TD
   F[Langage à abstraction encore plus élevée]
   F -->|Compile| E
@@ -251,7 +251,8 @@ graph TD
   B[Code Binaire]
   B -->|Contrôle| A
   A[Couche matérielle]
-{% endmermaid %}
+</div>
+
 > Schéma des couches d'abstractions
 
 Et si les fonctionnalités dites "*back-office*" ou communément "*back*" (comprendre : les calculs et les opérations effectués en arrière plan) ne sont dépendantes de rien de plus que ce compilateur, les fonctionnalités dites "*front-office*" ou "*front*" (comprendre : l'affichage de l'interface utilisateur et sa gestion) en revanche sont très dépendantes des technologies embarquées dans le système d'exploitation.\
