@@ -50,5 +50,15 @@
 		"scope": "markdown",
 		"prefix": "JS",
 		"body": "JavaScript"
+	},
+	"Mermaid": {
+		"scope": "markdown",
+		"prefix": "mermaid",
+		"body": [
+			"<div class=\"mermaid\">",
+			"graph TD",
+			"\t$1",
+			"</div>"
+		]
 	}
 }
