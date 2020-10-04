@@ -31,6 +31,11 @@
 		"prefix": "TODO",
 		"body": "<!-- TODO -->"
 	},
+	"FIXME": {
+		"scope": "markdown",
+		"prefix": "FIXME",
+		"body": "<!-- FIXME -->"
+	},
 	"Footpage note": {
 		"scope": "markdown",
 		"prefix": "foot",
