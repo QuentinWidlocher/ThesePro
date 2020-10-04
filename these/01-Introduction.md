@@ -29,13 +29,26 @@ Le temps n'est d'ailleurs bien souvent pas la seule contrainte que l'on cherche 
 Le métier de développeur est en cela le plus à même d'amener des pistes de réflexion sur l'optimisation étant donné la nature même du travail. Les ingénieurs logiciels font de la résolution de problèmes et de la vitesse ainsi que de l'efficacité de ces résolutions un enjeu premier.\
 Dans un cœur de métier aussi technique, il est donc normal d'avoir une multitude d'outils dont le but premier est la minimisation des coûts et des obstacles, et la maximisation de la qualité du résultat.
 
-Il existe un principe de programmation très employé qui cristallise un facette de l'optimisation, à savoir le principe DRY.\
-DRY, pour *Don't Repeat Yourself*, soit littéralement "Ne vous répétez pas" est un rappel constant aux développeurs de ne pas ré-écrire ce qui a déjà été écrit auparavant. Souvent l'on entend "Si vous devez écrire plus de deux fois la même chose, c'est que vous pouvez mieux faire", ou pour reprendre les mots de Andy Hunt et Dave Thomas[^2], initiateurs du principe DRY :
+Il existe un principe de programmation très employé qui cristallise un facette de l'optimisation, à savoir le principe *DRY*.\
+*DRY*, pour *Don't Repeat Yourself*, soit littéralement "Ne vous répétez pas" est un rappel constant aux développeurs de ne pas ré-écrire ce qui a déjà été écrit auparavant. Souvent entend on "Si vous devez écrire plus de deux fois la même chose, c'est que vous pouvez mieux faire", ou pour reprendre les mots de Andy Hunt et Dave Thomas[^2], initiateurs du principe *DRY* :
 
 > Dans un système, toute connaissance doit avoir une représentation unique, non-ambiguë, faisant autorité.
 
 ## Problématique
-<!-- TODO Problématique -->
+
+Parmi les nombreuses raisons de chercher à optimiser et à "ne pas se répéter" lorsque l'on développe une application, il y en a une qui s'avère être depuis bien longtemps particulièrement chronophage et par conséquent, onéreuse.\
+Pour qu'un logiciel puisse être disponible pour le plus grand nombre, il faut que celui-ci puisse exécuter sur un grand nombre d'appareils tous bien différents. La forme de l'écran, les performances de la machine, la méthode de saisie, tous ces paramètres sont à prendre en compte et il faut parfois redévelopper une application identique à l'aide un autre langage de programmation si l'on veut une version compatible.
+
+Devant cela bien sûr, le principe *DRY* est violé et, par là même, l'optimisation devient très compliquée.\
+On peut donc se demander :
+
+> Comment faire le choix d'une architecture applicative multi-plateformes ?
+
+Cette problématique n'est pas seulement à propos de "comment", dans le sens technique du terme mais aussi de "faut-il" ou même "est-t'il possible".
+
+En effet si une application peut être développée une seule fois et être compatible avec un grand nombre d'appareils différents, cela peut apporter une grande valeur ajoutée. Mais si ce développement est bien plus complexe et coûteux (en budget mais aussi en temps), l'effort vaut-t'il le coup ?
+
+L'effort lui même, est-t'il envisageable au vu des technologies actuelles ? Existe-t'il un ou plusieurs outils à-même de répondre au besoin de portabilité d'une architecture applicative ? Et quel serait la difficulté de les mettre en place dans un projet à venir, ou un projet existant ?
 
 ## Hypothèses proposées
 <!-- TODO Hypothèses proposées -->
