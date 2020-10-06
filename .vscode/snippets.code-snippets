@@ -65,5 +65,10 @@
 			"\t$1",
 			"</div>"
 		]
-	}
+	},
+	"Problématique": {
+		"scope": "markdown",
+		"prefix": "pbq",
+		"body": "problématique"
+	},
 }

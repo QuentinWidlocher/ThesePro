@@ -3,6 +3,7 @@
 1. [Problématiques potentielles](#problématiques-potentielles)
 1. [Glossaire](#glossaire)
 1. [État de l'art](#état-de-lart)
+1. [Hypothèses](#hypothèses)
 1. [Méthodes à appliquer](#méthodes-à-appliquer)
 1. [Performances](#performances)
 1. [Efficacité de prod](#efficacité-de-prod)
@@ -35,6 +36,24 @@
 - Le coût de fabrication des logiciels
 - Le gain qu'apportent les applis mobiles
 - Ouverture sur la promesse des applis hybrides
+
+## Hypothèses
+
+- 1 app native par cible
+  - Long, couteux et dur à maintenir
+- 1 app native pour chaque cible
+  - Mauvaises performances
+  - Très peu de fonctionnalité (jointure interne entre les features)
+  - Pistes : Xojo, WinDev
+- 1 app native desktop + 1 app native mobile
+  - Pas full multiplateforme
+  - Code dupliqué
+  - Efficace
+  - PC (Java/JavaFx, C++/Qt, Python/Kivy)
+  - Mobile (Dart/Flutter, C#/Xamarin)
+- 1 app web desktop et pwa
+- 1 app web desktop et 1 app hybride
+  - Ionic / NativeScript
 
 ## Méthodes à appliquer
 
@@ -89,6 +108,7 @@ Web : Pratique
 
 - <https://stackoverflow.com/questions/2098492/why-are-web-apps-prevalent-for-internal-corporate-apps>
 - <https://www.trustradius.com/erp>
+- <https://xpda.net/>
 
 ## Stats nécessaires
 

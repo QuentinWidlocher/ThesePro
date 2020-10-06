@@ -27,6 +27,8 @@ jobs:
         destination: ../docs
     - name: Print results
       run: echo $(ls ./jekyll); echo $(ls ./docs)
+    - name: Print built chapters
+      run: echo $(ls ./jekyll/_chapters); echo $(ls ./docs/chapters)
     - name: Add, commit and push changes to master branch
       run: |
         git config --local user.email 'action@github.com'

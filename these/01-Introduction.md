@@ -8,6 +8,11 @@ layout: post
 1. [Contexte](#contexte)
 1. [Problématique](#problématique)
 1. [Hypothèses proposées](#hypothèses-proposées)
+   1. [Première hypothèse](#première-hypothèse)
+   1. [Deuxième hypothèse](#deuxième-hypothèse)
+   1. [Troisième hypothèse](#troisième-hypothèse)
+   1. [Quatrième hypothèse](#quatrième-hypothèse)
+   1. [Cinquième hypothèse](#cinquième-hypothèse)
 1. [Démarche proposée](#démarche-proposée)
 1. [Valeur ajoutée de cette recherche](#valeur-ajoutée-de-cette-recherche)
 
@@ -40,18 +45,55 @@ Parmi les nombreuses raisons de chercher à optimiser et à "ne pas se répéter
 Pour qu'un logiciel puisse être disponible pour le plus grand nombre, il faut que celui-ci puisse exécuter sur un grand nombre d'appareils tous bien différents. La forme de l'écran, les performances de la machine, la méthode de saisie, tous ces paramètres sont à prendre en compte et il faut parfois redévelopper une application identique à l'aide un autre langage de programmation si l'on veut une version compatible.
 
 Devant cela bien sûr, le principe *DRY* est violé et, par là même, l'optimisation devient très compliquée.\
-On peut donc se demander :
+Nous pouvons donc nous demander :
 
-> Comment faire le choix d'une architecture applicative multi-plateformes ?
+> Comment faire le choix d'une architecture applicative multiplateforme ?
 
 Cette problématique n'est pas seulement à propos de "comment", dans le sens technique du terme mais aussi de "faut-il" ou même "est-t'il possible".
 
 En effet si une application peut être développée une seule fois et être compatible avec un grand nombre d'appareils différents, cela peut apporter une grande valeur ajoutée. Mais si ce développement est bien plus complexe et coûteux (en budget mais aussi en temps), l'effort vaut-t'il le coup ?
 
-L'effort lui même, est-t'il envisageable au vu des technologies actuelles ? Existe-t'il un ou plusieurs outils à-même de répondre au besoin de portabilité d'une architecture applicative ? Et quel serait la difficulté de les mettre en place dans un projet à venir, ou un projet existant ?
+L'effort lui même, est-t'il envisageable au vu des technologies actuelles ? Existe-t'il un ou plusieurs outils à-même de répondre au besoin de portabilité d'une architecture applicative ? Et quelle serait la difficulté de les mettre en place dans un projet à venir, ou un projet existant ?
 
 ## Hypothèses proposées
-<!-- TODO Hypothèses proposées -->
+
+Devant cette problématique, nous pouvons émettre plusieurs hypothèses afin de tenter de répondre à la question posée.\
+Chaque hypothèse propose une piste de réflexion prenant en compte les subtilités techniques ainsi que les risques de chaque technologies.
+
+### Première hypothèse
+
+Tout d'abord, afin de partir d'une hypothèse qui semblerait évidente, et qui aura pour but d'être comparée avec d'autres hypothèses plus recherchées, nous pouvons annoncer cette solution potentielle :
+
+> Une application native pour chaque appareil cible.
+
+De ce fait, cette hypothèse servira de "témoin" puisqu'elle ne nécessite pas de travaux de recherche particuliers et se contente de l'existant pour répondre à la problématique posée.\
+C'est en comparant les résultats de cette hypothèse aux autres que nous pourrons déterminer l'utilité de cette recherche de solution, ainsi que le bien fondé de la problématique.
+
+### Deuxième hypothèse
+
+> Un seul code source natif pour tous les appareils cibles communs.
+
+Bien entendu, s'il est possible d'avoir un seul code source qui puisse produire une application native pour chaque appareil cible, qu'il soit bureau ou mobile, et indépendamment de son système d'exploitation, cette solution devrait être la plus performante.\
+Les applications natives permettent de jouir au mieux des capacités de l'appareil tout en donnant accès au développeurs (et par là même aux  utilisateurs) à toutes les fonctionnalités de celui-ci, sans trop de freins. Une application multiplateforme native représente un gain de temps de développement considérable, et présente des avantages techniques indéniables.
+
+### Troisième hypothèse
+
+> Séparer les cibles en deux grands groupes, à savoir "Logiciels Bureaux" et "Applications Mobiles" et faire deux applications différentes pour ces groupes.
+
+En limitant les applications, le temps de développement se retrouve lui aussi réduit. Si nous nous concentrons sur deux groupes de cibles il n'y a alors que deux codes sources à créer et à maintenir. Leurs deux langages de programmation étant très probablement différents, les fonctionnalités seront donc écrites deux fois mais on peux facilement imaginer que c'est un coût supplémentaire éclipsé par les performances des applications ainsi que leurs possibilités.
+
+### Quatrième hypothèse
+
+> Une seule application web et une interface *responsive* pour tout les appareils cibles.
+
+Les applications web peuvent tourner sur n'importe quel appareil doté d'un navigateur internet. Le responsive design permet d'afficher un site sur toute taille d'écran. Il devrait donc être possible d'avoir une seule application web qui puisse être déployée sur une multitude de supports compatible tout en ne gardant qu'un seul code source.\
+Cette solution potentielle se rapproche de la deuxième hypothèse dans sa limitation des coûts et son optimisation de la quantité du code.
+
+### Cinquième hypothèse
+
+> Une application web pour les cibles bureau et une application hybride pour les cibles mobiles
+
+Grâce au langage de programmation commun (JavaScript), il est possible partager un maximum de code entre les deux applications tout en gardant les spécificités de l'affichage sur grand et petit écran. De plus l'application hybride permet d'accéder à plus de fonctionnalités du système d'exploitation et à mieux se fondre dans l'écosystème d'application de l'utilisateur.
 
 ## Démarche proposée
 <!-- TODO Démarche proposée -->
