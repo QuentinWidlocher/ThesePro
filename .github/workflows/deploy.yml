@@ -14,7 +14,7 @@ jobs:
     - name: Move files to jekyll
       run: |
           rm ./jekyll/_chapters/*
-          cp -R ./These/. ./jekyll/_chapters
+          cp -R ./these/. ./jekyll/_chapters
           echo
           echo Chapters :
           echo $(ls ./jekyll/_chapters)
