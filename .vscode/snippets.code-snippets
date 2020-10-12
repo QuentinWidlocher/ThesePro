@@ -29,22 +29,22 @@
 	"TODO": {
 		"scope": "markdown",
 		"prefix": "TODO",
-		"body": "<!-- TODO -->"
+		"body": "<!-- TODO: $1 -->"
 	},
 	"FIXME": {
 		"scope": "markdown",
 		"prefix": "FIXME",
-		"body": "<!-- FIXME -->"
+		"body": "<!-- FIXME: $1 -->"
 	},
 	"Footpage note": {
 		"scope": "markdown",
 		"prefix": "foot",
 		"body": "[^$1]: [$2]($3)"
 	},
-	"Développeurs": {
+	"Développe": {
 		"scope": "markdown",
 		"prefix": "dev",
-		"body": "développeurs"
+		"body": "développe$0"
 	},
 	"UI": {
 		"scope": "markdown",
@@ -70,5 +70,15 @@
 		"scope": "markdown",
 		"prefix": "pbq",
 		"body": "problématique"
+	},
+	"POC": {
+		"scope": "markdown",
+		"prefix": "poc",
+		"body": "*proof of concept*"
+	},
+	"Application": {
+		"scope": "markdown",
+		"prefix": "app",
+		"body": "application"
 	},
 }

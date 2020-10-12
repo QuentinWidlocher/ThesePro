@@ -89,16 +89,20 @@
 
 ## Critères de comparaison
 
-- Poids de l'app
-- Temps de dev
-- Performance de l'app (Benchmark)
-  - Charge CPU
-  - Consommation RAM
-- Consommation Électrique
-- Facilité de maintenance
-- Étendu de l'API (est ce qu'on est limité)
-- Rapidité/facilité de déploiement
-- Android et/ou iOS et/ou PC et/ou Mac
+- Pendant le dev
+  - Temps de dev
+  - Étendu de l'API (est ce qu'on est limité)
+- Après le développement
+  - Rapidité/facilité de déploiement
+  - Facilité de maintenance
+  - La réutilisation
+- Résultat
+  - Performance de l'app (Benchmark)
+    - L'utilisation du processeur
+    - L'utilisation de la mémoire vive
+    - Le temps de réponse moyen
+  - Consommation Électrique
+  - Poids de l'app
 
 Bureau : Performant\
 Mobile : Portable\
