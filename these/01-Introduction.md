@@ -16,17 +16,17 @@ layout: post
 1. [Démarche proposée](#démarche-proposée)
    1. [Qu'est ce qu'un *proof of concept*](#quest-ce-quun-proof-of-concept)
    1. [Les critères](#les-critères)
-      1. [Critères 1 : Pendant le développement](#critères-1--pendant-le-développement)
-         1. [Critère 1.1 : Le temps de développement](#critère-11--le-temps-de-développement)
-         1. [Critère 1.2 : Les limitations des technologies](#critère-12--les-limitations-des-technologies)
-      1. [Critères 2 : Après le développement](#critères-2--après-le-développement)
-         1. [Critères 2.1 : Le déploiement](#critères-21--le-déploiement)
-         1. [Critères 2.2 : La maintenance](#critères-22--la-maintenance)
-         1. [Critères 2.3 : La réutilisation](#critères-23--la-réutilisation)
-      1. [Critères 3 : Le résultat](#critères-3--le-résultat)
-         1. [Critères 3.1 : Utilisation du processeur et de la mémoire](#critères-31--utilisation-du-processeur-et-de-la-mémoire)
-         1. [Critères 3.2 : Temps de réponse moyen](#critères-32--temps-de-réponse-moyen)
-         1. [Critère 3.3 : Le poids de l'exécutable](#critère-33--le-poids-de-lexécutable)
+      1. [**Critères 1** : Pendant le développement](#critères-1--pendant-le-développement)
+         1. [**Critère 1.1** : Le temps de développement](#critère-11--le-temps-de-développement)
+         1. [**Critère 1.2** : Les limitations des technologies](#critère-12--les-limitations-des-technologies)
+      1. [**Critères 2** : Après le développement](#critères-2--après-le-développement)
+         1. [**Critères 2.1** : Le déploiement](#critères-21--le-déploiement)
+         1. [**Critères 2.2** : La maintenance](#critères-22--la-maintenance)
+         1. [**Critères 2.3** : La réutilisation](#critères-23--la-réutilisation)
+      1. [**Critères 3** : Le résultat](#critères-3--le-résultat)
+         1. [**Critères 3.1** : Utilisation du processeur et de la mémoire](#critères-31--utilisation-du-processeur-et-de-la-mémoire)
+         1. [**Critères 3.2** : Temps de réponse moyen](#critères-32--temps-de-réponse-moyen)
+         1. [**Critère 3.3** : Le poids de l'exécutable](#critère-33--le-poids-de-lexécutable)
    1. [RealWorld](#realworld)
 1. [Valeur ajoutée de cette recherche](#valeur-ajoutée-de-cette-recherche)
 
@@ -204,11 +204,11 @@ Afin que chaque relevé soit aussi assimilable aux autres que possible, il faut 
 Les critères de jugement sont multiples et s'appliquent tous à des parties cruciales d'une application réelle.\
 Nous scinderont ces critères en trois grandes parties afin de simplifier au mieux la lecture et la compréhension.
 
-#### Critères 1 : Pendant le développement
+#### **Critères 1** : Pendant le développement
 
 Ces critères sont des mesures des problématiques encourues lors de la phase de conception d'une application. Ils se rapportent principalement aux développeurs et aux obstacles qui leurs font face tout au long du développement.
 
-##### Critère 1.1 : Le temps de développement
+##### **Critère 1.1** : Le temps de développement
 
 L'un des critères les plus important, tant aux yeux des développeurs qu'à ceux des managers et des responsables, c'est bien entendu le temps qu'une application met à être produite.\
 Ce temps, mesuré en jours/homme se devra d'être aussi court que possible afin de limiter les coûts salariaux et de répondre au plus vite au besoin client.
@@ -217,7 +217,7 @@ Dans le cas de nos *proofs of concept*, je serais le seul développeur affecté 
 
 Pour mesurer ce critère, nous relèveront le temps passé à developer une démonstration quotidiennement et nous compareront les résultats obtenus.
 
-##### Critère 1.2 : Les limitations des technologies
+##### **Critère 1.2** : Les limitations des technologies
 
 Une application native possède, par définition, un accès complet aux fonctionnalités qu'offre le système d'exploitation sur lequel il exécute, sous réserve qu'il possède les droits nécessaires.\
 Une application web en revanche n'a pas ces accès et souvent il existe certaines fonctionnalités inaccessibles qui brident ce qu'il est possible de faire pour l'utilisateur.
@@ -226,23 +226,23 @@ Ces limitations peuvent se révéler cruciales pour une application métier et m
 
 Pour mesurer ce critère, nous utiliseront un système de note arbitraire en fonction de différents sous-critères liés à celui ci.
 
-#### Critères 2 : Après le développement
+#### **Critères 2** : Après le développement
 
 Ces critères se rapportent eux, à ce qui se passe une fois qu'une application est développée, qu'elle soit finie ou non. Nous allons donc nous intéresser à la livraison du produit, sa maintenance et l'optimisation des ressources en cas de réutilisation du code.
 
-##### Critères 2.1 : Le déploiement
+##### **Critères 2.1** : Le déploiement
 
 Le déploiement fait référence au moment où un logiciel est mis à la disposition des utilisateurs. Dans le cas d'un logiciel métier, cela peut se référer à la méthode d'envoi de celui au client, et à la façon dont les utilisateurs finaux pourront l'utiliser. Dans le cas d'une application grand-publique, c'est la méthode de distribution de celle ci au monde entier.
 
 Ce critères se base sur la simplicité du déploiement et les limitations possibles, mesurés tout deux sur une note arbitraire et la vitesse du déploiement qui sera chronométrée.
 
-##### Critères 2.2 : La maintenance
+##### **Critères 2.2** : La maintenance
 
 Une fois qu'un logiciel est déployé sur un grand nombre d'appareils divers, il est important de juger de la souplesse avec laquelle il est possible de le mettre à jour (périodiquement, ou "dans l'urgence") ainsi que l'impact que cette maintenance a sur les utilisateurs. Une bonne mise à jour ne doit pas interrompre le travail de l'usager.
 
 Pour mesurer ce critère, nous jugeront différents sous-critères liés à celui ci avec des notes arbitraires.
 
-##### Critères 2.3 : La réutilisation
+##### **Critères 2.3** : La réutilisation
 
 Toujours dans un soucis d'optimisation, il est très bénéfique pour une société de développement informatique de pouvoir compter sur des fonctionnalités qui existent déjà dans des projets, pour les utiliser dans des projets à venir. C'est cette réutilisation du code qui permet à une entreprise d'être de plus en plus performante et de pouvoir répondre aux besoins en un temps optimal.
 
@@ -250,11 +250,11 @@ Le code n'est pas la seule chose qui puisse être réutilisée, des morceaux de 
 
 Pour mesurer ce critère, nous évalueront les mécanismes qui permettent de rendre du code réutilisable.
 
-#### Critères 3 : Le résultat
+#### **Critères 3** : Le résultat
 
 Enfin, ces derniers critères visent à juger de/des application(s) une fois que leur développement est terminé. Contrairement aux critères précédents, on regarda plutôt ici certaines caractéristiques techniques qu'on comparera d'un point de vu simplement mathématique. Ces caractéristiques seront les résultats de *benchmarks*, des évaluations précise des critères.
 
-##### Critères 3.1 : Utilisation du processeur et de la mémoire
+##### **Critères 3.1** : Utilisation du processeur et de la mémoire
 
 Les performances d'une application sont un ensemble de mesures qui touche à sa consommation de ressources. Afin de s'exécuter convenablement, un logiciel doit utiliser la puissance de calcul du processeur et stocker/récupérer des données dans la mémoire vive de l'appareil.\
 Une application trop gourmande en ressource aura donc tendance à "fatiguer" la machine, qui peinera donc à faire fonctionner l'application, ou les autres processus de l'appareil.
@@ -263,7 +263,7 @@ Même si la consommation de ressource est importante pour tous les supports mat�
 
 Ces performances sont mesurables et quantifiables grâce à des outils d'analyse.
 
-##### Critères 3.2 : Temps de réponse moyen
+##### **Critères 3.2** : Temps de réponse moyen
 
 On juge une application agréable quand elle "répond au doigt et à l'oeil", en d'autres termes : quand celle ci réagit aux interactions de l'utilisateur dans un temps très restreint. Si un logiciel met plusieurs seconde à sauvegarder un document (par exemple), on jugera l'application lente.
 
@@ -272,16 +272,28 @@ Cette problématique peut même se faire ressentir quand toutes les actions ont 
 Le temps de réponse peut-être mesuré en obtenant la différence de temps entre une action de l'utilisateur et la réponse visible à l'écran de cette dernière.\
 Il est aussi intéressant de calculer le *First Contentful Paint* ou premier affichage de contenu, le temps que met une application à afficher pour la première fois la page que verra l'utilisateur.
 
-##### Critère 3.3 : Le poids de l'exécutable
+##### **Critère 3.3** : Le poids de l'exécutable
 
 Le dernier critère, le plus aisé à mesurer, est le poids final de l'application.\
 A l'inverse du code source, dont la taille n'a finalement que peu d'importance, le poids du logiciel qui devra loger sur la machine d'un utilisateur lui est plus capital. Encore une fois c'est les smartphones et autres appareils mobile qui sont les plus concernés en raison de leurs espaces de stockage relativement restreintes en comparaison avec les appareils fixes.
 
 ### RealWorld
-<!-- TODO: RealWorld -->
+
+Afin de rester dans un contexte technique, et de profiter au mieux du milieu du développement logiciels et de la vision qui l'entoure, nous allons baser nos travaux sur *RealWorld*[^3].
+
+*RealWorld* est un dépôt de code qui regroupe plusieurs *proofs of concept* cherchant à reproduire une même application avec des technologies différentes.\
+L'application en question est un clone de *Medium*[^4], un site web d'articles sur des sujets divers, appelé *Conduit*.
+
+Pour que chaque itération de *Conduit* soient comparables entre elle, elle doivent toutes suivre les même consignes, le même cahier des charges technique.\
+L'application est donc scindé en deux parties toujours interchangeables, d'un coté la partie interface utilisateur et de l'autre la gestion des données.
+
+Baser les *proofs of concept* de cette thèse sur *RealWorld* permet de mettre en pratique ce dont nous parlions dans le [contexte](#Contexte), à savoir le désir de ne pas répéter les mêmes travaux que ceux qui existent déjà. Nous cherchons à réutiliser l'existant au profit de nouveaux ouvrages.\
+De plus, *RealWorld* étant un travail *open source*, donc libre de droit, il est en parfait accord avec le format de cette thèse qui l'est tout autant, c'est une vision commune dans le monde du développement de logiciels qui mérite d'être partagé.
 
 ## Valeur ajoutée de cette recherche
 <!-- TODO Valeur ajoutée -->
 
 [^1]: [SlashData 2019](https://slashdata-website-cms.s3.amazonaws.com/sample_reports/EiWEyM5bfZe1Kug_.pdf)
 [^2]: *The Pragmatic Programmer*, Addison-Wesley, 2000
+[^3]: [RealWorld](https://github.com/gothinkster/realworld)
+[^4]: [Medium](https://medium.com/)
