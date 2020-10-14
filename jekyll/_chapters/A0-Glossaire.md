@@ -11,6 +11,8 @@ layout: post
 1. [Software](#software)
 1. [Logiciel propriétaire](#logiciel-propriétaire)
 1. [Logiciel libre (de droit)](#logiciel-libre-de-droit)
+1. [Compilateur](#compilateur)
+1. [Interpréteur](#interpréteur)
 
 ## Cross Platform
 
@@ -53,3 +55,17 @@ Un logiciel propriétaire n'est pas forcément payant, la nuance ne s'effectuant
 Un logiciel libre désigne la licence de distribution de ce dernier. La mention libre indique que le code source du logiciel peut-être librement consulté, distribué et réutilisé à des fin commerciales ou non. Ces différents points sont spécifié par le biais de licenses comme la licence [MIT](https://choosealicense.com/licenses/mit/) ou [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/).\
 Cette thèse professionnelle, bien que n'étant pas un logiciel, est partagé en ligne selon une licence [Creative Commons](https://choosealicense.com/licenses/cc-by-sa-4.0/). Vous pouvez retrouver sont contenu source sur un [dépôt Github](https://github.com/QuentinWidlocher/ThesePro).\
 Un logiciel libre n'est pas forcément gratuit, la nuance ne s'effectuant exclusivement que sur sa distribution.
+
+## Compilateur
+
+Un compilateur est un logiciel qui traduit un code source écrit dans un langage de programmation (le langage source) dans un autre langage (le langage cible).\
+Le nom "compilateur" est principalement utilisé pour les programmes qui traduisent un langage de programmation de haut niveau d'abstraction <!-- TODO: Mettre l'abstraction dans le glossaire --> vers un langage de niveau inférieur (par exemple, de l'assembleur vers du binaire) afin de créer un programme exécutable.
+
+## Interpréteur
+
+Contrairement au [compilateur](#compilateur), un interpréteur exécute directement des instructions écrites dans un langage de programmation, sans exiger qu'elles aient été préalablement compilées dans un langage machine ou inférieur.\
+L'interpréteur lit le code écrit ligne par ligne et *interprète* les actions "à la volé".
+
+Bien que ce procédé accélère la vitesse à laquelle on peux passer d'un code source à un logiciel (puisque la lecture du code se fait simultanément avec l'exécution), les langages interprétés souffrent souvent d'un vitesse d'exécution inférieure au langages compilés.
+
+NB : Il est possible de mélanger du code compilé et du code interprété dans le but de mitiger les lacunes de chacune de ces méthodes
