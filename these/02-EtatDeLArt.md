@@ -232,7 +232,7 @@ Pour répondre à cette problématique, les ingénieurs développeurs ont cherch
 Comme précisé [plus haut](#les-langages-et-leurs-niveaux-dabstraction), c'est avec l'arrivé de langages à plus haut niveau d'abstraction que l'on a pu commencer à porter des applications entre les différents systèmes d'exploitations les plus populaires (Windows, Linux et MacOS). Cependant avec la diversité croissante des technologies disponible, et l'apparition de langages à niveau d'abstraction encore plus élevé, cette portabilité a fini par s'estomper.
 
 Aussi contre-intuitif cela puisse-t-il être, lorsqu'on base un outil sur une autre qui se base lui même sur un autre, en plus de créer un outil plus performant, on risque de le rendre dépendant d'une multitude de détails qui l'empêche d'être utilisé avec d'autres outils.\
-C'est le cas de certains langages qui, pour pallier cela, nécessitent de posséder leur compilateur (ou interpréteur, voir glossaire<!--TODO interpréteur dans le glossaire-->) installé sur la machine cible (Java, C#, Python etc.).
+C'est le cas de certains langages qui, pour pallier cela, nécessitent de posséder leur compilateur (ou interpréteur, voir glossaire) installé sur la machine cible (Java, C#, Python etc.).
 
 <div class="mermaid">
 graph TD

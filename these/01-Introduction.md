@@ -297,7 +297,7 @@ Le but de ce travail de recherche est de fournir au sein d'un document synthéti
 Plutôt que de fonder les réponses aux hypothèses sur les jugements subjectifs de développeurs, cette thèse aborde ce sujet d'un point de vue technique grâce aux *proofs of concept* et aux *benchmarks* qui leurs sont liés.\
 Malgré cela, aucune réponse définitive ne saurait être apporté. Les solutions ont toujours des exceptions dans lesquelles elle brillent plus et le monde du développement de logiciel est en constante croissance, amenant de ce fait de nouveaux outils et de nouvelles solutions très fréquemment.\
 
-C'est au sujet de ce dernier point que ce travail de recherche ne vise donc pas une réponse unique mais plutôt un conseil quand à l'état d'esprit à avoir lorsque l'on considère une architecture applicative. Si les technologies évoluent à une vitesse extraordinaire, les concepts et les notions d'architecture elles, restent toujours valables selon la nature d'un projet. 
+C'est au sujet de ce dernier point que ce travail de recherche ne vise donc pas une réponse unique mais plutôt un conseil quand à l'état d'esprit à avoir lorsque l'on considère une architecture applicative. Si les technologies évoluent à une vitesse extraordinaire, les concepts et les notions d'architecture elles, restent toujours valables selon la nature d'un projet.
 
 [^1]: [SlashData 2019](https://slashdata-website-cms.s3.amazonaws.com/sample_reports/EiWEyM5bfZe1Kug_.pdf)
 [^2]: *The Pragmatic Programmer*, Addison-Wesley, 2000
