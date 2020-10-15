@@ -29,6 +29,10 @@ layout: post
          1. [**Critères 3.2** : Temps de réponse moyen](#critères-32--temps-de-réponse-moyen)
          1. [**Critère 3.3** : Le poids de l'exécutable](#critère-33--le-poids-de-lexécutable)
    1. [RealWorld](#realworld)
+      1. [Conduit](#conduit)
+         1. [Les fonctionnalités](#les-fonctionnalités)
+         1. [Visuels application bureau](#visuels-application-bureau)
+         1. [Visuels application mobile](#visuels-application-mobile)
 1. [Valeur ajoutée de cette recherche](#valeur-ajoutée-de-cette-recherche)
 
 ## Objet de la thèse
@@ -307,6 +311,40 @@ L'application est donc scindé en deux parties toujours interchangeables, d'un c
 
 Baser les *proofs of concept* de cette thèse sur *RealWorld* permet de mettre en pratique ce dont nous parlions dans le [contexte](#Contexte), à savoir le désir de ne pas répéter les mêmes travaux que ceux qui existent déjà. Nous cherchons à réutiliser l'existant au profit de nouveaux ouvrages.\
 De plus, *RealWorld* étant un travail *open source*, donc libre de droit, il est en parfait accord avec le format de cette thèse qui l'est tout autant, c'est une vision commune dans le monde du développement de logiciels qui mérite d'être partagé.
+
+#### Conduit
+
+Pour mieux présenter *Conduit* et donc la profondeur de notre application de démonstration, voici une liste des actions qu'il doit être capable de faire, ainsi quelques visuels pour aider à appréhender sa forme.
+
+##### Les fonctionnalités
+
+- Authentification
+  - Connexion
+  - Inscription
+- Lecture d'articles
+  - Flux global
+  - Flux d'auteurs
+  - Recherche par étiquettes
+  - Partage d'articles
+- Écriture d'articles
+  - Titre
+  - Sous Titre
+  - Corps en texte riche (Markdown <!-- TODO: Définition -->)
+  - Étiquettes
+
+##### Visuels application bureau
+
+![Authentification bureau](ConduitDesktopSignIn.png)
+![Page d'accueil bureau](ConduitDesktopHome.png)
+![Rédaction d'un article bureau](ConduitDesktopEditor.png)
+![Lecture d'un article bureau](ConduitDesktopArticle.png)
+
+##### Visuels application mobile
+
+![Authentification mobile](ConduitMobileSignIn.jpg)
+![Page d'accueil mobile](ConduitMobileHome.jpg)
+![Rédaction d'un article mobile](ConduitMobileEditor.jpg)
+![Lecture d'un article mobile](ConduitMobileArticle.jpg)
 
 ## Valeur ajoutée de cette recherche
 

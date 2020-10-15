@@ -104,8 +104,6 @@ Note : Les langages séparés par un slash représente à gauche le langage util
 
 Pour ces cinq applications différentes dont le code ne peux être partagé (même entre Mac et iOS car les spécificité sont trop grande pour que la réutilisation du code puisse avoir un véritable impact) les temps de développement sont relativement ??? <!-- TODO: indiquer les comparaison -->
 
-
-
 #### Hypothèse 1 - **Critère 1.2** : Les limitations des technologies
 
 ### Hypothèse 1 - **Critères 2** : Après le développement
@@ -135,7 +133,7 @@ Pour ces cinq applications différentes dont le code ne peux être partagé (mê
 
 ### Hypothèse 2 - Présentation du *proof of concept*
 
-<!-- Pas de code source disponible : Windev et/ou Xojo -->
+<!-- Pas de code source disponible : WinDev et/ou Xojo -->
 
 ### Hypothèse 2 - **Critères 1** : Pendant le développement
 
