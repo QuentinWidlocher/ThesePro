@@ -102,6 +102,10 @@ Note : Les langages séparés par un slash représente à gauche le langage util
 
 #### Hypothèse 1 - **Critère 1.1** : Le temps de développement
 
+Pour ces cinq applications différentes dont le code ne peux être partagé (même entre Mac et iOS car les spécificité sont trop grande pour que la réutilisation du code puisse avoir un véritable impact) les temps de développement sont relativement ??? <!-- TODO: indiquer les comparaison -->
+
+
+
 #### Hypothèse 1 - **Critère 1.2** : Les limitations des technologies
 
 ### Hypothèse 1 - **Critères 2** : Après le développement

@@ -7,6 +7,7 @@ layout: post
 1. [Objet de la thèse](#objet-de-la-thèse)
 1. [Contexte](#contexte)
 1. [Problématique](#problématique)
+1. [Cibles visées](#cibles-visées)
 1. [Hypothèses proposées](#hypothèses-proposées)
    1. [Première hypothèse](#première-hypothèse)
    1. [Deuxième hypothèse](#deuxième-hypothèse)
@@ -68,6 +69,23 @@ Cette problématique n'est pas seulement à propos de "comment", dans le sens te
 En effet si une application peut être développée une seule fois et être compatible avec un grand nombre d'appareils différents, cela peut apporter une grande valeur ajoutée. Mais si ce développement est bien plus complexe et coûteux (en budget mais aussi en temps), l'effort vaut-t'il le coup ?
 
 L'effort lui même, est-t'il envisageable au vu des technologies actuelles ? Existe-t'il un ou plusieurs outils à-même de répondre au besoin de portabilité d'une architecture applicative ? Et quelle serait la difficulté de les mettre en place dans un projet à venir, ou un projet existant ?
+
+## Cibles visées
+
+Cette question brasse un champ bien trop vague des possibles pour pouvoir en extraire une réponse valable pour tous les appareils informatiques existants.\
+Aussi nous allons réduire la portée de notre recherche aux systèmes d'exploitation les plus populaires aujourd'hui, chez les particuliers comme chez les professionnels. <!-- TODO: source -->
+
+Ces systèmes d'exploitation peuvent être groupés en deux catégories de support physique à savoir les terminaux fixes et mobiles :
+
+- Terminaux fixes :
+  - Linux
+  - Microsoft Windows (à partir de la version 7[^3])
+  - macOS (OSX)
+- Terminaux mobiles (smartphones) :
+  - Android
+  - iOS
+
+Ces cinqs systèmes d'exploitation seront notre principale préoccupation étant donné qu'ils représentent ensemble plus de ??%<!-- TODO: source --> de l'utilisation de machines informatiques.
 
 ## Hypothèses proposées
 
@@ -279,10 +297,10 @@ A l'inverse du code source, dont la taille n'a finalement que peu d'importance, 
 
 ### RealWorld
 
-Afin de rester dans un contexte technique, et de profiter au mieux du milieu du développement logiciels et de la vision qui l'entoure, nous allons baser nos travaux sur *RealWorld*[^3].
+Afin de rester dans un contexte technique, et de profiter au mieux du milieu du développement logiciels et de la vision qui l'entoure, nous allons baser nos travaux sur *RealWorld*[^4].
 
 *RealWorld* est un dépôt de code qui regroupe plusieurs *proofs of concept* cherchant à reproduire une même application avec des technologies différentes.\
-L'application en question est un clone de *Medium*[^4], un site web d'articles sur des sujets divers, appelé *Conduit*.
+L'application en question est un clone de *Medium*[^5], un site web d'articles sur des sujets divers, appelé *Conduit*.
 
 Pour que chaque itération de *Conduit* soient comparables entre elle, elle doivent toutes suivre les même consignes, le même cahier des charges technique.\
 L'application est donc scindé en deux parties toujours interchangeables, d'un coté la partie interface utilisateur et de l'autre la gestion des données.
@@ -301,5 +319,6 @@ C'est au sujet de ce dernier point que ce travail de recherche ne vise donc pas 
 
 [^1]: [SlashData 2019](https://slashdata-website-cms.s3.amazonaws.com/sample_reports/EiWEyM5bfZe1Kug_.pdf)
 [^2]: *The Pragmatic Programmer*, Addison-Wesley, 2000
-[^3]: [RealWorld](https://github.com/gothinkster/realworld)
-[^4]: [Medium](https://medium.com/)
+[^3]: [Fin du support de Windows XP : 2009](https://docs.microsoft.com/en-us/lifecycle/products/windows-xp)
+[^4]: [RealWorld](https://github.com/gothinkster/realworld)
+[^5]: [Medium](https://medium.com/)
