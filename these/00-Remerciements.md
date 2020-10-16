@@ -19,7 +19,7 @@ Durant la lecture de cette thèse, il est important de garder à l'esprit que le
 - Applicatif
 - *Software*
 
-Tous ces termes représentent sans distinctions un programme informatique utilisable par un usager, quelque soit sa nature ou l'appareil sur lequel il s'exécute.\
+Tous ces termes représentent sans distinctions un programme informatique utilisable par un usager, quelque soit sa nature ou l'appareil sur lequel il s'exécute. Il ne désigne pas un jeu ou
 Afin de distinguer ces détails, un suffixe est employé en plus de ces termes afin de préciser.
 
 ---

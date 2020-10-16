@@ -196,17 +196,17 @@ graph TD
     CS1((Code))
     CS1 --> UI1 & UI2
     subgraph Mobile
-        UI2(Interface)
-        MC4[Android]
-        MC5[iOS]
-        UI2 -->|Application Hybride| MC4 & MC5
+      UI2(Interface)
+      MC4[Android]
+      MC5[iOS]
+      UI2 -->|Application Hybride| MC4 & MC5
     end
     subgraph Bureau
-        UI1(Interface)
-        MC1[Linux]
-        MC2[Windows]
-        MC3[OSX]
-        UI1 -->|Application Web| MC1 & MC2 & MC3
+      UI1(Interface)
+      MC1[Linux]
+      MC2[Windows]
+      MC3[OSX]
+      UI1 -->|Application Web| MC1 & MC2 & MC3
     end
 </div>
 

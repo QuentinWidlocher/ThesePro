@@ -11,6 +11,7 @@ layout: post
       1. [Hypothèse 1 - **Critère 1.2** : Les limitations des technologies](#hypothèse-1---critère-12--les-limitations-des-technologies)
    1. [Hypothèse 1 - **Critères 2** : Après le développement](#hypothèse-1---critères-2--après-le-développement)
       1. [Hypothèse 1 - **Critères 2.1** : Le déploiement](#hypothèse-1---critères-21--le-déploiement)
+         1. [Pour des "particuliers"](#pour-des-particuliers)
       1. [Hypothèse 1 - **Critères 2.2** : La maintenance](#hypothèse-1---critères-22--la-maintenance)
       1. [Hypothèse 1 - **Critères 2.3** : La réutilisation](#hypothèse-1---critères-23--la-réutilisation)
    1. [Hypothèse 1 - **Critères 3** : Le résultat](#hypothèse-1---critères-3--le-résultat)
@@ -92,7 +93,7 @@ Pour tenter de le démontrer, nous allons réaliser une application dans chaque 
 
 - Linux : [Rust/C](https://github.com/gothinkster/rust-realworld-example-app)
 - Windows : [C#](https://github.com/gothinkster/aspnetcore-realworld-example-app)
-- Mac : [Swift](https://github.com/amadeu01/swift-vapor-conduit-example-app)
+- macOS : [Swift](https://github.com/amadeu01/swift-vapor-conduit-example-app)
 - Android : [Kotlin/Java](https://github.com/DrewCarlson/realworld-android-kotlin)
 - iOS : [Swift](https://github.com/littleStudent/swift-realworld-example)
 
@@ -102,17 +103,121 @@ Note : Les langages séparés par un slash représente à gauche le langage util
 
 #### Hypothèse 1 - **Critère 1.1** : Le temps de développement
 
-Pour ces cinq applications différentes dont le code ne peux être partagé (même entre Mac et iOS car les spécificité sont trop grande pour que la réutilisation du code puisse avoir un véritable impact) les temps de développement sont relativement ??? <!-- TODO: indiquer les comparaison -->
+Pour ces cinq applications différentes dont le code ne peux être partagé (même entre Mac et iOS qui partagent le même langage car les spécificité sont trop grande pour que la réutilisation du code puisse avoir un véritable impact) les temps de développement sont relativement ??? <!-- TODO: indiquer les comparaison -->
 
 #### Hypothèse 1 - **Critère 1.2** : Les limitations des technologies
+
+Ces cinq applications ont donc comme principe d'être chacune native et donc par définition d'avoir un accès à toutes les fonctionnalités offertes par le système d'exploitation cible, et cela sans charge supplémentaire de travail.\
+Certains systèmes d'exploitation ajoutent d'ailleurs à cela une couche de sécurité supplémentaire comme Android qui demande la permission à l'utilisateur avant d'accéder à des fonctionnalités natives.
+
+Parmi ces fonctionnalités, on retrouve fréquemment :
+
+- Le stockage de fichiers
+- L'accès à Internet
+- L'accès aux informations de l'appareil (Marque, numéro de téléphone, composants etc.)
+- L'accès aux périphériques de l'appareil (caméra, microphone, GPS etc.)
+
+Afin de juger des libertés d'accès de tous ces logiciels, nous leur donneront une note arbitraire qui s'étend de 0 (aucun accès aux fonctionnalités natives) à 5 (libre accès à toutes les fonctionnalités).
+
+| Système d'exploitation | Langage | Note sur 5 |
+| ---------------------- | ------- | ---------: |
+| Linux                  | Rust    | 5.0        |
+| Windows                | C#      | 5.0        |
+| macOS                  | Swift   | 5.0        |
+| Android                | Kotlin  | 4.0        |
+| iOS                    | Swift   | 4.0        |
+| **Moyenne**            |         | **4.6**    |
+
+Sans surprise, chaque application reçoit une note proche de maximale étant donné le degré de liberté offert par les applications natives.\
+Il est à noté que si Android et iOS ont tout deux des notes légèrement plus basse, c'est en raison de la requête faite à l'utilisateur d'accéder aux fonctionnalités. Quand bien même cette notion est très bénéfique d'un point de vue de la sécurité informatique, nous jugeons ici la degré de liberté d'accès exclusivement.
 
 ### Hypothèse 1 - **Critères 2** : Après le développement
 
 #### Hypothèse 1 - **Critères 2.1** : Le déploiement
 
+Nous allons réitérer la méthode de la notation afin de juger la facilité et la rapidité d'un déploiement sur ces différents systèmes d'exploitation.
+
+Pour cela nous allons juger en deux parties, à savoir le déploiement pour des "particuliers" et le déploiement pour le grand publique.\
+Par "particuliers" nous entendons ici par exemple des entreprises.
+
+##### Pour des "particuliers"
+
+| Système d'exploitation | Note sur 5 |
+| ---------------------- | ---------: |
+| Linux                  | 5.0        |
+| Windows                | 4.0        |
+| macOS                  | 5.0        |
+| Android                | 5.0        |
+| iOS                    | 2.0        |
+| **Moyenne**            | **4.2**    |
+
+Dans le cas de Linux, macOS, Windows Android, il est possible de créer des fichiers uniques qui servent de "containers" à l'application et qui, une fois exécutés, installent directement le logiciel.
+
+Linux offre une grande flexibilité ainsi que de nombreux outils pour faciliter le déploiement (*Ansible*, *Rudder* etc.). macOS et Android, tournant tous deux sous un noyau Linux, profitent d'une flexibilité similaire.
+
+Dans le cas de Windows, la présence d'un installeur obligatoire et les verrous mis sur les procédures d'installation peuvent parfois rendre la tâche légèrement plus compliquée.
+
+Enfin, sur iOS, afin de déployer une application, il est impératif de passer par un *store* (Marchés d'applications) même privé afin de rendre disponible le résultat. Chaque applicatif passant sur le store sera aussi testé par des employés d'Apple, ajoutant une charge temporelle supplémentaire.
+
 #### Hypothèse 1 - **Critères 2.2** : La maintenance
 
+La maintenance peut être perçu comme un second déploiement. Nous devons juger de la vitesse et la facilité de l'intervention en cas de mise à jour.
+
+| Système d'exploitation | Note sur 5 |
+| ---------------------- | ---------: |
+| Linux                  | 4.5        |
+| Windows                | 4.5        |
+| macOS                  | 4.5        |
+| Android                | 5.0        |
+| iOS                    | 5.0        |
+| **Moyenne**            | **4.7**    |
+
+Chaque système d'exploitation est très réceptif quand à la mise à jour des applications natives. Android et iOS proposent des systèmes intégrés dans leurs *stores* là ou les mises à jours sur les systèmes d'exploitation bureau doivent êtres implémentés manuellement.
+
 #### Hypothèse 1 - **Critères 2.3** : La réutilisation
+
+Voyons maintenant à quel point le code source utilisé dans ce projet pourrait-être utilisé à nouveau dans un autre projet.\
+Voici un apercu de la manière dont le code pourrait être réutilisé :
+
+<div class="mermaid">
+graph LR
+   subgraph Projet Actuel
+      L1[Linux]
+      W1[Windows]
+      M1[macOS]
+      A1[Android]
+      I1[iOS]
+   end
+   subgraph Prochain Projet
+      L2[Linux]
+      W2[Windows]
+      M2[macOS]
+      I2[iOS]
+      A2[Android]
+   end
+   L1 -- Rust --> L2
+   W1 -- C# --> W2
+   M1 -- Swift Bureau --> M2
+   M1 -. Swift Bureau .-> I2
+   A1 -- Kotlin --> A2
+   I1 -- Swift Mobile --> I2
+   I1 -. Swift Mobile .-> M2
+</div>
+
+Comme exprimé précédemment, même si les applications macOS et iOS sont développée dans les mêmes langages, tout le code ne peux pas être transposé de l'un à l'autre, seul quelques fonctionnalités très communes et qui ne touchent pas à l'affichage des données le peuvent.
+
+Nous pouvons voir dans ce cas que si l'on quantifie les liens qu'il est possible de faire entre les applications (une flèche vaut 1 point, et 0.5 point pour les flèches partielles), nous obtenons ce tableau :
+
+| Système d'exploitation | Langage | Partageable sur X projets |
+| ---------------------- | ------- | ------------------------: |
+| Linux                  | Rust    | 1.0                       |
+| Windows                | C#      | 1.0                       |
+| macOS                  | Swift   | 1.5                       |
+| Android                | Kotlin  | 1.0                       |
+| iOS                    | Swift   | 1.5                       |
+| **Moyenne**            |         | **1.2**                   |
+
+Attention, dans ce cas précis, les valeurs ne sont pas des notes sur 5 mais bien des ratios que nous pourront comparer plus tard. Actuellement, la moyenne de **1.2** représente un taux de partage de code assez faible puisque le code d'un logiciel n'est réutilisable que pour un logiciel d'un langage identique.
 
 ### Hypothèse 1 - **Critères 3** : Le résultat
 
