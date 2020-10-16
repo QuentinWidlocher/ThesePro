@@ -91,19 +91,21 @@ Cette hypothèse consiste à penser que développer une application native pour 
 
 Pour tenter de le démontrer, nous allons réaliser une application dans chaque langages natifs de nos cibles, à savoir :
 
-- Linux : [Rust/C](https://github.com/gothinkster/rust-realworld-example-app)
-- Windows : [C#](https://github.com/gothinkster/aspnetcore-realworld-example-app)
-- macOS : [Swift](https://github.com/amadeu01/swift-vapor-conduit-example-app)
-- Android : [Kotlin/Java](https://github.com/DrewCarlson/realworld-android-kotlin)
-- iOS : [Swift](https://github.com/littleStudent/swift-realworld-example)
+- Linux : [*Rust/C*](https://github.com/gothinkster/rust-realworld-example-app)
+- Windows : [*C#*](https://github.com/gothinkster/aspnetcore-realworld-example-app)
+- macOS : [*Swift*](https://github.com/amadeu01/swift-vapor-conduit-example-app)
+- Android : [*Kotlin/Java*](https://github.com/DrewCarlson/realworld-android-kotlin)
+- iOS : [*Swift*](https://github.com/littleStudent/swift-realworld-example)
 
-Note : Les langages séparés par un slash représente à gauche le langage utilisé pour le *proof of concept* et à droite le langage équivalent ou transpilé. <!-- TODO: définir transpiler -->
+Note : Les langages séparés par une barre oblique représentent à gauche le langage utilisé pour le *proof of concept* et à droite le langage équivalent ou transpilé. <!-- TODO: définir transpiler -->
 
 ### Hypothèse 1 - **Critères 1** : Pendant le développement
 
 #### Hypothèse 1 - **Critère 1.1** : Le temps de développement
 
 Pour ces cinq applications différentes dont le code ne peux être partagé (même entre Mac et iOS qui partagent le même langage car les spécificité sont trop grande pour que la réutilisation du code puisse avoir un véritable impact) les temps de développement sont relativement ??? <!-- TODO: indiquer les comparaison -->
+
+<!-- TODO: estimer les temps pour l'hypothèse1 -->
 
 #### Hypothèse 1 - **Critère 1.2** : Les limitations des technologies
 
@@ -221,6 +223,8 @@ Attention, dans ce cas précis, les valeurs ne sont pas des notes sur 5 mais bie
 
 ### Hypothèse 1 - **Critères 3** : Le résultat
 
+<!-- TODO: mesurer -->
+
 #### Hypothèse 1 - **Critères 3.1** : Utilisation du processeur et de la mémoire
 
 #### Hypothèse 1 - **Critères 3.2** : Temps de réponse moyen
@@ -229,7 +233,21 @@ Attention, dans ce cas précis, les valeurs ne sont pas des notes sur 5 mais bie
 
 ### Hypothèse 1 - Synthèse des critères
 
+- Critères 1 (Avant le développement)
+  - Critère 1.1 (Temps de développement) : ??h
+  - Critère 1.2 (Limitations) : 4.6 pts
+- Critères 2 (Après le développement)
+  - Critère 2.1 (Déploiement) : 4.2 pts
+  - Critère 2.2 (Maintenance) : 4.7 pts
+  - Critère 2.3 (Réutilisation) : 1.2:5
+- Critères 3 (Résultat)
+  - Critère 3.1 (*Benchmark*) : ??
+  - Critère 3.2 (Temps de réponse) : ??ms
+  - Critère 3.3 (Poids total) : ??Mb
+
 ### Hypothèse 1 - Conclusion
+
+<!-- TODO: conclusion hypothèse 1 -->
 
 ## Hypothèse 2
 <!-- TODO: Hypothèse 2 -->
