@@ -31,11 +31,11 @@ Ensuite on peux donner le seuil de chaque critère :
 
 Si l'on raccourci les écritures en :
 
-↑ = S'améliore en augmentant
-↓ = S'améliore en diminuant
-seuil de X = /X
-seuil estimé de X = *X
-cXY = Critère X.Y
+- ↑ = S'améliore en augmentant
+- ↓ = S'améliore en diminuant
+- seuil de X = /X
+- seuil estimé de X = *X
+- cXY = Critère X.Y
 
 Et qu'on se passe d'unité on a :
 
@@ -50,7 +50,8 @@ Et qu'on se passe d'unité on a :
 
 Maintenant créons trois scénarios différents de h1 (hypothèse 1) à h3 :
 
-h1 {
+```js
+h1 = {
   c11: 1000,
   c12: 4.6,
   c21: 4.2,
@@ -82,24 +83,25 @@ h3 = {
   c32: 200,
   c33: 7
 }
+```
 
 Ces scénarios sont exprimé sous la forme d'un objet JS parce que j'utilise Node pour mes calculs.
 
 Ces scénarios ont été créé en sachant que certains était meilleurs que d'autre de tel façon que :
 
-h2 < h1 < h3
+`h2 < h1 < h3`
 
 Si on fait la somme proportionnelle à leurs seuils de toutes les critères qui s'améliore en augmentant :
 
-↑ = ((c21/5 + c22/5 + c23/100)/3)
+`↑ = ((c21/5 + c22/5 + c23/100)/3)`
 
 Et que l'on fait pareil avec les critères qui s'améliore en diminuant :
 
-↓ = (c11/500 + c31/100 + c32/1000 + c33/50)
+`↓ = (c11/500 + c31/100 + c32/1000 + c33/50)`
 
 On peux imaginer pourvoir faire un ratio à l'aide de ↑/↓ :
 
-((c21/5 + c22/5 + c23/100)/3)/(c11/500 + c31/100 + c32/1000 + c33/50)
+`((c21/5 + c22/5 + c23/100)/3)/(c11/500 + c31/100 + c32/1000 + c33/50)`
 
 Quand on réalise ce calcul sur les scénarios on obtiens :
 
@@ -125,6 +127,7 @@ Maintenant comment être sûr que ce raisonnement tiens la route et n'est pas un
 
 Prenons le pire scénario possible h4 et le meilleur scénario h5 :
 
+```js
 h4 = {
   c11: 500,
   c12: 0,
@@ -146,6 +149,7 @@ h5 = {
   c32: 0,
   c33: 0
 }
+```
 
 Bien évidement ces valeurs sont délirantes mais c'est pour exprimer le ratio.
 Appliquons la formule à ces deux scénarios pour s'assurer que :
@@ -159,6 +163,5 @@ On obtiens :
 
 Bien sûr, ces valeurs n'indiquent pas grand chose cependant on peux vérifier que :
 
-h4 < h1 < h2 < h3 < h5
+h4 < h1 < h2 < h3 < h5\
 0 < 19,18 < 32,29 < 48,18 < Infinity
-
