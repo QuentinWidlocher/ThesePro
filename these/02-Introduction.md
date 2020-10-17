@@ -28,6 +28,7 @@ layout: post
          1. [**Critères 3.1** : Utilisation du processeur et de la mémoire](#critères-31--utilisation-du-processeur-et-de-la-mémoire)
          1. [**Critères 3.2** : Temps de réponse moyen](#critères-32--temps-de-réponse-moyen)
          1. [**Critère 3.3** : Le poids de l'exécutable](#critère-33--le-poids-de-lexécutable)
+      1. [Comparaisons des critères entres eux](#comparaisons-des-critères-entres-eux)
    1. [RealWorld](#realworld)
       1. [Conduit](#conduit)
          1. [Les fonctionnalités](#les-fonctionnalités)
@@ -118,30 +119,7 @@ graph TD
 
 ### Deuxième hypothèse
 
-> Un seul code source natif pour tous les appareils cibles communs.
-
-Bien entendu, s'il est possible d'avoir un seul code source qui puisse produire une application native pour chaque appareil cible, qu'il soit bureau ou mobile, et indépendamment de son système d'exploitation, cette solution devrait être la plus performante.\
-Les applications natives permettent de jouir au mieux des capacités de l'appareil tout en donnant accès au développeurs (et par là même aux  utilisateurs) à toutes les fonctionnalités de celui-ci, sans trop de freins. Une application multiplateforme native représente un gain de temps de développement considérable, et présente des avantages techniques indéniables.
-
-<div class="mermaid">
-graph TD
-    CS1((Code))
-    UI1(Interface Bureau)
-    UI2(Interface Mobile)
-    MC1[Linux]
-    MC2[Windows]
-    MC3[OSX]
-    MC4[Android]
-    MC5[iOS]
-    CS1 --> UI1 -->|Application Native| MC1 & MC2 & MC3
-    CS1 --> UI2 -->|Application Native| MC4 & MC5
-</div>
-
-> Schéma d'un exemple de cette hypothèse
-
-### Troisième hypothèse
-
-> Séparer les cibles en deux grands groupes, à savoir "Logiciels Bureaux" et "Applications Mobiles" et faire deux applications différentes pour ces groupes.
+> Séparer les cibles en deux grands groupes, à savoir "Logiciels Bureaux" et "Applications Mobiles" et faire deux applications natives différentes pour ces groupes.
 
 En limitant les applications, le temps de développement se retrouve lui aussi réduit. Si nous nous concentrons sur deux groupes de cibles il n'y a alors que deux codes sources à créer et à maintenir. Leurs deux langages de programmation étant très probablement différents, les fonctionnalités seront donc écrites deux fois mais on peux facilement imaginer que c'est un coût supplémentaire éclipsé par les performances des applications ainsi que leurs possibilités.
 
@@ -166,7 +144,7 @@ graph TD
 
 > Schéma d'un exemple de cette hypothèse
 
-### Quatrième hypothèse
+### Troisième hypothèse
 
 > Une seule application web et une interface *responsive* pour tout les appareils cibles.
 
@@ -185,7 +163,7 @@ graph TD
     CS1 --> UI1 -->|Application Web| MC1 & MC2 & MC3 & MC4 & MC5
 </div>
 
-### Cinquième hypothèse
+### Quatrième hypothèse
 
 > Une application web pour les cibles bureau et une application hybride pour les cibles mobiles
 
@@ -209,6 +187,21 @@ graph TD
       UI1 -->|Application Web| MC1 & MC2 & MC3
     end
 </div>
+
+### Cinquième hypothèse
+
+> Une application web pour les cibles bureau et une application native dans le même langage pour le cibles mobiles
+
+Cette hypothèse possède une grande similitude avec l'hypothèse précédente, à la différence près que l'application mobile est native.\
+En effet il existe de plus en plus d'outils permettant au développeurs d'applicatifs web de contraindre certaines de leurs possibilités pour permettre la création d'un logiciel natif à l'aide d'un code source pour logiciels web.
+
+Parmi ces outils on retrouve trois très populaires qui utilisent les trois frameworks <!-- TODO: parler des trois grand frameworks --> les plus connus à savoir :
+
+- *React Native* pour React
+- *Ionic* pour React, Angular et Vue
+- *NativeScript* pour Angular et Vue
+
+Ces outils permettent de partager du code depuis d'autres projets JavaScript et ne requièrent la modification que de la partie interface utilisateur. Dans le cas où les développeurs font le choix de commencer avec l'un de ces outils, ils peuvent réutiliser 100% du code pour faire une application web sur bureau et native sur mobile.
 
 ## Démarche proposée
 
@@ -298,6 +291,15 @@ Il est aussi intéressant de calculer le *First Contentful Paint* ou premier aff
 
 Le dernier critère, le plus aisé à mesurer, est le poids final de l'application.\
 A l'inverse du code source, dont la taille n'a finalement que peu d'importance, le poids du logiciel qui devra loger sur la machine d'un utilisateur lui est plus capital. Encore une fois c'est les smartphones et autres appareils mobile qui sont les plus concernés en raison de leurs espaces de stockage relativement restreintes en comparaison avec les appareils fixes.
+
+#### Comparaisons des critères entres eux
+
+Ces critères se basent sur des notations différentes : notes, temps, pourcentages, mesures etc.\
+Afin de réduire ces notations à un pied d'égalité et de pouvoir comparer chaque hypothèses entres elles par la somme de ses résultats, nous appliquerons une formule mathématique qui dégagera au final pour chaque hypothèse un nombre de point.
+
+Ces points auront pour intérêt de comparer les hypothèses entres elles mais il faut garder à l'esprit que cette méthode permet d'avoir un bon aperçu mais n'est en aucun cas un moyen de juger la finalité des hypothèses. Chacune auront des forces et des faiblesses.
+
+<!-- TODO: Parler de la formule ou pas -->
 
 ### RealWorld
 

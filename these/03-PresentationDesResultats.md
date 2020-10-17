@@ -92,12 +92,12 @@ Cette hypothèse consiste à penser que développer une application native pour 
 Pour tenter de le démontrer, nous allons réaliser une application dans chaque langages natifs de nos cibles, à savoir :
 
 - Linux : [*Rust/C*](https://github.com/gothinkster/rust-realworld-example-app)
-- Windows : [*C#*](https://github.com/gothinkster/aspnetcore-realworld-example-app)
-- macOS : [*Swift*](https://github.com/amadeu01/swift-vapor-conduit-example-app)
+- Windows : [*C#* avec .NET](https://github.com/gothinkster/aspnetcore-realworld-example-app)
+- macOS : [*Swift* avec Vapor](https://github.com/amadeu01/swift-vapor-conduit-example-app)
 - Android : [*Kotlin/Java*](https://github.com/DrewCarlson/realworld-android-kotlin)
 - iOS : [*Swift*](https://github.com/littleStudent/swift-realworld-example)
 
-Note : Les langages séparés par une barre oblique représentent à gauche le langage utilisé pour le *proof of concept* et à droite le langage équivalent ou transpilé. <!-- TODO: définir transpiler -->
+Note : Les langages séparés par une barre oblique représentent à gauche le langage utilisé pour le *proof of concept* et à droite le langage équivalent ou transpilé<!-- TODO: définir transpiler -->. Quand un langage est suivit de "avec X", on désigne le *framework*<!-- TODO: définir framework --> utilisé.
 
 ### Hypothèse 1 - **Critères 1** : Pendant le développement
 
@@ -252,17 +252,34 @@ Attention, dans ce cas précis, les valeurs ne sont pas des notes sur 5 mais bie
 ## Hypothèse 2
 <!-- TODO: Hypothèse 2 -->
 
-> Un seul code source natif pour tous les appareils cibles communs.
+> Séparer les cibles en deux grands groupes, à savoir "Logiciels Bureaux" et "Applications Mobiles" et faire deux applications natives différentes pour ces groupes.
 
 ### Hypothèse 2 - Présentation du *proof of concept*
 
-<!-- Pas de code source disponible : WinDev et/ou Xojo -->
+Cette hypothèse reprend en partie le principe de l'hypothèse précédente qui décrivait les applications natives comme étants les alternatives les plus puissantes disponibles. Cependant, pour palier le nombre conséquent d'applications à développer, ce nombre est réduit au plus faible possible en cherchant des technologies capables de créer des logiciels pour les interfaces bureau et d'autres pour les interfaces mobiles.
+
+Conserver les avantages des applications native en limitant grandement le nombre de logiciels semble être une approche prometteuse et pour le démontrer nous réaliserons une application pour chaque groupe d'appareils cibles :
+
+- Logiciels bureau (Linux, Windows, Mac) : [**Kotlin/Java** avec Spring](https://github.com/gothinkster/kotlin-spring-realworld-example-app)
+- Logiciels mobile (Android, iOS): [**Dart** avec Flutter](https://github.com/UkonnRa/flutter_realworld_app)
 
 ### Hypothèse 2 - **Critères 1** : Pendant le développement
 
 #### Hypothèse 2 - **Critère 1.1** : Le temps de développement
 
+Pour ces eux applications voici les temps de développement :
+
+<!-- TODO: mesurer -->
+
 #### Hypothèse 2 - **Critère 1.2** : Les limitations des technologies
+
+Comme pour l'hypothèse précédente, nous allons juger les deux applications sur la libertés qu'elles offrent aux développeurs d'accéder aux fonctionnalités du système d'exploitation cible.
+
+| Groupe de cibles | Langage | Note sur 5 |
+| ---------------- | ------- | ---------: |
+| Logiciel Bureau  | Kotlin  | 5.0        |
+| Logiciel Mobile  | Dart    | 4.5        |
+| **Moyenne**      |         | **4.8**    |
 
 ### Hypothèse 2 - **Critères 2** : Après le développement
 
@@ -287,12 +304,11 @@ Attention, dans ce cas précis, les valeurs ne sont pas des notes sur 5 mais bie
 ## Hypothèse 3
 <!-- TODO: Hypothèse 3 -->
 
-> Séparer les cibles en deux grands groupes, à savoir "Logiciels Bureaux" et "Applications Mobiles" et faire deux applications différentes pour ces groupes.
+> Une seule application web et une interface *responsive* pour tout les appareils cibles.
+
+[Angular](https://github.com/gothinkster/angular-realworld-example-app)
 
 ### Hypothèse 3 - Présentation du *proof of concept*
-
-- Logiciels bureau (Linux, Windows, Mac) : [Kotlin/Java](https://github.com/gothinkster/kotlin-spring-realworld-example-app)
-- Logiciels mobile (Android, iOS): [Flutter](https://github.com/UkonnRa/flutter_realworld_app)
 
 ### Hypothèse 3 - **Critères 1** : Pendant le développement
 
@@ -323,11 +339,9 @@ Attention, dans ce cas précis, les valeurs ne sont pas des notes sur 5 mais bie
 ## Hypothèse 4
 <!-- TODO: Hypothèse 4 -->
 
-> Une seule application web et une interface *responsive* pour tout les appareils cibles.
+> Une application web pour les cibles bureau et une application hybride pour les cibles mobiles
 
 ### Hypothèse 4 - Présentation du *proof of concept*
-
-[Angular](https://github.com/gothinkster/angular-realworld-example-app)
 
 ### Hypothèse 4 - **Critères 1** : Pendant le développement
 
@@ -357,8 +371,6 @@ Attention, dans ce cas précis, les valeurs ne sont pas des notes sur 5 mais bie
 
 ## Hypothèse 5
 <!-- TODO: Hypothèse 5 -->
-
-> Une application web pour les cibles bureau et une application hybride pour les cibles mobiles
 
 ### Hypothèse 5 - Présentation du *proof of concept*
 

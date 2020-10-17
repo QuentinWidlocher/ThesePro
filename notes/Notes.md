@@ -113,6 +113,7 @@ Web : Pratique
 - <https://stackoverflow.com/questions/2098492/why-are-web-apps-prevalent-for-internal-corporate-apps>
 - <https://www.trustradius.com/erp>
 - <https://xpda.net/>
+- <https://github.com/edvin/tornadofx>
 
 ## Stats nécessaires
 
