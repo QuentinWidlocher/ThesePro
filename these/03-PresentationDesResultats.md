@@ -11,7 +11,6 @@ layout: post
       1. [Hypothèse 1 - **Critère 1.2** : Les limitations des technologies](#hypothèse-1---critère-12--les-limitations-des-technologies)
    1. [Hypothèse 1 - **Critères 2** : Après le développement](#hypothèse-1---critères-2--après-le-développement)
       1. [Hypothèse 1 - **Critères 2.1** : Le déploiement](#hypothèse-1---critères-21--le-déploiement)
-         1. [Pour des "particuliers"](#pour-des-particuliers)
       1. [Hypothèse 1 - **Critères 2.2** : La maintenance](#hypothèse-1---critères-22--la-maintenance)
       1. [Hypothèse 1 - **Critères 2.3** : La réutilisation](#hypothèse-1---critères-23--la-réutilisation)
    1. [Hypothèse 1 - **Critères 3** : Le résultat](#hypothèse-1---critères-3--le-résultat)
@@ -126,9 +125,9 @@ Afin de juger des libertés d'accès de tous ces logiciels, nous leur donneront 
 | Linux                  | Rust    | 5.0        |
 | Windows                | C#      | 5.0        |
 | macOS                  | Swift   | 5.0        |
-| Android                | Kotlin  | 4.0        |
-| iOS                    | Swift   | 4.0        |
-| **Moyenne**            |         | **4.6**    |
+| Android                | Kotlin  | 4.5        |
+| iOS                    | Swift   | 4.5        |
+| **Moyenne**            |         | **4.8**    |
 
 Sans surprise, chaque application reçoit une note proche de maximale étant donné le degré de liberté offert par les applications natives.\
 Il est à noté que si Android et iOS ont tout deux des notes légèrement plus basse, c'est en raison de la requête faite à l'utilisateur d'accéder aux fonctionnalités. Quand bien même cette notion est très bénéfique d'un point de vue de la sécurité informatique, nous jugeons ici la degré de liberté d'accès exclusivement.
@@ -138,11 +137,6 @@ Il est à noté que si Android et iOS ont tout deux des notes légèrement plus 
 #### Hypothèse 1 - **Critères 2.1** : Le déploiement
 
 Nous allons réitérer la méthode de la notation afin de juger la facilité et la rapidité d'un déploiement sur ces différents systèmes d'exploitation.
-
-Pour cela nous allons juger en deux parties, à savoir le déploiement pour des "particuliers" et le déploiement pour le grand publique.\
-Par "particuliers" nous entendons ici par exemple des entreprises.
-
-##### Pour des "particuliers"
 
 | Système d'exploitation | Note sur 5 |
 | ---------------------- | ---------: |
@@ -197,13 +191,18 @@ graph LR
       I2[iOS]
       A2[Android]
    end
-   L1 -- Rust --> L2
-   W1 -- C# --> W2
-   M1 -- Swift Bureau --> M2
-   M1 -. Swift Bureau .-> I2
-   A1 -- Kotlin --> A2
-   I1 -- Swift Mobile --> I2
-   I1 -. Swift Mobile .-> M2
+   Rust((Rust))
+   C#((C#))
+   SwiftB((Swift Bureau))
+   SwiftM((Swift Mobile))
+   Kotlin((Kotlin))
+   L1 --- Rust --> L2
+   W1 --- C# --> W2
+   M1 --- SwiftB --> M2
+   M1 -.- SwiftB .-> I2
+   A1 --- Kotlin --> A2
+   I1 --- SwiftM --> I2
+   I1 -.- SwiftM .-> M2
 </div>
 
 Comme exprimé précédemment, même si les applications macOS et iOS sont développée dans les mêmes langages, tout le code ne peux pas être transposé de l'un à l'autre, seul quelques fonctionnalités très communes et qui ne touchent pas à l'affichage des données le peuvent.
@@ -221,6 +220,8 @@ Nous pouvons voir dans ce cas que si l'on quantifie les liens qu'il est possible
 
 Attention, dans ce cas précis, les valeurs ne sont pas des notes sur 5 mais bien des ratios que nous pourront comparer plus tard. Actuellement, la moyenne de **1.2** représente un taux de partage de code assez faible puisque le code d'un logiciel n'est réutilisable que pour un logiciel d'un langage identique.
 
+Afin de donner un pourcentage de réutilisation du code, nous pouvons diviser la moyenne obtenue par le nombre de projets. Ce faisant nous obtenons un indice de **24%** de code réutilisable.
+
 ### Hypothèse 1 - **Critères 3** : Le résultat
 
 <!-- TODO: mesurer -->
@@ -235,11 +236,11 @@ Attention, dans ce cas précis, les valeurs ne sont pas des notes sur 5 mais bie
 
 - Critères 1 (Avant le développement)
   - Critère 1.1 (Temps de développement) : ??h
-  - Critère 1.2 (Limitations) : 4.6 pts
+  - Critère 1.2 (Limitations) : 4.8 pts
 - Critères 2 (Après le développement)
   - Critère 2.1 (Déploiement) : 4.2 pts
   - Critère 2.2 (Maintenance) : 4.7 pts
-  - Critère 2.3 (Réutilisation) : 1.2:5
+  - Critère 2.3 (Réutilisation) : 24%
 - Critères 3 (Résultat)
   - Critère 3.1 (*Benchmark*) : ??
   - Critère 3.2 (Temps de réponse) : ??ms
@@ -267,13 +268,13 @@ Conserver les avantages des applications native en limitant grandement le nombre
 
 #### Hypothèse 2 - **Critère 1.1** : Le temps de développement
 
-Pour ces eux applications voici les temps de développement :
+Pour ces deux applications voici les temps de développement :
 
 <!-- TODO: mesurer -->
 
 #### Hypothèse 2 - **Critère 1.2** : Les limitations des technologies
 
-Comme pour l'hypothèse précédente, nous allons juger les deux applications sur la libertés qu'elles offrent aux développeurs d'accéder aux fonctionnalités du système d'exploitation cible.
+Comme pour l'hypothèse précédente, nous allons juger les deux applications sur la liberté qu'elles offrent aux développeurs d'accéder aux fonctionnalités du système d'exploitation cible.
 
 | Groupe de cibles | Langage | Note sur 5 |
 | ---------------- | ------- | ---------: |
@@ -281,13 +282,90 @@ Comme pour l'hypothèse précédente, nous allons juger les deux applications su
 | Logiciel Mobile  | Dart    | 4.5        |
 | **Moyenne**      |         | **4.8**    |
 
+Comme nous pouvons le constater, de la même manière que l'hypothèse précédente, les applications natives n'ont que très peu de limitations quand aux fonctionnalités auxquelles elles ont accès.\
+Seul l'application mobile possède un léger inconvénient encore une fois, celui  de devoir demander la permission à l'utilisateur pour accéder à certains mécanismes.
+
 ### Hypothèse 2 - **Critères 2** : Après le développement
 
 #### Hypothèse 2 - **Critères 2.1** : Le déploiement
 
+Du point de vue de la facilité de déploiement, on peux encore une fois s'attendre à des résultats similaires. Ici nous noteront chaque système d'exploitation à part car, contrairement au langage de développement qui est le même pour chaque cibles d'un groupe, le déploiement doit se faire indépendamment.
+
+| Système d'exploitation | Note sur 5 |
+| ---------------------- | ---------: |
+| Linux                  | 4.5        |
+| Windows                | 4.5        |
+| macOS                  | 4.5        |
+| Android                | 5.0        |
+| iOS                    | 2.0        |
+| **Moyenne**            | **4.1**    |
+
+Ici pour les cibles mobiles, le résultat est le même que pour l'hypothèse précédente car la méthode de déploiement est exactement la même.\
+Pour les cibles bureau, la seule contrainte notable est la présence obligatoire de Java sur les machines. Java est un logiciel qui est déjà présent sur un grand nombre d'appareils d'utilisateurs et dans le cas échéant, l'installation de celui ci est à la fois simple et rapide.
+
 #### Hypothèse 2 - **Critères 2.2** : La maintenance
 
+La maintenance de ces deux applications est encore une fois similaire à ce qui a été mesuré précédemment.
+
+| Système d'exploitation | Note sur 5 |
+| ---------------------- | ---------: |
+| Linux                  | 4.5        |
+| Windows                | 4.5        |
+| macOS                  | 4.5        |
+| Android                | 5.0        |
+| iOS                    | 5.0        |
+| **Moyenne**            | **4.7**    |
+
+Ici, c'est encore les cibles mobiles qui ont l'ascendant sur les cibles fixe en raison de la présence d'un *store* capable de mettre automatiquement les applications à jour sur la machine des utilisateurs.
+
 #### Hypothèse 2 - **Critères 2.3** : La réutilisation
+
+Observons maintenant la capacité du code source à être réutilisé pour un projet aux technologies similaires.
+
+<div class="mermaid">
+graph LR
+   subgraph Projet Actuel
+      subgraph LB1[Logiciel Bureau]
+         L1[Linux]
+         W1[Windows]
+         M1[macOS]
+      end
+      subgraph LM1[Logiciel Mobile]
+         A1[Android]
+         I1[iOS]
+      end
+   end
+   subgraph Projet Actuel
+      subgraph LB2[Logiciel Bureau]
+         L2[Linux]
+         W2[Windows]
+         M2[macOS]
+      end
+      subgraph LM2[Logiciel Mobile]
+         A2[Android]
+         I2[iOS]
+      end
+   end
+   Kotlin((Kotlin))
+   Dart((Dart))
+   L1 & W1 & M1 --- Kotlin --> L2 & W2 & M2
+   A1 & I1 --- Dart --> A2 & I2
+</div>
+
+Nous allons maintenant estimer pour chaque cible, le nombre de projet où son code source pourra être réutilisé (combien de flèches partent d'une cible à gauche pour arriver à droite)
+
+| Système d'exploitation | Langage | Partageable sur X projets |
+| ---------------------- | ------- | ------------------------: |
+| Linux                  | Kotlin  | 3.0                       |
+| Windows                | Kotlin  | 3.0                       |
+| macOS                  | Kotlin  | 3.0                       |
+| Android                | Dart    | 2.0                       |
+| iOS                    | Dart    | 2.0                       |
+| **Moyenne**            |         | **2.6**                   |
+
+Le ratio obtenu au final montre que le code peut-être partagé en moyenne sur plus de la moitié des projets. Rappelons que le moins bon ratio possible est lorsqu'un projet ne peut-être partagé uniquement vers un projet du même type, donnant ainsi une moyenne de 1 projet. Là ou le meilleur ratio possible serait une solution où chacun des cinq projet peut-être partagé avec les cinq autres, la moyenne serait donc 5.
+
+En divisant ce ratio par la quantité totale des projets nous obtenu un indice de partage de code de **52%** soit plus du double de l'hypothèse précédente.
 
 ### Hypothèse 2 - **Critères 3** : Le résultat
 
@@ -298,6 +376,18 @@ Comme pour l'hypothèse précédente, nous allons juger les deux applications su
 #### Hypothèse 2 - **Critère 3.3** : Le poids de l'exécutable
 
 ### Hypothèse 2 - Synthèse des critères
+
+- Critères 1 (Avant le développement)
+  - Critère 1.1 (Temps de développement) : ??h
+  - Critère 1.2 (Limitations) : 4.8 pts
+- Critères 2 (Après le développement)
+  - Critère 2.1 (Déploiement) : 4.1 pts
+  - Critère 2.2 (Maintenance) : 4.7 pts
+  - Critère 2.3 (Réutilisation) : 52%
+- Critères 3 (Résultat)
+  - Critère 3.1 (*Benchmark*) : ??
+  - Critère 3.2 (Temps de réponse) : ??ms
+  - Critère 3.3 (Poids total) : ??Mb
 
 ### Hypothèse 2 - Conclusion
 
