@@ -396,23 +396,58 @@ En divisant ce ratio par la quantité totale des projets nous obtenu un indice d
 
 > Une seule application web et une interface *responsive* pour tout les appareils cibles.
 
-[Angular](https://github.com/gothinkster/angular-realworld-example-app)
-
 ### Hypothèse 3 - Présentation du *proof of concept*
+
+Cette hypothèse part du principe qu'étant donné que toutes les cibles sont munies d'un navigateur internet, il est possible de faire tourner la même application web sur toutes celles ci avec un seul code source et une seule interface qui s'adapterais à l'écran quelque soit sa taille ou sa forme.
+
+Voici l'unique projet donc, qui sera réalisé pour ce *proof of concept* :
+
+[*Typescript/Javascript* avec Angular](https://github.com/gothinkster/angular-realworld-example-app)
 
 ### Hypothèse 3 - **Critères 1** : Pendant le développement
 
 #### Hypothèse 3 - **Critère 1.1** : Le temps de développement
 
+<!-- TODO: mesurer le temps -->
+
 #### Hypothèse 3 - **Critère 1.2** : Les limitations des technologies
+
+Pour notre première hypothèse utilisant une technologie du web, voyons quelles sont les limitations de celles ci.
+
+A l'inverse des applications native, les applications web ne possèdent pas un accès direct au fonctionnalités du système d'exploitation. Les seules choses qui leurs sont permises sont les capacités du navigateur dans lequel elles tournent (Accéder à la caméra, la localisation, au microphone par exemple).
+
+Impossible par exemple pour un applicatif web de stocker des fichiers à volonté sur le système de l'utilisateur, même avec sa permission (Et encore là, il faudrait que l'utilisateur accepte chaque stockage de fichier indépendamment).\
+Impossible aussi de fonctionner sans une connexion internet décente et régulière ou de exécuter en arrière plan.
+
+Les applications web sont donc très limitées dans ce qu'elle sont capable de faire même si elle possèdent tout de même les qualités requises pour en faire de véritable utilitaires (Affichage et traitement de données).
+
+Pour ce critère, nous évaluons sa note quinaire à **2.5**.
 
 ### Hypothèse 3 - **Critères 2** : Après le développement
 
 #### Hypothèse 3 - **Critères 2.1** : Le déploiement
 
+Déployer une application web consiste à mettre son code "compilé" sur un serveur en ligne afin que les utilisateurs puissent le télécharger et l'exécuter directement dans leurs navigateurs internet en indiquant l'adresse url correcte.
+
+Sans action nécessaire de la part de l'utilisateur autre que de cliquer sur le bon lien, on estime le déploiement d'un applicatif web très simple et rapide.
+
+Il est bon à noter aussi que cette méthode de déploiement est la même pour toutes les technologies du web.
+
+Pour ce critère, nous évaluons sa note quinaire à **5.0**.
+
 #### Hypothèse 3 - **Critères 2.2** : La maintenance
 
+La maintenance d'une application web est à la fois simple et délicate.
+
+En effet, même si la maintenance consiste à mettre à jour les fichiers de l'application sur le serveur afin que les utilisateurs puissent récupérer la nouvelle version sans même le savoir, il existe quelques problématique inhérentes aux limitations techniques des technologies du web.
+
+Puisqu'il n'est pas possible de faire fonctionner un logiciel web sans connexion internet, il n'est pas possible de rendre le serveur indisponible le temps de la mise à jour sans mettre en place un système complexe d'équilibreur de charge (*load balancer*, exemple : NGINX).
+
+Pour ce critère, nous évaluons sa note quinaire à **3.0**.
+
 #### Hypothèse 3 - **Critères 2.3** : La réutilisation
+
+Du point de vue de la réutilisation du code, étant donné que ce projet se base sur une technologie unique par rapport aux précédentes hypothèse, nous pouvons d'ors et déjà fixer l'indice de réutilisation à **100%**.
 
 ### Hypothèse 3 - **Critères 3** : Le résultat
 
@@ -424,12 +459,24 @@ En divisant ce ratio par la quantité totale des projets nous obtenu un indice d
 
 ### Hypothèse 3 - Synthèse des critères
 
+- Critères 1 (Avant le développement)
+  - Critère 1.1 (Temps de développement) : ??h
+  - Critère 1.2 (Limitations) : 2.5 pts
+- Critères 2 (Après le développement)
+  - Critère 2.1 (Déploiement) : 5 pts
+  - Critère 2.2 (Maintenance) : 3 pts
+  - Critère 2.3 (Réutilisation) : 100%
+- Critères 3 (Résultat)
+  - Critère 3.1 (*Benchmark*) : ??
+  - Critère 3.2 (Temps de réponse) : ??ms
+  - Critère 3.3 (Poids total) : ??Mb
+
 ### Hypothèse 3 - Conclusion
 
 ## Hypothèse 4
 <!-- TODO: Hypothèse 4 -->
 
-> Une application web pour les cibles bureau et une application hybride pour les cibles mobiles
+> Une application web hybride pour les cibles bureau et une application hybride pour les cibles mobiles
 
 ### Hypothèse 4 - Présentation du *proof of concept*
 
