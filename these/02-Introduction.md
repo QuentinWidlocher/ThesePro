@@ -165,31 +165,6 @@ graph TD
 
 ### Quatrième hypothèse
 
-> Une application web pour les cibles bureau et une application hybride pour les cibles mobiles
-
-Grâce au langage de programmation commun (JavaScript), il est possible partager un maximum de code entre les deux applications tout en gardant les spécificités de l'affichage sur grand et petit écran. De plus l'application hybride permet d'accéder à plus de fonctionnalités du système d'exploitation et à mieux se fondre dans l'écosystème d'application de l'utilisateur.
-
-<div class="mermaid">
-graph TD
-    CS1((Code))
-    CS1 --> UI1 & UI2
-    subgraph Mobile
-      UI2(Interface)
-      MC4[Android]
-      MC5[iOS]
-      UI2 -->|Application Hybride| MC4 & MC5
-    end
-    subgraph Bureau
-      UI1(Interface)
-      MC1[Linux]
-      MC2[Windows]
-      MC3[OSX]
-      UI1 -->|Application Web| MC1 & MC2 & MC3
-    end
-</div>
-
-### Cinquième hypothèse
-
 > Une application web pour les cibles bureau et une application native dans le même langage pour le cibles mobiles
 
 Cette hypothèse possède une grande similitude avec l'hypothèse précédente, à la différence près que l'application mobile est native.\
@@ -201,7 +176,54 @@ Parmi ces outils on retrouve trois très populaires qui utilisent les trois fram
 - *Ionic* pour React, Angular et Vue
 - *NativeScript* pour Angular et Vue
 
-Ces outils permettent de partager du code depuis d'autres projets JavaScript et ne requièrent la modification que de la partie interface utilisateur. Dans le cas où les développeurs font le choix de commencer avec l'un de ces outils, ils peuvent réutiliser 100% du code pour faire une application web sur bureau et native sur mobile.
+Ces outils permettent de partager une grande quantité de code depuis d'autres projets JavaScript et ne requièrent la modification que de la partie interface utilisateur. Dans le cas où les développeurs font le choix de commencer avec l'un de ces outils, ils peuvent réutiliser 100% du code pour faire une application web sur bureau et native sur mobile.
+
+<div class="mermaid">
+graph TD
+    CSP(Code Partageable) <--> CS1 & CS2
+    subgraph Mobile
+      CS1((Code)) --- UI2(Interface)
+      MC4[Android]
+      MC5[iOS]
+      APP1[Application Native]
+      UI2 --- APP1  --> MC4 & MC5
+    end
+    subgraph Bureau
+      CS2((Code)) --- UI1(Interface)
+      MC1[Linux]
+      MC2[Windows]
+      MC3[OSX]
+      APP2[Application Web]
+      UI1 --- APP2 --> MC1 & MC2 & MC3
+    end
+</div>
+
+### Cinquième hypothèse
+
+> Une application hybride pour les cibles bureau et une application hybride pour les cibles mobiles
+
+Grâce au langage de programmation commun (JavaScript), il est possible partager un maximum de code entre les deux applications tout en gardant les spécificités de l'affichage sur grand et petit écran. De plus l'application hybride permet d'accéder à plus de fonctionnalités du système d'exploitation et à mieux se fondre dans l'écosystème d'application de l'utilisateur.
+
+<div class="mermaid">
+graph TD
+    CS1((Code))
+    CS1 --- UI1 & UI2
+    subgraph Mobile
+      UI2(Interface)
+      MC4[Android]
+      MC5[iOS]
+      APP1[Application Hybride]
+      UI2 --- APP1  --> MC4 & MC5
+    end
+    subgraph Bureau
+      UI1(Interface)
+      MC1[Linux]
+      MC2[Windows]
+      MC3[OSX]
+      APP2[Application Hybride]
+      UI1 --- APP2 --> MC1 & MC2 & MC3
+    end
+</div>
 
 ## Démarche proposée
 

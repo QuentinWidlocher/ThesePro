@@ -120,14 +120,14 @@ Parmi ces fonctionnalités, on retrouve fréquemment :
 
 Afin de juger des libertés d'accès de tous ces logiciels, nous leur donneront une note arbitraire qui s'étend de 0 (aucun accès aux fonctionnalités natives) à 5 (libre accès à toutes les fonctionnalités).
 
-| Système d'exploitation | Langage | Note sur 5 |
-| ---------------------- | ------- | ---------: |
-| Linux                  | Rust    | 5.0        |
-| Windows                | C#      | 5.0        |
-| macOS                  | Swift   | 5.0        |
-| Android                | Kotlin  | 4.5        |
-| iOS                    | Swift   | 4.5        |
-| **Moyenne**            |         | **4.8**    |
+| Système d'exploitation | Langage | Nature | Note sur 5 |
+| ---------------------- | ------- | ------ | ---------: |
+| Linux                  | Rust    | Natif  | 5.0        |
+| Windows                | C#      | Natif  | 5.0        |
+| macOS                  | Swift   | Natif  | 5.0        |
+| Android                | Kotlin  | Natif  | 4.5        |
+| iOS                    | Swift   | Natif  | 4.5        |
+| **Moyenne**            |         |        | **4.8**    |
 
 Sans surprise, chaque application reçoit une note proche de maximale étant donné le degré de liberté offert par les applications natives.\
 Il est à noté que si Android et iOS ont tout deux des notes légèrement plus basse, c'est en raison de la requête faite à l'utilisateur d'accéder aux fonctionnalités. Quand bien même cette notion est très bénéfique d'un point de vue de la sécurité informatique, nous jugeons ici la degré de liberté d'accès exclusivement.
@@ -165,10 +165,12 @@ La maintenance peut être perçu comme un second déploiement. Nous devons juger
 | Windows                | 4.5        |
 | macOS                  | 4.5        |
 | Android                | 5.0        |
-| iOS                    | 5.0        |
-| **Moyenne**            | **4.7**    |
+| iOS                    | 3.5        |
+| **Moyenne**            | **4.4**    |
 
 Chaque système d'exploitation est très réceptif quand à la mise à jour des applications natives. Android et iOS proposent des systèmes intégrés dans leurs *stores* là ou les mises à jours sur les systèmes d'exploitation bureau doivent êtres implémentés manuellement.
+
+Cependant, iOS souffre des même problématiques de phase de test, bridant de ce fait la réactivité d'un déploiement de correctif.
 
 #### Hypothèse 1 - **Critères 2.3** : La réutilisation
 
@@ -239,7 +241,7 @@ Afin de donner un pourcentage de réutilisation du code, nous pouvons diviser la
   - Critère 1.2 (Limitations) : 4.8 pts
 - Critères 2 (Après le développement)
   - Critère 2.1 (Déploiement) : 4.2 pts
-  - Critère 2.2 (Maintenance) : 4.7 pts
+  - Critère 2.2 (Maintenance) : 4.4 pts
   - Critère 2.3 (Réutilisation) : 24%
 - Critères 3 (Résultat)
   - Critère 3.1 (*Benchmark*) : ??
@@ -276,11 +278,11 @@ Pour ces deux applications voici les temps de développement :
 
 Comme pour l'hypothèse précédente, nous allons juger les deux applications sur la liberté qu'elles offrent aux développeurs d'accéder aux fonctionnalités du système d'exploitation cible.
 
-| Groupe de cibles | Langage | Note sur 5 |
-| ---------------- | ------- | ---------: |
-| Logiciel Bureau  | Kotlin  | 5.0        |
-| Logiciel Mobile  | Dart    | 4.5        |
-| **Moyenne**      |         | **4.8**    |
+| Groupe de cibles | Langage | Nature | Note sur 5 |
+| ---------------- | ------- | ------ | ---------: |
+| Logiciel Bureau  | Kotlin  | Natif  | 5.0        |
+| Logiciel Mobile  | Dart    | Natif  | 4.5        |
+| **Moyenne**      |         |        | **4.8**    |
 
 Comme nous pouvons le constater, de la même manière que l'hypothèse précédente, les applications natives n'ont que très peu de limitations quand aux fonctionnalités auxquelles elles ont accès.\
 Seul l'application mobile possède un léger inconvénient encore une fois, celui  de devoir demander la permission à l'utilisateur pour accéder à certains mécanismes.
@@ -313,8 +315,8 @@ La maintenance de ces deux applications est encore une fois similaire à ce qui 
 | Windows                | 4.5        |
 | macOS                  | 4.5        |
 | Android                | 5.0        |
-| iOS                    | 5.0        |
-| **Moyenne**            | **4.7**    |
+| iOS                    | 3.5        |
+| **Moyenne**            | **4.4**    |
 
 Ici, c'est encore les cibles mobiles qui ont l'ascendant sur les cibles fixe en raison de la présence d'un *store* capable de mettre automatiquement les applications à jour sur la machine des utilisateurs.
 
@@ -382,7 +384,7 @@ En divisant ce ratio par la quantité totale des projets nous obtenu un indice d
   - Critère 1.2 (Limitations) : 4.8 pts
 - Critères 2 (Après le développement)
   - Critère 2.1 (Déploiement) : 4.1 pts
-  - Critère 2.2 (Maintenance) : 4.7 pts
+  - Critère 2.2 (Maintenance) : 4.4 pts
   - Critère 2.3 (Réutilisation) : 52%
 - Critères 3 (Résultat)
   - Critère 3.1 (*Benchmark*) : ??
@@ -392,7 +394,6 @@ En divisant ce ratio par la quantité totale des projets nous obtenu un indice d
 ### Hypothèse 2 - Conclusion
 
 ## Hypothèse 3
-<!-- TODO: Hypothèse 3 -->
 
 > Une seule application web et une interface *responsive* pour tout les appareils cibles.
 
@@ -474,25 +475,119 @@ Du point de vue de la réutilisation du code, étant donné que ce projet se bas
 ### Hypothèse 3 - Conclusion
 
 ## Hypothèse 4
-<!-- TODO: Hypothèse 4 -->
 
-> Une application web hybride pour les cibles bureau et une application hybride pour les cibles mobiles
+> Une application web pour les cibles bureau et une application native dans le même langage pour le cibles mobiles
 
 ### Hypothèse 4 - Présentation du *proof of concept*
+
+Cette hypothèse s'aligne sur la vision de la deuxième en affirmant que deux applications différentes pour les deux types de cibles permet de limiter les temps de développement.\
+A l'inverse de cette dernière cependant, l'hypothèse 4 est basée sur un langage unique dont les blocs qui la compose peuvent être réemployé.
+
+Voici les deux projets qui composent cette hypothèse :
+
+- Logiciel Bureau (Linux, Windows, Mac) : [**Typescript/Javascript** avec Angular](https://github.com/gothinkster/angular-realworld-example-app)
+- Logiciel Mobile (Android, iOS): [**Typescript/Javascript** avec NativeScript et Angular](https://github.com/nea/nativescript-realworld-example-app)
+
+Ils se reposent tout deux sur le même langage (*Typescript*) et le même outil de conception (*Angular*). L'application mobile utilise en plus l'outil *NativeScript* qui permet de transformer un projet web utilisant *Angular* en application mobile native pour Android et iOS.
 
 ### Hypothèse 4 - **Critères 1** : Pendant le développement
 
 #### Hypothèse 4 - **Critère 1.1** : Le temps de développement
 
+<!-- TODO: mesurer -->
+
 #### Hypothèse 4 - **Critère 1.2** : Les limitations des technologies
+
+Dans le cas d'une application web et une autre native, nous pouvons nous attendre à des différences assez importantes après les observations que nous avons pu effectuer lors de l'analyse des hypothèses précédentes.
+
+| Groupe de cibles | Langage    | Nature | Note sur 5 |
+| ---------------- | ---------- | ------ | ---------: |
+| Logiciel Bureau  | Typescript | Web    | 2.5        |
+| Logiciel Mobile  | Typescript | Natif  | 4.5        |
+| **Moyenne**      |            |        | **3.5**    |
+
+En effet, tel que dans l'hypothèse précédente, les applications web n'ont que très peu de libertés quand aux fonctionnalités auxquelles elles ont accès là ou, tel que dans les hypothèses 1 et 2, ce n'est pas un problème que rencontre les logiciels natifs.
 
 ### Hypothèse 4 - **Critères 2** : Après le développement
 
 #### Hypothèse 4 - **Critères 2.1** : Le déploiement
 
+Même chose dans le cas du déploiement, nous pouvons nous attendre à des notes similaire que pour les hypothèses web et native.
+
+| Système d'exploitation | Note sur 5 |
+| ---------------------- | ---------: |
+| Linux                  | 5.0        |
+| Windows                | 5.0        |
+| macOS                  | 5.0        |
+| Android                | 4.5        |
+| iOS                    | 2.0        |
+| **Moyenne**            | **4.3**    |
+
+Le déploiement de l'application web reste aussi simple que dans l'hypothèse précédente, et nous rencontrons les mêmes problématiques pour le déploiement sur les mobiles iOS que sur les autres hypothèses.
+
 #### Hypothèse 4 - **Critères 2.2** : La maintenance
 
+Idem pour la maintenance.
+
+| Système d'exploitation | Note sur 5 |
+| ---------------------- | ---------: |
+| Linux                  | 3.0        |
+| Windows                | 3.0        |
+| macOS                  | 3.0        |
+| Android                | 5.0        |
+| iOS                    | 3.5        |
+| **Moyenne**            | **3.5**    |
+
+Ici encore, seul Android et son store qui permet les mises à jours automatique parvient à se démarquer des applications webs et leur maintenance coûteuse ou de iOS et de sa phase de test obligatoire bridant la réactivité des déploiements.
+
 #### Hypothèse 4 - **Critères 2.3** : La réutilisation
+
+Jugeons de la capacité du code à pouvoir servir à nouveau lors du développement d'un projet usant de technologies semblables.
+
+<div class="mermaid">
+graph LR
+   subgraph Projet Actuel
+      subgraph LB1[Logiciel Bureau]
+         L1[Linux]
+         W1[Windows]
+         M1[macOS]
+      end
+      subgraph LM1[Logiciel Mobile]
+         A1[Android]
+         I1[iOS]
+      end
+   end
+   subgraph Projet Actuel
+      subgraph LB2[Logiciel Bureau]
+         L2[Linux]
+         W2[Windows]
+         M2[macOS]
+      end
+      subgraph LM2[Logiciel Mobile]
+         A2[Android]
+         I2[iOS]
+      end
+   end
+   TS((Typescript))
+   L1 & W1 & M1 & A1 & I1 --- TS --> L2 & W2 & M2 & A2 & I2
+</div>
+
+Ici, pour simplifier le schéma nous ne voyons que les liens directs qui se font.
+Voyons plus en détails les liens effectifs :
+
+| Système d'exploitation | Langage    | Nature | Partageable sur X projets |
+| ---------------------- | ---------- | ------ | ------------------------: |
+| Linux                  | Typescript | Web    | 4                         |
+| Windows                | Typescript | Web    | 4                         |
+| macOS                  | Typescript | Web    | 4                         |
+| Android                | Typescript | Natif  | 3.5                       |
+| iOS                    | Typescript | Natif  | 3.5                       |
+| **Moyenne**            |            |        | **3.8**                   |
+
+On considère que le code du web peut être partagé sur les trois système d'exploitation bureau (soit 3) et que seul la moitié du code est réutilisable sur les cibles mobiles (soit 0.5 *2 = 1). \
+De même, ce calcul inversé pour les cibles mobiles nous indique qu'il peut être partagé sur les deux système d'exploitation mobiles (soit 2) et uniquement partiellement sur les cibles bureau (soit 0.5* 3 = 1.5).
+
+En divisant le ratio moyen par la quantité totale des projets nous obtenu un indice de partage de code de **76%**. Cela reste moins que pour l'hypothèse 3 exclusivement web et mono-projet mais bien au delà des résultats obtenus pour les applications natives.
 
 ### Hypothèse 4 - **Critères 3** : Le résultat
 
@@ -504,29 +599,93 @@ Du point de vue de la réutilisation du code, étant donné que ce projet se bas
 
 ### Hypothèse 4 - Synthèse des critères
 
+- Critères 1 (Avant le développement)
+  - Critère 1.1 (Temps de développement) : ??h
+  - Critère 1.2 (Limitations) : 3.5 pts
+- Critères 2 (Après le développement)
+  - Critère 2.1 (Déploiement) : 4.3 pts
+  - Critère 2.2 (Maintenance) : 3.5 pts
+  - Critère 2.3 (Réutilisation) : 76%
+- Critères 3 (Résultat)
+  - Critère 3.1 (*Benchmark*) : ??
+  - Critère 3.2 (Temps de réponse) : ??ms
+  - Critère 3.3 (Poids total) : ??Mb
+
 ### Hypothèse 4 - Conclusion
 
 ## Hypothèse 5
 <!-- TODO: Hypothèse 5 -->
 
+> Une application web hybride pour les cibles bureau et une application hybride pour les cibles mobiles
+
 ### Hypothèse 5 - Présentation du *proof of concept*
 
-- Bureau (Linux, Windows, Mac) : [Angular](https://github.com/gothinkster/angular-realworld-example-app)
-- Mobile (Android, iOS): [NativeScript Angular](https://github.com/nea/nativescript-realworld-example-app)
+Cette hypothèse reprend en quelque sorte le format de l'hypothèse 2 et les technologies de l'hypothèse 3 à savoir réaliser deux applicatifs différents dans des technologies du web. Il ajoute en plus le fait de profiter de cette différence pour en faire des applications hybrides.\
+Cette hypothèse cherche à palier le manque d'accès aux fonctionnalités du système d'exploitation en encapsulant l'application web dans un logiciel natif (ayant ces accès) et de faire communiquer les deux.
+
+Les technologies que nous utiliseront dans cette hypothèse seront les mêmes que celles de l'hypothèse précédentes, à cela prêt que les applications seront modifiées afin d'utiliser des technologies de création d'applications hybride.
+
+Ces technologies capable de faire d'une application web, une application hybrides sont :
+
+- Pour le logiciel bureau : [Electron](https://www.electronjs.org/)
+- Pour le logiciel mobile : [Cordova](https://cordova.apache.org/)
 
 ### Hypothèse 5 - **Critères 1** : Pendant le développement
 
 #### Hypothèse 5 - **Critère 1.1** : Le temps de développement
 
+<!-- TODO: mesurer -->
+
 #### Hypothèse 5 - **Critère 1.2** : Les limitations des technologies
+
+Tout l'intérêt de cette hypothèse repose sur le principe de développer avec des technologies web et de profiter des conteneurs natifs pour pouvoir accéder aux fonctionnalités des systèmes d'exploitations des appareils cibles.
+
+| Groupe de cibles | Langage    | Nature  | Note sur 5 |
+| ---------------- | ---------- | ------- | ---------: |
+| Logiciel Bureau  | Typescript | Hybride | 4.5        |
+| Logiciel Mobile  | Typescript | Hybride | 4.0        |
+| **Moyenne**      |            |         | **4.3**    |
+
+L'accès aux fonctionnalités natives se fait dans ces technologies hybrides, par la mise en place de *plugins*, permettant l'accès à chacune des fonctionnalités une par une. C'est un coût de temps de développement certes très léger, mais présent par rapport à une application native.
+
+Par ailleurs, les applications mobiles "souffrent" aussi toujours de la demande de confirmation à l'utilisateur lors de l'accès aux fonctionnalités.
 
 ### Hypothèse 5 - **Critères 2** : Après le développement
 
 #### Hypothèse 5 - **Critères 2.1** : Le déploiement
 
+Le déploiement de ces deux applicatifs est similaire à celle des applications native puisque que les systèmes d'exploitation ne sont pas capable de faire la différence entre un logiciel hybride et natif.
+
+| Système d'exploitation | Note sur 5 |
+| ---------------------- | ---------: |
+| Linux                  | 4.5        |
+| Windows                | 4.5        |
+| macOS                  | 4.5        |
+| Android                | 5.0        |
+| iOS                    | 2.0        |
+| **Moyenne**            | **4.1**    |
+
+Les résultats sont donc les même que pour l'hypothèse 2.
+
 #### Hypothèse 5 - **Critères 2.2** : La maintenance
 
+Idem pour la maintenance.
+
+| Système d'exploitation | Note sur 5 |
+| ---------------------- | ---------: |
+| Linux                  | 4.5        |
+| Windows                | 4.5        |
+| macOS                  | 4.5        |
+| Android                | 5.0        |
+| iOS                    | 3.5        |
+| **Moyenne**            | **4.4**    |
+
 #### Hypothèse 5 - **Critères 2.3** : La réutilisation
+
+Cependant, contrairement à l'hypothèse 2, l'utilisation de la technologie web est là pour optimiser grandement la réutilisation possible du code source.
+Mise à part l'interface qui peut être différente, l'intégralité de ce code peut être réutilisé à volonté dans des projets ultérieurs.
+
+Les applications hybrides bénéficient donc d'un indice de réutilisation du code de **100%** comme les applications web (cf. hypothèse 3).
 
 ### Hypothèse 5 - **Critères 3** : Le résultat
 
@@ -537,5 +696,17 @@ Du point de vue de la réutilisation du code, étant donné que ce projet se bas
 #### Hypothèse 5 - **Critère 3.3** : Le poids de l'exécutable
 
 ### Hypothèse 5 - Synthèse des critères
+
+- Critères 1 (Avant le développement)
+  - Critère 1.1 (Temps de développement) : ??h
+  - Critère 1.2 (Limitations) : 4.3 pts
+- Critères 2 (Après le développement)
+  - Critère 2.1 (Déploiement) : 4.1 pts
+  - Critère 2.2 (Maintenance) : 4.4 pts
+  - Critère 2.3 (Réutilisation) : 100%
+- Critères 3 (Résultat)
+  - Critère 3.1 (*Benchmark*) : ??
+  - Critère 3.2 (Temps de réponse) : ??ms
+  - Critère 3.3 (Poids total) : ??Mb
 
 ### Hypothèse 5 - Conclusion
