@@ -12,9 +12,9 @@
 <meta property="og:description" content="Objet de la thèse Contexte Problématique Cibles visées Hypothèses proposées Première hypothèse Deuxième hypothèse Troisième hypothèse Quatrième hypothèse Cinquième hypothèse Démarche proposée Qu’est ce qu’un proof of concept Les critères Critères 1 : Pendant le développement Critère 1.1 : Le temps de développement Critère 1.2 : Les limitations des technologies Critères 2 : Après le développement Critères 2.1 : Le déploiement Critères 2.2 : La maintenance Critères 2.3 : La réutilisation Critères 3 : Le résultat Critères 3.1 : Utilisation du processeur et de la mémoire Critères 3.2 : Temps de réponse moyen Critère 3.3 : Le poids de l’exécutable Comparaisons des critères entres eux RealWorld Conduit Les fonctionnalités Visuels application bureau Visuels application mobile Valeur ajoutée de cette recherche" />
 <meta property="og:site_name" content="Thèse professionnelle" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-10-18T11:05:00+00:00" />
+<meta property="article:published_time" content="2020-10-19T20:37:44+00:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"/ThesePro/chapters/introduction","headline":"Introduction","dateModified":"2020-10-18T11:05:00+00:00","datePublished":"2020-10-18T11:05:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/ThesePro/chapters/introduction"},"author":{"@type":"Person","name":"Quentin Widlocher"},"description":"Objet de la thèse Contexte Problématique Cibles visées Hypothèses proposées Première hypothèse Deuxième hypothèse Troisième hypothèse Quatrième hypothèse Cinquième hypothèse Démarche proposée Qu’est ce qu’un proof of concept Les critères Critères 1 : Pendant le développement Critère 1.1 : Le temps de développement Critère 1.2 : Les limitations des technologies Critères 2 : Après le développement Critères 2.1 : Le déploiement Critères 2.2 : La maintenance Critères 2.3 : La réutilisation Critères 3 : Le résultat Critères 3.1 : Utilisation du processeur et de la mémoire Critères 3.2 : Temps de réponse moyen Critère 3.3 : Le poids de l’exécutable Comparaisons des critères entres eux RealWorld Conduit Les fonctionnalités Visuels application bureau Visuels application mobile Valeur ajoutée de cette recherche","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","url":"/ThesePro/chapters/introduction","headline":"Introduction","dateModified":"2020-10-19T20:37:44+00:00","datePublished":"2020-10-19T20:37:44+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/ThesePro/chapters/introduction"},"author":{"@type":"Person","name":"Quentin Widlocher"},"description":"Objet de la thèse Contexte Problématique Cibles visées Hypothèses proposées Première hypothèse Deuxième hypothèse Troisième hypothèse Quatrième hypothèse Cinquième hypothèse Démarche proposée Qu’est ce qu’un proof of concept Les critères Critères 1 : Pendant le développement Critère 1.1 : Le temps de développement Critère 1.2 : Les limitations des technologies Critères 2 : Après le développement Critères 2.1 : Le déploiement Critères 2.2 : La maintenance Critères 2.3 : La réutilisation Critères 3 : Le résultat Critères 3.1 : Utilisation du processeur et de la mémoire Critères 3.2 : Temps de réponse moyen Critère 3.3 : Le poids de l’exécutable Comparaisons des critères entres eux RealWorld Conduit Les fonctionnalités Visuels application bureau Visuels application mobile Valeur ajoutée de cette recherche","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/ThesePro/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/ThesePro/feed.xml" title="Thèse professionnelle" /></head>
 <body><header class="site-header" role="banner">
@@ -245,33 +245,6 @@ graph TD
 <h3 id="quatrième-hypothèse">Quatrième hypothèse</h3>
 
 <blockquote>
-  <p>Une application web pour les cibles bureau et une application hybride pour les cibles mobiles</p>
-</blockquote>
-
-<p>Grâce au langage de programmation commun (JavaScript), il est possible partager un maximum de code entre les deux applications tout en gardant les spécificités de l’affichage sur grand et petit écran. De plus l’application hybride permet d’accéder à plus de fonctionnalités du système d’exploitation et à mieux se fondre dans l’écosystème d’application de l’utilisateur.</p>
-
-<div class="mermaid">
-graph TD
-    CS1((Code))
-    CS1 --&gt; UI1 &amp; UI2
-    subgraph Mobile
-      UI2(Interface)
-      MC4[Android]
-      MC5[iOS]
-      UI2 --&gt;|Application Hybride| MC4 &amp; MC5
-    end
-    subgraph Bureau
-      UI1(Interface)
-      MC1[Linux]
-      MC2[Windows]
-      MC3[OSX]
-      UI1 --&gt;|Application Web| MC1 &amp; MC2 &amp; MC3
-    end
-</div>
-
-<h3 id="cinquième-hypothèse">Cinquième hypothèse</h3>
-
-<blockquote>
   <p>Une application web pour les cibles bureau et une application native dans le même langage pour le cibles mobiles</p>
 </blockquote>
 
@@ -286,7 +259,56 @@ En effet il existe de plus en plus d’outils permettant au développeurs d’ap
   <li><em>NativeScript</em> pour Angular et Vue</li>
 </ul>
 
-<p>Ces outils permettent de partager du code depuis d’autres projets JavaScript et ne requièrent la modification que de la partie interface utilisateur. Dans le cas où les développeurs font le choix de commencer avec l’un de ces outils, ils peuvent réutiliser 100% du code pour faire une application web sur bureau et native sur mobile.</p>
+<p>Ces outils permettent de partager une grande quantité de code depuis d’autres projets JavaScript et ne requièrent la modification que de la partie interface utilisateur. Dans le cas où les développeurs font le choix de commencer avec l’un de ces outils, ils peuvent réutiliser 100% du code pour faire une application web sur bureau et native sur mobile.</p>
+
+<div class="mermaid">
+graph TD
+    CSP(Code Partageable) &lt;--&gt; CS1 &amp; CS2
+    subgraph Mobile
+      CS1((Code)) --- UI2(Interface)
+      MC4[Android]
+      MC5[iOS]
+      APP1[Application Native]
+      UI2 --- APP1  --&gt; MC4 &amp; MC5
+    end
+    subgraph Bureau
+      CS2((Code)) --- UI1(Interface)
+      MC1[Linux]
+      MC2[Windows]
+      MC3[OSX]
+      APP2[Application Web]
+      UI1 --- APP2 --&gt; MC1 &amp; MC2 &amp; MC3
+    end
+</div>
+
+<h3 id="cinquième-hypothèse">Cinquième hypothèse</h3>
+
+<blockquote>
+  <p>Une application hybride pour les cibles bureau et une application hybride pour les cibles mobiles</p>
+</blockquote>
+
+<p>Grâce au langage de programmation commun (JavaScript), il est possible partager un maximum de code entre les deux applications tout en gardant les spécificités de l’affichage sur grand et petit écran. De plus l’application hybride permet d’accéder à plus de fonctionnalités du système d’exploitation et à mieux se fondre dans l’écosystème d’application de l’utilisateur.</p>
+
+<div class="mermaid">
+graph TD
+    CS1((Code))
+    CS1 --- UI1 &amp; UI2
+    subgraph Mobile
+      UI2(Interface)
+      MC4[Android]
+      MC5[iOS]
+      APP1[Application Hybride]
+      UI2 --- APP1  --&gt; MC4 &amp; MC5
+    end
+    subgraph Bureau
+      UI1(Interface)
+      MC1[Linux]
+      MC2[Windows]
+      MC3[OSX]
+      APP2[Application Hybride]
+      UI1 --- APP2 --&gt; MC1 &amp; MC2 &amp; MC3
+    end
+</div>
 
 <h2 id="démarche-proposée">Démarche proposée</h2>
 
