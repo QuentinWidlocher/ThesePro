@@ -90,11 +90,11 @@ Cette hypothèse consiste à penser que développer une application native pour 
 
 Pour tenter de le démontrer, nous allons réaliser une application dans chaque langages natifs de nos cibles, à savoir :
 
-- Linux : [*Rust/C*](https://github.com/gothinkster/rust-realworld-example-app)
-- Windows : [*C#* avec .NET](https://github.com/gothinkster/aspnetcore-realworld-example-app)
-- macOS : [*Swift* avec Vapor](https://github.com/amadeu01/swift-vapor-conduit-example-app)
-- Android : [*Kotlin/Java*](https://github.com/DrewCarlson/realworld-android-kotlin)
-- iOS : [*Swift*](https://github.com/littleStudent/swift-realworld-example)
+- Linux : [**Rust/C**](https://github.com/gothinkster/rust-realworld-example-app)
+- Windows : [**C#** avec .NET](https://github.com/gothinkster/aspnetcore-realworld-example-app)
+- macOS : [**Swift** avec Vapor](https://github.com/amadeu01/swift-vapor-conduit-example-app)
+- Android : [**Kotlin/Java**](https://github.com/DrewCarlson/realworld-android-kotlin)
+- iOS : [**Swift**](https://github.com/littleStudent/swift-realworld-example)
 
 Note : Les langages séparés par une barre oblique représentent à gauche le langage utilisé pour le *proof of concept* et à droite le langage équivalent ou transpilé<!-- TODO: définir transpiler -->. Quand un langage est suivit de "avec X", on désigne le *framework*<!-- TODO: définir framework --> utilisé.
 
@@ -102,9 +102,19 @@ Note : Les langages séparés par une barre oblique représentent à gauche le l
 
 #### Hypothèse 1 - **Critère 1.1** : Le temps de développement
 
-Pour ces cinq applications différentes dont le code ne peux être partagé (même entre Mac et iOS qui partagent le même langage car les spécificité sont trop grande pour que la réutilisation du code puisse avoir un véritable impact) les temps de développement sont relativement ??? <!-- TODO: indiquer les comparaison -->
+Pour ces cinq applications différentes dont le code ne peux être partagé (même entre Mac et iOS qui partagent le même langage car les spécificité sont trop grande pour que la réutilisation du code puisse avoir un véritable impact) les temps de développement sont relativement similaires.
 
-<!-- TODO: estimer les temps pour l'hypothèse1 -->
+| Système d'exploitation | Langage | Nature | Nombre estimé d'heures |
+| ---------------------- | ------- | ------ | ---------------------: |
+| Linux                  | Rust    | Natif  | 41                     |
+| Windows                | C#      | Natif  | 37                     |
+| macOS                  | Swift   | Natif  | 33                     |
+| Android                | Kotlin  | Natif  | 29                     |
+| iOS                    | Swift   | Natif  | 32                     |
+| **Moyenne**            | -       | -      | 34                     |
+| **Total**              | -       | -      | **172**                |
+
+Là où la moyenne est fournie à but indicatif, c'est dans le total que nous sommes intéressés. En effet, développer cinq fois une application similaire a un impact très important sur le temps total d'un projet.
 
 #### Hypothèse 1 - **Critère 1.2** : Les limitations des technologies
 
@@ -172,6 +182,9 @@ Chaque système d'exploitation est très réceptif quand à la mise à jour des 
 
 Cependant, iOS souffre des même problématiques de phase de test, bridant de ce fait la réactivité d'un déploiement de correctif.
 
+Au delà ce ça, chaque logiciel doit faire l'objet d'une maintenance particulière
+et chaque logiciel possède sont potentiel lot de problème à corriger. Cette multiplication des sources de problème est délicate et rend la maintenance complexe.
+
 #### Hypothèse 1 - **Critères 2.3** : La réutilisation
 
 Voyons maintenant à quel point le code source utilisé dans ce projet pourrait-être utilisé à nouveau dans un autre projet.\
@@ -234,10 +247,25 @@ Afin de donner un pourcentage de réutilisation du code, nous pouvons diviser la
 
 #### Hypothèse 1 - **Critère 3.3** : Le poids de l'exécutable
 
+Pour estimer l'impact du poids de l'exécutable final nous allons juger du poids moyen.
+
+| Système d'exploitation | Langage | Nature | Poids (en MB) |
+| ---------------------- | ------- | ------ | ------------: |
+| Linux                  | Rust    | Natif  | 6.24          |
+| Windows                | C#      | Natif  | 7.59          |
+| macOS                  | Swift   | Natif  | 7.95          |
+| Android                | Kotlin  | Natif  | 10.75         |
+| iOS                    | Swift   | Natif  | 11.20         |
+| **Moyenne**            | -       | -      | **8.75**      |
+| **Total**              | -       | -      | 43.73     |
+
+Chaque logiciel a un poids assez similaire aux autres, ont détecte cependant des poids plus élevé pour les applications mobiles, qui ont un poids souvent supérieurs aux logiciels de bureau.
+On estime en 2017 le poids moyen d'une application à 15MB sur Android et 38MB sur iOS[^1]
+
 ### Hypothèse 1 - Synthèse des critères
 
 - Critères 1 (Avant le développement)
-  - Critère 1.1 (Temps de développement) : ??h
+  - Critère 1.1 (Temps de développement) : 172h
   - Critère 1.2 (Limitations) : 4.8 pts
 - Critères 2 (Après le développement)
   - Critère 2.1 (Déploiement) : 4.2 pts
@@ -246,14 +274,13 @@ Afin de donner un pourcentage de réutilisation du code, nous pouvons diviser la
 - Critères 3 (Résultat)
   - Critère 3.1 (*Benchmark*) : ??
   - Critère 3.2 (Temps de réponse) : ??ms
-  - Critère 3.3 (Poids total) : ??Mb
+  - Critère 3.3 (Poids total) : 8.75MB
 
 ### Hypothèse 1 - Conclusion
 
 <!-- TODO: conclusion hypothèse 1 -->
 
 ## Hypothèse 2
-<!-- TODO: Hypothèse 2 -->
 
 > Séparer les cibles en deux grands groupes, à savoir "Logiciels Bureaux" et "Applications Mobiles" et faire deux applications natives différentes pour ces groupes.
 
@@ -272,7 +299,14 @@ Conserver les avantages des applications native en limitant grandement le nombre
 
 Pour ces deux applications voici les temps de développement :
 
-<!-- TODO: mesurer -->
+| Groupe de cibles | Langage | Nature | Nombre estimé d'heures |
+| ---------------- | ------- | ------ | ---------------------: |
+| Logiciel Bureau  | Kotlin  | Natif  | 23                     |
+| Logiciel Mobile  | Dart    | Natif  | 35                     |
+| **Moyenne**      | -       | -      | 29                 |
+| **Total**        | -       | -      | **58**                 |
+
+Le temps de développement total de ce projet s'élève donc à 58 heures. C'est naturellement bien moins élevé que l'hypothèse précédente et c'est un critère non négligeable.
 
 #### Hypothèse 2 - **Critère 1.2** : Les limitations des technologies
 
@@ -377,10 +411,23 @@ En divisant ce ratio par la quantité totale des projets nous obtenu un indice d
 
 #### Hypothèse 2 - **Critère 3.3** : Le poids de l'exécutable
 
+Dans cette hypothèse, le code source des cibles bureau permet de créer un unique exécutable capable de fonctionner sur toutes les machines fixes.\
+En revanche, le code source des cibles mobiles doit être *compilé* deux fois fin de produire un executable par cible.
+
+| Groupe de cibles | Langage | Nature | Poids (en MB) |
+| ---------------- | ------- | ------ | ------------: |
+| Logiciels Bureau | Kotlin  | Natif  | 8.12          |
+| Android          | Dart    | Natif  | 11.77         |
+| iOS              | Dart    | Natif  | 13.40         |
+| **Moyenne**      | -       | -      | **11.10**     |
+| **Total**        | -       | -      | 33.29     |
+
+Comme pour l'hypothèse précédente, le poids des applications mobiles sont légèrement plus élevées que celle des logiciels bureau. D'autant plus que les application créées avec *Flutter* (ou d'autres outils similaires) ont une charge supplémentaire de poids comparé aux application standard[^2].
+
 ### Hypothèse 2 - Synthèse des critères
 
 - Critères 1 (Avant le développement)
-  - Critère 1.1 (Temps de développement) : ??h
+  - Critère 1.1 (Temps de développement) : 58h
   - Critère 1.2 (Limitations) : 4.8 pts
 - Critères 2 (Après le développement)
   - Critère 2.1 (Déploiement) : 4.1 pts
@@ -389,7 +436,7 @@ En divisant ce ratio par la quantité totale des projets nous obtenu un indice d
 - Critères 3 (Résultat)
   - Critère 3.1 (*Benchmark*) : ??
   - Critère 3.2 (Temps de réponse) : ??ms
-  - Critère 3.3 (Poids total) : ??Mb
+  - Critère 3.3 (Poids total) : 11.10Mb
 
 ### Hypothèse 2 - Conclusion
 
@@ -403,13 +450,14 @@ Cette hypothèse part du principe qu'étant donné que toutes les cibles sont mu
 
 Voici l'unique projet donc, qui sera réalisé pour ce *proof of concept* :
 
-[*Typescript/Javascript* avec Angular](https://github.com/gothinkster/angular-realworld-example-app)
+[**Typescript/Javascript** avec Angular](https://github.com/gothinkster/angular-realworld-example-app)
 
 ### Hypothèse 3 - **Critères 1** : Pendant le développement
 
 #### Hypothèse 3 - **Critère 1.1** : Le temps de développement
 
-<!-- TODO: mesurer le temps -->
+Cette application web est l'unique application de l'hypothèse et son temps de développement est estimée à **20h**.\
+Cette valeur reste en accord avec celles estimées jusqu'à présent mais naturellement, l'écart est toujours plus grand avec les hypothèses précédentes qui nécessitaient de multiplier ce temps par le nombres d'appareil cible.
 
 #### Hypothèse 3 - **Critère 1.2** : Les limitations des technologies
 
@@ -458,10 +506,21 @@ Du point de vue de la réutilisation du code, étant donné que ce projet se bas
 
 #### Hypothèse 3 - **Critère 3.3** : Le poids de l'exécutable
 
+Une application web peut être exécuté de deux manières différentes et son poids change en fonction de la méthode employée.
+
+Tout d'abord, pour un développeur travaillant actuellement sur le projet, il est crucial de pouvoir compiler le code très rapidement afin de très vite pouvoir tester et opérer des changements et des corrections. Le poids de l'application n'est pas important est peut être sacrifié au profit de la vitesse de compilation.\
+Dans le cas du déploiement de l'application à des utilisateurs, la compromis est tout à fait inverse, il est acceptable de laisser la machine prendre plus de temps à la compilation afin que le résultat soit aussi léger que possible.
+
+Afin de gérer ces deux cas de figures, les développeurs travaillent avec ce que l'ont appelle deux profils. Le premier, le profil "développement" indique à la machine qu'elle doit s'efforcer d'accélérer la compilation au profit de l'espace de stockage requis et le second, le profil "production" qui lui indique plutôt de prendre le temps de limiter le gaspillage d'espace.
+
+Le profil "développement" étant uniquement à but temporaire, c'est le profil "production" que nous allons mesurer. Sa valeur est donc de **883 KB**.
+
+Si cette valeur semble si peu grande en comparaison aux autres hypothèse c'est que l'affichage des applications web se fait par le biais du navigateur et que la mesure de celui ci n'est pas prise en compte dans les hypothèse.
+
 ### Hypothèse 3 - Synthèse des critères
 
 - Critères 1 (Avant le développement)
-  - Critère 1.1 (Temps de développement) : ??h
+  - Critère 1.1 (Temps de développement) : 20h
   - Critère 1.2 (Limitations) : 2.5 pts
 - Critères 2 (Après le développement)
   - Critère 2.1 (Déploiement) : 5 pts
@@ -470,7 +529,7 @@ Du point de vue de la réutilisation du code, étant donné que ce projet se bas
 - Critères 3 (Résultat)
   - Critère 3.1 (*Benchmark*) : ??
   - Critère 3.2 (Temps de réponse) : ??ms
-  - Critère 3.3 (Poids total) : ??Mb
+  - Critère 3.3 (Poids total) : 0.88MB
 
 ### Hypothèse 3 - Conclusion
 
@@ -494,7 +553,14 @@ Ils se reposent tout deux sur le même langage (*Typescript*) et le même outil 
 
 #### Hypothèse 4 - **Critère 1.1** : Le temps de développement
 
-<!-- TODO: mesurer -->
+| Groupe de cibles | Langage    | Nature | Nombre estimé d'heures |
+| ---------------- | ---------- | ------ | ---------------------: |
+| Logiciel Bureau  | Typescript | Web    | 20                     |
+| Logiciel Mobile  | Typescript | Natif  | 23                     |
+| **Moyenne**      | -          | -      | 22                 |
+| **Total**        | -          | -      | **43**                 |
+
+Le code source du logiciel bureau étant principalement le même que l'hypothèse d'avant, le nombre estimé ne fluctue pas. On constate aussi que la technologie utilisé étant très similaire, les deux applicatifs ont des estimations très proches.
 
 #### Hypothèse 4 - **Critère 1.2** : Les limitations des technologies
 
@@ -597,10 +663,23 @@ En divisant le ratio moyen par la quantité totale des projets nous obtenu un in
 
 #### Hypothèse 4 - **Critère 3.3** : Le poids de l'exécutable
 
+Comparons le poids des exécutables obtenu avec le développement de cette hypothèse.
+
+| Groupe de cibles | Langage    | Nature | Poids (en MB) |
+| ---------------- | ---------- | ------ | ------------: |
+| Logiciels Bureau | Typescript | Web    | 0.88          |
+| Android          | Typescript | Natif  | 12.23         |
+| iOS              | Typescript | Natif  | 13.51         |
+| **Moyenne**      | -          | -      | **8.87**      |
+| **Total**        | -          | -      | 26.62     |
+
+Comme pour l'hypothèse précédente, le poids de l'application web est très faible comparé aux applications mobile car son affichage se fait dans le navigateur.\
+Du point de vue des logiciels mobiles, nous retrouvons un poids assez similaire à celles des applications mobiles native que nous avons déjà observé, ce qui s'explique par le fait que ces logiciels sont bels et biens des conteneurs natifs affichants des applications web.
+
 ### Hypothèse 4 - Synthèse des critères
 
 - Critères 1 (Avant le développement)
-  - Critère 1.1 (Temps de développement) : ??h
+  - Critère 1.1 (Temps de développement) : 43h
   - Critère 1.2 (Limitations) : 3.5 pts
 - Critères 2 (Après le développement)
   - Critère 2.1 (Déploiement) : 4.3 pts
@@ -609,7 +688,7 @@ En divisant le ratio moyen par la quantité totale des projets nous obtenu un in
 - Critères 3 (Résultat)
   - Critère 3.1 (*Benchmark*) : ??
   - Critère 3.2 (Temps de réponse) : ??ms
-  - Critère 3.3 (Poids total) : ??Mb
+  - Critère 3.3 (Poids total) : 8.87MB
 
 ### Hypothèse 4 - Conclusion
 
@@ -623,7 +702,7 @@ En divisant le ratio moyen par la quantité totale des projets nous obtenu un in
 Cette hypothèse reprend en quelque sorte le format de l'hypothèse 2 et les technologies de l'hypothèse 3 à savoir réaliser deux applicatifs différents dans des technologies du web. Il ajoute en plus le fait de profiter de cette différence pour en faire des applications hybrides.\
 Cette hypothèse cherche à palier le manque d'accès aux fonctionnalités du système d'exploitation en encapsulant l'application web dans un logiciel natif (ayant ces accès) et de faire communiquer les deux.
 
-Les technologies que nous utiliseront dans cette hypothèse seront les mêmes que celles de l'hypothèse précédentes, à cela prêt que les applications seront modifiées afin d'utiliser des technologies de création d'applications hybride.
+Les technologies que nous utiliseront dans cette hypothèse seront **les mêmes que celles de l'hypothèse précédentes**, à cela près que les applications seront modifiées afin d'utiliser des technologies de création d'applications hybride.
 
 Ces technologies capable de faire d'une application web, une application hybrides sont :
 
@@ -634,7 +713,14 @@ Ces technologies capable de faire d'une application web, une application hybride
 
 #### Hypothèse 5 - **Critère 1.1** : Le temps de développement
 
-<!-- TODO: mesurer -->
+Les technologies utilisées pour la création de ce *proof of concept* étant les mêmes que pour l'hypothèse précédente, nous retrouvons les même valeurs à ceci près que le temps d'intégrer les outils pour l'hybride sont à prendre en compte
+
+| Groupe de cibles | Langage    | Nature  | Nombre estimé d'heures |
+| ---------------- | ---------- | ------- | ---------------------: |
+| Logiciel Bureau  | Typescript | Hybride | 24                     |
+| Logiciel Mobile  | Typescript | Hybride | 25                     |
+| **Moyenne**      | -          | -       | 25                 |
+| **Total**        | -          | -       | **49**                 |
 
 #### Hypothèse 5 - **Critère 1.2** : Les limitations des technologies
 
@@ -695,10 +781,24 @@ Les applications hybrides bénéficient donc d'un indice de réutilisation du co
 
 #### Hypothèse 5 - **Critère 3.3** : Le poids de l'exécutable
 
+Nous avons déjà pu observer le poids d'une application native (par extension hybride) mobile dans l'hypothèse 4. Voyons le poids d'un logiciel hybride bureau.
+
+| Groupe de cibles | Langage    | Nature  | Poids (en MB) |
+| ---------------- | ---------- | ------- | ------------: |
+| Linux            | Typescript | Hybride | 57.32         |
+| Windows          | Typescript | Hybride | 66.25         |
+| macOS            | Typescript | Hybride | 117.30        |
+| Android          | Typescript | Hybride | 12.34         |
+| iOS              | Typescript | Hybride | 13.84         |
+| **Moyenne**      | -          | -       | **53.41**     |
+| **Total**        | -          | -       | 267.05        |
+
+Comme nous pouvons le constater, le poids d'une application hybride bureau utilisant *Electron* est assez conséquent. *Electron* fonctionne en embarquant un navigateur basé sur Chrome (Chromium) allégé mais cette nuance est très importante. C'est l'un des plus gros point faible de cet outil encore actuellement.
+
 ### Hypothèse 5 - Synthèse des critères
 
 - Critères 1 (Avant le développement)
-  - Critère 1.1 (Temps de développement) : ??h
+  - Critère 1.1 (Temps de développement) : 49h
   - Critère 1.2 (Limitations) : 4.3 pts
 - Critères 2 (Après le développement)
   - Critère 2.1 (Déploiement) : 4.1 pts
@@ -707,6 +807,9 @@ Les applications hybrides bénéficient donc d'un indice de réutilisation du co
 - Critères 3 (Résultat)
   - Critère 3.1 (*Benchmark*) : ??
   - Critère 3.2 (Temps de réponse) : ??ms
-  - Critère 3.3 (Poids total) : ??Mb
+  - Critère 3.3 (Poids total) : 53.41MB
 
 ### Hypothèse 5 - Conclusion
+
+[^1]: [Average App File Size (Sweet Pricing)](https://sweetpricing.com/blog/2017/02/average-app-file-size/)
+[^2]: [Comparing APK sizes (AndroidPub)](https://android.jlelse.eu/comparing-apk-sizes-a0eb37bb36f)
