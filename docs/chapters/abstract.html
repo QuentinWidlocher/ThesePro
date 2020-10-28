@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Annexe 1 - English Abstract | Thèse professionnelle</title>
+<meta name="generator" content="Jekyll v4.0.1" />
+<meta property="og:title" content="Annexe 1 - English Abstract" />
+<meta name="author" content="Quentin Widlocher" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Context" />
+<meta property="og:description" content="Context" />
+<meta property="og:site_name" content="Thèse professionnelle" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-10-28T20:26:54+00:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"/ThesePro/chapters/abstract","headline":"Annexe 1 - English Abstract","dateModified":"2020-10-28T20:26:54+00:00","datePublished":"2020-10-28T20:26:54+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/ThesePro/chapters/abstract"},"author":{"@type":"Person","name":"Quentin Widlocher"},"description":"Context","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/ThesePro/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/ThesePro/feed.xml" title="Thèse professionnelle" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/ThesePro/">Thèse professionnelle</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <h1>Annexe 1 - English Abstract</h1>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="post-content e-content" itemprop="articleBody">
+        <h2 id="context">Context</h2>
+
+<p>As of today I’m working in a software development company and like twenty six millions of software engineers, I’m striving for what we call <strong>optimization</strong>.<br />
+Even outside of software development, we all want to optimize what we can to increase our efficiency.</p>
+
+<p>In my field, optimization is the key element to achieve faster development speed. And one critical way to optimize a piece of software is by reusing some components from previous work.</p>
+
+<p>Code duplication is often found when an application is meant to run on several different types of hardware, and we would theoretically need to develop the software as many times as they are targets.<br />
+A software that can run on several machines is called a <em>multiplatform application</em>, or sometimes <em>cross-platform application</em>.</p>
+
+<p>There is a development paradigm called <em>DRY</em> which stands for <em>Don’t Repeat Yourself</em> and is at the core of many source codes today. The principle is pretty self-explanatory, when you need to write a piece of code more than twice, you need to write it in a better way.</p>
+
+<h2 id="problematic">Problematic</h2>
+
+<p>This paradigm should also be applied to the entirety of a software development project and not only in the code. For a multiplatform application, we should try to prevent creating the same thing multiple times, for the same purpose.</p>
+
+<p>The question that now arise is <em>how</em> ? How can we create the same application for several devices and is it always a good thing ? In other words, the question we can ask is :</p>
+
+<blockquote>
+  <p>How to choose the right software architecture for a multiplatform project ?</p>
+</blockquote>
+
+<p>This problematic is pretty broad and also mean “do I need to ?” or “is it worth it ?”. Theses are the questions we aim to answer in this thesis.</p>
+
+<h2 id="process">Process</h2>
+
+<p>A sure way to demonstrate this choice is to use several ways to build the same multiplatform application, and to compare them on a variety of criteria, ranging from the developing time to the software limitations and the specificities of the final product.</p>
+
+<p>After looking at five hypothesis, we can see how there a three big ways you can make a multiplatform application, and they all come with their own advantages and disadvantages</p>
+
+<h2 id="results">Results</h2>
+
+<p>Native applications for starters, emphasis on the low limitations and fast executions on the target machine. They can run on low-end devices and can access a lot of features such as the camera, the file storage or running while not connected to the Internet.<br />
+The main drawback is the lack of cross-platform compatibility of the source code. To target five different operating systems, you often need to develop the software five times and this cost a lot of time, and by extension, a lot of money.</p>
+
+<p>Web applications, on the other end, are meant to run on any devices that possess a web browser, meaning the same source code is used on each different operating system. It can save a lot of time while remaining performant on medium-end devices.<br />
+Of course, they doesn’t have access to the same features as the native applications (not without asking explicit permission to the user) and they cannot fully operate while offline. Their very structure also make them ressource intensive, especially on low-end devices.</p>
+
+<p>The last way of building a software is a mix of the previous two. It consist of putting a web application inside a mini web browser in a native application. This process is called a Hybrid application and allows to make the best of two worlds.<br />
+Being a web application, only one source code is really needed, and being inside a native application allows it to access all the features of the device.<br />
+The only remaining problem is the performance, and also a new problem of software weight.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>As we said earlier, each way possess its own advantages and drawbacks, so there exist no final answer to the problematic. The real answer would be to choose what is the most suited to your need.</p>
+
+<p>If you are in need for pure performance (i.e. for an industry or for military purpose) you should definitely choose native application as you need the full power of the device it runs on and time of development can probably be sacrificed.</p>
+
+<p>If you instead want a leisure application that can reach the most people, you can give up the performance and create a multiplatform application really quickly to ensure maximum reach. Your application must stay simple though, because it lack features access.</p>
+
+<p>Lastly, if you want to create performant softwares while keeping the costs of development low, you can create two hybrid application that can share pieces of code, allowing faster development and still access a lot of features.</p>
+
+<p>Choosing the right software architecture is not about choosing a single technique and sticking to it, but about choosing what is right for your project. Mixing and matching these three methods is great way to adjust the architecture to better suit your needs.</p>
+
+<p>For example, in my work we needed to create a software for commercials and telemarketers. They worked together but had two very different needs.<br />
+Commercials where on the road all day and needed to quickly find their way to their clients and store pictures offline.<br />
+Telemarketers on the other hand needed a really complete software to create and manage sales.</p>
+
+<p>We created a lightweight hybrid application for the commercials, allowing offline storage and quick access to all their needs.<br />
+For the telemarketers, we created a web application because we could reuse a lot of code from our previous works. This code could also be shared with the hybrid application.<br />
+In this case, using only one method could have been detrimental.</p>
+
+    </div><a class="u-url" href="/ThesePro/chapters/abstract" hidden></a>
+</article>
+<script defer src="/ThesePro/assets/mermaid.min.js"></script>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/ThesePro/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Thèse professionnelle</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Quentin Widlocher</li><li><a class="u-email" href="mailto:quentin@widlocher.com">quentin@widlocher.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/QuentinWidlocher"><svg class="svg-icon"><use xlink:href="/ThesePro/assets/minima-social-icons.svg#github"></use></svg> <span class="username">QuentinWidlocher</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Thèse professionnelle de fin de cursus, sur les applications native, web et hybrides.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
