@@ -260,7 +260,11 @@ Pour mesurer ce critère, nous relèveront le temps passé à developer une dém
 Une application native possède, par définition, un accès complet aux fonctionnalités qu'offre le système d'exploitation sur lequel il exécute, sous réserve qu'il possède les droits nécessaires.\
 Une application web en revanche n'a pas ces accès et souvent il existe certaines fonctionnalités inaccessibles qui brident ce qu'il est possible de faire pour l'utilisateur.
 
-Ces limitations peuvent se révéler cruciales pour une application métier et même s'il est souvent possible pour les développeurs de les contourner, il faut tout de même prendre cela en compte lors du comparatifs des solutions.  
+Ces limitations peuvent se révéler cruciales pour une application métier et même s'il est souvent possible pour les développeurs de les contourner, il faut tout de même prendre cela en compte lors du comparatifs des solutions.
+
+Les limitations peuvent aussi se faire sentir du point de vue du design global de l'application. Le design, bien qu'étant souvent perçu comme étant non obligatoire et parfois même superflu, peut s'avérer très important dans le cas de certains projet visant à créer une application agréable d'utilisation.
+
+Nous considèreront deux points pour juger du design. D'abord s'il est possible de créer une interface qui ressemble à ce que les utilisateurs connaissent et attendent (charte graphique du système d'exploitation) et aussi s'il est possible de sortir de cette charte afin de proposer des experiences plus intéressantes.
 
 Pour mesurer ce critère, nous utiliseront un système de note arbitraire en fonction de différents sous-critères liés à celui ci.
 
@@ -417,10 +421,10 @@ graph LR
   C1 -->|1h30mn| C2 -->|50mn| C3 -->|1h40mn| C4 -->|2h30mn| C5 -->|1h| C6 -->|1h| C7
 </div>
 
-Le problème c'est qu'il existe pas de manière de savoir à quel moment le développeur a commencé à travailler. Nous n'avons que son premier jalon (à 8h).\
+Le problème c'est qu'il existe pas de manière de savoir à quel moment le développeur a commencé à travailler. Nous n'avons que son premier jalon (à 9h).\
 Afin d'affiner un peu plus nous pouvons ajouter par défaut une heure de travail à chaque période ce qui donnerais dans cet exemple, une journée de 8h, ce qui semble tout à fait cohérent.
 
-C'est cet algorithme qui va pouvoir nous permettre d'estimer au mieux le temps de travail effectué sur un dépôt de code open source. 
+C'est cet algorithme qui va pouvoir nous permettre d'estimer au mieux le temps de travail effectué sur un dépôt de code open source.
 
 ## Valeur ajoutée de cette recherche
 
