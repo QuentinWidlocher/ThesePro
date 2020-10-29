@@ -171,7 +171,7 @@ graph TD
 Cette hypothèse possède une grande similitude avec l'hypothèse précédente, à la différence près que l'application mobile est native.\
 En effet il existe de plus en plus d'outils permettant au développeurs d'applicatifs web de contraindre certaines de leurs possibilités pour permettre la création d'un logiciel natif à l'aide d'un code source pour logiciels web.
 
-Parmi ces outils on retrouve trois très populaires qui utilisent les trois frameworks <!-- TODO: parler des trois grand frameworks --> les plus connus à savoir :
+Parmi ces outils on retrouve trois très populaires qui utilisent les trois [*frameworks*](/chapters/glossaire#framework) web les plus connus à savoir :
 
 - *React Native* pour React
 - *Ionic* pour React, Angular et Vue
@@ -241,6 +241,8 @@ Afin que chaque relevé soit aussi assimilable aux autres que possible, il faut 
 
 Les critères de jugement sont multiples et s'appliquent tous à des parties cruciales d'une application réelle.\
 Nous scinderont ces critères en trois grandes parties afin de simplifier au mieux la lecture et la compréhension.
+
+Il est important de rappeler que nous ne jugeront pas ici des technologies de constructions d'application (*frameworks*) mais uniquement des langages.
 
 #### **Critères 1** : Pendant le développement
 

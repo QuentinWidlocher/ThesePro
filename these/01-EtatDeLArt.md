@@ -214,7 +214,7 @@ Aujourd'hui il n'est pas rare de pouvoir accéder aux sites de grandes société
 
 ## La solution multiplateforme
 
-Devant ces trois grandes familles d'applicatifs, l'une d'entre elle s'est hissé sur le devant de la scène ces dernières années et ce, malgré plusieurs problématique, j'ai bien sûr nommé les applications web et leurs "successeurs spirituels" les applications *hybrides*.
+Devant ces trois grandes familles d'applicatifs, l'une d'entre elle s'est hissé sur le devant de la scène ces dernières années et ce, malgré plusieurs problématique, j'ai bien sûr nommé les applications web et leurs "successeurs spirituels" les applications [*hybrides*](/chapters/glossaire#logiciel-hybride).
 
 ### Pourquoi chercher le multiplateforme
 
@@ -255,7 +255,7 @@ graph TD
 
 > Schéma des couches d'abstractions
 
-Et si les fonctionnalités dites "*back-office*" ou communément "*back*" (comprendre : les calculs et les opérations effectués en arrière plan) ne sont dépendantes de rien de plus que ce compilateur, les fonctionnalités dites "*front-office*" ou "*front*" (comprendre : l'affichage de l'interface utilisateur et sa gestion) en revanche sont très dépendantes des technologies embarquées dans le système d'exploitation.\
+Et si les fonctionnalités dites "[*back-office*](/chapters/glossaire#backend--back-office)" ou communément "*back*" (comprendre : les calculs et les opérations effectués en arrière plan) ne sont dépendantes de rien de plus que ce compilateur, les fonctionnalités dites "[*front-office*](/chapters/glossaire#frontend--front-office)" ou "*front*" (comprendre : l'affichage de l'interface utilisateur et sa gestion) en revanche sont très dépendantes des technologies embarquées dans le système d'exploitation.\
 En effet, si le *back* représente 50% des fonctionnalités d'une application, le *front* représente alors les cinquante autres pour cents. Dès lors il est nécessaire d'utiliser des technologies communes aux systèmes d'exploitations que l'on cible si l'on désire pouvoir partager un maximum de code.
 
 ### Le multiplateforme mobile

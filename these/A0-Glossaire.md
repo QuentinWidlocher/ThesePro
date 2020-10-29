@@ -13,6 +13,12 @@ layout: post
 1. [Logiciel libre (de droit)](#logiciel-libre-de-droit)
 1. [Compilateur](#compilateur)
 1. [Interpréteur](#interpréteur)
+1. [Transpileur](#transpileur)
+1. [Frontend / Front office](#frontend--front-office)
+1. [Backend / Back office](#backend--back-office)
+1. [UI / UX](#ui--ux)
+1. [Architecture logicielle](#architecture-logicielle)
+1. [Framework](#framework)
 
 ## Cross Platform
 
@@ -33,11 +39,11 @@ Exemples :
 
 Un logiciel Web est une application conçue pour fonctionner au sein d'un navigateur internet.
 La plupart des systèmes d'exploitation ayant déjà des navigateurs web aboutit et à jour, ces applications peuvent donc fonctionner sur la plupart des OS, sans modification nécessaire sur le code.
-Ces logiciels sont jugé séparés des logiciels *natifs* car ils nécessitent que l'OS exécute d'abord un navigateur avant exécuter l'application.
+Ces logiciels sont jugé séparés des [logiciels *natifs*](#logiciel-natif) car ils nécessitent que l'OS exécute d'abord un navigateur avant exécuter l'application.
 
 ## Logiciel *Hybride*
 
-Ces logiciels sont un mélange d'applications natives et web. Elle sont généralement développé avec des technologie Web mais sont présenté à l'utilisateur final dans un navigateur "camouflé".
+Ces logiciels sont un mélange d'applications [natives]((#logiciel-natif)) et [web](#logiciel-web). Elle sont généralement développé avec des technologie Web mais sont présenté à l'utilisateur final dans un navigateur "camouflé".
 Contrairement aux applications web qui doivent tourner dans le navigateur de l'utilisateur, les applications hybrides intègre un navigateur souvent plus léger, sans interface, n'ayant d'autre but que exécuter l'application.
 Cette méthode permet de contourner certaines limitation dû au choix Web ou Natif.
 
@@ -69,3 +75,36 @@ L'interpréteur lit le code écrit ligne par ligne et *interprète* les actions 
 Bien que ce procédé accélère la vitesse à laquelle on peux passer d'un code source à un logiciel (puisque la lecture du code se fait simultanément avec l'exécution), les langages interprétés souffrent souvent d'un vitesse d'exécution inférieure au langages compilés.
 
 NB : Il est possible de mélanger du code compilé et du code interprété dans le but de mitiger les lacunes de chacune de ces méthodes
+
+## Transpileur
+
+A l'instar d'un [compilateur](#compilateur), un transpileur se content de "traduire" un code source dans un langage, vers un autre, quelque soit les niveaux d'abstraction qui les séparent.
+
+## Frontend / Front office
+
+Le *front end*, ou littéralement la "boutique" (en opposition au [*backend*](#backend)), constitue l'interface visuelle d'une application. Ses boutons, ses formulaires ses pages etc.
+
+Le rôle d'une application de *front end* (souvent raccourcie à "un front" en français) est de communiquer avec l'utilisateur afin de récolter des données, de faire un pré-traitement de ces données et de les envoyer "au back" où des traitement plus complexe seront effectués.\
+Son rôle est aussi dans l'autre sens, à savoir de récupérer des informations "du back" et de les afficher à l'utilisateur.
+
+## Backend / Back office
+
+Le *back end*, ou littéralement "l'arrière boutique" (en opposition au [*frontend*](#frontend)), constitue souvent la partie non visible d'une application où les traitement des données se font. C'est cette partie qui est chargé de communiquer avec la base de données pour assurer le stockage desdites données. Il communique aussi avec le *frontend* pour lui permettre d'afficher des données, et en reçoit par la même occasion les saisies de l'utilisateur.
+
+## UI / UX
+
+La *User Interface*, appelé "interface utilisateur" en français, est ce que voit l'utilisateur qui se sert d'une application. Elle fait partie intégrante du [*frontend*](#frontend) mais ne se réfère pas au traitement des données, uniquement de l'aspect visuel.
+
+En plus de l'UI, on entend aussi souvent parler de l'UX, la *User Experience* ou l'expérience utilisateur. Cette appellation concerne non pas l'aspect visuel mais l'ergonomie d'une application. Cette notion prend en compte le positionnement des élément, leurs *affordance* et leur lisibilité.
+
+## Architecture logicielle
+
+L'architecture logicielle est un terme qui désigne l'ensemble des technologies employé dans la création d'un projet de développement informatique.\
+Le langage de programmation, les outils de constructions, et la relation client/serveur sont des composante de cette architecture.
+
+Dans cette thèse, nous nous intéressons surtout aux langages utilisés ainsi qu'au différentes applications différente permettant de couvrir l'ensemble des cinq systèmes d'exploitation principaux.
+
+## Framework
+
+Littéralement une "structure" ou une "charpente", un framework est un ensemble d'outils de développement adapté à un langage pour gagner en efficacité lors de la construction d'un logiciel.\
+C'est un terme assez polyvalent utilisé aussi bien pour des fonctions utilitaires qui évitent de "réinventer" la roue, que pour des [architectures applicative](#architecture-logicielle) pré-programmées munie de fonctionnalités poussée.
