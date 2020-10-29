@@ -8,13 +8,13 @@
 <meta property="og:title" content="Glossaire" />
 <meta name="author" content="Quentin Widlocher" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Cross Platform Logiciel Natif Logiciel Web Logiciel Hybride Software Logiciel propriétaire Logiciel libre (de droit) Compilateur Interpréteur" />
-<meta property="og:description" content="Cross Platform Logiciel Natif Logiciel Web Logiciel Hybride Software Logiciel propriétaire Logiciel libre (de droit) Compilateur Interpréteur" />
+<meta name="description" content="Cross Platform Logiciel Natif Logiciel Web Logiciel Hybride Software Logiciel propriétaire Logiciel libre (de droit) Compilateur Interpréteur Transpileur Frontend / Front office Backend / Back office UI / UX Architecture logicielle Framework" />
+<meta property="og:description" content="Cross Platform Logiciel Natif Logiciel Web Logiciel Hybride Software Logiciel propriétaire Logiciel libre (de droit) Compilateur Interpréteur Transpileur Frontend / Front office Backend / Back office UI / UX Architecture logicielle Framework" />
 <meta property="og:site_name" content="Thèse professionnelle" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-10-29T15:24:55+00:00" />
+<meta property="article:published_time" content="2020-10-29T18:33:45+00:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"/ThesePro/chapters/glossaire","headline":"Glossaire","dateModified":"2020-10-29T15:24:55+00:00","datePublished":"2020-10-29T15:24:55+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/ThesePro/chapters/glossaire"},"author":{"@type":"Person","name":"Quentin Widlocher"},"description":"Cross Platform Logiciel Natif Logiciel Web Logiciel Hybride Software Logiciel propriétaire Logiciel libre (de droit) Compilateur Interpréteur","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","url":"/ThesePro/chapters/glossaire","headline":"Glossaire","dateModified":"2020-10-29T18:33:45+00:00","datePublished":"2020-10-29T18:33:45+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/ThesePro/chapters/glossaire"},"author":{"@type":"Person","name":"Quentin Widlocher"},"description":"Cross Platform Logiciel Natif Logiciel Web Logiciel Hybride Software Logiciel propriétaire Logiciel libre (de droit) Compilateur Interpréteur Transpileur Frontend / Front office Backend / Back office UI / UX Architecture logicielle Framework","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/ThesePro/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/ThesePro/feed.xml" title="Thèse professionnelle" /></head>
 <body><header class="site-header" role="banner">
@@ -45,6 +45,12 @@
   <li><a href="#logiciel-libre-de-droit">Logiciel libre (de droit)</a></li>
   <li><a href="#compilateur">Compilateur</a></li>
   <li><a href="#interpréteur">Interpréteur</a></li>
+  <li><a href="#transpileur">Transpileur</a></li>
+  <li><a href="#frontend--front-office">Frontend / Front office</a></li>
+  <li><a href="#backend--back-office">Backend / Back office</a></li>
+  <li><a href="#ui--ux">UI / UX</a></li>
+  <li><a href="#architecture-logicielle">Architecture logicielle</a></li>
+  <li><a href="#framework">Framework</a></li>
 </ol>
 
 <h2 id="cross-platform">Cross Platform</h2>
@@ -68,11 +74,11 @@ Aujourd’hui cette appellation peut avoir plusieurs sens mais elle désigne en 
 
 <p>Un logiciel Web est une application conçue pour fonctionner au sein d’un navigateur internet.
 La plupart des systèmes d’exploitation ayant déjà des navigateurs web aboutit et à jour, ces applications peuvent donc fonctionner sur la plupart des OS, sans modification nécessaire sur le code.
-Ces logiciels sont jugé séparés des logiciels <em>natifs</em> car ils nécessitent que l’OS exécute d’abord un navigateur avant exécuter l’application.</p>
+Ces logiciels sont jugé séparés des <a href="#logiciel-natif">logiciels <em>natifs</em></a> car ils nécessitent que l’OS exécute d’abord un navigateur avant exécuter l’application.</p>
 
 <h2 id="logiciel-hybride">Logiciel <em>Hybride</em></h2>
 
-<p>Ces logiciels sont un mélange d’applications natives et web. Elle sont généralement développé avec des technologie Web mais sont présenté à l’utilisateur final dans un navigateur “camouflé”.
+<p>Ces logiciels sont un mélange d’applications <a href="(#logiciel-natif)">natives</a> et <a href="#logiciel-web">web</a>. Elle sont généralement développé avec des technologie Web mais sont présenté à l’utilisateur final dans un navigateur “camouflé”.
 Contrairement aux applications web qui doivent tourner dans le navigateur de l’utilisateur, les applications hybrides intègre un navigateur souvent plus léger, sans interface, n’ayant d’autre but que exécuter l’application.
 Cette méthode permet de contourner certaines limitation dû au choix Web ou Natif.</p>
 
@@ -104,6 +110,39 @@ L’interpréteur lit le code écrit ligne par ligne et <em>interprète</em> les
 <p>Bien que ce procédé accélère la vitesse à laquelle on peux passer d’un code source à un logiciel (puisque la lecture du code se fait simultanément avec l’exécution), les langages interprétés souffrent souvent d’un vitesse d’exécution inférieure au langages compilés.</p>
 
 <p>NB : Il est possible de mélanger du code compilé et du code interprété dans le but de mitiger les lacunes de chacune de ces méthodes</p>
+
+<h2 id="transpileur">Transpileur</h2>
+
+<p>A l’instar d’un <a href="#compilateur">compilateur</a>, un transpileur se content de “traduire” un code source dans un langage, vers un autre, quelque soit les niveaux d’abstraction qui les séparent.</p>
+
+<h2 id="frontend--front-office">Frontend / Front office</h2>
+
+<p>Le <em>front end</em>, ou littéralement la “boutique” (en opposition au <a href="#backend"><em>backend</em></a>), constitue l’interface visuelle d’une application. Ses boutons, ses formulaires ses pages etc.</p>
+
+<p>Le rôle d’une application de <em>front end</em> (souvent raccourcie à “un front” en français) est de communiquer avec l’utilisateur afin de récolter des données, de faire un pré-traitement de ces données et de les envoyer “au back” où des traitement plus complexe seront effectués.<br />
+Son rôle est aussi dans l’autre sens, à savoir de récupérer des informations “du back” et de les afficher à l’utilisateur.</p>
+
+<h2 id="backend--back-office">Backend / Back office</h2>
+
+<p>Le <em>back end</em>, ou littéralement “l’arrière boutique” (en opposition au <a href="#frontend"><em>frontend</em></a>), constitue souvent la partie non visible d’une application où les traitement des données se font. C’est cette partie qui est chargé de communiquer avec la base de données pour assurer le stockage desdites données. Il communique aussi avec le <em>frontend</em> pour lui permettre d’afficher des données, et en reçoit par la même occasion les saisies de l’utilisateur.</p>
+
+<h2 id="ui--ux">UI / UX</h2>
+
+<p>La <em>User Interface</em>, appelé “interface utilisateur” en français, est ce que voit l’utilisateur qui se sert d’une application. Elle fait partie intégrante du <a href="#frontend"><em>frontend</em></a> mais ne se réfère pas au traitement des données, uniquement de l’aspect visuel.</p>
+
+<p>En plus de l’UI, on entend aussi souvent parler de l’UX, la <em>User Experience</em> ou l’expérience utilisateur. Cette appellation concerne non pas l’aspect visuel mais l’ergonomie d’une application. Cette notion prend en compte le positionnement des élément, leurs <em>affordance</em> et leur lisibilité.</p>
+
+<h2 id="architecture-logicielle">Architecture logicielle</h2>
+
+<p>L’architecture logicielle est un terme qui désigne l’ensemble des technologies employé dans la création d’un projet de développement informatique.<br />
+Le langage de programmation, les outils de constructions, et la relation client/serveur sont des composante de cette architecture.</p>
+
+<p>Dans cette thèse, nous nous intéressons surtout aux langages utilisés ainsi qu’au différentes applications différente permettant de couvrir l’ensemble des cinq systèmes d’exploitation principaux.</p>
+
+<h2 id="framework">Framework</h2>
+
+<p>Littéralement une “structure” ou une “charpente”, un framework est un ensemble d’outils de développement adapté à un langage pour gagner en efficacité lors de la construction d’un logiciel.<br />
+C’est un terme assez polyvalent utilisé aussi bien pour des fonctions utilitaires qui évitent de “réinventer” la roue, que pour des <a href="#architecture-logicielle">architectures applicative</a> pré-programmées munie de fonctionnalités poussée.</p>
 
     </div><a class="u-url" href="/ThesePro/chapters/glossaire" hidden></a>
 </article>
