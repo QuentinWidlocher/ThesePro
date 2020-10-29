@@ -34,6 +34,7 @@ layout: post
          1. [Les fonctionnalités](#les-fonctionnalités)
          1. [Visuels application bureau](#visuels-application-bureau)
          1. [Visuels application mobile](#visuels-application-mobile)
+   1. [Précisions sur les mesures](#précisions-sur-les-mesures)
 1. [Valeur ajoutée de cette recherche](#valeur-ajoutée-de-cette-recherche)
 
 ## Objet de la thèse
@@ -369,6 +370,57 @@ Pour mieux présenter *Conduit* et donc la profondeur de notre application de d�
 ![Page d'accueil mobile](ConduitMobileHome.jpg)
 ![Rédaction d'un article mobile](ConduitMobileEditor.jpg)
 ![Lecture d'un article mobile](ConduitMobileArticle.jpg)
+
+### Précisions sur les mesures
+
+Bien entendu, puisque les *proofs of concept* se baseront sur une base de travail déjà effectué à différents niveau, il ne sera pas possible de baser la mesure du temps de développement sur ma propre quantité de travail uniquement.\
+Afin de pouvoir estimer au plus précis le temps de travail déjà effectué par la communauté open source, nous allons nous servir d'un outil.
+
+Dans le monde du développement de logiciel, il est coutume d'utiliser un outil dit "de *versionning*" afin de pouvoir travailler à plusieurs en parallèle sur un même projet et de gérer les différentes versions de l'application.\
+Parmi ces outils de versionning, le plus connu est *Git* et c'est celui qui est utilisé dans dans le dépôt de code de *RealWorld*.\
+Sans rentrer dans des détails qui n'apporterait pas grand chose à la thèse, il est important d'expliquer rapidement le fonctionnement de *Git* afin de comprendre comment il est possible d'estimer du temps de travail passé.
+
+Quand un développeur change des fichiers, Git retient la liste des changement, en comparaison avec les fichiers tels qu'ils étaient avant que le développeur ne se mette à travailler. Lorsqu'il décide qu'il a fini sa tâche, il peut choisir de *commit* (littéralement "créer un engagement", sous entendu de modification) ses modification et de donner un nom à ces changements afin de les catégoriser.(Exemple : "Ajoute la fonctionnalité de recherche des utilisateurs").\
+Ce *commit* est horodaté et il peux passer à une autre tâche, effectuer les modifications nécessaires, les *commit* à nouveau etc.
+
+Il existe donc une ligne du temps sur laquelle tous les *commits* sont positionnés. Cependant ils indiquent tous un endroit dans le temps et non pas une durée de travail. A l'aide d'un algorithme, il est possible de récupérer ces commits et de les grouper ensemble pour reconstituer une "période de travail".
+
+Par exemple, si un développeur crée ces commits à ces moments :
+
+<div class="mermaid">
+graph LR
+  C1(Commit 1 - 09:00)
+  C2(Commit 2 - 10:30)
+  C3(Commit 3 - 11:20)
+  C4(Commit 4 - 13:00)
+  C5(Commit 5 - 15:30)
+  C6(Commit 6 - 16:30)
+  C7(Commit 7 - 17:30)
+  C1 --> C2 --> C3 --> C4 --> C5 --> C6 --> C7
+</div>
+
+On peux lier les *commits* qui se déroulent à moins de 2h d'écarts, et ainsi dégager les deux périodes de travail de la journée. Il suffit ensuite de mesurer l'écart de temps entre le premier et le dernier *commit* de la période.
+
+<div class="mermaid">
+graph LR
+  subgraph Période 1 - 4h
+    C1(Commit 1 - 09:00)
+    C2(Commit 2 - 10:30)
+    C3(Commit 3 - 11:20)
+    C4(Commit 4 - 13:00)
+  end
+  subgraph Période 2 - 2h
+    C5(Commit 5 - 15:30)
+    C6(Commit 6 - 16:30)
+    C7(Commit 7 - 17:30)
+  end
+  C1 -->|1h30mn| C2 -->|50mn| C3 -->|1h40mn| C4 -->|2h30mn| C5 -->|1h| C6 -->|1h| C7
+</div>
+
+Le problème c'est qu'il existe pas de manière de savoir à quel moment le développeur a commencé à travailler. Nous n'avons que son premier jalon (à 8h).\
+Afin d'affiner un peu plus nous pouvons ajouter par défaut une heure de travail à chaque période ce qui donnerais dans cet exemple, une journée de 8h, ce qui semble tout à fait cohérent.
+
+C'est cet algorithme qui va pouvoir nous permettre d'estimer au mieux le temps de travail effectué sur un dépôt de code open source. 
 
 ## Valeur ajoutée de cette recherche
 
