@@ -25,8 +25,8 @@ layout: post
          1. [**Critères 2.2** : La maintenance](#critères-22--la-maintenance)
          1. [**Critères 2.3** : La réutilisation](#critères-23--la-réutilisation)
       1. [**Critères 3** : Le résultat](#critères-3--le-résultat)
-         1. [**Critères 3.1** : Utilisation du processeur et de la mémoire](#critères-31--utilisation-du-processeur-et-de-la-mémoire)
-         1. [**Critères 3.2** : Temps de réponse moyen](#critères-32--temps-de-réponse-moyen)
+         1. [**Critère 3.1** : Utilisation du processeur et de la mémoire](#critère-31--utilisation-du-processeur-et-de-la-mémoire)
+         1. [**Critère 3.2** : Temps de réponse moyen](#critère-32--temps-de-réponse-moyen)
          1. [**Critère 3.3** : Le poids de l'exécutable](#critère-33--le-poids-de-lexécutable)
       1. [Comparaisons des critères entres eux](#comparaisons-des-critères-entres-eux)
    1. [RealWorld](#realworld)
@@ -298,16 +298,28 @@ Pour mesurer ce critère, nous évalueront les mécanismes qui permettent de ren
 
 Enfin, ces derniers critères visent à juger de/des application(s) une fois que leur développement est terminé. Contrairement aux critères précédents, on regarda plutôt ici certaines caractéristiques techniques qu'on comparera d'un point de vu simplement mathématique. Ces caractéristiques seront les résultats de *benchmarks*, des évaluations précise des critères.
 
-##### **Critères 3.1** : Utilisation du processeur et de la mémoire
+##### **Critère 3.1** : Utilisation du processeur et de la mémoire
 
 Les performances d'une application sont un ensemble de mesures qui touche à sa consommation de ressources. Afin de s'exécuter convenablement, un logiciel doit utiliser la puissance de calcul du processeur et stocker/récupérer des données dans la mémoire vive de l'appareil.\
 Une application trop gourmande en ressource aura donc tendance à "fatiguer" la machine, qui peinera donc à faire fonctionner l'application, ou les autres processus de l'appareil.
 
 Même si la consommation de ressource est importante pour tous les supports matériels, c'est le cas des applicatifs mobile qui est le plus critique en raison des faibles performances des smartphones, comparés aux performances des ordinateurs.
 
+Le but étant de comparer chaque hypothèse sur la même base, nous allons donc établir une liste de moment où nous mesureront l'utilisation du processeur et celle de la mémoire.\
+Ces moments se basent sur la forme des *proofs of concept* en question, pour plus d'informations sur la nature de l'application de test, veuillez vous référer au passage listant [ses fonctionnalités attendues](#conduit).
+
+Voici donc les différents instants du cycle d'utilisation de l'application où nous effectueront nos relevés :
+
+- Ouverture de l'application et arrivé sur la liste des articles
+- Tri des articles par l'utilisation des *tags* (étiquettes) sur cette même page
+- Ouverture de la page d'un utilisateur
+- Connexion à l'application
+- Publication d'un article
+- Suppression d'un article
+
 Ces performances sont mesurables et quantifiables grâce à des outils d'analyse.
 
-##### **Critères 3.2** : Temps de réponse moyen
+##### **Critère 3.2** : Temps de réponse moyen
 
 On juge une application agréable quand elle "répond au doigt et à l'oeil", en d'autres termes : quand celle ci réagit aux interactions de l'utilisateur dans un temps très restreint. Si un logiciel met plusieurs seconde à sauvegarder un document (par exemple), on jugera l'application lente.
 
@@ -315,6 +327,8 @@ Cette problématique peut même se faire ressentir quand toutes les actions ont 
 
 Le temps de réponse peut-être mesuré en obtenant la différence de temps entre une action de l'utilisateur et la réponse visible à l'écran de cette dernière.\
 Il est aussi intéressant de calculer le *First Contentful Paint* ou premier affichage de contenu, le temps que met une application à afficher pour la première fois la page que verra l'utilisateur.
+
+De même, ces relevés se feront sur les mêmes instants du cycle d'utilisation de l'application que pour le [critère 3.1](#critère-31--utilisation-du-processeur-et-de-la-mémoire).
 
 ##### **Critère 3.3** : Le poids de l'exécutable
 

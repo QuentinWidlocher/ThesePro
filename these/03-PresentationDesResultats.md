@@ -15,6 +15,8 @@ layout: post
       1. [Hypothèse 1 - **Critères 2.3** : La réutilisation](#hypothèse-1---critères-23--la-réutilisation)
    1. [Hypothèse 1 - **Critères 3** : Le résultat](#hypothèse-1---critères-3--le-résultat)
       1. [Hypothèse 1 - **Critères 3.1** : Utilisation du processeur et de la mémoire](#hypothèse-1---critères-31--utilisation-du-processeur-et-de-la-mémoire)
+         1. [Hypothèse 1 - **Critère 3.1.1** : Utilisation du processeur](#hypothèse-1---critère-311--utilisation-du-processeur)
+         1. [Hypothèse 1 - **Critère 3.1.1** : Utilisation de la mémoire](#hypothèse-1---critère-311--utilisation-de-la-mémoire)
       1. [Hypothèse 1 - **Critères 3.2** : Temps de réponse moyen](#hypothèse-1---critères-32--temps-de-réponse-moyen)
       1. [Hypothèse 1 - **Critère 3.3** : Le poids de l'exécutable](#hypothèse-1---critère-33--le-poids-de-lexécutable)
    1. [Hypothèse 1 - Synthèse des critères](#hypothèse-1---synthèse-des-critères)
@@ -96,7 +98,7 @@ Pour tenter de le démontrer, nous allons réaliser une application dans chaque 
 - Android : [**Kotlin/Java**](https://github.com/DrewCarlson/realworld-android-kotlin)
 - iOS : [**Swift**](https://github.com/littleStudent/swift-realworld-example)
 
-Note : Les langages séparés par une barre oblique représentent à gauche le langage utilisé pour le *proof of concept* et à droite le langage équivalent ou transpilé<!-- TODO: définir transpiler -->. Quand un langage est suivit de "avec X", on désigne le *framework*<!-- TODO: définir framework --> utilisé.
+Note : Les langages séparés par une barre oblique représentent à gauche le langage utilisé pour le *proof of concept* et à droite le langage équivalent ou [transpilé](/chapters/glossaire#tranpilateur). Quand un langage est suivit de "avec X", on désigne le [*framework*](/chapters/glossaire#framwork) utilisé.
 
 ### Hypothèse 1 - **Critères 1** : Pendant le développement
 
@@ -106,13 +108,13 @@ Pour ces cinq applications différentes dont le code ne peux être partagé (mê
 
 | Système d'exploitation | Langage | Nature | Nombre estimé d'heures |
 | ---------------------- | ------- | ------ | ---------------------: |
-| Linux                  | Rust    | Natif  | 41                     |
-| Windows                | C#      | Natif  | 37                     |
-| macOS                  | Swift   | Natif  | 33                     |
-| Android                | Kotlin  | Natif  | 29                     |
-| iOS                    | Swift   | Natif  | 32                     |
-| **Moyenne**            | -       | -      | 34                     |
-| **Total**              | -       | -      | **172**                |
+| Linux                  | Rust    | Natif  |                     41 |
+| Windows                | C#      | Natif  |                     37 |
+| macOS                  | Swift   | Natif  |                     33 |
+| Android                | Kotlin  | Natif  |                     29 |
+| iOS                    | Swift   | Natif  |                     32 |
+| **Moyenne**            | -       | -      |                     34 |
+| **Total**              | -       | -      |                **172** |
 
 Là où la moyenne est fournie à but indicatif, c'est dans le total que nous sommes intéressés. En effet, développer cinq fois une application similaire a un impact très important sur le temps total d'un projet.
 
@@ -132,12 +134,12 @@ Afin de juger des libertés d'accès de tous ces logiciels, nous leur donneront 
 
 | Système d'exploitation | Langage | Nature | Note sur 5 |
 | ---------------------- | ------- | ------ | ---------: |
-| Linux                  | Rust    | Natif  | 5.0        |
-| Windows                | C#      | Natif  | 5.0        |
-| macOS                  | Swift   | Natif  | 5.0        |
-| Android                | Kotlin  | Natif  | 4.5        |
-| iOS                    | Swift   | Natif  | 4.5        |
-| **Moyenne**            |         |        | **4.8**    |
+| Linux                  | Rust    | Natif  |        5.0 |
+| Windows                | C#      | Natif  |        5.0 |
+| macOS                  | Swift   | Natif  |        5.0 |
+| Android                | Kotlin  | Natif  |        4.5 |
+| iOS                    | Swift   | Natif  |        4.5 |
+| **Moyenne**            |         |        |    **4.8** |
 
 Sans surprise, chaque application reçoit une note proche de maximale étant donné le degré de liberté offert par les applications natives.\
 Il est à noté que si Android et iOS ont tout deux des notes légèrement plus basse, c'est en raison de la requête faite à l'utilisateur d'accéder aux fonctionnalités. Quand bien même cette notion est très bénéfique d'un point de vue de la sécurité informatique, nous jugeons ici la degré de liberté d'accès exclusivement.
@@ -150,12 +152,12 @@ Nous allons réitérer la méthode de la notation afin de juger la facilité et 
 
 | Système d'exploitation | Note sur 5 |
 | ---------------------- | ---------: |
-| Linux                  | 5.0        |
-| Windows                | 4.0        |
-| macOS                  | 5.0        |
-| Android                | 5.0        |
-| iOS                    | 2.0        |
-| **Moyenne**            | **4.2**    |
+| Linux                  |        5.0 |
+| Windows                |        4.0 |
+| macOS                  |        5.0 |
+| Android                |        5.0 |
+| iOS                    |        2.0 |
+| **Moyenne**            |    **4.2** |
 
 Dans le cas de Linux, macOS, Windows Android, il est possible de créer des fichiers uniques qui servent de "containers" à l'application et qui, une fois exécutés, installent directement le logiciel.
 
@@ -171,12 +173,12 @@ La maintenance peut être perçu comme un second déploiement. Nous devons juger
 
 | Système d'exploitation | Note sur 5 |
 | ---------------------- | ---------: |
-| Linux                  | 4.5        |
-| Windows                | 4.5        |
-| macOS                  | 4.5        |
-| Android                | 5.0        |
-| iOS                    | 3.5        |
-| **Moyenne**            | **4.4**    |
+| Linux                  |        4.5 |
+| Windows                |        4.5 |
+| macOS                  |        4.5 |
+| Android                |        5.0 |
+| iOS                    |        3.5 |
+| **Moyenne**            |    **4.4** |
 
 Chaque système d'exploitation est très réceptif quand à la mise à jour des applications natives. Android et iOS proposent des systèmes intégrés dans leurs *stores* là ou les mises à jours sur les systèmes d'exploitation bureau doivent êtres implémentés manuellement.
 
@@ -226,12 +228,12 @@ Nous pouvons voir dans ce cas que si l'on quantifie les liens qu'il est possible
 
 | Système d'exploitation | Langage | Partageable sur X projets |
 | ---------------------- | ------- | ------------------------: |
-| Linux                  | Rust    | 1.0                       |
-| Windows                | C#      | 1.0                       |
-| macOS                  | Swift   | 1.5                       |
-| Android                | Kotlin  | 1.0                       |
-| iOS                    | Swift   | 1.5                       |
-| **Moyenne**            |         | **1.2**                   |
+| Linux                  | Rust    |                       1.0 |
+| Windows                | C#      |                       1.0 |
+| macOS                  | Swift   |                       1.5 |
+| Android                | Kotlin  |                       1.0 |
+| iOS                    | Swift   |                       1.5 |
+| **Moyenne**            |         |                   **1.2** |
 
 Attention, dans ce cas précis, les valeurs ne sont pas des notes sur 5 mais bien des ratios que nous pourront comparer plus tard. Actuellement, la moyenne de **1.2** représente un taux de partage de code assez faible puisque le code d'un logiciel n'est réutilisable que pour un logiciel d'un langage identique.
 
@@ -243,7 +245,76 @@ Afin de donner un pourcentage de réutilisation du code, nous pouvons diviser la
 
 #### Hypothèse 1 - **Critères 3.1** : Utilisation du processeur et de la mémoire
 
+Nous allons mesurer les utilisations du processeur et de la mémoire dans ces cinq applications natives, à différents instants du cycle de l'utilisation du *proof of concept*.\
+Ces instants sont, rappelons le :
+
+- A : Ouverture de l'application et arrivé sur la liste des articles
+- B : Tri des articles
+- C : Ouverture de la page d'un utilisateur
+- D : Connexion à l'application
+- E : Publication d'un article
+- F : Suppression d'un article
+
+##### Hypothèse 1 - **Critère 3.1.1** : Utilisation du processeur
+
+|             | Linux | Windows | macOS | Android |  iOS | **Moyenne** |
+| :---------: | ----: | ------: | ----: | ------: | ---: | ----------: |
+|      A      |  6.32 |    7.15 |  7.19 |    6.47 | 7.26 |        6.99 |
+|      B      |  6.18 |    8.03 |  8.15 |    7.66 | 8.76 |        7.76 |
+|      C      |  6.42 |    6.90 |  6.95 |    6.45 | 7.12 |        6.77 |
+|      D      |  5.67 |    5.88 |  6.21 |    5.81 | 6.27 |        5.97 |
+|      E      |  5.69 |    6.08 |  6.09 |    5.86 | 6.74 |        6.09 |
+|      F      |  4.77 |    5.34 |  5.47 |    5.26 | 5.77 |        5.32 |
+| **Moyenne** |  5.84 |    6.56 |  6.68 |    6.25 | 6.99 |    **6.48** |
+
+Nous pouvons voir qu'en géneral aucune des applications n'atteint les huits pourcents de l'utilisation du processeur ce qui est signe d'une consommation assez basse.\
+Nous pouvons aussi remarquer que l'action la plus coûteuse est la recherche parmis la liste intégrale des articles, ce qui semble tout à fait cohérent.
+
+En moyenne, pour ces logiciels, nous nous situons aux alentours de **6.48%** d'utilisation du processeur.
+
+##### Hypothèse 1 - **Critère 3.1.1** : Utilisation de la mémoire
+
+Sur les mêmes six actions, regardons l'utilisation de la mémoire vive (en MB).
+
+|             | Linux | Windows | macOS | Android |   iOS | **Moyenne** |
+| :---------: | ----: | ------: | ----: | ------: | ----: | ----------: |
+|      A      | 15.95 |   18.18 | 18.49 |   17.20 | 20.88 |       18.14 |
+|      B      | 13.36 |   14.20 | 14.81 |   14.04 | 15.41 |       14.36 |
+|      C      | 13.67 |   14.80 | 14.98 |   14.29 | 15.01 |       14.55 |
+|      D      | 13.19 |   14.62 | 15.72 |   13.42 | 15.15 |       14.42 |
+|      E      | 12.31 |   13.09 | 14.09 |   12.52 | 14.55 |       13.31 |
+|      F      | 10.51 |   11.12 | 11.63 |   11.09 | 12.40 |       11.35 |
+| **Moyenne** | 13.17 |   14.34 | 14.86 |   13.76 | 15.66 |   **14.36** |
+
+Là encore, l'utilisation de la mémoire est répartie assez naturellement sans anomalies à relever. Notons tout de même que c'est le démarrage qui est le plus coûteux en raison des nombreuses informations importantes à initialiser au démarrage qui ne servent pas lors de l'utilisation.
+
+Nous retenons donc la valeur moyenne de **14.36MB** d'utilisation de la mémoire.
+
 #### Hypothèse 1 - **Critères 3.2** : Temps de réponse moyen
+
+Comme expliqué dans l'introduction, le temps de réponse d'une application est important et donne à l'utilisateur la sensation d'un logiciel puissant et efficace (ou à l'inverse d'un logiciel lent et désagréable d'utilisation)
+
+En utilisant les mêmes actions que pour le critère précédent, regardont les temps de réponses moyen de celles ci.\
+Nous regarderons aussi deux autres données lors de l'affichage premier de la fenêtre :
+
+- G : *First Contentful Paint* ou premier affichage de contenu (temps avant que les premières données n'arrivent à l'ecran)
+- H : *Time to Interactive* ou durée avant interaction possible. (temps avant de pouvoir avoir la main sur le logiciel)
+
+Les valeurs sont exprimées en secondes
+
+|             | Linux | Windows | macOS | Android |  iOS | **Moyenne** |
+| :---------: | ----: | ------: | ----: | ------: | ---: | ----------: |
+|      A      |  1.86 |    2.05 |  2.95 |    2.02 | 2.15 |        2.21 |
+|      B      |  0.71 |    0.80 |  0.79 |    0.79 | 0.80 |        0.78 |
+|      C      |  0.09 |    0.10 |  0.10 |    0.11 | 0.12 |        0.10 |
+|      D      |  0.12 |    0.17 |  0.19 |    0.15 | 0.19 |        0.16 |
+|      E      |  0.71 |    0.77 |  0.74 |    0.73 | 0.78 |        0.75 |
+|      F      |  0.07 |    0.08 |  0.09 |    0.11 | 0.09 |        0.09 |
+|      G      |  0.71 |    0.80 |  0.81 |    0.74 | 0.93 |        0.81 |
+|      H      |  0.88 |    1.02 |  1.00 |    0.96 | 1.10 |        0.99 |
+| **Moyenne** |  0.64 |    0.72 |  0.83 |    0.70 | 0.77 |    **0.74** |
+
+Nous observons donc que le temps de réactivité d'une application native se trouve généralement sous la seconde.
 
 #### Hypothèse 1 - **Critère 3.3** : Le poids de l'exécutable
 
@@ -251,13 +322,13 @@ Pour estimer l'impact du poids de l'exécutable final nous allons juger du poids
 
 | Système d'exploitation | Langage | Nature | Poids (en MB) |
 | ---------------------- | ------- | ------ | ------------: |
-| Linux                  | Rust    | Natif  | 6.24          |
-| Windows                | C#      | Natif  | 7.59          |
-| macOS                  | Swift   | Natif  | 7.95          |
-| Android                | Kotlin  | Natif  | 10.75         |
-| iOS                    | Swift   | Natif  | 11.20         |
-| **Moyenne**            | -       | -      | **8.75**      |
-| **Total**              | -       | -      | 43.73     |
+| Linux                  | Rust    | Natif  |          6.24 |
+| Windows                | C#      | Natif  |          7.59 |
+| macOS                  | Swift   | Natif  |          7.95 |
+| Android                | Kotlin  | Natif  |         10.75 |
+| iOS                    | Swift   | Natif  |         11.20 |
+| **Moyenne**            | -       | -      |      **8.75** |
+| **Total**              | -       | -      |         43.73 |
 
 Chaque logiciel a un poids assez similaire aux autres, ont détecte cependant des poids plus élevé pour les applications mobiles, qui ont un poids souvent supérieurs aux logiciels de bureau.
 On estime en 2017 le poids moyen d'une application à 15MB sur Android et 38MB sur iOS[^1]
@@ -272,8 +343,9 @@ On estime en 2017 le poids moyen d'une application à 15MB sur Android et 38MB s
   - Critère 2.2 (Maintenance) : 4.4 pts
   - Critère 2.3 (Réutilisation) : 24%
 - Critères 3 (Résultat)
-  - Critère 3.1 (*Benchmark*) : ??
-  - Critère 3.2 (Temps de réponse) : ??ms
+  - Critère 3.1.1 (*Benchmark* processeur) : 6.48%
+  - Critère 3.1.2 (*Benchmark* mémoire) : 14.36MB
+  - Critère 3.2 (Temps de réponse) : 0.74s
   - Critère 3.3 (Poids total) : 8.75MB
 
 ### Hypothèse 1 - Conclusion
@@ -301,10 +373,10 @@ Pour ces deux applications voici les temps de développement :
 
 | Groupe de cibles | Langage | Nature | Nombre estimé d'heures |
 | ---------------- | ------- | ------ | ---------------------: |
-| Logiciel Bureau  | Kotlin  | Natif  | 23                     |
-| Logiciel Mobile  | Dart    | Natif  | 35                     |
-| **Moyenne**      | -       | -      | 29                 |
-| **Total**        | -       | -      | **58**                 |
+| Logiciel Bureau  | Kotlin  | Natif  |                     23 |
+| Logiciel Mobile  | Dart    | Natif  |                     35 |
+| **Moyenne**      | -       | -      |                     29 |
+| **Total**        | -       | -      |                 **58** |
 
 Le temps de développement total de ce projet s'élève donc à 58 heures. C'est naturellement bien moins élevé que l'hypothèse précédente et c'est un critère non négligeable.
 
@@ -314,9 +386,9 @@ Comme pour l'hypothèse précédente, nous allons juger les deux applications su
 
 | Groupe de cibles | Langage | Nature | Note sur 5 |
 | ---------------- | ------- | ------ | ---------: |
-| Logiciel Bureau  | Kotlin  | Natif  | 5.0        |
-| Logiciel Mobile  | Dart    | Natif  | 4.5        |
-| **Moyenne**      |         |        | **4.8**    |
+| Logiciel Bureau  | Kotlin  | Natif  |        5.0 |
+| Logiciel Mobile  | Dart    | Natif  |        4.5 |
+| **Moyenne**      |         |        |    **4.8** |
 
 Comme nous pouvons le constater, de la même manière que l'hypothèse précédente, les applications natives n'ont que très peu de limitations quand aux fonctionnalités auxquelles elles ont accès.\
 Seul l'application mobile possède un léger inconvénient encore une fois, celui  de devoir demander la permission à l'utilisateur pour accéder à certains mécanismes.
@@ -329,12 +401,12 @@ Du point de vue de la facilité de déploiement, on peux encore une fois s'atten
 
 | Système d'exploitation | Note sur 5 |
 | ---------------------- | ---------: |
-| Linux                  | 4.5        |
-| Windows                | 4.5        |
-| macOS                  | 4.5        |
-| Android                | 5.0        |
-| iOS                    | 2.0        |
-| **Moyenne**            | **4.1**    |
+| Linux                  |        4.5 |
+| Windows                |        4.5 |
+| macOS                  |        4.5 |
+| Android                |        5.0 |
+| iOS                    |        2.0 |
+| **Moyenne**            |    **4.1** |
 
 Ici pour les cibles mobiles, le résultat est le même que pour l'hypothèse précédente car la méthode de déploiement est exactement la même.\
 Pour les cibles bureau, la seule contrainte notable est la présence obligatoire de Java sur les machines. Java est un logiciel qui est déjà présent sur un grand nombre d'appareils d'utilisateurs et dans le cas échéant, l'installation de celui ci est à la fois simple et rapide.
@@ -345,12 +417,12 @@ La maintenance de ces deux applications est encore une fois similaire à ce qui 
 
 | Système d'exploitation | Note sur 5 |
 | ---------------------- | ---------: |
-| Linux                  | 4.5        |
-| Windows                | 4.5        |
-| macOS                  | 4.5        |
-| Android                | 5.0        |
-| iOS                    | 3.5        |
-| **Moyenne**            | **4.4**    |
+| Linux                  |        4.5 |
+| Windows                |        4.5 |
+| macOS                  |        4.5 |
+| Android                |        5.0 |
+| iOS                    |        3.5 |
+| **Moyenne**            |    **4.4** |
 
 Ici, c'est encore les cibles mobiles qui ont l'ascendant sur les cibles fixe en raison de la présence d'un *store* capable de mettre automatiquement les applications à jour sur la machine des utilisateurs.
 
@@ -392,12 +464,12 @@ Nous allons maintenant estimer pour chaque cible, le nombre de projet où son co
 
 | Système d'exploitation | Langage | Partageable sur X projets |
 | ---------------------- | ------- | ------------------------: |
-| Linux                  | Kotlin  | 3.0                       |
-| Windows                | Kotlin  | 3.0                       |
-| macOS                  | Kotlin  | 3.0                       |
-| Android                | Dart    | 2.0                       |
-| iOS                    | Dart    | 2.0                       |
-| **Moyenne**            |         | **2.6**                   |
+| Linux                  | Kotlin  |                       3.0 |
+| Windows                | Kotlin  |                       3.0 |
+| macOS                  | Kotlin  |                       3.0 |
+| Android                | Dart    |                       2.0 |
+| iOS                    | Dart    |                       2.0 |
+| **Moyenne**            |         |                   **2.6** |
 
 Le ratio obtenu au final montre que le code peut-être partagé en moyenne sur plus de la moitié des projets. Rappelons que le moins bon ratio possible est lorsqu'un projet ne peut-être partagé uniquement vers un projet du même type, donnant ainsi une moyenne de 1 projet. Là ou le meilleur ratio possible serait une solution où chacun des cinq projet peut-être partagé avec les cinq autres, la moyenne serait donc 5.
 
@@ -416,11 +488,11 @@ En revanche, le code source des cibles mobiles doit être *compilé* deux fois f
 
 | Groupe de cibles | Langage | Nature | Poids (en MB) |
 | ---------------- | ------- | ------ | ------------: |
-| Logiciels Bureau | Kotlin  | Natif  | 8.12          |
-| Android          | Dart    | Natif  | 11.77         |
-| iOS              | Dart    | Natif  | 13.40         |
-| **Moyenne**      | -       | -      | **11.10**     |
-| **Total**        | -       | -      | 33.29     |
+| Logiciels Bureau | Kotlin  | Natif  |          8.12 |
+| Android          | Dart    | Natif  |         11.77 |
+| iOS              | Dart    | Natif  |         13.40 |
+| **Moyenne**      | -       | -      |     **11.10** |
+| **Total**        | -       | -      |         33.29 |
 
 Comme pour l'hypothèse précédente, le poids des applications mobiles sont légèrement plus élevées que celle des logiciels bureau. D'autant plus que les application créées avec *Flutter* (ou d'autres outils similaires) ont une charge supplémentaire de poids comparé aux application standard[^2].
 
@@ -555,10 +627,10 @@ Ils se reposent tout deux sur le même langage (*Typescript*) et le même outil 
 
 | Groupe de cibles | Langage    | Nature | Nombre estimé d'heures |
 | ---------------- | ---------- | ------ | ---------------------: |
-| Logiciel Bureau  | Typescript | Web    | 20                     |
-| Logiciel Mobile  | Typescript | Natif  | 23                     |
-| **Moyenne**      | -          | -      | 22                 |
-| **Total**        | -          | -      | **43**                 |
+| Logiciel Bureau  | Typescript | Web    |                     20 |
+| Logiciel Mobile  | Typescript | Natif  |                     23 |
+| **Moyenne**      | -          | -      |                     22 |
+| **Total**        | -          | -      |                 **43** |
 
 Le code source du logiciel bureau étant principalement le même que l'hypothèse d'avant, le nombre estimé ne fluctue pas. On constate aussi que la technologie utilisé étant très similaire, les deux applicatifs ont des estimations très proches.
 
@@ -568,9 +640,9 @@ Dans le cas d'une application web et une autre native, nous pouvons nous attendr
 
 | Groupe de cibles | Langage    | Nature | Note sur 5 |
 | ---------------- | ---------- | ------ | ---------: |
-| Logiciel Bureau  | Typescript | Web    | 2.5        |
-| Logiciel Mobile  | Typescript | Natif  | 4.5        |
-| **Moyenne**      |            |        | **3.5**    |
+| Logiciel Bureau  | Typescript | Web    |        2.5 |
+| Logiciel Mobile  | Typescript | Natif  |        4.5 |
+| **Moyenne**      |            |        |    **3.5** |
 
 En effet, tel que dans l'hypothèse précédente, les applications web n'ont que très peu de libertés quand aux fonctionnalités auxquelles elles ont accès là ou, tel que dans les hypothèses 1 et 2, ce n'est pas un problème que rencontre les logiciels natifs.
 
@@ -582,12 +654,12 @@ Même chose dans le cas du déploiement, nous pouvons nous attendre à des notes
 
 | Système d'exploitation | Note sur 5 |
 | ---------------------- | ---------: |
-| Linux                  | 5.0        |
-| Windows                | 5.0        |
-| macOS                  | 5.0        |
-| Android                | 4.5        |
-| iOS                    | 2.0        |
-| **Moyenne**            | **4.3**    |
+| Linux                  |        5.0 |
+| Windows                |        5.0 |
+| macOS                  |        5.0 |
+| Android                |        4.5 |
+| iOS                    |        2.0 |
+| **Moyenne**            |    **4.3** |
 
 Le déploiement de l'application web reste aussi simple que dans l'hypothèse précédente, et nous rencontrons les mêmes problématiques pour le déploiement sur les mobiles iOS que sur les autres hypothèses.
 
@@ -597,12 +669,12 @@ Idem pour la maintenance.
 
 | Système d'exploitation | Note sur 5 |
 | ---------------------- | ---------: |
-| Linux                  | 3.0        |
-| Windows                | 3.0        |
-| macOS                  | 3.0        |
-| Android                | 5.0        |
-| iOS                    | 3.5        |
-| **Moyenne**            | **3.5**    |
+| Linux                  |        3.0 |
+| Windows                |        3.0 |
+| macOS                  |        3.0 |
+| Android                |        5.0 |
+| iOS                    |        3.5 |
+| **Moyenne**            |    **3.5** |
 
 Ici encore, seul Android et son store qui permet les mises à jours automatique parvient à se démarquer des applications webs et leur maintenance coûteuse ou de iOS et de sa phase de test obligatoire bridant la réactivité des déploiements.
 
@@ -643,12 +715,12 @@ Voyons plus en détails les liens effectifs :
 
 | Système d'exploitation | Langage    | Nature | Partageable sur X projets |
 | ---------------------- | ---------- | ------ | ------------------------: |
-| Linux                  | Typescript | Web    | 4                         |
-| Windows                | Typescript | Web    | 4                         |
-| macOS                  | Typescript | Web    | 4                         |
-| Android                | Typescript | Natif  | 3.5                       |
-| iOS                    | Typescript | Natif  | 3.5                       |
-| **Moyenne**            |            |        | **3.8**                   |
+| Linux                  | Typescript | Web    |                         4 |
+| Windows                | Typescript | Web    |                         4 |
+| macOS                  | Typescript | Web    |                         4 |
+| Android                | Typescript | Natif  |                       3.5 |
+| iOS                    | Typescript | Natif  |                       3.5 |
+| **Moyenne**            |            |        |                   **3.8** |
 
 On considère que le code du web peut être partagé sur les trois système d'exploitation bureau (soit 3) et que seul la moitié du code est réutilisable sur les cibles mobiles (soit 0.5 *2 = 1). \
 De même, ce calcul inversé pour les cibles mobiles nous indique qu'il peut être partagé sur les deux système d'exploitation mobiles (soit 2) et uniquement partiellement sur les cibles bureau (soit 0.5* 3 = 1.5).
@@ -667,11 +739,11 @@ Comparons le poids des exécutables obtenu avec le développement de cette hypot
 
 | Groupe de cibles | Langage    | Nature | Poids (en MB) |
 | ---------------- | ---------- | ------ | ------------: |
-| Logiciels Bureau | Typescript | Web    | 0.88          |
-| Android          | Typescript | Natif  | 12.23         |
-| iOS              | Typescript | Natif  | 13.51         |
-| **Moyenne**      | -          | -      | **8.87**      |
-| **Total**        | -          | -      | 26.62     |
+| Logiciels Bureau | Typescript | Web    |          0.88 |
+| Android          | Typescript | Natif  |         12.23 |
+| iOS              | Typescript | Natif  |         13.51 |
+| **Moyenne**      | -          | -      |      **8.87** |
+| **Total**        | -          | -      |         26.62 |
 
 Comme pour l'hypothèse précédente, le poids de l'application web est très faible comparé aux applications mobile car son affichage se fait dans le navigateur.\
 Du point de vue des logiciels mobiles, nous retrouvons un poids assez similaire à celles des applications mobiles native que nous avons déjà observé, ce qui s'explique par le fait que ces logiciels sont bels et biens des conteneurs natifs affichants des applications web.
@@ -717,10 +789,10 @@ Les technologies utilisées pour la création de ce *proof of concept* étant le
 
 | Groupe de cibles | Langage    | Nature  | Nombre estimé d'heures |
 | ---------------- | ---------- | ------- | ---------------------: |
-| Logiciel Bureau  | Typescript | Hybride | 24                     |
-| Logiciel Mobile  | Typescript | Hybride | 25                     |
-| **Moyenne**      | -          | -       | 25                 |
-| **Total**        | -          | -       | **49**                 |
+| Logiciel Bureau  | Typescript | Hybride |                     24 |
+| Logiciel Mobile  | Typescript | Hybride |                     25 |
+| **Moyenne**      | -          | -       |                     25 |
+| **Total**        | -          | -       |                 **49** |
 
 #### Hypothèse 5 - **Critère 1.2** : Les limitations des technologies
 
@@ -728,9 +800,9 @@ Tout l'intérêt de cette hypothèse repose sur le principe de développer avec 
 
 | Groupe de cibles | Langage    | Nature  | Note sur 5 |
 | ---------------- | ---------- | ------- | ---------: |
-| Logiciel Bureau  | Typescript | Hybride | 4.5        |
-| Logiciel Mobile  | Typescript | Hybride | 4.0        |
-| **Moyenne**      |            |         | **4.3**    |
+| Logiciel Bureau  | Typescript | Hybride |        4.5 |
+| Logiciel Mobile  | Typescript | Hybride |        4.0 |
+| **Moyenne**      |            |         |    **4.3** |
 
 L'accès aux fonctionnalités natives se fait dans ces technologies hybrides, par la mise en place de *plugins*, permettant l'accès à chacune des fonctionnalités une par une. C'est un coût de temps de développement certes très léger, mais présent par rapport à une application native.
 
@@ -744,12 +816,12 @@ Le déploiement de ces deux applicatifs est similaire à celle des applications 
 
 | Système d'exploitation | Note sur 5 |
 | ---------------------- | ---------: |
-| Linux                  | 4.5        |
-| Windows                | 4.5        |
-| macOS                  | 4.5        |
-| Android                | 5.0        |
-| iOS                    | 2.0        |
-| **Moyenne**            | **4.1**    |
+| Linux                  |        4.5 |
+| Windows                |        4.5 |
+| macOS                  |        4.5 |
+| Android                |        5.0 |
+| iOS                    |        2.0 |
+| **Moyenne**            |    **4.1** |
 
 Les résultats sont donc les même que pour l'hypothèse 2.
 
@@ -759,12 +831,12 @@ Idem pour la maintenance.
 
 | Système d'exploitation | Note sur 5 |
 | ---------------------- | ---------: |
-| Linux                  | 4.5        |
-| Windows                | 4.5        |
-| macOS                  | 4.5        |
-| Android                | 5.0        |
-| iOS                    | 3.5        |
-| **Moyenne**            | **4.4**    |
+| Linux                  |        4.5 |
+| Windows                |        4.5 |
+| macOS                  |        4.5 |
+| Android                |        5.0 |
+| iOS                    |        3.5 |
+| **Moyenne**            |    **4.4** |
 
 #### Hypothèse 5 - **Critères 2.3** : La réutilisation
 
@@ -785,13 +857,13 @@ Nous avons déjà pu observer le poids d'une application native (par extension h
 
 | Groupe de cibles | Langage    | Nature  | Poids (en MB) |
 | ---------------- | ---------- | ------- | ------------: |
-| Linux            | Typescript | Hybride | 57.32         |
-| Windows          | Typescript | Hybride | 66.25         |
-| macOS            | Typescript | Hybride | 117.30        |
-| Android          | Typescript | Hybride | 12.34         |
-| iOS              | Typescript | Hybride | 13.84         |
-| **Moyenne**      | -          | -       | **53.41**     |
-| **Total**        | -          | -       | 267.05        |
+| Linux            | Typescript | Hybride |         57.32 |
+| Windows          | Typescript | Hybride |         66.25 |
+| macOS            | Typescript | Hybride |        117.30 |
+| Android          | Typescript | Hybride |         12.34 |
+| iOS              | Typescript | Hybride |         13.84 |
+| **Moyenne**      | -          | -       |     **53.41** |
+| **Total**        | -          | -       |        267.05 |
 
 Comme nous pouvons le constater, le poids d'une application hybride bureau utilisant *Electron* est assez conséquent. *Electron* fonctionne en embarquant un navigateur basé sur Chrome (Chromium) allégé mais cette nuance est très importante. C'est l'un des plus gros point faible de cet outil encore actuellement.
 

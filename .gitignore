@@ -3,3 +3,5 @@ jekyll/_site
 jekyll/_chapters
 *.docx
 *.tmp
+*.ods
+.~*#
