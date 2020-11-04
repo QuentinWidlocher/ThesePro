@@ -190,7 +190,7 @@ et chaque logiciel possède sont potentiel lot de problème à corriger. Cette m
 #### Hypothèse 1 - **Critères 2.3** : La réutilisation
 
 Voyons maintenant à quel point le code source utilisé dans ce projet pourrait-être utilisé à nouveau dans un autre projet.\
-Voici un apercu de la manière dont le code pourrait être réutilisé :
+Voici un aperçu de la manière dont le code pourrait être réutilisé :
 
 <div class="mermaid">
 graph LR
@@ -241,8 +241,6 @@ Afin de donner un pourcentage de réutilisation du code, nous pouvons diviser la
 
 ### Hypothèse 1 - **Critères 3** : Le résultat
 
-<!-- TODO: mesurer -->
-
 #### Hypothèse 1 - **Critères 3.1** : Utilisation du processeur et de la mémoire
 
 Nous allons mesurer les utilisations du processeur et de la mémoire dans ces cinq applications natives, à différents instants du cycle de l'utilisation du *proof of concept*.\
@@ -267,8 +265,8 @@ Ces instants sont, rappelons le :
 |      F      |  4.77 |    5.34 |  5.47 |    5.26 | 5.77 |        5.32 |
 | **Moyenne** |  5.84 |    6.56 |  6.68 |    6.25 | 6.99 |    **6.48** |
 
-Nous pouvons voir qu'en géneral aucune des applications n'atteint les huits pourcents de l'utilisation du processeur ce qui est signe d'une consommation assez basse.\
-Nous pouvons aussi remarquer que l'action la plus coûteuse est la recherche parmis la liste intégrale des articles, ce qui semble tout à fait cohérent.
+Nous pouvons voir qu'en général aucune des applications n'atteint les huit pour-cents de l'utilisation du processeur ce qui est signe d'une consommation assez basse.\
+Nous pouvons aussi remarquer que l'action la plus coûteuse est la recherche parmi la liste intégrale des articles, ce qui semble tout à fait cohérent.
 
 En moyenne, pour ces logiciels, nous nous situons aux alentours de **6.48%** d'utilisation du processeur.
 
@@ -294,10 +292,10 @@ Nous retenons donc la valeur moyenne de **14.36MB** d'utilisation de la mémoire
 
 Comme expliqué dans l'introduction, le temps de réponse d'une application est important et donne à l'utilisateur la sensation d'un logiciel puissant et efficace (ou à l'inverse d'un logiciel lent et désagréable d'utilisation)
 
-En utilisant les mêmes actions que pour le critère précédent, regardont les temps de réponses moyen de celles ci.\
+En utilisant les mêmes actions que pour le critère précédent, regardons les temps de réponses moyen de celles ci.\
 Nous regarderons aussi deux autres données lors de l'affichage premier de la fenêtre :
 
-- G : *First Contentful Paint* ou premier affichage de contenu (temps avant que les premières données n'arrivent à l'ecran)
+- G : *First Contentful Paint* ou premier affichage de contenu (temps avant que les premières données n'arrivent à l’écran)
 - H : *Time to Interactive* ou durée avant interaction possible. (temps avant de pouvoir avoir la main sur le logiciel)
 
 Les valeurs sont exprimées en secondes
@@ -348,9 +346,22 @@ On estime en 2017 le poids moyen d'une application à 15MB sur Android et 38MB s
   - Critère 3.2 (Temps de réponse) : 0.74s
   - Critère 3.3 (Poids total) : 8.75MB
 
+En appliquant la formule de calcul proposée, nous obtenons pour cette hypothèse un score moyen de **69.45%**
+
+![Graphique Hypothèse 1](./GraphiqueHypothese1.png)
+
 ### Hypothèse 1 - Conclusion
 
-<!-- TODO: conclusion hypothèse 1 -->
+En observant les résultat de notre analyse, il est aisé d'observer que cette hypothèse possède de nombreuses qualité, notamment en ce qui concerne les performances.\
+Néanmoins, nous pouvons aussi remarquer deux critères très coûteux qui sont négligés tels que le temps de développement et la capacité de réutilisation du code source.
+
+Cette hypothèse, part du principe qu'une application native développée avec un système d'exploitation précis en tête est forcément plus performante. Et même si cette affirmation s'avère être vraie, cela représente tout de même un très grande quantité de logiciels à développer, chacun avec son propre langage.\
+Ce critère est très important et c'est cette hypothèse qui le satisfait le moins. Malgré les avantages qu'offrent les applications native, il est difficilement envisageable de les utiliser dans un cas où l'on souhaite viser un grand nombre de cibles.
+
+D'autre part, étant donné que ces applications n'ont pas de langage en commun (exception faite de macOS et iOS avec *Swift*), il est très difficile de partager du code et donc d'accélérer le développement des applications futures.\
+Là encore le problème s'axe de manière identique car il n'est pas important si l'on souhaite viser un petit nombre d'appareils cible.
+
+Nous allons essayer de mitiger ces problème avec la prochaine hypothèse.
 
 ## Hypothèse 2
 
@@ -358,7 +369,7 @@ On estime en 2017 le poids moyen d'une application à 15MB sur Android et 38MB s
 
 ### Hypothèse 2 - Présentation du *proof of concept*
 
-Cette hypothèse reprend en partie le principe de l'hypothèse précédente qui décrivait les applications natives comme étants les alternatives les plus puissantes disponibles. Cependant, pour palier le nombre conséquent d'applications à développer, ce nombre est réduit au plus faible possible en cherchant des technologies capables de créer des logiciels pour les interfaces bureau et d'autres pour les interfaces mobiles.
+Cette hypothèse reprend en partie le principe de l'hypothèse précédente qui décrivait les applications natives comme étant les alternatives les plus puissantes disponibles. Cependant, pour palier le nombre conséquent d'applications à développer, ce nombre est réduit au plus faible possible en cherchant des technologies capables de créer des logiciels pour les interfaces bureau et d'autres pour les interfaces mobiles.
 
 Conserver les avantages des applications native en limitant grandement le nombre de logiciels semble être une approche prometteuse et pour le démontrer nous réaliserons une application pour chaque groupe d'appareils cibles :
 
@@ -518,7 +529,7 @@ Comme pour l'hypothèse précédente, le poids des applications mobiles sont lé
 
 ### Hypothèse 3 - Présentation du *proof of concept*
 
-Cette hypothèse part du principe qu'étant donné que toutes les cibles sont munies d'un navigateur internet, il est possible de faire tourner la même application web sur toutes celles ci avec un seul code source et une seule interface qui s'adapterais à l'écran quelque soit sa taille ou sa forme.
+Cette hypothèse part du principe qu'étant donné que toutes les cibles sont munies d'un navigateur internet, il est possible de faire tourner la même application web sur toutes celles ci avec un seul code source et une seule interface qui s’adapterait à l'écran quelque soit sa taille ou sa forme.
 
 Voici l'unique projet donc, qui sera réalisé pour ce *proof of concept* :
 
@@ -548,7 +559,7 @@ Pour ce critère, nous évaluons sa note quinaire à **2.5**.
 
 #### Hypothèse 3 - **Critères 2.1** : Le déploiement
 
-Déployer une application web consiste à mettre son code "compilé" sur un serveur en ligne afin que les utilisateurs puissent le télécharger et l'exécuter directement dans leurs navigateurs internet en indiquant l'adresse url correcte.
+Déployer une application web consiste à mettre son code "compilé" sur un serveur en ligne afin que les utilisateurs puissent le télécharger et l'exécuter directement dans leurs navigateurs internet en indiquant l'adresse URL correcte.
 
 Sans action nécessaire de la part de l'utilisateur autre que de cliquer sur le bon lien, on estime le déploiement d'un applicatif web très simple et rapide.
 
@@ -746,7 +757,7 @@ Comparons le poids des exécutables obtenu avec le développement de cette hypot
 | **Total**        | -          | -      |         26.62 |
 
 Comme pour l'hypothèse précédente, le poids de l'application web est très faible comparé aux applications mobile car son affichage se fait dans le navigateur.\
-Du point de vue des logiciels mobiles, nous retrouvons un poids assez similaire à celles des applications mobiles native que nous avons déjà observé, ce qui s'explique par le fait que ces logiciels sont bels et biens des conteneurs natifs affichants des applications web.
+Du point de vue des logiciels mobiles, nous retrouvons un poids assez similaire à celles des applications mobiles native que nous avons déjà observé, ce qui s'explique par le fait que ces logiciels sont bels et biens des conteneurs natifs affichant des applications web.
 
 ### Hypothèse 4 - Synthèse des critères
 
