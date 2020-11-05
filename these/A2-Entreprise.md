@@ -122,6 +122,17 @@ C'est en cela que la méthode s'harmonise avec la philosophie pour une gestion d
 
 ### Faiblesses
 
+Étant une startup, Erudo souffre bien malheureusement des mêmes menaces que les autres startup.
+
+Tout d'abord, l'entreprise est très dépendante des contrats qu'elle est capable d'obtenir. C'est ces contrats qui lui permettent de rester à flot.\
+Fort heureusement, les formations régulières et les divers contrats de maintenance proposés aux client permettent de conserver un apport régulier.
+
+Du fait de la faible masse salariale dans l'entreprise, certaines personne occupent des rôle cruciaux et apportent un savoir faire qui pourrais disparaitre en même temps que l'employé si un jour il devait quitter l'entreprise.\
+Cette problématique est constamment travaillée en interne lors de diverses sessions de partage de connaissance, ayant pour but de former chaque employé à chaque tâche qu'il est possible de réaliser dans l'entreprise. (Du développement, à la gestion de l'infrastructure réseau en passant pas la gestion des outils d'intégration)
+
+Une autre faiblesses à noter, provient du fait qu'un grand nombre d'employés sont alternant au CESi (où sont fournies des formations rappelons le). Ces alternants donc je fait partie n'ont pas l'expérience qu'il est souvent important d'avoir dans un métier.\
+Ce n'est pas pour autant qu'ils ne sont pas correctement formé et encadré par des salariés plus expérimentés.
+
 ## Place dans l'entreprise
 
 Comme nous avons pu le dire plus tôt, au sein d'Erudo, la hiérarchie est très horizontale, si bien que chaque employé possède globalement les même missions à savoir :
