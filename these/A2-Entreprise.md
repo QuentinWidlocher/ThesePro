@@ -14,6 +14,10 @@ layout: post
 1. [Placement sur le marché](#placement-sur-le-marché)
 1. [Analyse concurrentielle](#analyse-concurrentielle)
 1. [Forces et faiblesses](#forces-et-faiblesses)
+   1. [Forces](#forces)
+      1. [La philosophie](#la-philosophie)
+      1. [La méthode](#la-méthode)
+   1. [Faiblesses](#faiblesses)
 1. [Place dans l'entreprise](#place-dans-lentreprise)
    1. [Rôles particuliers](#rôles-particuliers)
 1. [Missions menées](#missions-menées)
@@ -90,6 +94,34 @@ Malgré cela bien sûr, chaque personne possède bien souvent une affinité avec
 
 ## Forces et faiblesses
 
+### Forces
+
+#### La philosophie
+
+L'une des principales force d'Erudo est sans contexte sa philosophie de travail.
+
+En effet, là où la plupart des entreprises se basent sur la hiérarchie pour établir un climat de travail propice, Erudo fait le choix de créer ce climat avec la confiance.\
+Adrien HAUTOT lui même reste développeur au même titre que ses employés, malgré ses responsabilités plus importantes et c'est cette proximité qui efface les barrières hiérarchique et favorise le partage.
+
+En misant sur la communication avant tout, l'entreprise peut ainsi avancer non plus "à l'aide" de ses employés, mais *avec eux*.\
+Cette différence joue un rôle considérable dans la vision du travail, à savoir que les employés ne sont plus motivé par le résultats du mois mais bien par l'évolution de l'entreprise elle même.
+
+Un autre avantage de cette hiérarchie horizontale est qu'une fois sur un pied d'égalité avec les autres employés, il est plus aisé de participer en apportant des idées, en posant des questions et en cherchant à expliquer des choses.
+
+#### La méthode
+
+Pour tirer profit de la traction apportée par la philosophie de l'entreprise, cette dernière emploie une méthode de travail assez novatrice et tout particulièrement adapté au cœur de métier, la méthode *Scrum*.
+
+Cette méthode (expliquée plus en détail dans le chapitre [*démarche*](#démarche)) s'appuie sur la méthodologie Agile.\
+Cette méthodologie consiste à découvrir les besoins et à élaborer des solutions grâce à l'effort de collaboration d'équipes auto-organisées.\
+Elle préconise une planification adaptative, un développement évolutif, une livraison rapide et une amélioration continue, et elle encourage des réponses flexibles au changement.
+
+Pour cela bien entendu, il est crucial d'avoir du recul sur la demande et d'avoir une équipe en pleine maitrise de son domaine de travail, capable se s'auto-organiser sans un responsable de projet délégué.
+
+C'est en cela que la méthode s'harmonise avec la philosophie pour une gestion de l'entreprise efficace et réactive.
+
+### Faiblesses
+
 ## Place dans l'entreprise
 
 Comme nous avons pu le dire plus tôt, au sein d'Erudo, la hiérarchie est très horizontale, si bien que chaque employé possède globalement les même missions à savoir :
@@ -115,5 +147,10 @@ Parmi les spécificité que l'on peut trouver au sein de l'entreprise il y a :
 ## Missions menées
 
 ## Démarche
+
+\[SCRUM]
+est conçu pour des équipes de dix membres ou moins, qui divisent leur travail en objectifs pouvant être réalisés dans des itérations limitées dans le temps, appelées sprints, ne dépassant pas un mois et durent le plus souvent deux semaines.
+
+L'équipe suit les progrès dans le cadre de réunions quotidiennes de 15 minutes, appelées mêlées quotidiennes. À la fin du sprint, l'équipe procède à une révision du sprint, pour démontrer le travail accompli, et à une rétrospective du sprint pour s'améliorer continuellement.
 
 ## Résultats
