@@ -15,6 +15,7 @@ layout: post
 1. [Analyse concurrentielle](#analyse-concurrentielle)
 1. [Forces et faiblesses](#forces-et-faiblesses)
 1. [Place dans l'entreprise](#place-dans-lentreprise)
+   1. [Rôles particuliers](#rôles-particuliers)
 1. [Missions menées](#missions-menées)
 1. [Démarche](#démarche)
 1. [Résultats](#résultats)
@@ -90,6 +91,26 @@ Malgré cela bien sûr, chaque personne possède bien souvent une affinité avec
 ## Forces et faiblesses
 
 ## Place dans l'entreprise
+
+Comme nous avons pu le dire plus tôt, au sein d'Erudo, la hiérarchie est très horizontale, si bien que chaque employé possède globalement les même missions à savoir :
+
+- **Analyser** et **comprendre** les besoins de l'entreprise (automatisation, évolution) pour mieux proposer les solutions adéquates
+- **Concevoir** des solutions logicielles sur-mesure en fonction des demandes formulées par les divers clients
+- **Participer** à la réalisation et la mise en production des solutions
+- **Effectuer** des tests pour vérifier le bon fonctionnement des outils et procéder aux rectifications, si nécessaire, avant de les commercialiser
+- **Organiser** et **piloter** de façon Agile des projets informatiques
+
+### Rôles particuliers
+
+Certains employés ont aussi une spécialité dans laquelle ils sont plus compétents. Et d'autres sont plus souvent en relations avec des clients.
+
+Parmi les spécificité que l'on peut trouver au sein de l'entreprise il y a :
+
+- La gestion de l'infrastructure et du système d'intégration continue
+- Un bonne connaissance des architectures applicative dîtes, de *frontend*
+- La relation avec le propriétaire du produit (*Product Owner* ou PO)
+- La mise en place de l'interface utilisateur et la réflexion autour de l’expérience d'utilisation
+- La gestion de l'architecture applicative de l'application serveur
 
 ## Missions menées
 
