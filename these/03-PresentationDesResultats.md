@@ -32,9 +32,12 @@ layout: post
       1. [Hypothèse 2 - **Critères 2.3** : La réutilisation](#hypothèse-2---critères-23--la-réutilisation)
    1. [Hypothèse 2 - **Critères 3** : Le résultat](#hypothèse-2---critères-3--le-résultat)
       1. [Hypothèse 2 - **Critères 3.1** : Utilisation du processeur et de la mémoire](#hypothèse-2---critères-31--utilisation-du-processeur-et-de-la-mémoire)
+         1. [Hypothèse 2 - **Critère 3.1.1** : Utilisation du processeur](#hypothèse-2---critère-311--utilisation-du-processeur)
+         1. [Hypothèse 2 - **Critère 3.1.1** : Utilisation de la mémoire](#hypothèse-2---critère-311--utilisation-de-la-mémoire)
       1. [Hypothèse 2 - **Critères 3.2** : Temps de réponse moyen](#hypothèse-2---critères-32--temps-de-réponse-moyen)
       1. [Hypothèse 2 - **Critère 3.3** : Le poids de l'exécutable](#hypothèse-2---critère-33--le-poids-de-lexécutable)
    1. [Hypothèse 2 - Synthèse des critères](#hypothèse-2---synthèse-des-critères)
+   1. [Hypothèse 2 - Comparatif](#hypothèse-2---comparatif)
    1. [Hypothèse 2 - Conclusion](#hypothèse-2---conclusion)
 1. [Hypothèse 3](#hypothèse-3)
    1. [Hypothèse 3 - Présentation du *proof of concept*](#hypothèse-3---présentation-du-proof-of-concept)
@@ -312,7 +315,7 @@ Les valeurs sont exprimées en secondes
 |      H      |  0.88 |    1.02 |  1.00 |    0.96 | 1.10 |        0.99 |
 | **Moyenne** |  0.64 |    0.72 |  0.83 |    0.70 | 0.77 |    **0.74** |
 
-Nous observons donc que le temps de réactivité d'une application native se trouve généralement sous la seconde.
+Nous observons donc que le temps de réactivité d'une application native se trouve généralement sous la seconde, en moyenne à **0.74s** pour être precis.
 
 #### Hypothèse 1 - **Critère 3.3** : Le poids de l'exécutable
 
@@ -490,7 +493,73 @@ En divisant ce ratio par la quantité totale des projets nous obtenu un indice d
 
 #### Hypothèse 2 - **Critères 3.1** : Utilisation du processeur et de la mémoire
 
+Observons maintenant les mesures de l'utilisation des ressources pour cette hypothèse.\
+Étant donnée que les technologies sont similaires à celle de l'hypothèse précédente, nous pouvons nous attendre à des résultats semblables.
+
+Rappelons les instants de mesures :
+
+- A : Ouverture de l'application et arrivé sur la liste des articles
+- B : Tri des articles
+- C : Ouverture de la page d'un utilisateur
+- D : Connexion à l'application
+- E : Publication d'un article
+- F : Suppression d'un article
+
+##### Hypothèse 2 - **Critère 3.1.1** : Utilisation du processeur
+
+|             | Application bureau | Application mobile | **Moyenne** |
+| :---------: | -----------------: | -----------------: | ----------: |
+|      A      |               7.63 |               9.29 |        8.46 |
+|      B      |               6.75 |               8.11 |        7.43 |
+|      C      |               5.91 |               6.73 |        6.32 |
+|      D      |               6.96 |               6.49 |        6.73 |
+|      E      |               6.02 |               7.48 |        6.75 |
+|      F      |               4.65 |               5.51 |        5.08 |
+| **Moyenne** |               6.32 |               7.27 |    **6.80** |
+
+Comme anticipé, la consommation du processeur est très similaire étant donné que cette hypothèse mesure des applications native elle aussi.\
+Nous pouvons remarquer une légère hausse mais il est impossible de déterminer si elle est dû à la technologie employé ou à une coïncidence.
+
+Nous situons en moyenne l'utilisation du processeur aux alentours de **6.80%** pour cette hypothèse.
+
+##### Hypothèse 2 - **Critère 3.1.1** : Utilisation de la mémoire
+
+Sur les mêmes six actions, regardons l'utilisation de la mémoire vive (en MB).
+
+|             | Application bureau | Application mobile | **Moyenne** |
+| :---------: | -----------------: | -----------------: | ----------: |
+|      A      |              16.86 |              17.90 |       17.38 |
+|      B      |              14.23 |              15.78 |       15.01 |
+|      C      |              16.61 |              13.92 |       15.27 |
+|      D      |              15.71 |              13.87 |       14.79 |
+|      E      |              14.55 |              15.81 |       15.18 |
+|      F      |              11.75 |              13.61 |       12.68 |
+| **Moyenne** |              14.95 |              15.15 |   **15.05** |
+
+Même chose ici, les résultats sont similaires à l'hypothèse précédente tel que nous aurions pu l'imaginer. En moyenne, l'utilisation de la mémoire est de **15.05MB** pour cette hypothèse.
+
 #### Hypothèse 2 - **Critères 3.2** : Temps de réponse moyen
+
+Rappelons les deux instants de mesures supplémentaires :
+
+- G : *First Contentful Paint* ou premier affichage de contenu (temps avant que les premières données n'arrivent à l’écran)
+- H : *Time to Interactive* ou durée avant interaction possible. (temps avant de pouvoir avoir la main sur le logiciel)
+
+Les valeurs sont exprimées en secondes
+
+|             | Application bureau | Application mobile | **Moyenne** |
+| :---------: | -----------------: | -----------------: | ----------: |
+|      A      |               1.93 |               2.13 |        2.03 |
+|      B      |               0.75 |               0.79 |        0.77 |
+|      C      |               0.16 |               0.13 |        0.14 |
+|      D      |               0.15 |               0.18 |        0.17 |
+|      E      |               0.77 |               0.79 |        0.78 |
+|      F      |               0.07 |               0.08 |        0.08 |
+|      G      |               0.74 |               0.89 |        0.82 |
+|      H      |               0.81 |               1.01 |        0.91 |
+| **Moyenne** |               0.67 |               0.75 |    **0.71** |
+
+Sans surprise nous pouvons donc observer que le temps de réactivité de cette hypothèse est fortement similaire à celui de l'hypothèse précédente, en moyenne à **0.71s**.
 
 #### Hypothèse 2 - **Critère 3.3** : Le poids de l'exécutable
 
@@ -517,11 +586,28 @@ Comme pour l'hypothèse précédente, le poids des applications mobiles sont lé
   - Critère 2.2 (Maintenance) : 4.4 pts
   - Critère 2.3 (Réutilisation) : 52%
 - Critères 3 (Résultat)
-  - Critère 3.1 (*Benchmark*) : ??
-  - Critère 3.2 (Temps de réponse) : ??ms
+  - Critère 3.1.1 (*Benchmark* processeur) : 6.80%
+  - Critère 3.1.2 (*Benchmark* mémoire) : 15.05MB
+  - Critère 3.2 (Temps de réponse) : 0.71ms
   - Critère 3.3 (Poids total) : 11.10Mb
 
+### Hypothèse 2 - Comparatif
+
+Comme répété plusieurs fois au long de cette hypothèse, la plupart des mesures sont bien entendues très similaire étant donnée que les technologies le sont aussi.
+
+Néanmoins cette hypothèse permet de résoudre deux des problème les plus importants de l'hypothèse 1, à savoir le temps de développement et la réutilisation du code.
+
+En effet, il va de soit que développer seulement deux applications est bien plus rapide que d'en développer cinq. Cela dit, cette facilité viens avec une limitation sur le choix de la technologie car tous les langages ne sont pas multiplateformes. Et même au sein de ces langages, tous les outils ne permettent pas de créer des logiciels fonctionnant sur plusieurs systèmes d'exploitations.
+
+Aussi, limiter le nombre d'applications et donc de langage permet aussi de limiter le nombre de codes sources différent et donc d'accroître la quantité relative de code qui peut-être employé à nouveau sur des projets à l'architecture applicative similaire.\
+Là encore, c'est sous réserve d'une limitation quand au choix des langages et des outils.
+
 ### Hypothèse 2 - Conclusion
+
+Cette hypothèse démontre l'importance de bien choisir la structure de l'application lors de la réalisation d'un projet aux technologies native.\
+Nous avons pu remarquer que se limiter en choix de langage et d'outil est un compromis capable de pallier les plus importantes limitations des applications natives, à savoir leur faible portée par rapports aux cibles.
+
+Cette hypothèse confirme à nouveau que si l'on maîtrise totalement les cibles d'un projet de développement de logiciel, les applications natives apportent performance et liberté.
 
 ## Hypothèse 3
 
