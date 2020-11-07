@@ -10,6 +10,10 @@ layout: post
    1. [Organigramme](#organigramme)
 1. [Placement sur le marché](#placement-sur-le-marché)
 1. [Analyse concurrentielle](#analyse-concurrentielle)
+   1. [La concurrence directe](#la-concurrence-directe)
+      1. [SCUB](#scub)
+   1. [La concurrence indirecte](#la-concurrence-indirecte)
+      1. [SOLISYS](#solisys)
 1. [Forces et faiblesses](#forces-et-faiblesses)
    1. [Forces](#forces)
       1. [La philosophie](#la-philosophie)
@@ -53,7 +57,66 @@ Malgré cela bien sûr, chaque personne possède bien souvent une affinité avec
 
 ## Placement sur le marché
 
+Erudo est une entreprise de développement de logiciels métiers sur mesures comme il peut en exister plusieurs, même à Angoulême.
+
+Afin de se positionner au mieux, l'accent est mis (comme au sein de l'entreprise elle même) sur la communication avec le clients, et ce que l'on appelle fréquemment le "feeling".\
+En effet, Erudo prend parti de sa faible envergure pour se placer au plus près des clients et de leurs besoins.
+
+C'est dans le dialogue fréquent et efficace que la confiance peut s'établir et durer. Actuellement, les seuls d'Erudo viennent d'un démarchage actif.\
+Cependant, récemment l'accent à été mis sur la communication de l'entreprise au "grand public" lors de la refonte du site internet [erudo.fr](https://www.erudo.fr/) et par là même, de l'aspect graphique de l'entreprise.\
+Dans cette communication se place encore et toujours cette notion de proximité et de dialogue qui fait la particularité d'Erudo par rapport aux entreprises de développement concurrentes.
+
 ## Analyse concurrentielle
+
+Afin d'analyser aux mieux la concurrence d'Erudo, citons à nouveau les valeurs, les objectifs et les propositions de l'entreprise.
+
+Tout d'abord, Erudo propose :
+
+- Des solutions logiciels sur mesure
+- Une approche *Agile* de la gestion de projet
+- Des formations aux écoles et aux professionnels
+
+L'entreprise s'adresse donc :
+
+- Aux TPE et PME pour des logiciels de gestions
+- Aux TPE et PME pour des formations techniques
+- Aux écoles de programmation
+- Aux écoles de gestion de projets (informatique ou non)
+
+Elle met en avant :
+
+- Sa communication directe et ses relations très proches de l'utilisateur final (et donc du besoin)
+- Son approche Agile et sa capacité à livrer au plus vite les fonctionnalités essentielles
+- Sa polyvalence quand à la nature des logiciels qu'elle est capable de fournir
+  - ERP (Progiciel de gestion intégré)
+  - DMS (Gestion électronique de documents)
+  - CRM (Gestion de la relation client)
+  - Applications mobiles
+  - Logiciels de Tarification
+  - Etc.
+
+### La concurrence directe
+
+#### SCUB
+
+SCUB est une entreprise de développement de logiciels sur-mesure basé à Angoulême mais présente à Bordeaux et à Paris. Elle compte près de 9 salariés et a réalisé un chiffre d'affaire de 1 365 500 € en 2016.
+
+Elle propose comme Erudo des logiciels sur mesure, développés selon une approche Agile.\
+Cependant, la livraison des produits de SCUB est réalisé selon une méthode de cycle en V, à savoir que le produit final n'est livré qu'une fois le développement finalisé.
+Elle ne propose pas de formations, ni techniques, ni de gestion de projet.
+
+SCUB s'adresse donc principalement aux PME et met en avant la qualité de leurs logiciels reconnus par des labels (Finance Innovation par exemple).\
+Ils mettent aussi en avant leur approche Agile du développement permettant aux clients de suivre l'avancement du projet.
+
+### La concurrence indirecte
+
+#### SOLISYS
+
+SOLISYS est une société par actions simplifiée de développement de logiciels basé à Clermont-Ferrand comptant trois salariés.
+
+Elle propose des solutions informatiques de télégestion, de modélisation d'infrastructure et de gestion d'exploitation. Contrairement à Erudo, ces solutions sont existantes et ne font pas parti d'un développement sur mesure, si ce n'est la mise en place.
+
+SOLISYS vise principalement les PME en mettant en avant les nouvelles technologies comme la BI (*Business Intelligence*, informatique décisionnelle), le Big Data ou l'IoT (*Internet of Things*, objets connectés).
 
 ## Forces et faiblesses
 

@@ -588,7 +588,7 @@ Comme pour l'hypothèse précédente, le poids des applications mobiles sont lé
 - Critères 3 (Résultat)
   - Critère 3.1.1 (*Benchmark* processeur) : 6.80%
   - Critère 3.1.2 (*Benchmark* mémoire) : 15.05MB
-  - Critère 3.2 (Temps de réponse) : 0.71ms
+  - Critère 3.2 (Temps de réponse) : 0.71s
   - Critère 3.3 (Poids total) : 11.10Mb
 
 ### Hypothèse 2 - Comparatif
