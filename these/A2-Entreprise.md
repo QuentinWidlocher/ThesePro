@@ -39,6 +39,7 @@ layout: post
          1. [La mêlée quotidienne](#la-mêlée-quotidienne)
          1. [La revue de sprint](#la-revue-de-sprint)
          1. [La rétrospective de sprint](#la-rétrospective-de-sprint)
+   1. [Facturation](#facturation)
 1. [Résultats](#résultats)
 
 ## Historique
@@ -317,6 +318,8 @@ Chaque sprint commence par une planification afin d'établir un objectif de spri
 
 Scrum met l'accent sur les résultats utiles à la fin du sprint. Dans le cas du développement de logiciels, cela signifie par exemple que le logiciel a été entièrement intégré, testé et documenté, et qu'il est potentiellement possible de le livrer.
 
+![Fonctionnement d'un sprint](./ScrumProcess.svg)
+
 ##### La planification de sprint
 
 Au début d'un sprint, l'équipe Scrum organise une planification du sprint pour discuter et convenir mutuellement de l'étendue du travail qui doit être effectué pendant ce sprint.
@@ -361,6 +364,16 @@ Trois questions principales se posent dans la rétrospective du sprint :
 - Qu'est-ce qui pourrait être amélioré pour une meilleure productivité lors du prochain sprint ?
   
 La durée recommandée est d'une heure et demie pour un sprint de deux semaines.
+
+### Facturation
+
+Un problème résultant de l'utilisation de la méthode Agile est qu'il est parfois difficile pour un client de savoir à l'avance combien il devra payer pour son produit. Erudo a donc mis en place un système appelé "pack de jours".
+
+L'équipe estime en amont le temps de réalisation de toutes ou parties des tâches du projet et c'est ce temps estimé qui sera finalement facturé au client et non le temps réellement passé. Cette nuance motive (et oblige) l'entreprise à affiner ses estimations et à appliquer au mieux la méthode Scrum.
+
+Les packs de jours sont vendus aux client (souvent par lot de 50 jours/hommes) et ce dernier est libre de dépenser ses "jours" à son bon vouloir sur les fonctionnalités qui l'intéresse.
+
+Une fois un pack épuisé, le client est libre ou non d'en acheter un autre suivant ses besoins ou s'il considère le projet comme étant suffisamment avancé.
 
 ## Résultats
 
