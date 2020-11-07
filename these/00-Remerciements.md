@@ -8,7 +8,13 @@ layout: post
 1. [Précisions](#précisions)
 
 ## Remerciements
-<!-- TODO: Remerciements -->
+
+Avant de commencer je souhaiterais remercier plusieurs personnes qui ont rendu cette thèse possible.
+
+Tout d'abord , un grand merci à Adrien HAUTOT, gérant de l'entreprise **Erudo**, pour m'avoir permis de la rejoindre et de m'avoir laissé l'occasion de participer réellement aux activités d'un développeur de logiciel, mais aussi celles de manager de projet.\
+L'entreprise qu'il a bâtit et qu'il dirige encore aujourd'hui a su m'ouvrir les yeux sur ma vision de l'avenir et de ce métier qui, je le crois, sera encore le mien dans les années à suivre.
+
+Je souhaite aussi remercier toute l'équipe d'Erudo pour leurs soutiens et pour l'ambiance et la vision singulière que nous pouvons partager durant notre travail.
 
 ## Précisions
 
