@@ -12,6 +12,7 @@ layout: post
 1. [Analyse concurrentielle](#analyse-concurrentielle)
    1. [La concurrence directe](#la-concurrence-directe)
       1. [SCUB](#scub)
+      1. [Sodigep](#sodigep)
    1. [La concurrence indirecte](#la-concurrence-indirecte)
       1. [SOLISYS](#solisys)
 1. [Forces et faiblesses](#forces-et-faiblesses)
@@ -26,6 +27,18 @@ layout: post
    1. [Pro Tech Habitat](#pro-tech-habitat)
    1. [Safran / Zodiac](#safran--zodiac)
 1. [Démarche](#démarche)
+   1. [La méthode Agile](#la-méthode-agile)
+   1. [La méthode Scrum](#la-méthode-scrum)
+      1. [Les rôles](#les-rôles)
+         1. [Le Product Owner](#le-product-owner)
+         1. [L'équipe de développement](#léquipe-de-développement)
+         1. [Le Scrum Master](#le-scrum-master)
+      1. [Les outils](#les-outils)
+         1. [Les sprints](#les-sprints)
+         1. [La planification de sprint](#la-planification-de-sprint)
+         1. [La mêlée quotidienne](#la-mêlée-quotidienne)
+         1. [La revue de sprint](#la-revue-de-sprint)
+         1. [La rétrospective de sprint](#la-rétrospective-de-sprint)
 1. [Résultats](#résultats)
 
 ## Historique
@@ -107,6 +120,14 @@ Elle ne propose pas de formations, ni techniques, ni de gestion de projet.
 
 SCUB s'adresse donc principalement aux PME et met en avant la qualité de leurs logiciels reconnus par des labels (Finance Innovation par exemple).\
 Ils mettent aussi en avant leur approche Agile du développement permettant aux clients de suivre l'avancement du projet.
+
+#### Sodigep
+
+Sodigep est une entreprise de développement d'ERP basé à Angoulême, comptant trois salariés. Elle a réalisé un chiffre d'affaire de 258 700 € en 2017.
+
+La proposition de Sodigep s'axe sur son logiciel de gestion intégré, vendu en l'état puis adapté aux besoins de l'entreprise cliente.
+
+L'entreprise s'adresse au TPE et PME et met en avant l'étendu de son logiciel de gestion, ainsi que la personnalisation de ce dernier.
 
 ### La concurrence indirecte
 
@@ -224,10 +245,122 @@ l’Amérique du nord. Ce client est l’un des plus importants de l’entrepris
 
 ## Démarche
 
-<!-- [SCRUM]
-est conçu pour des équipes de dix membres ou moins, qui divisent leur travail en objectifs pouvant être réalisés dans des itérations limitées dans le temps, appelées sprints, ne dépassant pas un mois et durent le plus souvent deux semaines.
+### La méthode Agile
 
-L'équipe suit les progrès dans le cadre de réunions quotidiennes de 15 minutes, appelées mêlées quotidiennes. À la fin du sprint, l'équipe procède à une révision du sprint, pour démontrer le travail accompli, et à une rétrospective du sprint pour s'améliorer continuellement. -->
+Le développement de logiciels agile fait référence à des approches dans le processus de développement logiciel qui augmentent la transparence et la vitesse de changement dans le but de conduire à un déploiement plus rapide . Cette approche permet de minimiser les risques et les opérations inutiles dans le processus de développement.
+
+Cette méthode doit être coordonnée avec le client à intervalles réguliers et courts.\
+Cela permet de répondre avec souplesse aux exigences des clients afin d'accroître leur satisfaction globale. Le développement logiciel agile se caractérise par des équipes auto-organisées et une approche itérative et incrémentale.
+
+la méthode a été popularisée par le "Manifeste pour le développement Agile de logiciels[^1]". Les quatre valeurs et les douze principes proposés dans ce manifeste ont été dérivés et ont donné lieu à un large éventail de cadres de développement logiciel, comme par exemple *Scrum* et *Kanban*.
+
+Afin de saisir au mieux la mentalité de cette méthode, voici les quatre valeurs "piliers" de cette dernière. Il faut valoriser :
+
+- Les individus et leurs interactions plus que les processus et les outils
+- Des logiciels opérationnels plus qu’une documentation exhaustive
+- La collaboration avec les clients plus que la négociation contractuelle
+- L’adaptation au changement plus que le suivi d’un plan
+
+La manifeste rappelle bien entendu qu'il faut "reconnaitre la valeur des seconds éléments, mais privilégier les premiers".
+
+### La méthode Scrum
+
+Scrum est un ensemble de règles et d'outils basé sur la méthode Agile. La méthode est conçue pour des équipes de dix membres ou moins, qui divisent leur travail en objectifs pouvant être réalisés dans des itérations limitées dans le temps, appelées sprints, ne dépassant pas un mois et durent le plus souvent deux semaines.
+
+L'équipe suit les progrès dans le cadre de réunions quotidiennes de 15 minutes, appelées mêlées quotidiennes. À la fin du sprint, l'équipe procède à une révision du sprint, pour démontrer le travail accompli, et à une rétrospective du sprint pour s'améliorer continuellement.
+
+Un principe clé de Scrum est la reconnaissance du fait que les clients changeront d'avis sur ce qu'ils veulent ou ce dont ils ont besoin et qu'il y aura des défis imprévisibles pour lesquels une approche prédictive ou planifiée n'est pas adaptée.\
+C'est pourquoi Scrum adopte une approche empirique fondée sur des preuves en acceptant que le problème ne puisse pas être entièrement compris ou défini d'emblée, et en se concentrant plutôt sur la manière de maximiser la capacité de l'équipe à livrer rapidement, à répondre aux nouvelles exigences et à s'adapter à l'évolution des technologies et aux changements des conditions du marché.
+
+Le Scrum comprend trois rôles, qui sont idéalement situés au même endroit physiques pour assurer une communication optimale entre les membres de l'équipe.\
+Là où de nombreuses organisations ont d'autres rôles impliqués dans la définition et la livraison du produit, Scrum ne définit que ces trois rôles.
+
+#### Les rôles
+
+##### Le Product Owner
+
+Le *Product Owner* (PO), ou en français le propriétaire du produit, représente les parties prenantes du produit et la voix du client.
+
+Il définit le produit en termes compréhensible pour le client (généralement des témoignages d'utilisateurs appelés *User Stories*), les ajoute à une liste de tâche à effectuer (appelés *Backlog*) et les classe par ordre de priorité en fonction de leur importance.
+
+Une équipe Scrum doit avoir un seul *product owner* qui ne doit pas dicter à l'équipe comment parvenir à une solution technique, mais doit chercher à obtenir un consensus parmi les membres de l'équipe.\
+Un bon propriétaire de produit doit être capable de communiquer ce dont l'entreprise a besoin, de demander pourquoi elle en a besoin et de transmettre le message à toutes les parties prenantes, y compris l'équipe de développement.
+
+##### L'équipe de développement
+
+L'équipe de développement est composée de trois à neuf membres qui effectuent toutes les tâches nécessaires pour augmenter la production de valeur à chaque sprint.
+
+Bien que les membres de l'équipe soient souvent appelés "développeurs", le terme désigne toute personne qui joue un rôle dans le développement et le soutien du système ou du produit (designers, spécialistes des données, statisticiens, analystes, ingénieurs, programmeurs, testeurs etc.)
+
+L'équipe de développement doit être auto-organisée. Bien qu'aucun travail ne doive parvenir à l'équipe sans passer par le *product owner*, et que le *scrum master* soit censé protéger l'équipe d'une trop grande distraction, l'équipe doit tout de même être encouragée à interagir directement avec les clients et/ou les parties prenantes afin d'obtenir une compréhension maximale et un retour d'information immédiat.
+
+##### Le Scrum Master
+
+La méthode Scrum est facilitée par un *Scrum Master* (littéralement "maître de mêlée"), qui vise à éliminer les obstacles à la capacité de l'équipe à atteindre les objectifs.
+
+Le *scrum master* n'est pas un chef d'équipe ou un chef de projet traditionnel, mais il agit comme un tampon entre l'équipe et toute influence perturbatrice. Il veille à ce que le cadre de la méthode soit respecté.
+
+L'une des différences entre le rôle de *scrum master* et celui de chef de projet est que ce dernier peut avoir des responsabilités de gestion du personnel là où le *scrum master* n'en a pas.
+
+Un *scrum master* fournit une quantité limitée de directives puisque l'équipe est censée être autonome et s'auto-organiser. Scrum ne reconnaît pas formellement le rôle de gestionnaire de projet, car les tendances traditionnelles de commandement et de contrôle causeraient des difficultés.
+
+#### Les outils
+
+La méthode Scrum propose aussi de nombreux outils essentiels à sa bonne application.
+
+##### Les sprints
+
+Un sprint (également appelé itération) est l'unité de base du développement dans Scrum.\
+C'est un effort chronométré, à savoir que la durée est convenue et fixée à l'avance pour chaque sprint et se situe normalement entre une semaine et un mois, deux semaines étant le plus courant.
+
+Chaque sprint commence par une planification afin d'établir un objectif de sprint. Ils sprint se terminent par une revue et une rétrospective du sprint, qui passe en revue les progrès réalisés pour les montrer aux parties prenantes et tirer des leçons et des améliorations pour les sprints suivants.
+
+Scrum met l'accent sur les résultats utiles à la fin du sprint. Dans le cas du développement de logiciels, cela signifie par exemple que le logiciel a été entièrement intégré, testé et documenté, et qu'il est potentiellement possible de le livrer.
+
+##### La planification de sprint
+
+Au début d'un sprint, l'équipe Scrum organise une planification du sprint pour discuter et convenir mutuellement de l'étendue du travail qui doit être effectué pendant ce sprint.
+
+Cette planification permet aussi de préparer un *backlog* de sprint qui comprend le travail nécessaire pour terminer les éléments du backlog de produits sélectionnés, de convenir de l'objectif du sprint (une brève description de ce qu'il est prévu de livrer à la fin du sprint). La durée recommandée d'une planification de sprint est de quatre heures pour un sprint de deux semaines.
+
+Au cours de la première moitié, toute l'équipe Scrum (équipe de développement, *scrum master* et *product owner*) sélectionne les éléments du *backlog* qui, selon elle, pourraient être réalisés dans ce sprint.
+
+Dans la seconde moitié, l'équipe de développement identifie les tâches nécessaires pour achever ces éléments du backlog du produit pour aboutir  un backlog de sprint.\
+Au fur et à mesure, certains éléments du *backlog* peuvent être divisés ou remis dans le *backlog* si l'équipe ne pense plus pouvoir terminer le travail requis en un seul sprint.
+
+##### La mêlée quotidienne
+
+Chaque jour, lors d'un sprint, l'équipe organise une mêlée quotidienne (appelé aussi stand-up) avec des directives spécifiques. Tous les membres de l'équipe de développement viennent préparés.
+
+La mêlée quotidienne commence précisément à l'heure, même si certains membres de l'équipe de développement sont absents. Elle doit se dérouler au même moment et au même endroit chaque jour et est limitée à quinze minutes.
+
+Tout le monde est le bienvenu, mais seuls les membres de l'équipe de développement doivent contribuer. Lors de la mêlée quotidienne, chaque membre de l'équipe répond généralement à trois questions :
+
+- Qu'ai-je fait hier qui a contribué à ce que l'équipe atteigne l'objectif de sprint ?
+- Qu'est-ce que je compte faire aujourd'hui pour y contribuer ?
+- Est-ce que je vois un obstacle qui pourrait m'empêcher, moi ou l'équipe, d'atteindre cet objectif ?
+
+Tout obstacle (par exemple : risque, problème, dépendance des tâches, hypothèse non fondée) identifié dans la mêlée quotidienne doit être noté par le *scrum master* et affiché sur le tableau de mêlée de l'équipe. Une personne doit être désignée pour travailler à une résolution.
+
+Aucune discussion détaillée ou technique ne doit avoir lieu lors de la mêlée quotidienne.\ Une fois la réunion terminée, les membres peuvent se réunir pour discuter des questions en détail.
+
+##### La revue de sprint
+
+Lors de la rétrospective du sprint à la fin de ce dernier, l'équipe passe en revue le travail accompli et le travail prévu qui n'a pas été achevé. Elle présente le travail achevés aux parties prenantes lors d'une démonstration et collabore avec elles sur ce qu'il faut faire ensuite.
+
+Lors d'une revue, un travail incomplet ne peut être montré. La durée recommandée est de deux heures pour un sprint de deux semaines.
+
+##### La rétrospective de sprint
+
+Lors de la rétrospective du sprint, l'équipe réfléchit sur le sprint passé et identifie et convient d'actions pour amélioration les processus. Le *scrum master* a pour objectif de  faciliter cette démarche.
+
+Trois questions principales se posent dans la rétrospective du sprint :
+
+- Que c'est il bien passé pendant le sprint ?
+- Que ne c'est il pas bien passé ?
+- Qu'est-ce qui pourrait être amélioré pour une meilleure productivité lors du prochain sprint ?
+  
+La durée recommandée est d'une heure et demie pour un sprint de deux semaines.
 
 ## Résultats
 
@@ -246,3 +379,5 @@ Pour donner un exemple, il a récemment été remarqué que notre comportement s
 Ces écarts ont étés promptement rétablis au sein de la méthode elle même car c'est lors d'une retrospective de sprint que ces écarts ont étés détecté. Cette itération a donc apporté avec elle un lot de changement qui nous ont permis de s'améliorer encore.
 
 Sans cette capacité à se remettre fréquemment en question, la direction que l'ont prend reste toujours la même, aussi déviante de l'objectif soit-elle.
+
+[^1]: [Agile Manifesto](https://agilemanifesto.org/iso/fr/manifesto.html)
