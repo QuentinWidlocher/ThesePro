@@ -50,9 +50,12 @@ layout: post
       1. [Hypothèse 3 - **Critères 2.3** : La réutilisation](#hypothèse-3---critères-23--la-réutilisation)
    1. [Hypothèse 3 - **Critères 3** : Le résultat](#hypothèse-3---critères-3--le-résultat)
       1. [Hypothèse 3 - **Critères 3.1** : Utilisation du processeur et de la mémoire](#hypothèse-3---critères-31--utilisation-du-processeur-et-de-la-mémoire)
+         1. [Hypothèse 3 - **Critère 3.1.1** : Utilisation de du processeur](#hypothèse-3---critère-311--utilisation-de-du-processeur)
+         1. [Hypothèse 3 - **Critère 3.1.2** : Utilisation de la mémoire](#hypothèse-3---critère-312--utilisation-de-la-mémoire)
       1. [Hypothèse 3 - **Critères 3.2** : Temps de réponse moyen](#hypothèse-3---critères-32--temps-de-réponse-moyen)
       1. [Hypothèse 3 - **Critère 3.3** : Le poids de l'exécutable](#hypothèse-3---critère-33--le-poids-de-lexécutable)
    1. [Hypothèse 3 - Synthèse des critères](#hypothèse-3---synthèse-des-critères)
+   1. [Hypothèse 3 - Comparatif](#hypothèse-3---comparatif)
    1. [Hypothèse 3 - Conclusion](#hypothèse-3---conclusion)
 1. [Hypothèse 4](#hypothèse-4)
    1. [Hypothèse 4 - Présentation du *proof of concept*](#hypothèse-4---présentation-du-proof-of-concept)
@@ -671,7 +674,42 @@ Du point de vue de la réutilisation du code, étant donné que ce projet se bas
 
 #### Hypothèse 3 - **Critères 3.1** : Utilisation du processeur et de la mémoire
 
+Regardons l’utilisation des ressources du système pour cette hypothèse
+
+##### Hypothèse 3 - **Critère 3.1.1** : Utilisation de du processeur
+
+- Ouverture de l'application et arrivé sur la liste des articles : **39.4%**
+- Tri des articles : **28%**
+- Ouverture de la page d'un utilisateur : **15%**
+- Connexion à l'application : **17%**
+- Publication d'un article : **35.2%**
+- Suppression d'un article : **11%**
+
+En moyenne l'utilisation du processeur pour l'onglet de la page est donc de **24.3%** soit presque le quadruple des hypothèses précédentes.
+
+##### Hypothèse 3 - **Critère 3.1.2** : Utilisation de la mémoire
+
+- Ouverture de l'application et arrivé sur la liste des articles : **66.73MB**
+- Tri des articles : **55.06MB**
+- Ouverture de la page d'un utilisateur : **54.40MB**
+- Connexion à l'application : **56.82MB**
+- Publication d'un article : **66.60MB**
+- Suppression d'un article : **65.05MB**
+
+En moyenne l'utilisation de la mémoire pour l'onglet de la page est donc de **60.78MB** le même ordre de grandeur que le critères précédent.
+
 #### Hypothèse 3 - **Critères 3.2** : Temps de réponse moyen
+
+- Ouverture de l'application et arrivé sur la liste des articles : **1.84s**
+- Tri des articles : **0.77s**
+- Ouverture de la page d'un utilisateur : **0.53s**
+- Connexion à l'application : **1.01s**
+- Publication d'un article : **2.31s**
+- Suppression d'un article : **1.04s**
+- *First Contentful Paint* ou premier affichage de contenu : **0.7s**
+- *Time to Interactive* ou durée avant interaction possible : **2.4s**
+
+Le temps de réponse moyen de cette application est donc de **1.33s** soit un peu plus d'une demie seconde de plus par rapport aux hypothèse natives
 
 #### Hypothèse 3 - **Critère 3.3** : Le poids de l'exécutable
 
@@ -696,11 +734,28 @@ Si cette valeur semble si peu grande en comparaison aux autres hypothèse c'est 
   - Critère 2.2 (Maintenance) : 3 pts
   - Critère 2.3 (Réutilisation) : 100%
 - Critères 3 (Résultat)
-  - Critère 3.1 (*Benchmark*) : ??
-  - Critère 3.2 (Temps de réponse) : ??ms
+  - Critère 3.1.1 (*Benchmark* processeur) : 24.3%
+  - Critère 3.1.2 (*Benchmark* mémoire) : 60.78MB
+  - Critère 3.2 (Temps de réponse) : 1.33s
   - Critère 3.3 (Poids total) : 0.88MB
 
+### Hypothèse 3 - Comparatif
+
+Comme nous avons pu le remarquer, cette application web est très peu similaire aux applications native des hypothèses précédentes.
+
+Tout d'abord, du point de vue des performances, cette application web est bien plus consommatrice de ressource que ses contreparties native, d'une magnitude de presque quatre.\
+Les applications web présentes aussi de nombreuses lacunes quand aux accès aux fonctionnalités native.
+
+Le gain en revanche se situe au niveau du temps de développement, de déploiement et aussi sur le poids final de l'application et sa capacité à pouvoir partager du code.\
+Chacun de ces critères a une note quasi parfait dans cette hypothèse.
+
 ### Hypothèse 3 - Conclusion
+
+Nous avons donc pu voir que le principe d'une application web n'est pas du tout le même qu'un application native, ces deux méthodes ne cherchent en aucun cas à atteindre le même but.
+
+Là où les applications native brillent de part leurs performances brutes, c'est dans la vitesse de création et de déploiement que se démarquent les application web.
+
+Dans le cas d'une application à but extrêmement multiplateforme, c'est une méthode de choix qui permet de rapidement créer et fournir une application finie, surtout si cette dernière se base sur le code d'une application précédente, ce qui est fort probable et fort adapté.
 
 ## Hypothèse 4
 
