@@ -388,9 +388,7 @@ On estime en 2017 le poids moyen d'une application à 15MB sur Android et 38MB s
   - Critère 3.2 (Temps de réponse) : 0.74s
   - Critère 3.3 (Poids total) : 8.75MB
 
-En appliquant la formule de calcul proposée, nous obtenons pour cette hypothèse un score moyen de 
-
-![Graphique Hypothèse 1](./GraphiqueHypothese1.png)
+[Graphique Hypothèse 1](./GraphiqueHypothese1.png)
 
 ### Hypothèse 1 - Conclusion
 
@@ -648,7 +646,9 @@ Comme pour l'hypothèse précédente, le poids des applications mobiles sont lé
   - Critère 3.1.1 (*Benchmark* processeur) : 6.80%
   - Critère 3.1.2 (*Benchmark* mémoire) : 15.05MB
   - Critère 3.2 (Temps de réponse) : 0.71s
-  - Critère 3.3 (Poids total) : 11.10Mb
+  - Critère 3.3 (Poids total) : 11.10MB
+
+[Graphique Hypothèse 2](./GraphiqueHypothese2.png)
 
 ### Hypothèse 2 - Comparatif
 
@@ -807,6 +807,8 @@ Si cette valeur semble si peu grande en comparaison aux autres hypothèse c'est 
   - Critère 3.1.2 (*Benchmark* mémoire) : 60.78MB
   - Critère 3.2 (Temps de réponse) : 1.33s
   - Critère 3.3 (Poids total) : 0.88MB
+
+[Graphique Hypothèse 3](./GraphiqueHypothese3.png)
 
 ### Hypothèse 3 - Comparatif
 
@@ -1070,6 +1072,8 @@ Du point de vue des logiciels mobiles, nous retrouvons un poids assez similaire 
   - Critère 3.2 (Temps de réponse) : 1.00s
   - Critère 3.3 (Poids total) : 8.87MB
 
+[Graphique Hypothèse 4](./GraphiqueHypothese4.png)
+
 ### Hypothèse 4 - Comparatif
 
 Cette hypothèse mélange deux approches différentes de la création d'application dans le but de mitiger les inconvénients que chaque méthode possède.
@@ -1282,6 +1286,8 @@ Comme nous pouvons le constater, le poids d'une application hybride bureau utili
   - Critère 3.1.2 (*Benchmark* mémoire) : 65.91MB
   - Critère 3.2 (Temps de réponse) : 1.23s
   - Critère 3.3 (Poids total) : 53.41MB
+
+[Graphique Hypothèse 5](./GraphiqueHypothese5.png)
 
 ### Hypothèse 5 - Comparatif
 
