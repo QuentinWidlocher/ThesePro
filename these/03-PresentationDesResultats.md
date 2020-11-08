@@ -86,9 +86,12 @@ layout: post
       1. [Hypothèse 5 - **Critères 2.3** : La réutilisation](#hypothèse-5---critères-23--la-réutilisation)
    1. [Hypothèse 5 - **Critères 3** : Le résultat](#hypothèse-5---critères-3--le-résultat)
       1. [Hypothèse 5 - **Critères 3.1** : Utilisation du processeur et de la mémoire](#hypothèse-5---critères-31--utilisation-du-processeur-et-de-la-mémoire)
+         1. [Hypothèse 5 - **Critère 3.1.1** : Utilisation du processeur](#hypothèse-5---critère-311--utilisation-du-processeur)
+         1. [Hypothèse 5 - **Critère 3.1.1** : Utilisation de la mémoire](#hypothèse-5---critère-311--utilisation-de-la-mémoire)
       1. [Hypothèse 5 - **Critères 3.2** : Temps de réponse moyen](#hypothèse-5---critères-32--temps-de-réponse-moyen)
       1. [Hypothèse 5 - **Critère 3.3** : Le poids de l'exécutable](#hypothèse-5---critère-33--le-poids-de-lexécutable)
    1. [Hypothèse 5 - Synthèse des critères](#hypothèse-5---synthèse-des-critères)
+   1. [Hypothèse 5 - Comparatif](#hypothèse-5---comparatif)
    1. [Hypothèse 5 - Conclusion](#hypothèse-5---conclusion)
 
 ## Hypothèse 1
@@ -1000,7 +1003,6 @@ En faisant cela, elle profite des avantages octroyés par les applications web s
 Cela démontre encore un fois que le choix d'une architecture applicative n'est pas une question de choisir une méthode et de s'y tenir coûte que coûte, mais plutôt de savoir ce que l'on recherche pour pouvoir mélanger les points forts et les points faibles de chaque solution dans le but d'avoir une optimisation équilibrée.
 
 ## Hypothèse 5
-<!-- TODO: Hypothèse 5 -->
 
 > Une application web hybride pour les cibles bureau et une application hybride pour les cibles mobiles
 
@@ -1084,7 +1086,71 @@ Les applications hybrides bénéficient donc d'un indice de réutilisation du co
 
 #### Hypothèse 5 - **Critères 3.1** : Utilisation du processeur et de la mémoire
 
+Les applications hybrides étant des application web incorporées dans des conteneur natifs, leurs performances devraient être similaires à celle des logiciels web classique.
+
+Rappelons les instants de mesures :
+
+- A : Ouverture de l'application et arrivé sur la liste des articles
+- B : Tri des articles
+- C : Ouverture de la page d'un utilisateur
+- D : Connexion à l'application
+- E : Publication d'un article
+- F : Suppression d'un article
+
+##### Hypothèse 5 - **Critère 3.1.1** : Utilisation du processeur
+
+|             | Application bureau | Application mobile | **Moyenne** |
+| :---------: | -----------------: | -----------------: | ----------: |
+|      A      |              38.28 |              36.46 |       37.37 |
+|      B      |              25.45 |              29.23 |       27.34 |
+|      C      |              13.00 |              15.84 |       14.42 |
+|      D      |              19.95 |              19.80 |       19.88 |
+|      E      |              32.39 |              35.48 |       33.94 |
+|      F      |               9.32 |               9.87 |        9.60 |
+| **Moyenne** |              23.07 |              24.45 |   **23.76** |
+
+Les deux applications ont donc des résultats comparables à ceux de l'hypothèse 3, comme nous pouvions nous y attendre
+
+L'utilisation du processeur peut-être située aux alentours de **23.76%** pour cette hypothèse.
+
+##### Hypothèse 5 - **Critère 3.1.1** : Utilisation de la mémoire
+
+Sur les mêmes six actions, regardons l'utilisation de la mémoire vive (en MB).
+
+|             | Application bureau | Application mobile | **Moyenne** |
+| :---------: | -----------------: | -----------------: | ----------: |
+|      A      |              73.07 |              76.67 |       74.87 |
+|      B      |              63.63 |              58.69 |       61.16 |
+|      C      |              60.96 |              58.82 |       59.89 |
+|      D      |              60.87 |              59.87 |       60.37 |
+|      E      |              71.40 |              68.76 |       70.08 |
+|      F      |              69.98 |              68.21 |       69.10 |
+| **Moyenne** |              66.65 |              65.17 |   **65.91** |
+
+Nous observons une utilisation de la mémoire de **65.91MB** pour cette hypothèse.
+
 #### Hypothèse 5 - **Critères 3.2** : Temps de réponse moyen
+
+Rappelons les deux instants de mesures supplémentaires :
+
+- G : *First Contentful Paint* ou premier affichage de contenu (temps avant que les premières données n'arrivent à l’écran)
+- H : *Time to Interactive* ou durée avant interaction possible. (temps avant de pouvoir avoir la main sur le logiciel)
+
+Les valeurs sont exprimées en secondes
+
+|             | Application bureau | Application mobile | **Moyenne** |
+| :---------: | -----------------: | -----------------: | ----------: |
+|      A      |               1.80 |               1.78 |        1.79 |
+|      B      |               0.65 |               1.03 |        0.84 |
+|      C      |               0.51 |               0.35 |        0.43 |
+|      D      |               0.87 |               0.83 |        0.85 |
+|      E      |               2.15 |               2.31 |        2.23 |
+|      F      |               0.71 |               1.21 |        0.96 |
+|      G      |               0.66 |               0.44 |        0.55 |
+|      H      |               2.39 |               1.96 |        2.18 |
+| **Moyenne** |               1.22 |               1.24 |        1.23 |
+
+Nous obtenons donc une moyenne de temps de réactivité de **1.23s**, un résultat légèrement inférieur à l'hypothèse 3 s'expliquant en partie par le fait que les donnés sont stockés localement avec les applications hybrides, plutôt que sur une serveur distant comme pour les applications web.
 
 #### Hypothèse 5 - **Critère 3.3** : Le poids de l'exécutable
 
@@ -1112,12 +1178,29 @@ Comme nous pouvons le constater, le poids d'une application hybride bureau utili
   - Critère 2.2 (Maintenance) : 4.4 pts
   - Critère 2.3 (Réutilisation) : 100%
 - Critères 3 (Résultat)
-  - Critère 3.1.1 (*Benchmark* processeur) : ?%
-  - Critère 3.1.2 (*Benchmark* mémoire) : ?MB
-  - Critère 3.2 (Temps de réponse) : ?s
+  - Critère 3.1.1 (*Benchmark* processeur) : 23.76%
+  - Critère 3.1.2 (*Benchmark* mémoire) : 65.91MB
+  - Critère 3.2 (Temps de réponse) : 1.23s
   - Critère 3.3 (Poids total) : 53.41MB
 
+### Hypothèse 5 - Comparatif
+
+Nous pouvons remarquer que cette solution présente des avantages par rapport à une application web, bien que le langage de développement reste le même.
+
+Cette hypothèse possède la plupart des avantages d'une application web (Excellent potentiel de réutilisation, temps de développement court) et souffre des mêmes inconvénients (Performances en deçà des logiciels natifs).\
+Cependant, elle apporte un avantage conséquent dans sa capacité à pouvoir profiter des pleines fonctionnalités du système d'exploitation sur lequel elle tourne.
+
+Son inconvénient principal est son poids particulièrement élevé, dû à l'intégration du navigateur.
+
 ### Hypothèse 5 - Conclusion
+
+Bien qu'elle ne permet de résoudre que l'un des deux principaux problème des applications web (à savoir les limitations des fonctionnalités), l'approche hybride est une bonne façon de produire des logiciels à l'apparence "solide", apportant à l'utilisateur tout ce qu'il attend d'une application native.
+
+Quand bien même les performances ne sont pas aussi bonnes, et le poids particulièrement élevé, ce sont deux critère qui aujourd'hui ont moins d'importance étant donné les performances de nos postes de travail.
+
+Les applications hybrides sont donc un bon compromis entre l'approche native et web, et reste compatible avec presque 100% des technologies du web.
+
+Il est très intéressant de noter que pour palier au poids, de récentes technologies de logiciels hybrides tentes d'utiliser des navigateurs très allégés voire celui directement intégré au système d'exploitation. (Notons [Tauri](https://tauri.studio/en/), [Neutralinojs](https://neutralino.js.org/) et [Lorca](https://github.com/zserge/lorca))
 
 [^1]: [Average App File Size (Sweet Pricing)](https://sweetpricing.com/blog/2017/02/average-app-file-size/)
 [^2]: [Comparing APK sizes (AndroidPub)](https://android.jlelse.eu/comparing-apk-sizes-a0eb37bb36f)
