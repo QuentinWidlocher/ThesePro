@@ -68,9 +68,12 @@ layout: post
       1. [Hypothèse 4 - **Critères 2.3** : La réutilisation](#hypothèse-4---critères-23--la-réutilisation)
    1. [Hypothèse 4 - **Critères 3** : Le résultat](#hypothèse-4---critères-3--le-résultat)
       1. [Hypothèse 4 - **Critères 3.1** : Utilisation du processeur et de la mémoire](#hypothèse-4---critères-31--utilisation-du-processeur-et-de-la-mémoire)
+         1. [Hypothèse 4 - **Critère 3.1.1** : Utilisation du processeur](#hypothèse-4---critère-311--utilisation-du-processeur)
+         1. [Hypothèse 4 - **Critère 3.1.1** : Utilisation de la mémoire](#hypothèse-4---critère-311--utilisation-de-la-mémoire)
       1. [Hypothèse 4 - **Critères 3.2** : Temps de réponse moyen](#hypothèse-4---critères-32--temps-de-réponse-moyen)
       1. [Hypothèse 4 - **Critère 3.3** : Le poids de l'exécutable](#hypothèse-4---critère-33--le-poids-de-lexécutable)
    1. [Hypothèse 4 - Synthèse des critères](#hypothèse-4---synthèse-des-critères)
+   1. [Hypothèse 4 - Comparatif](#hypothèse-4---comparatif)
    1. [Hypothèse 4 - Conclusion](#hypothèse-4---conclusion)
 1. [Hypothèse 5](#hypothèse-5)
    1. [Hypothèse 5 - Présentation du *proof of concept*](#hypothèse-5---présentation-du-proof-of-concept)
@@ -874,8 +877,8 @@ Voyons plus en détails les liens effectifs :
 | iOS                    | Typescript | Natif  |                       3.5 |
 | **Moyenne**            |            |        |                   **3.8** |
 
-On considère que le code du web peut être partagé sur les trois système d'exploitation bureau (soit 3) et que seul la moitié du code est réutilisable sur les cibles mobiles (soit 0.5 *2 = 1). \
-De même, ce calcul inversé pour les cibles mobiles nous indique qu'il peut être partagé sur les deux système d'exploitation mobiles (soit 2) et uniquement partiellement sur les cibles bureau (soit 0.5* 3 = 1.5).
+On considère que le code du web peut être partagé sur les trois système d'exploitation bureau (soit 3) et que seul la moitié du code est réutilisable sur les cibles mobiles (soit 0.5*2 = 1).\
+De même, ce calcul inversé pour les cibles mobiles nous indique qu'il peut être partagé sur les deux système d'exploitation mobiles (soit 2) et uniquement partiellement sur les cibles bureau (soit 0.5*3 = 1.5).
 
 En divisant le ratio moyen par la quantité totale des projets nous obtenu un indice de partage de code de **76%**. Cela reste moins que pour l'hypothèse 3 exclusivement web et mono-projet mais bien au delà des résultats obtenus pour les applications natives.
 
@@ -883,7 +886,71 @@ En divisant le ratio moyen par la quantité totale des projets nous obtenu un in
 
 #### Hypothèse 4 - **Critères 3.1** : Utilisation du processeur et de la mémoire
 
+En ce qui concerne l'utilisation des ressources pour cette hypothèse, nous pouvons nous attendre à des résultats mêlant la partie bureau de l'hypothèse 3 et la partie mobile de l'hypothèse 2 car nous mélangeons une application web et une application native.
+
+Rappelons les instants de mesures :
+
+- A : Ouverture de l'application et arrivé sur la liste des articles
+- B : Tri des articles
+- C : Ouverture de la page d'un utilisateur
+- D : Connexion à l'application
+- E : Publication d'un article
+- F : Suppression d'un article
+
+##### Hypothèse 4 - **Critère 3.1.1** : Utilisation du processeur
+
+|             | Application bureau | Application mobile | **Moyenne** |
+| :---------: | -----------------: | -----------------: | ----------: |
+|      A      |              38.10 |               9.27 |       23.70 |
+|      B      |              29.00 |               8.42 |       18.60 |
+|      C      |              15.80 |               6.83 |       11.30 |
+|      D      |              17.70 |               6.90 |       12.10 |
+|      E      |              33.50 |               7.85 |       20.50 |
+|      F      |              13.00 |               5.49 |        9.26 |
+| **Moyenne** |              24.00 |               7.38 |   **15.60** |
+
+Nous pouvons constater l’écart entre les applications web et mobile côte à côte dans ce tableau. Les valeurs sont donc similaire à ce qui a pu être observé précédemment.
+
+Nous situons en moyenne l'utilisation du processeur aux alentours de **15.60%** pour cette hypothèse.
+
+##### Hypothèse 4 - **Critère 3.1.1** : Utilisation de la mémoire
+
+Sur les mêmes six actions, regardons l'utilisation de la mémoire vive (en MB).
+
+|             | Application bureau | Application mobile | **Moyenne** |
+| :---------: | -----------------: | -----------------: | ----------: |
+|      A      |              64.40 |              22.61 |       43.51 |
+|      B      |              50.20 |              18.87 |       34.54 |
+|      C      |              55.30 |              16.92 |       36.11 |
+|      D      |              58.10 |               9.14 |       33.62 |
+|      E      |              71.20 |              18.73 |       44.97 |
+|      F      |              67.90 |              11.96 |       39.93 |
+| **Moyenne** |              61.20 |              16.35 |   **38.77** |
+
+Les résultats sont ici encore conforme à nos attentes. En moyenne, l'utilisation de la mémoire est de **38.77MB** pour cette hypothèse.
+
 #### Hypothèse 4 - **Critères 3.2** : Temps de réponse moyen
+
+Rappelons les deux instants de mesures supplémentaires :
+
+- G : *First Contentful Paint* ou premier affichage de contenu (temps avant que les premières données n'arrivent à l’écran)
+- H : *Time to Interactive* ou durée avant interaction possible. (temps avant de pouvoir avoir la main sur le logiciel)
+
+Les valeurs sont exprimées en secondes
+
+|             | Application bureau | Application mobile | **Moyenne** |
+| :---------: | -----------------: | -----------------: | ----------: |
+|      A      |               1.83 |               2.19 |        2.01 |
+|      B      |               0.81 |               0.73 |        0.77 |
+|      C      |               0.46 |               0.21 |        0.34 |
+|      D      |               0.92 |               0.19 |        0.56 |
+|      E      |               1.36 |               0.81 |        1.09 |
+|      F      |               1.01 |               0.56 |        0.79 |
+|      G      |               0.69 |               0.81 |        0.75 |
+|      H      |               2.11 |               1.26 |        1.69 |
+| **Moyenne** |               1.15 |               0.85 |        1.00 |
+
+Nous obtenons donc une moyenne de temps de réactivité de **1.00s**.
 
 #### Hypothèse 4 - **Critère 3.3** : Le poids de l'exécutable
 
@@ -910,11 +977,27 @@ Du point de vue des logiciels mobiles, nous retrouvons un poids assez similaire 
   - Critère 2.2 (Maintenance) : 3.5 pts
   - Critère 2.3 (Réutilisation) : 76%
 - Critères 3 (Résultat)
-  - Critère 3.1 (*Benchmark*) : ??
-  - Critère 3.2 (Temps de réponse) : ??ms
+  - Critère 3.1.1 (*Benchmark* processeur) : 15.60%
+  - Critère 3.1.2 (*Benchmark* mémoire) : 38.77MB
+  - Critère 3.2 (Temps de réponse) : 1.00s
   - Critère 3.3 (Poids total) : 8.87MB
 
+### Hypothèse 4 - Comparatif
+
+Cette hypothèse mélange deux approches différentes de la création d'application dans le but de mitiger les inconvénients que chaque méthode possède.
+
+Malgré les deux applications à développer, le temps de développement final reste inférieur à celui de l'hypothèse 2, car le code peut être partagé dès la phase de production, sans attendre un hypothétique futur projet basé sur la même architecture applicative.
+
+Pour le reste des critères, nous retrouvons sans surprise une moyenne des application web et natives.
+
 ### Hypothèse 4 - Conclusion
+
+Comme nous pouvons le constater avec le diagramme en toile, cette hypothèse est très équilibré en comparaison avec les autres précédentes. C'est une architecture qui permet de gagner beaucoup de temps de développement sur le moment et d'en gagner dans le futur grâce à un partage de code efficace.\
+
+Cette hypothèse fait le sacrifice des performances sur les plate-formes puissante (avec l'application web bureau), mais y prête une attention particulière sur les plate-formes qui le sont moins (avec l'application native mobile).\
+En faisant cela, elle profite des avantages octroyés par les applications web sans mettre de coté le confort final de l'utilisateur final.
+
+Cela démontre encore un fois que le choix d'une architecture applicative n'est pas une question de choisir une méthode et de s'y tenir coûte que coûte, mais plutôt de savoir ce que l'on recherche pour pouvoir mélanger les points forts et les points faibles de chaque solution dans le but d'avoir une optimisation équilibrée.
 
 ## Hypothèse 5
 <!-- TODO: Hypothèse 5 -->
@@ -1029,8 +1112,9 @@ Comme nous pouvons le constater, le poids d'une application hybride bureau utili
   - Critère 2.2 (Maintenance) : 4.4 pts
   - Critère 2.3 (Réutilisation) : 100%
 - Critères 3 (Résultat)
-  - Critère 3.1 (*Benchmark*) : ??
-  - Critère 3.2 (Temps de réponse) : ??ms
+  - Critère 3.1.1 (*Benchmark* processeur) : ?%
+  - Critère 3.1.2 (*Benchmark* mémoire) : ?MB
+  - Critère 3.2 (Temps de réponse) : ?s
   - Critère 3.3 (Poids total) : 53.41MB
 
 ### Hypothèse 5 - Conclusion
