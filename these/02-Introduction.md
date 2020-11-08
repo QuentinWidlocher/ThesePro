@@ -46,7 +46,7 @@ Son but est de chercher à analyser le sujet en profondeur et de proposer des pi
 
 ## Contexte
 
-Lorsque j'écrit cette thèse, je suis actuellement en poste dans une entreprise de développement de logiciels sur mesure. Je suis donc un développeur comme plus de vingt-six millions de personnes dans le monde[^1], et comme eux, je suis sans cesse à la recherche **d'optimisation**.\
+Lorsque j’écris cette thèse, je suis actuellement en poste dans une entreprise de développement de logiciels sur mesure. Je suis donc un développeur comme plus de vingt-six millions de personnes dans le monde[^1], et comme eux, je suis sans cesse à la recherche **d'optimisation**.\
 Le désir constant d'optimisation peut-être perçu comme la lutte continuelle pour l'amélioration d'un fonctionnement, pour la minimisation des contraintes et des coûts pour mener à bien une activité.
 
 Dans mon (notre) cas de figure, au sein de sociétés dont le but est de fournir à ses clients des logiciels capables de répondre à leurs besoins les plus directs, cette optimisation est bien entendu fondamentale. Limiter le temps de réponse de l'entreprise pour adresser les besoins du client, qui lui même demande une solution informatiques très souvent dans l'optique d'optimiser son temps de production ou de réponse.\
@@ -70,11 +70,11 @@ Nous pouvons donc nous demander :
 
 > Comment faire le choix d'une architecture applicative multiplateforme ?
 
-Cette problématique n'est pas seulement à propos de "comment", dans le sens technique du terme mais aussi de "faut-il" ou même "est-t'il possible".
+Cette problématique n'est pas seulement à propos de "comment", dans le sens technique du terme mais aussi de "faut-il" ou même "est il possible".
 
-En effet si une application peut être développée une seule fois et être compatible avec un grand nombre d'appareils différents, cela peut apporter une grande valeur ajoutée. Mais si ce développement est bien plus complexe et coûteux (en budget mais aussi en temps), l'effort vaut-t'il le coup ?
+En effet si une application peut être développée une seule fois et être compatible avec un grand nombre d'appareils différents, cela peut apporter une grande valeur ajoutée. Mais si ce développement est bien plus complexe et coûteux (en budget mais aussi en temps), l'effort vaut il le coup ?
 
-L'effort lui même, est-t'il envisageable au vu des technologies actuelles ? Existe-t'il un ou plusieurs outils à-même de répondre au besoin de portabilité d'une architecture applicative ? Et quelle serait la difficulté de les mettre en place dans un projet à venir, ou un projet existant ?
+L'effort lui même, est il envisageable au vu des technologies actuelles ? Existe-t-il un ou plusieurs outils à-même de répondre au besoin de portabilité d'une architecture applicative ? Et quelle serait la difficulté de les mettre en place dans un projet à venir, ou un projet existant ?
 
 ## Cibles visées
 
@@ -91,7 +91,7 @@ Ces systèmes d'exploitation peuvent être groupés en deux catégories de suppo
   - Android
   - iOS
 
-Ces cinqs systèmes d'exploitation seront notre principale préoccupation étant donné qu'ils représentent ensemble plus de ??%<!-- TODO: source --> de l'utilisation de machines informatiques.
+Ces cinq systèmes d'exploitation seront notre principale préoccupation étant donné qu'ils représentent ensemble plus de ??%<!-- TODO: source --> de l'utilisation de machines informatiques.
 
 ## Hypothèses proposées
 
@@ -264,9 +264,8 @@ Une application web en revanche n'a pas ces accès et souvent il existe certaine
 
 Ces limitations peuvent se révéler cruciales pour une application métier et même s'il est souvent possible pour les développeurs de les contourner, il faut tout de même prendre cela en compte lors du comparatifs des solutions.
 
-Les limitations peuvent aussi se faire sentir du point de vue du design global de l'application. Le design, bien qu'étant souvent perçu comme étant non obligatoire et parfois même superflu, peut s'avérer très important dans le cas de certains projet visant à créer une application agréable d'utilisation.
-
-Nous considèreront deux points pour juger du design. D'abord s'il est possible de créer une interface qui ressemble à ce que les utilisateurs connaissent et attendent (charte graphique du système d'exploitation) et aussi s'il est possible de sortir de cette charte afin de proposer des experiences plus intéressantes.
+Les limitations peuvent aussi se faire sentir du point de vue du design global de l'application. Le design, bien qu'étant souvent perçu comme étant non obligatoire et parfois même superflu, peut s'avérer très important dans le cas de certains projet visant à créer une application agréable d'utilisation.\
+Pour en juger, nous considèreront les possibilités offertes par la technologie employée pour permettre une grande liberté esthétique.
 
 Pour mesurer ce critère, nous utiliseront un système de note arbitraire en fonction de différents sous-critères liés à celui ci.
 
@@ -321,7 +320,7 @@ Ces performances sont mesurables et quantifiables grâce à des outils d'analyse
 
 ##### **Critère 3.2** : Temps de réponse moyen
 
-On juge une application agréable quand elle "répond au doigt et à l'oeil", en d'autres termes : quand celle ci réagit aux interactions de l'utilisateur dans un temps très restreint. Si un logiciel met plusieurs seconde à sauvegarder un document (par exemple), on jugera l'application lente.
+On juge une application agréable quand elle "répond au doigt et à l’œil", en d'autres termes : quand celle ci réagit aux interactions de l'utilisateur dans un temps très restreint. Si un logiciel met plusieurs seconde à sauvegarder un document (par exemple), on jugera l'application lente.
 
 Cette problématique peut même se faire ressentir quand toutes les actions ont un délais de quelques millisecondes. Même si l'utilisateur ne s'en rend pas tout de suite compte, l'application dégagera une impression de lenteur et de frustration.
 
@@ -434,7 +433,7 @@ graph LR
     C6(Commit 6 - 16:30)
     C7(Commit 7 - 17:30)
   end
-  C1 -->|1h30mn| C2 -->|50mn| C3 -->|1h40mn| C4 -->|2h30mn| C5 -->|1h| C6 -->|1h| C7
+  C1 -->|1h30m| C2 -->|50m| C3 -->|1h40m| C4 -->|2h30m| C5 -->|1h| C6 -->|1h| C7
 </div>
 
 Le problème c'est qu'il existe pas de manière de savoir à quel moment le développeur a commencé à travailler. Nous n'avons que son premier jalon (à 9h).\

@@ -9,6 +9,8 @@ layout: post
    1. [Hypothèse 1 - **Critères 1** : Pendant le développement](#hypothèse-1---critères-1--pendant-le-développement)
       1. [Hypothèse 1 - **Critère 1.1** : Le temps de développement](#hypothèse-1---critère-11--le-temps-de-développement)
       1. [Hypothèse 1 - **Critère 1.2** : Les limitations des technologies](#hypothèse-1---critère-12--les-limitations-des-technologies)
+         1. [Hypothèse 1 - **Critère 1.2.1** : L'accès aux fonctionnalités](#hypothèse-1---critère-121--laccès-aux-fonctionnalités)
+         1. [Hypothèse 1 - **Critère 1.2.2** : Les limitations esthétiques](#hypothèse-1---critère-122--les-limitations-esthétiques)
    1. [Hypothèse 1 - **Critères 2** : Après le développement](#hypothèse-1---critères-2--après-le-développement)
       1. [Hypothèse 1 - **Critères 2.1** : Le déploiement](#hypothèse-1---critères-21--le-déploiement)
       1. [Hypothèse 1 - **Critères 2.2** : La maintenance](#hypothèse-1---critères-22--la-maintenance)
@@ -26,6 +28,8 @@ layout: post
    1. [Hypothèse 2 - **Critères 1** : Pendant le développement](#hypothèse-2---critères-1--pendant-le-développement)
       1. [Hypothèse 2 - **Critère 1.1** : Le temps de développement](#hypothèse-2---critère-11--le-temps-de-développement)
       1. [Hypothèse 2 - **Critère 1.2** : Les limitations des technologies](#hypothèse-2---critère-12--les-limitations-des-technologies)
+         1. [Hypothèse 2 - **Critère 1.2.1** : L'accès aux fonctionnalités](#hypothèse-2---critère-121--laccès-aux-fonctionnalités)
+         1. [Hypothèse 2 - **Critère 1.2.2** : Les limitations esthétiques](#hypothèse-2---critère-122--les-limitations-esthétiques)
    1. [Hypothèse 2 - **Critères 2** : Après le développement](#hypothèse-2---critères-2--après-le-développement)
       1. [Hypothèse 2 - **Critères 2.1** : Le déploiement](#hypothèse-2---critères-21--le-déploiement)
       1. [Hypothèse 2 - **Critères 2.2** : La maintenance](#hypothèse-2---critères-22--la-maintenance)
@@ -44,6 +48,8 @@ layout: post
    1. [Hypothèse 3 - **Critères 1** : Pendant le développement](#hypothèse-3---critères-1--pendant-le-développement)
       1. [Hypothèse 3 - **Critère 1.1** : Le temps de développement](#hypothèse-3---critère-11--le-temps-de-développement)
       1. [Hypothèse 3 - **Critère 1.2** : Les limitations des technologies](#hypothèse-3---critère-12--les-limitations-des-technologies)
+         1. [Hypothèse 3 - **Critère 1.2.1** : L'accès aux fonctionnalités](#hypothèse-3---critère-121--laccès-aux-fonctionnalités)
+         1. [Hypothèse 3 - **Critère 1.2.2** : Les limitations esthétiques](#hypothèse-3---critère-122--les-limitations-esthétiques)
    1. [Hypothèse 3 - **Critères 2** : Après le développement](#hypothèse-3---critères-2--après-le-développement)
       1. [Hypothèse 3 - **Critères 2.1** : Le déploiement](#hypothèse-3---critères-21--le-déploiement)
       1. [Hypothèse 3 - **Critères 2.2** : La maintenance](#hypothèse-3---critères-22--la-maintenance)
@@ -62,6 +68,8 @@ layout: post
    1. [Hypothèse 4 - **Critères 1** : Pendant le développement](#hypothèse-4---critères-1--pendant-le-développement)
       1. [Hypothèse 4 - **Critère 1.1** : Le temps de développement](#hypothèse-4---critère-11--le-temps-de-développement)
       1. [Hypothèse 4 - **Critère 1.2** : Les limitations des technologies](#hypothèse-4---critère-12--les-limitations-des-technologies)
+         1. [Hypothèse 4 - **Critère 1.2.1** : L'accès aux fonctionnalités](#hypothèse-4---critère-121--laccès-aux-fonctionnalités)
+         1. [Hypothèse 4 - **Critère 1.2.2** : Les limitations esthétiques](#hypothèse-4---critère-122--les-limitations-esthétiques)
    1. [Hypothèse 4 - **Critères 2** : Après le développement](#hypothèse-4---critères-2--après-le-développement)
       1. [Hypothèse 4 - **Critères 2.1** : Le déploiement](#hypothèse-4---critères-21--le-déploiement)
       1. [Hypothèse 4 - **Critères 2.2** : La maintenance](#hypothèse-4---critères-22--la-maintenance)
@@ -80,6 +88,8 @@ layout: post
    1. [Hypothèse 5 - **Critères 1** : Pendant le développement](#hypothèse-5---critères-1--pendant-le-développement)
       1. [Hypothèse 5 - **Critère 1.1** : Le temps de développement](#hypothèse-5---critère-11--le-temps-de-développement)
       1. [Hypothèse 5 - **Critère 1.2** : Les limitations des technologies](#hypothèse-5---critère-12--les-limitations-des-technologies)
+         1. [Hypothèse 5 - **Critère 1.2.1** : L'accès aux fonctionnalités](#hypothèse-5---critère-121--laccès-aux-fonctionnalités)
+         1. [Hypothèse 5 - **Critère 1.2.2** : Les limitations esthétiques](#hypothèse-5---critère-122--les-limitations-esthétiques)
    1. [Hypothèse 5 - **Critères 2** : Après le développement](#hypothèse-5---critères-2--après-le-développement)
       1. [Hypothèse 5 - **Critères 2.1** : Le déploiement](#hypothèse-5---critères-21--le-déploiement)
       1. [Hypothèse 5 - **Critères 2.2** : La maintenance](#hypothèse-5---critères-22--la-maintenance)
@@ -132,6 +142,8 @@ Là où la moyenne est fournie à but indicatif, c'est dans le total que nous so
 
 #### Hypothèse 1 - **Critère 1.2** : Les limitations des technologies
 
+##### Hypothèse 1 - **Critère 1.2.1** : L'accès aux fonctionnalités
+
 Ces cinq applications ont donc comme principe d'être chacune native et donc par définition d'avoir un accès à toutes les fonctionnalités offertes par le système d'exploitation cible, et cela sans charge supplémentaire de travail.\
 Certains systèmes d'exploitation ajoutent d'ailleurs à cela une couche de sécurité supplémentaire comme Android qui demande la permission à l'utilisateur avant d'accéder à des fonctionnalités natives.
 
@@ -154,7 +166,24 @@ Afin de juger des libertés d'accès de tous ces logiciels, nous leur donneront 
 | **Moyenne**            |         |        |    **4.8** |
 
 Sans surprise, chaque application reçoit une note proche de maximale étant donné le degré de liberté offert par les applications natives.\
-Il est à noté que si Android et iOS ont tout deux des notes légèrement plus basse, c'est en raison de la requête faite à l'utilisateur d'accéder aux fonctionnalités. Quand bien même cette notion est très bénéfique d'un point de vue de la sécurité informatique, nous jugeons ici la degré de liberté d'accès exclusivement.
+Il est à noter que si Android et iOS ont tout deux des notes légèrement plus basse, c'est en raison de la requête faite à l'utilisateur d'accéder aux fonctionnalités. Quand bien même cette notion est très bénéfique d'un point de vue de la sécurité informatique, nous jugeons ici la degré de liberté d'accès exclusivement.
+
+##### Hypothèse 1 - **Critère 1.2.2** : Les limitations esthétiques
+
+Jugeons maintenant de la liberté offerte par ces applications natives de créer une interface esthétique, unique et intuitive.
+
+| Système d'exploitation | Langage | Nature | Note sur 5 |
+| ---------------------- | ------- | ------ | ---------: |
+| Linux                  | Rust    | Natif  |        3.0 |
+| Windows                | C#      | Natif  |        3.0 |
+| macOS                  | Swift   | Natif  |        2.5 |
+| Android                | Kotlin  | Natif  |        2.5 |
+| iOS                    | Swift   | Natif  |        2.5 |
+| **Moyenne**            |         |        |    **2.7** |
+
+Linux et Windows proposent tout un bon contrôle sur les fenêtres d'application mais leur apparence est limité en possibilité. Même s'il est possible d'arriver à des résultats convenable, il est difficile de différencier une application d'une autre uniquement par l'aspect esthétique.
+
+Pour les systèmes d'exploitation d'Apple (macOS et iOS) ainsi qu'Android, quand bien même leur proposition d'affichage est d'un naturel très esthétique, le contrôle permis est très restreint et chaque application native aura tendance à se ressembler sans un effort conséquent apporté par les concepteurs de l'application.
 
 ### Hypothèse 1 - **Critères 2** : Après le développement
 
@@ -347,7 +376,8 @@ On estime en 2017 le poids moyen d'une application à 15MB sur Android et 38MB s
 
 - Critères 1 (Avant le développement)
   - Critère 1.1 (Temps de développement) : 172h
-  - Critère 1.2 (Limitations) : 4.8 pts
+  - Critère 1.2.1 (Limitations Techniques) : 4.8 pts
+  - Critère 1.2.2 (Limitations Esthétiques) : 2.7 pts
 - Critères 2 (Après le développement)
   - Critère 2.1 (Déploiement) : 4.2 pts
   - Critère 2.2 (Maintenance) : 4.4 pts
@@ -358,7 +388,7 @@ On estime en 2017 le poids moyen d'une application à 15MB sur Android et 38MB s
   - Critère 3.2 (Temps de réponse) : 0.74s
   - Critère 3.3 (Poids total) : 8.75MB
 
-En appliquant la formule de calcul proposée, nous obtenons pour cette hypothèse un score moyen de **69.45%**
+En appliquant la formule de calcul proposée, nous obtenons pour cette hypothèse un score moyen de 
 
 ![Graphique Hypothèse 1](./GraphiqueHypothese1.png)
 
@@ -405,6 +435,8 @@ Le temps de développement total de ce projet s'élève donc à 58 heures. C'est
 
 #### Hypothèse 2 - **Critère 1.2** : Les limitations des technologies
 
+##### Hypothèse 2 - **Critère 1.2.1** : L'accès aux fonctionnalités
+
 Comme pour l'hypothèse précédente, nous allons juger les deux applications sur la liberté qu'elles offrent aux développeurs d'accéder aux fonctionnalités du système d'exploitation cible.
 
 | Groupe de cibles | Langage | Nature | Note sur 5 |
@@ -415,6 +447,23 @@ Comme pour l'hypothèse précédente, nous allons juger les deux applications su
 
 Comme nous pouvons le constater, de la même manière que l'hypothèse précédente, les applications natives n'ont que très peu de limitations quand aux fonctionnalités auxquelles elles ont accès.\
 Seul l'application mobile possède un léger inconvénient encore une fois, celui  de devoir demander la permission à l'utilisateur pour accéder à certains mécanismes.
+
+##### Hypothèse 2 - **Critère 1.2.2** : Les limitations esthétiques
+
+En ce qui concerne les limitations des possibilités esthétiques, nous pouvons nous attendre à des résultats similaire à l'hypothèse précédente.
+
+| Groupe de cibles | Langage | Nature | Note sur 5 |
+| ---------------- | ------- | ------ | ---------: |
+| Logiciel Bureau  | Kotlin  | Natif  |        2.0 |
+| Logiciel Mobile  | Dart    | Natif  |        2.5 |
+| **Moyenne**      |         |        |    **2.3** |
+
+Nous retrouvons en effet la même note en ce qui concerne la partie mobile mais une note légèrement plus basse pour la partie bureau.\
+Cela s'explique par la différence de l'approche de l'interface des logiciels bureau multiplateforme là où l'approche des logiciels mobiles sont très similaires.
+
+Android et iOS possèdent tout deux une charte graphique différente mais comparable, ce qui fait que proposer des composants graphiques (Boutons, champs de textes, tableaux) dans deux apparences différentes est possibles sans trop de problèmes.
+
+À l'inverse, il n'existe aucune charte graphique liant Linux, Windows et macOS. C'est cette absence de lien qui rend l'affichage d'une interface graphique assez limité en possibilité.
 
 ### Hypothèse 2 - **Critères 2** : Après le développement
 
@@ -589,7 +638,8 @@ Comme pour l'hypothèse précédente, le poids des applications mobiles sont lé
 
 - Critères 1 (Avant le développement)
   - Critère 1.1 (Temps de développement) : 58h
-  - Critère 1.2 (Limitations) : 4.8 pts
+  - Critère 1.2.1 (Limitations techniques) : 4.8 pts
+  - Critère 1.2.2 (Limitations esthétiques) : 2.3 pts
 - Critères 2 (Après le développement)
   - Critère 2.1 (Déploiement) : 4.1 pts
   - Critère 2.2 (Maintenance) : 4.4 pts
@@ -610,6 +660,8 @@ En effet, il va de soit que développer seulement deux applications est bien plu
 
 Aussi, limiter le nombre d'applications et donc de langage permet aussi de limiter le nombre de codes sources différent et donc d'accroître la quantité relative de code qui peut-être employé à nouveau sur des projets à l'architecture applicative similaire.\
 Là encore, c'est sous réserve d'une limitation quand au choix des langages et des outils.
+
+Enfin, malgré tous ces changements, le problème de liberté quand à l'affichage de l'interface utilisateur reste entier.
 
 ### Hypothèse 2 - Conclusion
 
@@ -639,6 +691,8 @@ Cette valeur reste en accord avec celles estimées jusqu'à présent mais nature
 
 #### Hypothèse 3 - **Critère 1.2** : Les limitations des technologies
 
+##### Hypothèse 3 - **Critère 1.2.1** : L'accès aux fonctionnalités
+
 Pour notre première hypothèse utilisant une technologie du web, voyons quelles sont les limitations de celles ci.
 
 A l'inverse des applications native, les applications web ne possèdent pas un accès direct au fonctionnalités du système d'exploitation. Les seules choses qui leurs sont permises sont les capacités du navigateur dans lequel elles tournent (Accéder à la caméra, la localisation, au microphone par exemple).
@@ -649,6 +703,14 @@ Impossible aussi de fonctionner sans une connexion internet décente et réguli�
 Les applications web sont donc très limitées dans ce qu'elle sont capable de faire même si elle possèdent tout de même les qualités requises pour en faire de véritable utilitaires (Affichage et traitement de données).
 
 Pour ce critère, nous évaluons sa note quinaire à **2.5**.
+
+##### Hypothèse 3 - **Critère 1.2.2** : Les limitations esthétiques
+
+Pour afficher une interface graphique, les applications web ont recours à une technologie appelé CSS (Cascading StyleSheets soit feuilles de style en cascade). Cette technologie, vieille de près de 24 ans a connu de nombreuse révisions et est aujourd'hui une technologie très puissante capable d'afficher des interfaces complexes et originales.
+
+Pour donner un exemple de comparatif, j'invite le lecteur à comparer les différences graphique entre ses logiciels de bureau et les différences entre chaque site web qu'il a visité.
+
+Pour ce critère, nous évaluons donc sa note quinaire à **5.0**.
 
 ### Hypothèse 3 - **Critères 2** : Après le développement
 
@@ -734,7 +796,8 @@ Si cette valeur semble si peu grande en comparaison aux autres hypothèse c'est 
 
 - Critères 1 (Avant le développement)
   - Critère 1.1 (Temps de développement) : 20h
-  - Critère 1.2 (Limitations) : 2.5 pts
+  - Critère 1.2.1 (Limitations techniques) : 2.5 pts
+  - Critère 1.2.2 (Limitations esthétiques) : 5.0 pts
 - Critères 2 (Après le développement)
   - Critère 2.1 (Déploiement) : 5 pts
   - Critère 2.2 (Maintenance) : 3 pts
@@ -750,18 +813,20 @@ Si cette valeur semble si peu grande en comparaison aux autres hypothèse c'est 
 Comme nous avons pu le remarquer, cette application web est très peu similaire aux applications native des hypothèses précédentes.
 
 Tout d'abord, du point de vue des performances, cette application web est bien plus consommatrice de ressource que ses contreparties native, d'une magnitude de presque quatre.\
-Les applications web présentes aussi de nombreuses lacunes quand aux accès aux fonctionnalités native.
+Les applications web présentes aussi de nombreuses lacunes quand aux accès aux fonctionnalités native de l'appareil.
 
 Le gain en revanche se situe au niveau du temps de développement, de déploiement et aussi sur le poids final de l'application et sa capacité à pouvoir partager du code.\
 Chacun de ces critères a une note quasi parfait dans cette hypothèse.
+
+C'est aussi le cas de l'aspect esthétique qui propose une liberté de mise en page virtuellement infinie grâce au *CSS*.
 
 ### Hypothèse 3 - Conclusion
 
 Nous avons donc pu voir que le principe d'une application web n'est pas du tout le même qu'un application native, ces deux méthodes ne cherchent en aucun cas à atteindre le même but.
 
-Là où les applications native brillent de part leurs performances brutes, c'est dans la vitesse de création et de déploiement que se démarquent les application web.
+Là où les applications native brillent de part leurs performances brutes, c'est dans la vitesse de création et de déploiement que se démarquent les application web, mais aussi dans l'apparence qui peut facilement être très alléchante pour les utilisateur.
 
-Dans le cas d'une application à but extrêmement multiplateforme, c'est une méthode de choix qui permet de rapidement créer et fournir une application finie, surtout si cette dernière se base sur le code d'une application précédente, ce qui est fort probable et fort adapté.
+Dans le cas d'une application à but extrêmement multiplateforme, c'est une méthode de choix qui permet de rapidement créer et fournir une belle application finie, surtout si cette dernière se base sur le code d'une application précédente, ce qui est fort probable et fort adapté.
 
 ## Hypothèse 4
 
@@ -794,6 +859,8 @@ Le code source du logiciel bureau étant principalement le même que l'hypothès
 
 #### Hypothèse 4 - **Critère 1.2** : Les limitations des technologies
 
+##### Hypothèse 4 - **Critère 1.2.1** : L'accès aux fonctionnalités
+
 Dans le cas d'une application web et une autre native, nous pouvons nous attendre à des différences assez importantes après les observations que nous avons pu effectuer lors de l'analyse des hypothèses précédentes.
 
 | Groupe de cibles | Langage    | Nature | Note sur 5 |
@@ -803,6 +870,23 @@ Dans le cas d'une application web et une autre native, nous pouvons nous attendr
 | **Moyenne**      |            |        |    **3.5** |
 
 En effet, tel que dans l'hypothèse précédente, les applications web n'ont que très peu de libertés quand aux fonctionnalités auxquelles elles ont accès là ou, tel que dans les hypothèses 1 et 2, ce n'est pas un problème que rencontre les logiciels natifs.
+
+##### Hypothèse 4 - **Critère 1.2.2** : Les limitations esthétiques
+
+Concernant les libertés de conception d'interface, on s'attend à obtenir un résultat tout à fait inverse.
+
+| Groupe de cibles | Langage    | Nature | Note sur 5 |
+| ---------------- | ---------- | ------ | ---------: |
+| Logiciel Bureau  | Typescript | Web    |        5.0 |
+| Logiciel Mobile  | Typescript | Natif  |        2.0 |
+| **Moyenne**      |            |        |    **3.5** |
+
+La note parfaite du logiciel bureau s'explique encore par la présence du CSS.\
+Si le logiciel mobile a une note plus faible que dans les hypothèse précédentes, c'est dû à la technologie employé par l'outil NativeScript.
+
+En effet, si NativeScript propose un ersatz de CSS afin que le développeur web retrouve une technologie qui lui est familière, cette méthode est loin d'être aussi puissante que le réel CSS.
+
+Bridé par la nature native de l'application, il n'est pas possible d'utiliser du véritable CSS avec cet outil. L'algorithme de conversion de ce "CSS" vers la mise en page native n'est pas sans erreur du à la marge importante de liberté entre ces deux technologies.
 
 ### Hypothèse 4 - **Critères 2** : Après le développement
 
@@ -974,7 +1058,8 @@ Du point de vue des logiciels mobiles, nous retrouvons un poids assez similaire 
 
 - Critères 1 (Avant le développement)
   - Critère 1.1 (Temps de développement) : 43h
-  - Critère 1.2 (Limitations) : 3.5 pts
+  - Critère 1.2.1 (Limitations techniques) : 3.5 pts
+  - Critère 1.2.2 (Limitations esthétiques) : 3.5 pts
 - Critères 2 (Après le développement)
   - Critère 2.1 (Déploiement) : 4.3 pts
   - Critère 2.2 (Maintenance) : 3.5 pts
@@ -1033,6 +1118,8 @@ Les technologies utilisées pour la création de ce *proof of concept* étant le
 
 #### Hypothèse 5 - **Critère 1.2** : Les limitations des technologies
 
+##### Hypothèse 5 - **Critère 1.2.1** : L'accès aux fonctionnalités
+
 Tout l'intérêt de cette hypothèse repose sur le principe de développer avec des technologies web et de profiter des conteneurs natifs pour pouvoir accéder aux fonctionnalités des systèmes d'exploitations des appareils cibles.
 
 | Groupe de cibles | Langage    | Nature  | Note sur 5 |
@@ -1044,6 +1131,18 @@ Tout l'intérêt de cette hypothèse repose sur le principe de développer avec 
 L'accès aux fonctionnalités natives se fait dans ces technologies hybrides, par la mise en place de *plugins*, permettant l'accès à chacune des fonctionnalités une par une. C'est un coût de temps de développement certes très léger, mais présent par rapport à une application native.
 
 Par ailleurs, les applications mobiles "souffrent" aussi toujours de la demande de confirmation à l'utilisateur lors de l'accès aux fonctionnalités.
+
+##### Hypothèse 5 - **Critère 1.2.2** : Les limitations esthétiques
+
+Bien entendu, le CSS reste tout à fait possible d'utilisation sur les applications hybrides.
+
+| Groupe de cibles | Langage    | Nature  | Note sur 5 |
+| ---------------- | ---------- | ------- | ---------: |
+| Logiciel Bureau  | Typescript | Hybride |        5.0 |
+| Logiciel Mobile  | Typescript | Hybride |        5.0 |
+| **Moyenne**      |            |         |    **5.0** |
+
+Il est donc naturel que la note soit la même que pour celle de l'hypothèse 3.
 
 ### Hypothèse 5 - **Critères 2** : Après le développement
 
@@ -1172,7 +1271,8 @@ Comme nous pouvons le constater, le poids d'une application hybride bureau utili
 
 - Critères 1 (Avant le développement)
   - Critère 1.1 (Temps de développement) : 49h
-  - Critère 1.2 (Limitations) : 4.3 pts
+  - Critère 1.2.1 (Limitations techniques) : 4.3 pts
+  - Critère 1.2.2 (Limitations esthétiques) : 5.0 pts
 - Critères 2 (Après le développement)
   - Critère 2.1 (Déploiement) : 4.1 pts
   - Critère 2.2 (Maintenance) : 4.4 pts
@@ -1187,7 +1287,7 @@ Comme nous pouvons le constater, le poids d'une application hybride bureau utili
 
 Nous pouvons remarquer que cette solution présente des avantages par rapport à une application web, bien que le langage de développement reste le même.
 
-Cette hypothèse possède la plupart des avantages d'une application web (Excellent potentiel de réutilisation, temps de développement court) et souffre des mêmes inconvénients (Performances en deçà des logiciels natifs).\
+Cette hypothèse possède la plupart des avantages d'une application web (Excellent potentiel de réutilisation, temps de développement court et interface utilisateur très poussée) et souffre des mêmes inconvénients (Performances en deçà des logiciels natifs).\
 Cependant, elle apporte un avantage conséquent dans sa capacité à pouvoir profiter des pleines fonctionnalités du système d'exploitation sur lequel elle tourne.
 
 Son inconvénient principal est son poids particulièrement élevé, dû à l'intégration du navigateur.
@@ -1200,7 +1300,7 @@ Quand bien même les performances ne sont pas aussi bonnes, et le poids particul
 
 Les applications hybrides sont donc un bon compromis entre l'approche native et web, et reste compatible avec presque 100% des technologies du web.
 
-Il est très intéressant de noter que pour palier au poids, de récentes technologies de logiciels hybrides tentes d'utiliser des navigateurs très allégés voire celui directement intégré au système d'exploitation. (Notons [Tauri](https://tauri.studio/en/), [Neutralinojs](https://neutralino.js.org/) et [Lorca](https://github.com/zserge/lorca))
+Il est très intéressant de noter que pour palier le problème poids, de récentes technologies de logiciels hybrides tentes d'utiliser des navigateurs très allégés voire celui directement intégré au système d'exploitation. (Notons [Tauri](https://tauri.studio/en/), [Neutralinojs](https://neutralino.js.org/) et [Lorca](https://github.com/zserge/lorca))
 
 [^1]: [Average App File Size (Sweet Pricing)](https://sweetpricing.com/blog/2017/02/average-app-file-size/)
 [^2]: [Comparing APK sizes (AndroidPub)](https://android.jlelse.eu/comparing-apk-sizes-a0eb37bb36f)
