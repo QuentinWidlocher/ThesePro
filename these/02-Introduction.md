@@ -79,7 +79,7 @@ L'effort lui même, est il envisageable au vu des technologies actuelles ? Exist
 ## Cibles visées
 
 Cette question brasse un champ bien trop vague des possibles pour pouvoir en extraire une réponse valable pour tous les appareils informatiques existants.\
-Aussi nous allons réduire la portée de notre recherche aux systèmes d'exploitation les plus populaires aujourd'hui, chez les particuliers comme chez les professionnels. <!-- TODO: source -->
+Aussi nous allons réduire la portée de notre recherche aux systèmes d'exploitation les plus populaires aujourd'hui, chez les particuliers comme chez les professionnels.
 
 Ces systèmes d'exploitation peuvent être groupés en deux catégories de support physique à savoir les terminaux fixes et mobiles :
 
@@ -91,7 +91,7 @@ Ces systèmes d'exploitation peuvent être groupés en deux catégories de suppo
   - Android
   - iOS
 
-Ces cinq systèmes d'exploitation seront notre principale préoccupation étant donné qu'ils représentent ensemble plus de ??%<!-- TODO: source --> de l'utilisation de machines informatiques.
+Ces cinq systèmes d'exploitation seront notre principale préoccupation étant donné qu'ils représentent ensemble plus de 95%[^4] de l'utilisation de machines informatiques.
 
 ## Hypothèses proposées
 
@@ -339,16 +339,16 @@ A l'inverse du code source, dont la taille n'a finalement que peu d'importance, 
 Ces critères se basent sur des notations différentes : notes, temps, pourcentages, mesures etc.\
 Afin de réduire ces notations à un pied d'égalité et de pouvoir comparer chaque hypothèses entres elles par la somme de ses résultats, nous appliquerons une formule mathématique qui dégagera au final pour chaque hypothèse un nombre de point.
 
-Ces points auront pour intérêt de comparer les hypothèses entres elles mais il faut garder à l'esprit que cette méthode permet d'avoir un bon aperçu mais n'est en aucun cas un moyen de juger la finalité des hypothèses. Chacune auront des forces et des faiblesses.
+Ces points auront pour intérêt de comparer les hypothèses entres elles mais il faut garder à l'esprit que cette méthode permet d'avoir un bon aperçu mais n'est en aucun cas un moyen de juger la finalité des hypothèses. Chacune auront des forces et des faiblesses distincte qu'il faudra apprécier selon leur contexte.
 
 <!-- TODO: Parler de la formule ou pas -->
 
 ### RealWorld
 
-Afin de rester dans un contexte technique, et de profiter au mieux du milieu du développement logiciels et de la vision qui l'entoure, nous allons baser nos travaux sur *RealWorld*[^4].
+Afin de rester dans un contexte technique, et de profiter au mieux du milieu du développement logiciels et de la vision qui l'entoure, nous allons baser nos travaux sur *RealWorld*[^5].
 
 *RealWorld* est un dépôt de code qui regroupe plusieurs *proofs of concept* cherchant à reproduire une même application avec des technologies différentes.\
-L'application en question est un clone de *Medium*[^5], un site web d'articles sur des sujets divers, appelé *Conduit*.
+L'application en question est un clone de *Medium*[^6], un site web d'articles sur des sujets divers, appelé *Conduit*.
 
 Pour que chaque itération de *Conduit* soient comparables entre elle, elle doivent toutes suivre les même consignes, le même cahier des charges technique.\
 L'application est donc scindé en deux parties toujours interchangeables, d'un coté la partie interface utilisateur et de l'autre la gestion des données.
@@ -373,7 +373,7 @@ Pour mieux présenter *Conduit* et donc la profondeur de notre application de d�
 - Écriture d'articles
   - Titre
   - Sous Titre
-  - Corps en texte riche (Markdown <!-- TODO: Définition -->)
+  - Corps en texte riche ([Markdown](/chapters/glossaire#markdown))
   - Étiquettes
 
 ##### Visuels application bureau
@@ -453,5 +453,6 @@ C'est au sujet de ce dernier point que ce travail de recherche ne vise donc pas 
 [^1]: [SlashData 2019](https://slashdata-website-cms.s3.amazonaws.com/sample_reports/EiWEyM5bfZe1Kug_.pdf)
 [^2]: *The Pragmatic Programmer*, Addison-Wesley, 2000
 [^3]: [Fin du support de Windows XP : 2009](https://docs.microsoft.com/en-us/lifecycle/products/windows-xp)
-[^4]: [RealWorld](https://github.com/gothinkster/realworld)
-[^5]: [Medium](https://medium.com/)
+[^4]: [StatCounter 2019](https://gs.statcounter.com/os-market-share/all/worldwide/2019)
+[^5]: [RealWorld](https://github.com/gothinkster/realworld)
+[^6]: [Medium](https://medium.com/)

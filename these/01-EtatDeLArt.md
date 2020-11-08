@@ -44,7 +44,7 @@ Il est donc primordial de rendre ces interfaces le plus accessible possible et c
 Lors de la genèse de l'informatique, il n'était pas encore question de portabilité applicative, chaque logiciel devait être développé pour une (et une seule) machine.\
 Si un logiciel devait exister sur un ordinateur d'une marque et sur un autre d'un marque différente, il devait être redéveloppé deux fois car le langage machine de ces ordinateurs était tout bonnement différent.
 
-Bien évidemment, ce problème de taille fut rapidement réglé avec l'arrivé des langages de programmation à haut niveau d'abstraction et des systèmes d'exploitations.
+Bien évidemment, ce problème de taille fut rapidement réglé avec l'arrivé des langages de programmation à haut niveau d'[abstraction](/chapters/glossaire#abstraction) et des systèmes d'exploitations.
 
 #### Les langages et leurs niveaux d'abstraction
 

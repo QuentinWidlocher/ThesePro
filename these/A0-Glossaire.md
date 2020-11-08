@@ -19,6 +19,8 @@ layout: post
 1. [UI / UX](#ui--ux)
 1. [Architecture logicielle](#architecture-logicielle)
 1. [Framework](#framework)
+1. [Markdown](#markdown)
+1. [Abstraction](#abstraction)
 
 ## Cross Platform
 
@@ -59,13 +61,13 @@ Un logiciel propriétaire n'est pas forcément payant, la nuance ne s'effectuant
 ## Logiciel libre (de droit)
 
 Un logiciel libre désigne la licence de distribution de ce dernier. La mention libre indique que le code source du logiciel peut-être librement consulté, distribué et réutilisé à des fin commerciales ou non. Ces différents points sont spécifié par le biais de licenses comme la licence [MIT](https://choosealicense.com/licenses/mit/) ou [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/).\
-Cette thèse professionnelle, bien que n'étant pas un logiciel, est partagé en ligne selon une licence [Creative Commons](https://choosealicense.com/licenses/cc-by-sa-4.0/). Vous pouvez retrouver sont contenu source sur un [dépôt Github](https://github.com/QuentinWidlocher/ThesePro).\
+Cette thèse professionnelle, bien que n'étant pas un logiciel, est partagé en ligne selon une licence [Creative Commons](https://choosealicense.com/licenses/cc-by-sa-4.0/). Vous pouvez retrouver sont contenu source sur un [dépôt GitHub](https://github.com/QuentinWidlocher/ThesePro).\
 Un logiciel libre n'est pas forcément gratuit, la nuance ne s'effectuant exclusivement que sur sa distribution.
 
 ## Compilateur
 
 Un compilateur est un logiciel qui traduit un code source écrit dans un langage de programmation (le langage source) dans un autre langage (le langage cible).\
-Le nom "compilateur" est principalement utilisé pour les programmes qui traduisent un langage de programmation de haut niveau d'abstraction <!-- TODO: Mettre l'abstraction dans le glossaire --> vers un langage de niveau inférieur (par exemple, de l'assembleur vers du binaire) afin de créer un programme exécutable.
+Le nom "compilateur" est principalement utilisé pour les programmes qui traduisent un langage de programmation de haut niveau d'[abstraction](#abstraction) vers un langage de niveau inférieur (par exemple, de l'assembleur vers du binaire) afin de créer un programme exécutable.
 
 ## Interpréteur
 
@@ -108,3 +110,22 @@ Dans cette thèse, nous nous intéressons surtout aux langages utilisés ainsi q
 
 Littéralement une "structure" ou une "charpente", un framework est un ensemble d'outils de développement adapté à un langage pour gagner en efficacité lors de la construction d'un logiciel.\
 C'est un terme assez polyvalent utilisé aussi bien pour des fonctions utilitaires qui évitent de "réinventer" la roue, que pour des [architectures applicative](#architecture-logicielle) pré-programmées munie de fonctionnalités poussée.
+
+## Markdown
+
+Le *Markdown* viens de l'appellation *Markup Language* signifiant littéralement "langage de balisage".\
+C'est une façon d'écrire du texte brut en y incorporant des éléments de mise en page comme des mots en gras, italique, soulignés, barré, des listes à puces, des tableaux etc.\
+Ces éléments sont ajouté à l'aide de caractères spéciaux comme l’astérisque \* ou les dièses \#.\
+Un texte en gras aura donc cette forme par exemple : `**Ceci est un texte en gras**`
+
+Cette méthode permet le stockage de fichier à mise en page complexe sous la forme de texte brut, très léger et facile à interpréter pour une machine comme pour un humain.
+
+Cette thèse même a d'abord été écrite en *Markdown* avant d'être convertie en fichier Word pour la touche esthétique final.
+
+## Abstraction
+
+L'abstraction est un concept informatique visant à simplifier quelque chose en "cachant" (encapsulant) la complexité quelque part et en n'en affichant qu'une partie utile.
+
+L'informatique est souvent répartie en "couches", bâties les une sur les autres. L'abstraction sert à masquer les spécificités de la couche inférieure afin d'en simplifier l'utilisation dans la couche actuelle.
+
+On peux considérer n'importe quel langage de programmation comme une abstraction du binaire, et les fonctionnalités d'un système d'exploitation sont elles même des abstractions de fonctionnalités du processeur.
