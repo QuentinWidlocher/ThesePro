@@ -39,7 +39,7 @@ layout: post
 ## Synthèse
 
 Nos hypothèse finalisées et analysé, il est temps d'observer de manière synthétique chaque méthode de développement d'application et d'apprécier leurs points forts et leurs points faibles.\
-Nous verrons aussi comment palier grâce à ces derniers grâce à des agencements d'outils au sein d'architectures applicatives.
+Nous verrons aussi comment palier ces derniers grâce à ces derniers grâce à des agencements d'outils au sein d'architectures applicatives.
 
 Afin d'analyser au mieux ces méthodes, nous allons nous servir des critères utilisés précédemment pour nos hypothèse, et nous allons comparer les résultats des hypothèses se servant de ces méthodes au hypothèses qui ne s'en servent pas.
 
@@ -152,8 +152,30 @@ Le plus grand avantage de cette technologie devient alors un de ses points faibl
 Entre deux applications web en *Javascript*, il est très aisé de partager du code et ce, même si ces deux applications n'utilisent pas le même outil de conception (*framework*). C'est pourquoi beaucoup d'entreprise se tournent aujourd'hui vers les technologies du web pour accélérer leurs temps de développements, et créent des librairies de code prêt à être réutilisé sur les projets à venir.
 
 #### Applications Web - La consommation des ressources
+
+La plus grande problématique des applications web est celle de leurs performances.\
+Étant des applicatifs s’exécutant au sein d'un navigateur Internet, lui même s'exécutant au sein d'un système d'exploitation, ces premières souffrent d'une consommation excessive en ressource, principalement en mémoire vive.
+
+Ces limitations ne viennent pas vraiment des applications elles même mais plutôt des navigateurs qui sont de véritables machines à interpréter du code. Ces navigateurs contiennent des moteurs qui se chargent d'interpréter le code HTML, CSS et Javascript à tout moment. Note amusante, le moteur permettant d'exécuter le code Javascript aujourd'hui s'appelle le moteur [V8](https://v8.dev/) (Moteur utilisant un intérpréteur appellé *Ignition* et une infrastructure de compilation appelée *Crankshaft* (Vilebrequin)).
+
+C'est cette limitation qui rend les logiciels web peux adaptés pour les métier très rigoureux ou demander un très haut niveau de réflexe. Même chose si une application complexe doit s'exécuter sur une machine faible en performance (ex: terminaux de gestion portatifs)
+
 #### Applications Web - Les temps de réponses
+
+Pour les mêmes raisons que la consommation des ressources, les temps de réponses d'une application web sont souvent en deçà par rapport à leurs contreparties native.\
+
+Il est donc important pour les développeur de prêter une attention particulière aux logiciels web, surtout s'ils sont censé s'exécuter sur des appareils peu puissants.
+
+Une note technique cependant, la gestion de code asynchrone est bien plus aisée avec cette technologie, ce qui amène souvent à des impressions de fluidité pour les utilisateurs.
+
 #### Applications Web - Le poids de l'application
+
+Là ou une application native doit embarquer avec elle tout ce dont elle a besoin pour s'exécuter, et souvent doit se reposer sur des paquets exécutifs ([voir plus haut](#applications-natives---le-poids-de-lapplication)) ajoutant encore plus de poids, les application web n'ont pas cette problématique.
+
+Si nous n'avons pas pris en compte les paquets supplémentaire pour les application native, nous ne prenons donc pas en compte le poids du navigateur intégré au système d'exploitation de l'utilisateur car, comme les paquets, il n'est pas livré avec le logiciel même s'il est indispensable.
+
+De plus, les applications web sont envoyées au fur et à mesure aux utilisateurs via Internet là ou les applications natives doivent êtres téléchargées de A à Z.\
+Cette récupération plus fragmentée permet d'augmenter drastiquement la vitesse d'accès à un applicatif.
 
 ### Les application hybrides
 
