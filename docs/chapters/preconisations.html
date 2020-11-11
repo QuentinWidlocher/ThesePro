@@ -12,9 +12,9 @@
 <meta property="og:description" content="Synthèse Les application natives Applications Natives - Le temps de développement Applications Natives - Les limitations techniques Applications Natives - Les limitations esthétiques Applications Natives - Le déploiement Applications Natives - La maintenance Applications Natives - La réutilisation Applications Natives - La consommation des ressources Applications Natives - Les temps de réponses Applications Natives - Le poids de l’application Les application web Applications Web - Le temps de développement Applications Web - Les limitations techniques Applications Web - Les limitations esthétiques Applications Web - Le déploiement Applications Web - La maintenance Applications Web - La réutilisation Applications Web - La consommation des ressources Applications Web - Les temps de réponses Applications Web - Le poids de l’application Les application hybrides Applications Hybrides - Le temps de développement Applications Hybrides - Les limitations techniques Applications Hybrides - Les limitations esthétiques Applications Hybrides - Le déploiement Applications Hybrides - La maintenance Applications Hybrides - La réutilisation Applications Hybrides - La consommation des ressources Applications Hybrides - Les temps de réponses Applications Hybrides - Le poids de l’application" />
 <meta property="og:site_name" content="Thèse professionnelle" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-11-09T21:33:35+00:00" />
+<meta property="article:published_time" content="2020-11-10T21:42:14+00:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"/ThesePro/chapters/preconisations","headline":"Synthèse et préconisation","dateModified":"2020-11-09T21:33:35+00:00","datePublished":"2020-11-09T21:33:35+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/ThesePro/chapters/preconisations"},"author":{"@type":"Person","name":"Quentin Widlocher"},"description":"Synthèse Les application natives Applications Natives - Le temps de développement Applications Natives - Les limitations techniques Applications Natives - Les limitations esthétiques Applications Natives - Le déploiement Applications Natives - La maintenance Applications Natives - La réutilisation Applications Natives - La consommation des ressources Applications Natives - Les temps de réponses Applications Natives - Le poids de l’application Les application web Applications Web - Le temps de développement Applications Web - Les limitations techniques Applications Web - Les limitations esthétiques Applications Web - Le déploiement Applications Web - La maintenance Applications Web - La réutilisation Applications Web - La consommation des ressources Applications Web - Les temps de réponses Applications Web - Le poids de l’application Les application hybrides Applications Hybrides - Le temps de développement Applications Hybrides - Les limitations techniques Applications Hybrides - Les limitations esthétiques Applications Hybrides - Le déploiement Applications Hybrides - La maintenance Applications Hybrides - La réutilisation Applications Hybrides - La consommation des ressources Applications Hybrides - Les temps de réponses Applications Hybrides - Le poids de l’application","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","url":"/ThesePro/chapters/preconisations","headline":"Synthèse et préconisation","dateModified":"2020-11-10T21:42:14+00:00","datePublished":"2020-11-10T21:42:14+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/ThesePro/chapters/preconisations"},"author":{"@type":"Person","name":"Quentin Widlocher"},"description":"Synthèse Les application natives Applications Natives - Le temps de développement Applications Natives - Les limitations techniques Applications Natives - Les limitations esthétiques Applications Natives - Le déploiement Applications Natives - La maintenance Applications Natives - La réutilisation Applications Natives - La consommation des ressources Applications Natives - Les temps de réponses Applications Natives - Le poids de l’application Les application web Applications Web - Le temps de développement Applications Web - Les limitations techniques Applications Web - Les limitations esthétiques Applications Web - Le déploiement Applications Web - La maintenance Applications Web - La réutilisation Applications Web - La consommation des ressources Applications Web - Les temps de réponses Applications Web - Le poids de l’application Les application hybrides Applications Hybrides - Le temps de développement Applications Hybrides - Les limitations techniques Applications Hybrides - Les limitations esthétiques Applications Hybrides - Le déploiement Applications Hybrides - La maintenance Applications Hybrides - La réutilisation Applications Hybrides - La consommation des ressources Applications Hybrides - Les temps de réponses Applications Hybrides - Le poids de l’application","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/ThesePro/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/ThesePro/feed.xml" title="Thèse professionnelle" /></head>
 <body><header class="site-header" role="banner">
@@ -84,7 +84,7 @@
 <h2 id="synthèse">Synthèse</h2>
 
 <p>Nos hypothèse finalisées et analysé, il est temps d’observer de manière synthétique chaque méthode de développement d’application et d’apprécier leurs points forts et leurs points faibles.<br />
-Nous verrons aussi comment palier grâce à ces derniers grâce à des agencements d’outils au sein d’architectures applicatives.</p>
+Nous verrons aussi comment palier ces derniers grâce à ces derniers grâce à des agencements d’outils au sein d’architectures applicatives.</p>
 
 <p>Afin d’analyser au mieux ces méthodes, nous allons nous servir des critères utilisés précédemment pour nos hypothèse, et nous allons comparer les résultats des hypothèses se servant de ces méthodes au hypothèses qui ne s’en servent pas.</p>
 
@@ -197,8 +197,30 @@ Même s’il est possible de bloquer l’accès à un logiciel web pendant sa ma
 <p>Entre deux applications web en <em>Javascript</em>, il est très aisé de partager du code et ce, même si ces deux applications n’utilisent pas le même outil de conception (<em>framework</em>). C’est pourquoi beaucoup d’entreprise se tournent aujourd’hui vers les technologies du web pour accélérer leurs temps de développements, et créent des librairies de code prêt à être réutilisé sur les projets à venir.</p>
 
 <h4 id="applications-web---la-consommation-des-ressources">Applications Web - La consommation des ressources</h4>
+
+<p>La plus grande problématique des applications web est celle de leurs performances.<br />
+Étant des applicatifs s’exécutant au sein d’un navigateur Internet, lui même s’exécutant au sein d’un système d’exploitation, ces premières souffrent d’une consommation excessive en ressource, principalement en mémoire vive.</p>
+
+<p>Ces limitations ne viennent pas vraiment des applications elles même mais plutôt des navigateurs qui sont de véritables machines à interpréter du code. Ces navigateurs contiennent des moteurs qui se chargent d’interpréter le code HTML, CSS et Javascript à tout moment. Note amusante, le moteur permettant d’exécuter le code Javascript aujourd’hui s’appelle le moteur <a href="https://v8.dev/">V8</a> (Moteur utilisant un intérpréteur appellé <em>Ignition</em> et une infrastructure de compilation appelée <em>Crankshaft</em> (Vilebrequin)).</p>
+
+<p>C’est cette limitation qui rend les logiciels web peux adaptés pour les métier très rigoureux ou demander un très haut niveau de réflexe. Même chose si une application complexe doit s’exécuter sur une machine faible en performance (ex: terminaux de gestion portatifs)</p>
+
 <h4 id="applications-web---les-temps-de-réponses">Applications Web - Les temps de réponses</h4>
+
+<p>Pour les mêmes raisons que la consommation des ressources, les temps de réponses d’une application web sont souvent en deçà par rapport à leurs contreparties native.\</p>
+
+<p>Il est donc important pour les développeur de prêter une attention particulière aux logiciels web, surtout s’ils sont censé s’exécuter sur des appareils peu puissants.</p>
+
+<p>Une note technique cependant, la gestion de code asynchrone est bien plus aisée avec cette technologie, ce qui amène souvent à des impressions de fluidité pour les utilisateurs.</p>
+
 <h4 id="applications-web---le-poids-de-lapplication">Applications Web - Le poids de l’application</h4>
+
+<p>Là ou une application native doit embarquer avec elle tout ce dont elle a besoin pour s’exécuter, et souvent doit se reposer sur des paquets exécutifs (<a href="#applications-natives---le-poids-de-lapplication">voir plus haut</a>) ajoutant encore plus de poids, les application web n’ont pas cette problématique.</p>
+
+<p>Si nous n’avons pas pris en compte les paquets supplémentaire pour les application native, nous ne prenons donc pas en compte le poids du navigateur intégré au système d’exploitation de l’utilisateur car, comme les paquets, il n’est pas livré avec le logiciel même s’il est indispensable.</p>
+
+<p>De plus, les applications web sont envoyées au fur et à mesure aux utilisateurs via Internet là ou les applications natives doivent êtres téléchargées de A à Z.<br />
+Cette récupération plus fragmentée permet d’augmenter drastiquement la vitesse d’accès à un applicatif.</p>
 
 <h3 id="les-application-hybrides">Les application hybrides</h3>
 
