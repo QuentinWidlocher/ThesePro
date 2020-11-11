@@ -41,6 +41,9 @@ layout: post
          1. [Exemple 1 - Industriel](#exemple-1---industriel)
             1. [Pour l'automatisation des machines, une application native](#pour-lautomatisation-des-machines-une-application-native)
             1. [Pour la visualisation des statistiques, une application web](#pour-la-visualisation-des-statistiques-une-application-web)
+         1. [Exemple 2 - Public](#exemple-2---public)
+            1. [Pour la version bureau, une application web](#pour-la-version-bureau-une-application-web)
+            1. [Pour la version mobile, une application hybride](#pour-la-version-mobile-une-application-hybride)
       1. [Exemples réels](#exemples-réels)
 
 ## Synthèse
@@ -245,9 +248,9 @@ Ce n'est pas le cas des applications hybrides mobile cependant qui utilisent dir
 
 ## Préconisations
 
-Voyons un dernière fois, sous une forme plus synthétique, les raisons de privilégier une méthode à une autre
+Voyons un dernière fois, sous une forme plus synthétique, les raisons de privilégier une méthode à une autre.
 
-Voyons une dernière fois, sous une forme très synthétique, ce qu'apportent ces méthodes et dans quelle intention les choisir
+Voyons une dernière fois, sous une forme très synthétique, ce qu'apportent ces méthodes et dans quelle intention les choisir.
 
 **Quand choisir une application native ?**
 
@@ -291,7 +294,8 @@ Donnons quelques exemples de projets à but multiplateforme afin de mieux saisir
 
 ##### Exemple 1 - Industriel
 
-Imaginons une usine où sont manufacturés des produits quelconques à la chaîne. L'entreprise cherche à informatiser la chaîne de production et à dégager des statistiques variés quand au fonctionnement quotidien de celle ci.
+Imaginons une usine où sont manufacturés des produits quelconques à la chaîne.\
+L'entreprise cherche à informatiser la chaîne de production et à dégager des statistiques variés quand au fonctionnement quotidien de celle ci.
 
 La chaîne de production doit être automatisée mais doit offrir aux employés de l'usine un accès aux contrôles des machines en cas de problème ou simplement pour ajuster la production.
 
@@ -317,5 +321,37 @@ Voici une choix possible d'architecture applicative pour cette situation :
 - Parce que l'application doit être agréable à naviguer et doit apporter des résultat faciles à appréhender
 - Parce que la consultation des données n'est pas une tâche critique
 - Parce qu'il est très facile d'ajouter cette application sur des nouveaux terminaux
+
+En utilisant seulement deux méthode de conception d'application, il est possible de couvrir 100% des machines cible et de tirer profit au maximum des capacités de ces méthodes
+
+##### Exemple 2 - Public
+
+Imaginons un organisme de droit privé français opérant des prestations financières dans des conditions déterminées par la loi (Pensez à la Caisse d'allocations familiales).
+
+Cet organisme souhaite mettre à disposition de ses tout ses utilisateurs une solution applicative ayant pour but de leur permettre de consulter leurs droits, de demander des prestations et de communiquer avec des intermédiaires.\
+Il doit être possible aux utilisateurs d'accéder à toutes ces fonctionnalités depuis un terminal mobile comme une tablette ou un smartphone.
+
+De nombreux autres services sont proposé comme des informations hebdomadaire sur l’évolution des prestations, la mise à disposition des attestations numériques, le suivit des démarche en cours/effectuées etc.
+
+Voici une choix possible d'architecture applicative pour cette situation :
+
+###### Pour la version bureau, une application web
+
+- Parce que le nombre de cible est très élevé
+- Parce que l'interface doit-être claire et élégante
+- Parce qu'il faut être connecté à Internet pour pouvoir s'en servir
+- Parce qu'aucune installation préalable n'est nécessaire
+- Parce que le transit des fichiers sont fait de manière consciente
+
+###### Pour la version mobile, une application hybride
+
+- Parce que les mises à jour sont simplifié grace au *store*
+- Parce que les nombreuses fonctionnalités de la version web peuvent être partagées avec cette application sans effort
+- Parce que la mise est page de toutes ces fonctionnalités doit faire l'objet d'une réflexion différente
+- Parce que c'est plus facile pour l'utilisateur d'accéder à ses fichiers sur mobile
+- Parce que l'interface doit-être claire et élégante
+
+Là encore ces deux méthode permettent de couvrir toutes les cible en tirant profit de la vitesse octroyé par le partage de code entre hybride et web.\
+La nécessité d'être en ligne ne justifie pas forcément une application native, de même pour l'aspect graphique qui doit être travaillé pour seoir aux utilisateurs.
 
 #### Exemples réels 
