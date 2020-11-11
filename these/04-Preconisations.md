@@ -35,6 +35,13 @@ layout: post
       1. [Applications Hybrides - La consommation des ressources](#applications-hybrides---la-consommation-des-ressources)
       1. [Applications Hybrides - Les temps de réponses](#applications-hybrides---les-temps-de-réponses)
       1. [Applications Hybrides - Le poids de l'application](#applications-hybrides---le-poids-de-lapplication)
+1. [Préconisations](#préconisations)
+   1. [Exemples de choix](#exemples-de-choix)
+      1. [Exemples fictifs](#exemples-fictifs)
+         1. [Exemple 1 - Industriel](#exemple-1---industriel)
+            1. [Pour l'automatisation des machines, une application native](#pour-lautomatisation-des-machines-une-application-native)
+            1. [Pour la visualisation des statistiques, une application web](#pour-la-visualisation-des-statistiques-une-application-web)
+      1. [Exemples réels](#exemples-réels)
 
 ## Synthèse
 
@@ -235,3 +242,80 @@ Le plus gros point faible des application hybrides bureau reste le poids final d
 Rappelons que cette méthode demande la plupart du temps de livrer un navigateur complet afin de pouvoir y exécuter le logiciel. Sans code ajouté, c'est un poids supplémentaire de 50MB.
 
 Ce n'est pas le cas des applications hybrides mobile cependant qui utilisent directement le navigateur intégré au système d'exploitation. C'est une chose possible car ce navigateur est réellement intégré et ne peux être retiré contrairement aux système d'exploitations bureau.
+
+## Préconisations
+
+Voyons un dernière fois, sous une forme plus synthétique, les raisons de privilégier une méthode à une autre
+
+Voyons une dernière fois, sous une forme très synthétique, ce qu'apportent ces méthodes et dans quelle intention les choisir
+
+**Quand choisir une application native ?**
+
+- Pour des métier où le temps de réaction est clé
+- Pour des besoins métiers complexes
+- Pour des solutions indépendante capable de fonctionner sans réseau
+- Pour des solutions multiplateforme visant peu de plateformes, et d'un même groupe (bureau ou mobile)
+- Pour des besoins de mises à jour fréquentes.
+- Pour des appareils peu puissants
+- Pour des entreprises se concentrant sur peu de projets
+
+**Quand choisir une application web ?**
+
+- Pour des projet aux cibles très nombreuses
+- Pour des solutions à l'aspect élégantes et/ou originales
+- Pour des cibles non connues à l'avance
+- Pour des mises en production très rapide
+- Pour des temps de production rapide
+- Pour des entreprises créant fréquemment de nouveaux projets
+
+**Quand choisir une application hybride ?**
+
+- Pour des besoins métiers complexes
+- Pour des solutions indépendante capable de fonctionner sans réseau
+- Pour des besoins de mises à jour fréquentes.
+- Pour des solutions à l'aspect élégantes et/ou originales
+- Pour des temps de production rapide
+- Pour des entreprises créant fréquemment de nouveaux projets
+
+Rappelons à nouveau que le but de cette thèse n'est pas de donner une unique réponse à la problématique, mais d'orienter et de conseiller le choix des lecteurs.
+
+Aucune des méthodes présentées n'est exempte de faiblesses. Il est important de bien analyser le besoin d'un projet et de connaître les forces et les faiblesses de chacune de ces méthodes pour faire le choix le plus adapté.
+
+Il est aussi important de noter que ces trois méthodes ne constituent pas uniquement trois réponses, mais sont plutôt des outils pour composer une multitude de solutions applicatives plus ou moins adaptées au besoin d'un projet.
+
+### Exemples de choix
+
+Donnons quelques exemples de projets à but multiplateforme afin de mieux saisir comment faire le choix de l'architecture applicative.
+
+#### Exemples fictifs
+
+##### Exemple 1 - Industriel
+
+Imaginons une usine où sont manufacturés des produits quelconques à la chaîne. L'entreprise cherche à informatiser la chaîne de production et à dégager des statistiques variés quand au fonctionnement quotidien de celle ci.
+
+La chaîne de production doit être automatisée mais doit offrir aux employés de l'usine un accès aux contrôles des machines en cas de problème ou simplement pour ajuster la production.
+
+Il faut aussi que les responsables naviguant la chaîne de production puisse avoir accès à des statistiques diverses (Temps de production d'un produit, ralentissements, consommation électrique etc., les possibilités sont infinie).\
+Ces donnés doivent aussi être accessible aux employés du bureau d'étude pour faciliter les choix futurs.
+
+Cette situation est de nature multiplateforme, les appareils opérants les machines de la chaîne de production, les terminaux mobiles des responsable et les postes de travail du bureau d'études sont autant de plateforme différentes à prendre en compte.
+
+Voici une choix possible d'architecture applicative pour cette situation :
+
+###### Pour l'automatisation des machines, une application native
+
+- Parce que ces logiciels doivent répondre au commande au plus vite pour éviter les problèmes
+- Parce que l'accès au réseau est optionnel tant que les machines peuvent êtres manœuvrés
+- Parce que l'interface graphique doit-être fonctionnelle bien plus qu'élégante
+- Parce qu'il est bien plus aisé à une application native de pouvoir contrôler des machines
+- Parce que tous les appareils sont tous identiques et fonctionnent sur le même système d'exploitation
+
+###### Pour la visualisation des statistiques, une application web
+
+- Parce qu'il faut pouvoir y accéder depuis de nombreux terminaux variés (mobiles et fixes)
+- Parce que les statistiques sont stockés sur un réseau, donc l'accès au réseau est obligatoire
+- Parce que l'application doit être agréable à naviguer et doit apporter des résultat faciles à appréhender
+- Parce que la consultation des données n'est pas une tâche critique
+- Parce qu'il est très facile d'ajouter cette application sur des nouveaux terminaux
+
+#### Exemples réels 
