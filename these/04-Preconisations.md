@@ -180,11 +180,58 @@ Cette récupération plus fragmentée permet d'augmenter drastiquement la vitess
 ### Les application hybrides
 
 #### Applications Hybrides - Le temps de développement
+
+De la même façon que les application web et native, le temps de développement des applications hybride ne dépend surtout que de l'architecture multiplateforme choisie.
+
+À l'instar du web, l'hybride est naturellement multiplateforme et permet à un seul projet de se contenter de deux applications pour couvrir l'ensemble des systèmes d'exploitations majeurs correctement.
+
 #### Applications Hybrides - Les limitations techniques
+
+Ces limitations sont, nous l'avons vu, le point fort des applications natives et le point faible des applications web.\
+
+En "mélangeant" ces deux technologies, une solution hybride est capable de tirer profit de sa condition de logiciel natif et possède un accès - certes indirect, mais néanmoins assez complet - aux fonctionnalités offertes par le système d'exploitation.
+
+Une application hybride installé sur une poste de travail est capable d'accéder au système de fichier de l'utilisateur afin de conserver la persistence des données de celui ci.\
+Prenons comme exemple Microsoft Teams qui est capable de stocker des fichiers partagé sur le disque dur et de les envoyer sur une cloud.
+
+Avec ce même exemple, nous remarquons que Microsoft Teams ne demande pas constamment à l'utilisateur l'autorisation à la caméra et au microphone, étant installé sur le poste, il possède directement ces droits, là ou la version web doit sans cesse réitérer ces demandes.\
+Pourtant la version web et la version hybride partagent probablement plus de 75% de leurs code source.
+
 #### Applications Hybrides - Les limitations esthétiques
+
+À l'inverse des limitations techniques, les limitations esthétiques sont le point faible des application native et le point fort des applications web.
+
+Là encore, une application hybride tire le meilleur de ses deux composantes et propose une liberté de création d'interface aussi grande que celle du web grâce au CSS.
+
 #### Applications Hybrides - Le déploiement
+
+Pour le déploiement, les logiciels hybrides sont identiques aux logiciels natifs, le système d'exploitation et l'utilisateur ne pouvant pas réellement faire la différence entre les deux.
+
 #### Applications Hybrides - La maintenance
+
+Idem pour la maintenance, qui est rigoureusement la même que pour les applications natives.
+
 #### Applications Hybrides - La réutilisation
+
+La réutilisation du code cependant est similaire à celle des application web, à savoir excellente.
+
+Une application native peut très aisément partager du code avec une autre, et même avec une application web.
+
+Pour peu qu'une application hybride n'ai pas besoin d'accéder à des fonctionnalités du  système d'exploitation, il est possible de convertir une application web en hybride avec un travail supplémentaire minime.\
+De cette première version, il est possible d'ajouter ces fonctionnalités au fur et à mesure des mises à jour, et ainsi d'opérer une évolution graduelle.
+
 #### Applications Hybrides - La consommation des ressources
+
+La partie applicative d'un logiciel hybride étant identique à celle d'un logiciel web, la consommation des ressources est virtuellement la même que ces derniers.
+
 #### Applications Hybrides - Les temps de réponses
+
+Encore une fois, idem pour les temps de réponse, pour les même raisons.\
+Notons toutefois un léger gain dû à la présence des ressources nécessaires (code, images...) en local.
+
 #### Applications Hybrides - Le poids de l'application
+
+Le plus gros point faible des application hybrides bureau reste le poids final de l'applicatif.\
+Rappelons que cette méthode demande la plupart du temps de livrer un navigateur complet afin de pouvoir y exécuter le logiciel. Sans code ajouté, c'est un poids supplémentaire de 50MB.
+
+Ce n'est pas le cas des applications hybrides mobile cependant qui utilisent directement le navigateur intégré au système d'exploitation. C'est une chose possible car ce navigateur est réellement intégré et ne peux être retiré contrairement aux système d'exploitations bureau.
