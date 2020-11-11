@@ -47,10 +47,11 @@ layout: post
       1. [Exemple réel](#exemple-réel)
          1. [Pour le CRM, une application web](#pour-le-crm-une-application-web)
          1. [Pour l'APP, une application native. Ou web ? Peut-être hybride ?](#pour-lapp-une-application-native-ou-web--peut-être-hybride-)
+   1. [Conclusion](#conclusion)
 
 ## Synthèse
 
-Nos hypothèse finalisées et analysé, il est temps d'observer de manière synthétique chaque méthode de développement d'application et d'apprécier leurs points forts et leurs points faibles.\
+Nos hypothèses finalisées et analysés, il est temps d'observer de manière synthétique chaque méthode de développement d'application et d'apprécier leurs points forts et leurs points faibles.\
 Nous verrons aussi comment palier ces derniers grâce à ces derniers grâce à des agencements d'outils au sein d'architectures applicatives.
 
 Afin d'analyser au mieux ces méthodes, nous allons nous servir des critères utilisés précédemment pour nos hypothèse, et nous allons comparer les résultats des hypothèses se servant de ces méthodes au hypothèses qui ne s'en servent pas.
@@ -250,9 +251,9 @@ Ce n'est pas le cas des applications hybrides mobile cependant qui utilisent dir
 
 ## Préconisations
 
-Voyons un dernière fois, sous une forme plus synthétique, les raisons de privilégier une méthode à une autre.
+Afin de choisir une architecture applicative pour un projet dans sa totalité ou une partie, on peut se poser de nombreuses questions sur la nature du projet et ainsi déterminer à s'il existe une méthode capable de répondre aux besoins de manière précise.
 
-Voyons une dernière fois, sous une forme très synthétique, ce qu'apportent ces méthodes et dans quelle intention les choisir.
+Voici une liste de ces questions.
 
 **Quand choisir une application native ?**
 
@@ -283,6 +284,8 @@ Voyons une dernière fois, sous une forme très synthétique, ce qu'apportent ce
 - Pour des entreprises créant fréquemment de nouveaux projets
 
 Rappelons à nouveau que le but de cette thèse n'est pas de donner une unique réponse à la problématique, mais d'orienter et de conseiller le choix des lecteurs.
+
+Cette liste de question permet donc de choisir plus facilement quelle méthode est la plus adaptée au besoin d'un projet.
 
 Aucune des méthodes présentées n'est exempte de faiblesses. Il est important de bien analyser le besoin d'un projet et de connaître les forces et les faiblesses de chacune de ces méthodes pour faire le choix le plus adapté.
 
@@ -412,4 +415,17 @@ C'est donc la technologie web qui a été choisie, malgré sa gestion peu évide
 Cette technologie a permis de rapidement construire l'application en réutilisant du code déjà produit pour la partie CRM. Elle a aussi permis de donner un aspect "natif" à l'application pour que les utilisateurs s'y retrouvent facilement.\
 Le déploiement a pu se faire via une URL plutôt que par le *store* d'Apple et les mises à jour se font comme pour la partie CRM, à savoir pendant les jours non ouvrés.
 
-Ce choix de solution prouve à nouveau qu'il est important de connaitre chaque forces et chaque faiblesses des méthodes disponibles, et de savoir laquelle est la plus adaptée à un projet ou une partie.
+### Conclusion
+
+Rappelons la problématique posée originalement qui était :
+
+> Comment faire le choix d'une architecture applicative multiplateforme ?
+
+Nous pouvons désormais nous baser sur les hypothèses, les recherches et leurs résultats, pour y répondre en affirmant qu'il est important de connaitre chaque forces et chaque faiblesses des méthodes disponibles, et de savoir laquelle est la plus adaptée à un projet ou une partie.
+
+Il est à noter que si toutes ces méthodes existent et sont chacune employé aujourd'hui, c'est véritablement car aucune méthode n'est "la bonne méthode"
+
+Le principe même d'une architecture, c'est qu'elle doit être adaptée au besoin de la personne qui la met en place, et qu'il n'existe aucune architecture parfaite.\
+Auquel cas tous les bâtiments seraient simplement identiques.
+
+Cette thèse a pour but d'aider tout chef de projet informatique à choisir la ou les technologies adaptée(s) au mieux à leurs projets. 
