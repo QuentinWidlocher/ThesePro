@@ -44,7 +44,9 @@ layout: post
          1. [Exemple 2 - Public](#exemple-2---public)
             1. [Pour la version bureau, une application web](#pour-la-version-bureau-une-application-web)
             1. [Pour la version mobile, une application hybride](#pour-la-version-mobile-une-application-hybride)
-      1. [Exemples réels](#exemples-réels)
+      1. [Exemple réel](#exemple-réel)
+         1. [Pour le CRM, une application web](#pour-le-crm-une-application-web)
+         1. [Pour l'APP, une application native. Ou web ? Peut-être hybride ?](#pour-lapp-une-application-native-ou-web--peut-être-hybride-)
 
 ## Synthèse
 
@@ -264,7 +266,7 @@ Voyons une dernière fois, sous une forme très synthétique, ce qu'apportent ce
 
 **Quand choisir une application web ?**
 
-- Pour des projet aux cibles très nombreuses
+- Pour des projet aux cibles très nombreuses et variées
 - Pour des solutions à l'aspect élégantes et/ou originales
 - Pour des cibles non connues à l'avance
 - Pour des mises en production très rapide
@@ -351,7 +353,63 @@ Voici une choix possible d'architecture applicative pour cette situation :
 - Parce que c'est plus facile pour l'utilisateur d'accéder à ses fichiers sur mobile
 - Parce que l'interface doit-être claire et élégante
 
-Là encore ces deux méthode permettent de couvrir toutes les cible en tirant profit de la vitesse octroyé par le partage de code entre hybride et web.\
+Là encore ces deux méthodes permettent de couvrir toutes les cible en tirant profit de la vitesse octroyé par le partage de code entre hybride et web.\
 La nécessité d'être en ligne ne justifie pas forcément une application native, de même pour l'aspect graphique qui doit être travaillé pour seoir aux utilisateurs.
 
-#### Exemples réels 
+#### Exemple réel
+
+Afin de prouver l'application de ce choix, nous allons voir un exemple concret, mis en pratique dans l'entreprise dans laquelle je travaille actuellement, Erudo.
+
+Ici, une entreprise officiant dans le domaine de la protection de l'habitat et de l'entretien des murs et des toitures nous a contacté. L'entreprise est composé de trois groupe d'employés aux fonctions complémentaires.\
+
+D'une part les téléprospecteurs qui démarchent téléphoniquement les clients potentiels et prévoient des rendez vous que les commerciaux pourrons honorer.\
+Ces commerciaux rencontrent ces clients potentiels et établissent un devis et conviennent peut-être d'une date de début de chantier avec eux sur leurs iPhones.\
+C'est ensuite au tour des techniciens de mettre en place la rénovation de la maison.
+
+Afin d'assister les téléprospecteurs et les commerciaux, Erudo a conçu *Habit'app*, pour permettre à ces deux groupes de communiquer au mieux afin d'honorer un plus grand nombre de rendez-vous.
+
+Ce projet a été scindé en deux applications distinctes, appelés en interne "CRM" et "APP" (Pour APPlication mobile).
+
+##### Pour le CRM, une application web
+
+Erudo travaille depuis toujours en utilisant des technologies du web. Ce choix est motivé par la quantité croissante de projets à gérer et la volonté de pouvoir partager un maximum de code d'un projet à l'autre.
+
+De plus, bien que l'application soit complexe, ses performances ne constitue pas un élément clé et la vitesse de réponse de l'application n'est pas critique pour les utilisateurs.\
+Aucune fonctionnalités du système d'exploitation n'a besoin d'être utilisé (les transits de fichiers se font de manière consciente) mais l'aspect visuel de l'application a été soigné pour rendre l'utilisation plus agréable par les téléprospecteurs.
+
+Le déploiement de la solution a pu être très rapide pour respecter la *deadline* (très utile pour la méthode Agile utilisé en interne donc) et les frictions liées aux mises à jour de l'application ont pu être réduite car l'application n'est utilisé qu'en période ouvrées, les mises à jour pouvant donc être effectuées automatiquement le week-end.
+
+Le choix d'une solution web était donc le plus propice pour cette partie du projet, et ce choix n'a pas fait l'objet d'une réflexion particulière.
+
+##### Pour l'APP, une application native. Ou web ? Peut-être hybride ?
+
+La réalisation d' une application mobile était une première pour Erudo qui a toujours réalisé des application bureau. Le choix de la technologie s'est donc posé, bien plus que pour le CRM.
+
+Tout d'abord nous avons effectué une liste des critères qui nous paraissaient important pour cette application :
+
+- Livrer vite
+- Faire évoluer facilement
+- Fonctionner hors ligne
+- Être attractif pour les commerciaux parfois réticents à changer de technologie
+
+Prenons chaque point et tâchons de déterminer quelle technologie est la plus adaptée :
+
+- **"Livrer vite"**
+  - Afin de pouvoir accélérer au mieux les temps de développement, Erudo a tout intérêt à créer une application web ou hybride pour profiter du partage de code.
+  - Les applications web permettent aussi de déployer très rapidement là où les applications hybrides et natives requiert une installation spécifique
+- **"Faire évoluer facilement"**
+  - Là encore, c'est au moyen des technologies web ou hybrides que l'équipe d'Erudo aura la plus grande vitesse de réaction.
+  - Les mises à jours sont cependant très compliquées sur iOS où elles requièrent à l'application de passer entre les mains d'employés Apple.
+- **"Fonctionner hors ligne"**
+  - C'est aux applications natives et hybrides que revient souvent cette tâche car les applications web ne sont pas capable de fonctionner hors ligne sans une modification supplémentaire
+- **"Être attractif pour les commerciaux parfois réticents à changer de technologie"**
+  - Une application native pourra sembler familière à ces utilisateurs, mais les technologies web et hybrides permettent d'aller encore plus loin et de proposer des mises en page intuitives.
+
+Devant tous ces critères, il apparaît évident qu'une application native ne possède pas les qualités requises pour cette partie du projet.\
+La technologie hybride semble quand à elle particulièrement adapté au besoin mais se heurte au problème de déploiement et de mises à jour sur les appareils doté d'un système d'exploitation iOS.
+
+C'est donc la technologie web qui a été choisie, malgré sa gestion peu évidente d'un mode hors ligne.\
+Cette technologie a permis de rapidement construire l'application en réutilisant du code déjà produit pour la partie CRM. Elle a aussi permis de donner un aspect "natif" à l'application pour que les utilisateurs s'y retrouvent facilement.\
+Le déploiement a pu se faire via une URL plutôt que par le *store* d'Apple et les mises à jour se font comme pour la partie CRM, à savoir pendant les jours non ouvrés.
+
+Ce choix de solution prouve à nouveau qu'il est important de connaitre chaque forces et chaque faiblesses des méthodes disponibles, et de savoir laquelle est la plus adaptée à un projet ou une partie.

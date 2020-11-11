@@ -29,7 +29,7 @@ Mot anglais se traduisant par "Multi-plateforme". Se dit de logiciel qui peuvent
 ## Logiciel *Natif*
 
 On dit d'un logiciel qu'il est natif s'il a été développé avec les outils pensé à la base pour son système d'exploitation (OS).
-Cette appellation remonte à un âge plus ancien de l'informatique ou il servait à définir un logiciel développé à l'aide du même langage que celui de son système d'exploitation.
+Cette appellation remonte au début de l'informatique ou il servait à définir un logiciel développé à l'aide du même langage que celui de son système d'exploitation.
 Aujourd'hui cette appellation peut avoir plusieurs sens mais elle désigne en général un logiciel bénéficiant des outils pensés à la base pour le support sur lequel il s'exécute, ou du moins qui s'exécute directement au sein de l'OS.
 
 Exemples :
@@ -41,7 +41,7 @@ Exemples :
 
 Un logiciel Web est une application conçue pour fonctionner au sein d'un navigateur internet.
 La plupart des systèmes d'exploitation ayant déjà des navigateurs web aboutit et à jour, ces applications peuvent donc fonctionner sur la plupart des OS, sans modification nécessaire sur le code.
-Ces logiciels sont jugé séparés des [logiciels *natifs*](#logiciel-natif) car ils nécessitent que l'OS exécute d'abord un navigateur avant exécuter l'application.
+Ces logiciels sont jugé séparés des [logiciels *natifs*](#logiciel-natif) car ils nécessitent que l'OS fasse d'abord tourner un navigateur avant d'exécuter l'application.
 
 ## Logiciel *Hybride*
 
@@ -55,7 +55,7 @@ Mot anglais désignant un logiciel. Souvent abrégé "soft".
 
 ## Logiciel propriétaire
 
-Un logiciel propriétaire désigne la licence de distribution de ce dernier. La mention propriétaire indique que le code source du logiciel n'est pas rendu publique et qu'il ne doit en aucun cas être partagé, dévoilé ou réutilisé en dehors de la société qui le conçoit.\
+Un logiciel propriétaire désigne la licence de distribution de ce dernier. La mention "propriétaire" indique que le code source du logiciel n'est pas rendu publique et qu'il ne doit en aucun cas être partagé, dévoilé ou réutilisé en dehors de la société qui le conçoit.\
 Un logiciel propriétaire n'est pas forcément payant, la nuance ne s'effectuant exclusivement que sur sa distribution.
 
 ## Logiciel libre (de droit)
@@ -104,12 +104,11 @@ En plus de l'UI, on entend aussi souvent parler de l'UX, la *User Experience* ou
 L'architecture logicielle est un terme qui désigne l'ensemble des technologies employé dans la création d'un projet de développement informatique.\
 Le langage de programmation, les outils de constructions, et la relation client/serveur sont des composante de cette architecture.
 
-Dans cette thèse, nous nous intéressons surtout aux langages utilisés ainsi qu'au différentes applications différente permettant de couvrir l'ensemble des cinq systèmes d'exploitation principaux.
+Dans cette thèse, nous nous intéressons surtout aux langages utilisés ainsi qu'au différentes applications permettant de couvrir l'ensemble des cinq systèmes d'exploitation principaux.
 
 ## Framework
 
-Littéralement une "structure" ou une "charpente", un framework est un ensemble d'outils de développement adapté à un langage pour gagner en efficacité lors de la construction d'un logiciel.\
-C'est un terme assez polyvalent utilisé aussi bien pour des fonctions utilitaires qui évitent de "réinventer" la roue, que pour des [architectures applicative](#architecture-logicielle) pré-programmées munie de fonctionnalités poussée.
+Littéralement une "structure" ou une "charpente", un framework est un ensemble d'outils de développement adapté à un langage pour gagner en efficacité lors de la construction d'un logiciel.\Cettennalités poussée.
 
 ## Markdown
 
