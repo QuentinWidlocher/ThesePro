@@ -9,7 +9,7 @@ layout: post
 1. [Logiciel *Web*](#logiciel-web)
 1. [Logiciel *Hybride*](#logiciel-hybride)
 1. [Software](#software)
-1. [Logiciel propriétaire](#logiciel-propriétaire)
+   1. [Logiciel propriétaire](#logiciel-propriétaire)
 1. [Logiciel libre (de droit)](#logiciel-libre-de-droit)
 1. [Compilateur](#compilateur)
 1. [Interpréteur](#interpréteur)
@@ -21,6 +21,7 @@ layout: post
 1. [Framework](#framework)
 1. [Markdown](#markdown)
 1. [Abstraction](#abstraction)
+1. [Système d'exploitation](#système-dexploitation)
 
 ## Cross Platform
 
@@ -108,7 +109,7 @@ Dans cette thèse, nous nous intéressons surtout aux langages utilisés ainsi q
 
 ## Framework
 
-Littéralement une "structure" ou une "charpente", un framework est un ensemble d'outils de développement adapté à un langage pour gagner en efficacité lors de la construction d'un logiciel.\Cettennalités poussée.
+Littéralement une "structure" ou une "charpente", un framework est un ensemble d'outils de développement adapté à un langage pour gagner en efficacité lors de la construction d'un logiciel.
 
 ## Markdown
 
@@ -128,3 +129,7 @@ L'abstraction est un concept informatique visant à simplifier quelque chose en 
 L'informatique est souvent répartie en "couches", bâties les une sur les autres. L'abstraction sert à masquer les spécificités de la couche inférieure afin d'en simplifier l'utilisation dans la couche actuelle.
 
 On peux considérer n'importe quel langage de programmation comme une abstraction du binaire, et les fonctionnalités d'un système d'exploitation sont elles même des abstractions de fonctionnalités du processeur.
+
+## Système d'exploitation
+
+Le système d'exploitation d'un appareil est le logiciel qui prend en charge les fonctions de base de celui, telles que la gestion des application et le contrôle des périphériques.
