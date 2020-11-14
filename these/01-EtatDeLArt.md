@@ -215,8 +215,6 @@ Aujourd'hui il n'est pas rare de pouvoir accéder aux sites de grandes société
 
 ## La solution multiplateforme
 
-Devant ces trois grandes familles d'applicatifs, l'une d'entre elles s'est hissé sur le devant de la scène ces dernières années et ce, malgré plusieurs problématiques, j'ai nommé les applications web et leurs "successeurs spirituels" les applications [*hybrides*](/chapters/glossaire#logiciel-hybride).
-
 ### Pourquoi chercher le multiplateforme
 
 L'utilisation de plus en plus fréquente des appareils mobiles ainsi que celle des sites web a poussé de plus en plus d'entreprises à se pencher sur la question du multiplateforme.\

@@ -44,18 +44,18 @@ layout: post
 
 ## Historique
 
-Au début de l'année 2016, Adrien HAUTOT crée la startup Erudo SAS à Angoulême, en Charente.\
-Son activité principale est le développement de logiciels web de gestion sur-mesure pour les entreprises. Son rôle est d'assurer une évolution des systèmes de gestion informatisé de ses clients.
+Au début de l'année 2016, Adrien HAUTOT crée la start-up Erudo SAS à Angoulême, en Charente.\
+Son activité principale est le développement de logiciels web de gestion sur-mesure pour les entreprises. Son rôle est d'assurer une évolution des systèmes de gestion informatisée de ses clients.
 
 ## Activité
 
 En plus du développement de logiciels, Erudo délivre aussi des formations dans le secteur de l'informatique comme par exemple des formations au CESi d'Angoulême. L'entreprise forme également des professionnels aux méthodes agiles ou au langage de programmation Java par exemple.
 
-Néanmoins la développement de logiciel reste la principale source de revenue de l’entreprise comme le montre l’évolution du chiffre d'affaire ci-dessous :
+Néanmoins le développement de logiciels reste la principale source de revenus de l’entreprise comme le montre l’évolution du chiffre d'affaires ci-dessous :
 
 ![Évolution du CA d'Erudo de 2016 à 2019](./EvolutionCAErudo.png)
 
-Aujourd'hui, l'entreprise compte 8 employés et dégage un chiffre d'affaire de 186 475.81€.
+Aujourd'hui, l'entreprise compte 8 employés et dégage un chiffre d'affaires de 186 476 €.
 
 Ses clients sont variés et peuvent être des TPE, des PME (comme [Solvetys](https://solvetys.com/) ou [Pro Tech Habitat](https://www.protechhabitat.fr/)) ou des entreprises plus large (comme la [Smatis](https://www.smatis.fr/) ou le groupe [Safran](https://www.safran-group.com/fr)).
 
@@ -71,22 +71,23 @@ Malgré cela bien sûr, chaque personne possède bien souvent une affinité avec
 
 ## Placement sur le marché
 
-Erudo est une entreprise de développement de logiciels métiers sur mesures comme il peut en exister plusieurs, même à Angoulême.
+Erudo est une entreprise de développement de logiciels métiers sur-mesure comme il en existe plusieurs, y compris à Angoulême.
 
-Afin de se positionner au mieux, l'accent est mis (comme au sein de l'entreprise elle même) sur la communication avec le clients, et ce que l'on appelle fréquemment le "feeling".\
-En effet, Erudo prend parti de sa faible envergure pour se placer au plus près des clients et de leurs besoins.
+Afin de se positionner au mieux, l'accent est mis (comme au sein de l'entreprise elle-même) sur la communication avec le client, et ce que l'on appelle fréquemment le "feeling".\
+En effet, Erudo tire parti de sa faible envergure pour se placer au plus près des clients et de leurs besoins.
 
-C'est dans le dialogue fréquent et efficace que la confiance peut s'établir et durer. Actuellement, les seuls d'Erudo viennent d'un démarchage actif.\
-Cependant, récemment l'accent à été mis sur la communication de l'entreprise au "grand public" lors de la refonte du site internet [erudo.fr](https://www.erudo.fr/) et par là même, de l'aspect graphique de l'entreprise.\
+C'est dans le dialogue fréquent et efficace que la confiance peut s'établir et durer. Actuellement, les seuls clients d'Erudo viennent d'un démarchage actif.
+
+Cependant, récemment l'accent a été mis sur la communication de l'entreprise au "grand public" lors de la refonte du site internet [erudo.fr](https://www.erudo.fr/) et par là même, de l'aspect graphique de l'entreprise.\
 Dans cette communication se place encore et toujours cette notion de proximité et de dialogue qui fait la particularité d'Erudo par rapport aux entreprises de développement concurrentes.
 
 ## Analyse concurrentielle
 
-Afin d'analyser aux mieux la concurrence d'Erudo, citons à nouveau les valeurs, les objectifs et les propositions de l'entreprise.
+Afin d'analyser au mieux la concurrence d'Erudo, citons à nouveau les valeurs, les objectifs et les propositions de l'entreprise.
 
 Tout d'abord, Erudo propose :
 
-- Des solutions logiciels sur mesure
+- Des solutions logicielles sur mesure
 - Une approche *Agile* de la gestion de projet
 - Des formations aux écoles et aux professionnels
 
@@ -101,34 +102,34 @@ Elle met en avant :
 
 - Sa communication directe et ses relations très proches de l'utilisateur final (et donc du besoin)
 - Son approche Agile et sa capacité à livrer au plus vite les fonctionnalités essentielles
-- Sa polyvalence quand à la nature des logiciels qu'elle est capable de fournir
-  - ERP (Progiciel de gestion intégré)
+- Sa polyvalence quant à la nature des logiciels qu'elle est capable de fournir
+  - ERP (Progiciel de gestion intégrée)
   - DMS (Gestion électronique de documents)
   - CRM (Gestion de la relation client)
   - Applications mobiles
-  - Logiciels de Tarification
+  - Logiciels de tarification
   - Etc.
 
 ### La concurrence directe
 
 #### SCUB
 
-SCUB est une entreprise de développement de logiciels sur-mesure basé à Angoulême mais présente à Bordeaux et à Paris. Elle compte près de 9 salariés et a réalisé un chiffre d'affaire de 1 365 500 € en 2016.
+SCUB est une entreprise de développement de logiciel sur-mesure basée à Angoulême mais présente à Bordeaux et à Paris. Elle compte près de 9 salariés et a réalisé un chiffre d'affaires de 1 365 500 € en 2016.
 
 Elle propose comme Erudo des logiciels sur mesure, développés selon une approche Agile.\
 Cependant, la livraison des produits de SCUB est réalisé selon une méthode de cycle en V, à savoir que le produit final n'est livré qu'une fois le développement finalisé.
-Elle ne propose pas de formations, ni techniques, ni de gestion de projet.
+Elle ne propose pas de formations (ni techniques, ni de gestion de projet).
 
 SCUB s'adresse donc principalement aux PME et met en avant la qualité de leurs logiciels reconnus par des labels (Finance Innovation par exemple).\
 Ils mettent aussi en avant leur approche Agile du développement permettant aux clients de suivre l'avancement du projet.
 
 #### Sodigep
 
-Sodigep est une entreprise de développement d'ERP basé à Angoulême, comptant trois salariés. Elle a réalisé un chiffre d'affaire de 258 700 € en 2017.
+Sodigep est une entreprise de développement d'ERP basé à Angoulême, comptant trois salariés. Elle a réalisé un chiffre d'affaires de 258 700 € en 2017.
 
 La proposition de Sodigep s'axe sur son logiciel de gestion intégré, vendu en l'état puis adapté aux besoins de l'entreprise cliente.
 
-L'entreprise s'adresse au TPE et PME et met en avant l'étendu de son logiciel de gestion, ainsi que la personnalisation de ce dernier.
+L'entreprise s'adresse au TPE et PME et met en avant l'étendue de son logiciel de gestion, ainsi que la personnalisation de ce dernier.
 
 ### La concurrence indirecte
 
@@ -136,7 +137,7 @@ L'entreprise s'adresse au TPE et PME et met en avant l'étendu de son logiciel d
 
 SOLISYS est une société par actions simplifiée de développement de logiciels basé à Clermont-Ferrand comptant trois salariés.
 
-Elle propose des solutions informatiques de télégestion, de modélisation d'infrastructure et de gestion d'exploitation. Contrairement à Erudo, ces solutions sont existantes et ne font pas parti d'un développement sur mesure, si ce n'est la mise en place.
+Elle propose des solutions informatiques de télégestion, de modélisation d'infrastructure et de gestion d'exploitation. Contrairement à Erudo, ces solutions sont existantes et ne font pas partie d'un développement sur mesure, si ce n'est la mise en place.
 
 SOLISYS vise principalement les PME en mettant en avant les nouvelles technologies comme la BI (*Business Intelligence*, informatique décisionnelle), le Big Data ou l'IoT (*Internet of Things*, objets connectés).
 
@@ -146,44 +147,44 @@ SOLISYS vise principalement les PME en mettant en avant les nouvelles technologi
 
 #### La philosophie
 
-L'une des principales force d'Erudo est sans contexte sa philosophie de travail.
+L'une des principales force d'Erudo est sans conteste sa philosophie de travail.
 
 En effet, là où la plupart des entreprises se basent sur la hiérarchie pour établir un climat de travail propice, Erudo fait le choix de créer ce climat avec la confiance.\
-Adrien HAUTOT lui même reste développeur au même titre que ses employés, malgré ses responsabilités plus importantes et c'est cette proximité qui efface les barrières hiérarchique et favorise le partage.
+Adrien HAUTOT lui-même reste développeur au même titre que ses employés, malgré ses responsabilités plus importantes et c'est cette proximité qui efface les barrières hiérarchiques et favorise le partage.
 
 En misant sur la communication avant tout, l'entreprise peut ainsi avancer non plus "à l'aide" de ses employés, mais *avec eux*.\
-Cette différence joue un rôle considérable dans la vision du travail, à savoir que les employés ne sont plus motivé par le résultats du mois mais bien par l'évolution de l'entreprise elle même.
+Cette différence joue un rôle considérable dans la vision du travail, à savoir que les employés ne sont plus motivé par les résultats du mois mais bien par l'évolution de l'entreprise elle-même.
 
 Un autre avantage de cette hiérarchie horizontale est qu'une fois sur un pied d'égalité avec les autres employés, il est plus aisé de participer en apportant des idées, en posant des questions et en cherchant à expliquer des choses.
 
 #### La méthode
 
-Pour tirer profit de la traction apportée par la philosophie de l'entreprise, cette dernière emploie une méthode de travail assez novatrice et tout particulièrement adapté au cœur de métier, la méthode *Scrum*.
+Pour tirer profit de la traction apportée par la philosophie de l'entreprise, cette dernière emploie une méthode de travail assez novatrice et tout particulièrement adaptée au cœur de métier, la méthode *Scrum*.
 
 Cette méthode (expliquée plus en détail dans le chapitre [*démarche*](#démarche)) s'appuie sur la méthodologie Agile.\
 Cette méthodologie consiste à découvrir les besoins et à élaborer des solutions grâce à l'effort de collaboration d'équipes auto-organisées.\
 Elle préconise une planification adaptative, un développement évolutif, une livraison rapide et une amélioration continue, et elle encourage des réponses flexibles au changement.
 
-Pour cela bien entendu, il est crucial d'avoir du recul sur la demande et d'avoir une équipe en pleine maitrise de son domaine de travail, capable se s'auto-organiser sans un responsable de projet délégué.
+Pour cela bien entendu, il est crucial d'avoir du recul sur la demande et d'avoir une équipe en pleine maitrise de son domaine de travail, capable de s'auto-organiser sans un responsable de projet délégué.
 
 C'est en cela que la méthode s'harmonise avec la philosophie pour une gestion de l'entreprise efficace et réactive.
 
 ### Faiblesses
 
-Étant une startup, Erudo souffre bien malheureusement des mêmes menaces que les autres startup.
+Étant une start-up, Erudo souffre bien malheureusement des mêmes menaces que les autres start-up.
 
 Tout d'abord, l'entreprise est très dépendante des contrats qu'elle est capable d'obtenir. C'est ces contrats qui lui permettent de rester à flot.\
-Fort heureusement, les formations régulières et les divers contrats de maintenance proposés aux client permettent de conserver un apport régulier.
+Fort heureusement, les formations régulières et les divers contrats de maintenance proposés aux clients permettent de conserver un apport régulier.
 
-Du fait de la faible masse salariale dans l'entreprise, certaines personne occupent des rôle cruciaux et apportent un savoir faire qui pourrais disparaitre en même temps que l'employé si un jour il devait quitter l'entreprise.\
+Du fait de la faible masse salariale de l'entreprise, certaines personnes occupent des rôles cruciaux et apportent un savoir-faire qui pourrait disparaitre en même temps que l'employé si un jour il devait quitter l'entreprise.\
 Cette problématique est constamment travaillée en interne lors de diverses sessions de partage de connaissance, ayant pour but de former chaque employé à chaque tâche qu'il est possible de réaliser dans l'entreprise. (Du développement, à la gestion de l'infrastructure réseau en passant pas la gestion des outils d'intégration)
 
-Une autre faiblesses à noter, provient du fait qu'un grand nombre d'employés sont alternant au CESi (où sont fournies des formations rappelons le). Ces alternants donc je fait partie n'ont pas l'expérience qu'il est souvent important d'avoir dans un métier.\
-Ce n'est pas pour autant qu'ils ne sont pas correctement formé et encadré par des salariés plus expérimentés.
+Une autre faiblesse à noter, provient du fait qu'un grand nombre d'employés sont alternants au CESi (où sont fournies des formations rappelons-le). Ces alternants dont je fais partie n'ont pas l'expérience qu'il est souvent important d'avoir dans un métier.\
+Ce n'est pas pour autant qu'ils ne sont pas correctement formés et encadrés par des salariés plus expérimentés.
 
 ## Place dans l'entreprise
 
-Comme nous avons pu le dire plus tôt, au sein d'Erudo, la hiérarchie est très horizontale, si bien que chaque employé possède globalement les même missions à savoir :
+Comme nous avons pu le dire plus tôt, au sein d'Erudo, la hiérarchie est très horizontale, si bien que chaque employé possède globalement les mêmes missions à savoir :
 
 - **Analyser** et **comprendre** les besoins de l'entreprise (automatisation, évolution) pour mieux proposer les solutions adéquates
 - **Concevoir** des solutions logicielles sur-mesure en fonction des demandes formulées par les divers clients
@@ -195,10 +196,10 @@ Comme nous avons pu le dire plus tôt, au sein d'Erudo, la hiérarchie est très
 
 Certains employés ont aussi une spécialité dans laquelle ils sont plus compétents. Et d'autres sont plus souvent en relations avec des clients.
 
-Parmi les spécificité que l'on peut trouver au sein de l'entreprise il y a :
+Parmi les spécificités que l'on peut trouver au sein de l'entreprise il y a :
 
 - La gestion de l'infrastructure et du système d'intégration continue
-- Un bonne connaissance des architectures applicative dîtes, de *frontend*
+- Un bonne connaissance des architectures applicative
 - La relation avec le propriétaire du produit (*Product Owner* ou PO)
 - La mise en place de l'interface utilisateur et la réflexion autour de l’expérience d'utilisation
 - La gestion de l'architecture applicative de l'application serveur
@@ -214,30 +215,30 @@ Cette société s'adresse à des personnes endettées qui veulent financer un au
 
 En regroupant les crédits et en les étalant dans le temps, Solvetys permet à ses clients de desserrer l'étau des remboursements.
 
-Pour Solvetys, Erudo a développé *Soluiob*, une solution de suivi et de gestion des dossiers clients pour Solvetys. C’est une refonte de la solution "Portail Solvetys" développée il y a plus de 9 ans par Adrien HAUTOT.
+Pour Solvetys, Erudo a développé *Soluiob*, une solution de suivi et de gestion des dossiers clients. C’est une refonte de la solution "Portail Solvetys" développée il y a plus de 9 ans par Adrien HAUTOT.
 
 ### Pro Tech Habitat
 
 Pro Tech Habitat est une entreprise qui officie dans le domaine de la protection de l'habitat et de l'entretien des murs et des toitures.
 
-L'entreprise est composé de trois groupe d'employés aux fonctions complémentaires.\
-D'une part les téléprospecteurs qui démarchent téléphoniquement les clients potentiels et prévoient des rendez vous que les commerciaux pourrons honorer.\
+L'entreprise est composé de trois groupes d'employés aux fonctions complémentaires.\
+D'une part les téléprospecteurs qui démarchent téléphoniquement les clients potentiels et prévoient des rendez-vous que les commerciaux pourront honorer.\
 Ces commerciaux rencontrent ces clients potentiels et établissent un devis et conviennent peut-être d'une date de début de chantier avec eux.\
 C'est ensuite au tour des techniciens de mettre en place la rénovation de la maison.
 
 Afin d'assister les téléprospecteurs et les commerciaux, Erudo a conçu *Habit'app*, une double application permettant à ces deux groupes de communiquer au mieux afin d'honorer un plus grand nombre de rendez-vous.\
-D'une part l'application bureau permet aux téléprospecteurs de planifier des rendez vous et de l'autre, une application mobile permet aux commerciaux de suivre leurs rendez-vous de la journée ainsi que pouvoir remonter l'information en cas d'un contrat signé ou non.
+D'une part l'application bureau permet aux téléprospecteurs de planifier des rendez-vous et de l'autre, une application mobile permet aux commerciaux de suivre leurs rendez-vous de la journée ainsi que pouvoir remonter l'information en cas d'un contrat signé ou non.
 
 ### Safran / Zodiac
 
-Avant le rachat par Safran l’entreprise cliente s’appelait Zodiac-Aerospace.\
+Avant le rachat par Safran, l’entreprise cliente s’appelait Zodiac-Aerospace.\
 Le donneur d’ordre étant une structure interne à Zodiac qui assure, auprès des compagnies aériennes un support technique pour l’entretien, la maintenance et les réparations ainsi que des services après-vente pour les produits du groupe, partout dans le monde.
 
 Zodiac-Aerospace est organisé autour des trois principales zones (États-Unis, Europe, Asie) d’où rayonne un réseau de stations de réparation et de distribution.\
 Au sein du groupe Safran le projet *Izos* s’articule autour du *DVM* ("Management visuel").
 
 Il permet à Safran de mieux gérer les commandes naviguant au sein de leurs ateliers de réparation et à mieux gérer leurs délais.\
-Le projet a pour objectif d’être déployé dans le monde entier, d’où la nécessité d'un application complétement multilingue. Il existe une seule version de l’application pour tous les ateliers.
+Le projet a pour objectif d’être déployé dans le monde entier, d’où la nécessité d'une application complètement multilingue. Il existe une seule version de l’application pour tous les ateliers.
 
 Le logiciel de gestion permet à la fois de créer, de modifier et de suivre une commande par l’ingénieur et le chef d’atelier. Il permet aussi d’afficher un management visuel des autres commandes sur des écrans dans chaque service concerné par l’entretien.
 
@@ -248,7 +249,7 @@ l’Amérique du nord. Ce client est l’un des plus importants de l’entrepris
 
 ### La méthode Agile
 
-Le développement de logiciels agile fait référence à des approches dans le processus de développement logiciel qui augmentent la transparence et la vitesse de changement dans le but de conduire à un déploiement plus rapide . Cette approche permet de minimiser les risques et les opérations inutiles dans le processus de développement.
+Le développement de logiciels agile fait référence à des approches dans le processus qui augmentent la transparence et la vitesse de changement dans le but de conduire à un déploiement plus rapide. Cette approche permet de minimiser les risques et les opérations inutiles dans le processus de développement.
 
 Cette méthode doit être coordonnée avec le client à intervalles réguliers et courts.\
 Cela permet de répondre avec souplesse aux exigences des clients afin d'accroître leur satisfaction globale. Le développement logiciel agile se caractérise par des équipes auto-organisées et une approche itérative et incrémentale.
@@ -262,7 +263,7 @@ Afin de saisir au mieux la mentalité de cette méthode, voici les quatre valeur
 - La collaboration avec les clients plus que la négociation contractuelle
 - L’adaptation au changement plus que le suivi d’un plan
 
-La manifeste rappelle bien entendu qu'il faut "reconnaitre la valeur des seconds éléments, mais privilégier les premiers".
+Le manifeste rappelle bien entendu qu'il faut "reconnaitre la valeur des seconds éléments, mais privilégier les premiers".
 
 ### La méthode Scrum
 
@@ -273,7 +274,7 @@ L'équipe suit les progrès dans le cadre de réunions quotidiennes de 15 minute
 Un principe clé de Scrum est la reconnaissance du fait que les clients changeront d'avis sur ce qu'ils veulent ou ce dont ils ont besoin et qu'il y aura des défis imprévisibles pour lesquels une approche prédictive ou planifiée n'est pas adaptée.\
 C'est pourquoi Scrum adopte une approche empirique fondée sur des preuves en acceptant que le problème ne puisse pas être entièrement compris ou défini d'emblée, et en se concentrant plutôt sur la manière de maximiser la capacité de l'équipe à livrer rapidement, à répondre aux nouvelles exigences et à s'adapter à l'évolution des technologies et aux changements des conditions du marché.
 
-Le Scrum comprend trois rôles, qui sont idéalement situés au même endroit physiques pour assurer une communication optimale entre les membres de l'équipe.\
+Scrum comprend trois rôles, qui sont idéalement situés aux même endroits physiques pour assurer une communication optimale entre les membres de l'équipe.\
 Là où de nombreuses organisations ont d'autres rôles impliqués dans la définition et la livraison du produit, Scrum ne définit que ces trois rôles.
 
 #### Les rôles
@@ -282,10 +283,10 @@ Là où de nombreuses organisations ont d'autres rôles impliqués dans la défi
 
 Le *Product Owner* (PO), ou en français le propriétaire du produit, représente les parties prenantes du produit et la voix du client.
 
-Il définit le produit en termes compréhensible pour le client (généralement des témoignages d'utilisateurs appelés *User Stories*), les ajoute à une liste de tâche à effectuer (appelés *Backlog*) et les classe par ordre de priorité en fonction de leur importance.
+Il définit le produit en termes compréhensibles pour le client (généralement des témoignages d'utilisateurs appelés *User Stories*), les ajoute à une liste de tâche à effectuer (appelés *Backlog*) et les classe par ordre de priorité en fonction de leur importance.
 
 Une équipe Scrum doit avoir un seul *product owner* qui ne doit pas dicter à l'équipe comment parvenir à une solution technique, mais doit chercher à obtenir un consensus parmi les membres de l'équipe.\
-Un bon propriétaire de produit doit être capable de communiquer ce dont l'entreprise a besoin, de demander pourquoi elle en a besoin et de transmettre le message à toutes les parties prenantes, y compris l'équipe de développement.
+Un bon *product owner* doit être capable de communiquer ce dont l'entreprise a besoin, de demander pourquoi elle en a besoin et de transmettre le message à toutes les parties prenantes, y compris l'équipe de développement.
 
 ##### L'équipe de développement
 
@@ -303,7 +304,7 @@ Le *scrum master* n'est pas un chef d'équipe ou un chef de projet traditionnel,
 
 L'une des différences entre le rôle de *scrum master* et celui de chef de projet est que ce dernier peut avoir des responsabilités de gestion du personnel là où le *scrum master* n'en a pas.
 
-Un *scrum master* fournit une quantité limitée de directives puisque l'équipe est censée être autonome et s'auto-organiser. Scrum ne reconnaît pas formellement le rôle de gestionnaire de projet, car les tendances traditionnelles de commandement et de contrôle causeraient des difficultés.
+Un *scrum master* fournit une quantité limitée de directives puisque l'équipe est censée être autonome et s'auto-organiser. Scrum ne reconnaît pas formellement le rôle de gestionnaire de projets, car les tendances traditionnelles de commandement et de contrôle causeraient des difficultés.
 
 #### Les outils
 
@@ -314,7 +315,7 @@ La méthode Scrum propose aussi de nombreux outils essentiels à sa bonne applic
 Un sprint (également appelé itération) est l'unité de base du développement dans Scrum.\
 C'est un effort chronométré, à savoir que la durée est convenue et fixée à l'avance pour chaque sprint et se situe normalement entre une semaine et un mois, deux semaines étant le plus courant.
 
-Chaque sprint commence par une planification afin d'établir un objectif de sprint. Ils sprint se terminent par une revue et une rétrospective du sprint, qui passe en revue les progrès réalisés pour les montrer aux parties prenantes et tirer des leçons et des améliorations pour les sprints suivants.
+Chaque sprint commence par une planification afin d'établir un objectif de sprint. Ces sprints se terminent par une revue et une rétrospective, qui passe en revue les progrès réalisés pour les montrer aux parties prenantes et tirer des leçons et des améliorations pour les sprints suivants.
 
 Scrum met l'accent sur les résultats utiles à la fin du sprint. Dans le cas du développement de logiciels, cela signifie par exemple que le logiciel a été entièrement intégré, testé et documenté, et qu'il est potentiellement possible de le livrer.
 
@@ -328,7 +329,7 @@ Cette planification permet aussi de préparer un *backlog* de sprint qui compren
 
 Au cours de la première moitié, toute l'équipe Scrum (équipe de développement, *scrum master* et *product owner*) sélectionne les éléments du *backlog* qui, selon elle, pourraient être réalisés dans ce sprint.
 
-Dans la seconde moitié, l'équipe de développement identifie les tâches nécessaires pour achever ces éléments du backlog du produit pour aboutir  un backlog de sprint.\
+Dans la seconde moitié, l'équipe de développement identifie les tâches nécessaires pour achever ces éléments du backlog du produit pour aboutir à un backlog de sprint.\
 Au fur et à mesure, certains éléments du *backlog* peuvent être divisés ou remis dans le *backlog* si l'équipe ne pense plus pouvoir terminer le travail requis en un seul sprint.
 
 ##### La mêlée quotidienne
@@ -349,13 +350,13 @@ Aucune discussion détaillée ou technique ne doit avoir lieu lors de la mêlée
 
 ##### La revue de sprint
 
-Lors de la rétrospective du sprint à la fin de ce dernier, l'équipe passe en revue le travail accompli et le travail prévu qui n'a pas été achevé. Elle présente le travail achevés aux parties prenantes lors d'une démonstration et collabore avec elles sur ce qu'il faut faire ensuite.
+Lors de la revue du sprint à la fin de ce dernier, l'équipe passe en revue le travail accompli et le travail prévu qui n'a pas été achevé. Elle présente le travail achevé aux parties prenantes lors d'une démonstration et collabore avec elles sur ce qu'il faut faire ensuite.
 
 Lors d'une revue, un travail incomplet ne peut être montré. La durée recommandée est de deux heures pour un sprint de deux semaines.
 
 ##### La rétrospective de sprint
 
-Lors de la rétrospective du sprint, l'équipe réfléchit sur le sprint passé et identifie et convient d'actions pour amélioration les processus. Le *scrum master* a pour objectif de  faciliter cette démarche.
+Lors de la rétrospective du sprint, l'équipe réfléchit sur le sprint passé et identifie et convient d'actions pour améliorer les processus. Le *scrum master* a pour objectif de faciliter cette démarche.
 
 Trois questions principales se posent dans la rétrospective du sprint :
 
@@ -371,26 +372,26 @@ Un problème résultant de l'utilisation de la méthode Agile est qu'il est parf
 
 L'équipe estime en amont le temps de réalisation de toutes ou parties des tâches du projet et c'est ce temps estimé qui sera finalement facturé au client et non le temps réellement passé. Cette nuance motive (et oblige) l'entreprise à affiner ses estimations et à appliquer au mieux la méthode Scrum.
 
-Les packs de jours sont vendus aux client (souvent par lot de 50 jours/hommes) et ce dernier est libre de dépenser ses "jours" à son bon vouloir sur les fonctionnalités qui l'intéresse.
+Les packs de jours sont vendus aux clients (souvent par lot de 50 jours/hommes) et ce dernier est libre de dépenser ses "jours" à son bon vouloir sur les fonctionnalités qui l'intéresse.
 
 Une fois un pack épuisé, le client est libre ou non d'en acheter un autre suivant ses besoins ou s'il considère le projet comme étant suffisamment avancé.
 
 ## Résultats
 
-Jusqu'à présent, cette démarche s'est avérée très efficace pour gérer au mieux les projets clients. Ces derniers reçoivent très rapidement une version non complète de l'application mais un version qu'il leurs est possible d'essayer et de rapidement nous fournir des retours de correctifs et d'ajustements.
+Jusqu'à présent, cette démarche s'est avérée très efficace pour gérer au mieux les projets clients. Ces derniers reçoivent très rapidement une version non complète de l'application mais une version qu'il leur est possible d'essayer et de rapidement fournir des retours de correctifs et d'ajustements.
 
-Cela nous a toujours permis de faire évoluer les projets aux besoins de nos clients plutôt que de leurs demander d'ajuster leurs utilisations. C'est une chose qui paraît contre-intuitif et cela, malgré la fréquence à laquelle cela peut arriver dans des entreprises utilisant des méthodes moins adaptés au développement de logiciels.
+Cela nous a toujours permis de faire évoluer les projets aux besoins de nos clients plutôt que de leur demander d'ajuster leur utilisation. C'est une chose qui paraît contre-intuitive et cela, malgré la fréquence à laquelle cela peut arriver dans des entreprises utilisant des méthodes moins adaptées au développement de logiciels.
 
-Cette méthode permet aussi de prévoir du temps de réflexion sur ce qui a été fait et d'en tirer sans cesse des pistes d'améliorations. Le temps de partage de connaissance et de montée en niveau des technologies nous permet d'être toujours prêts à entamer un nouveau projet dans les meilleurs conditions.
+Cette méthode permet aussi de prévoir du temps de réflexion sur ce qui a été fait et d'en tirer sans cesse des pistes d'améliorations. Le temps de partage de connaissance et de montée en niveau des technologies nous permet d'être toujours prêts à entamer un nouveau projet dans les meilleures conditions.
 
-La philosophie axée sur la communication nous permet aussi de détecter et de résoudre très rapidement les frictions entre les pensées tout en permettant à chacun de s'exprimer sur son ressenti. Une grande proportion est aussi attribué à la veille technologique que nous effectuons chacun dans l'intérêt de tous les autres.
+La philosophie axée sur la communication nous permet aussi de détecter et de résoudre très rapidement les frictions entre les pensées tout en permettant à chacun de s'exprimer sur son ressenti. Une grande proportion est aussi attribuée à la veille technologique que nous effectuons chacun dans l'intérêt de tous les autres.
 
-Bien sûr, il n'est pas question d'affirmer que tout se passe toujours bien, mais plutôt de reconnaitre que tout à tendance à se passer de mieux en mieux au fil des itérations que cette méthode apporte.
+Bien sûr, il n'est pas question d'affirmer que tout se passe toujours bien, mais plutôt de reconnaitre que tout a tendance à se passer de mieux en mieux au fil des itérations que cette méthode apporte.
 
-Pour donner un exemple, il a récemment été remarqué que notre comportement s'éloignait parfois de ce qui rend Scrum si efficace. Les objectifs des sprints n'étaient plus rappelés au début de chaque mêlées et l'on se servaient rarement du graphique *burndown* (indiquant la progression d'un sprint) dans celles ci.
+Pour donner un exemple, il a récemment été remarqué que notre comportement s'éloignait parfois de ce qui rend Scrum si efficace. Les objectifs des sprints n'étaient plus rappelés au début de chaque mêlée et l'on se servaient rarement du graphique *burndown* (indiquant la progression d'un sprint) dans celles-ci.
 
-Ces écarts ont étés promptement rétablis au sein de la méthode elle même car c'est lors d'une retrospective de sprint que ces écarts ont étés détecté. Cette itération a donc apporté avec elle un lot de changement qui nous ont permis de s'améliorer encore.
+Ces écarts ont étés promptement rétablis au sein de la méthode elle-même car c'est lors d'une rétrospective de sprint que ces écarts ont été détectés. Cette itération a donc apporté avec elle un lot de changement qui nous ont permis de s'améliorer encore.
 
-Sans cette capacité à se remettre fréquemment en question, la direction que l'ont prend reste toujours la même, aussi déviante de l'objectif soit-elle.
+Sans cette capacité à se remettre fréquemment en question, la direction que l'on prend reste toujours la même, aussi déviante de l'objectif soit-elle.
 
 [^1]: [Agile Manifesto](https://agilemanifesto.org/iso/fr/manifesto.html)
